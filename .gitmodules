@@ -1,0 +1,3 @@
+[submodule "static"]
+	path = static
+	url = git@vcs.fsf.org:enc-static.git
