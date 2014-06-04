@@ -303,41 +303,54 @@
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 						<h2><em>#5</em> Use it well</h2>
+<p>Everyone uses GnuPG a little differently, but it's important to follow some basic practices to keep your email secure. Not following them, you risk the privacy of the people you communicate with, as well as your own, and damage the Web of Trust.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5a" class="step">
 					<div class="main">
-						<h3><em>Step 5a</em> When should I encrypt? When should I sign?</h3>
-						<p>Everyone uses GnuPG a little differently. Encryption is most important for messages involving finances, personal information, politically sensitive conversations and anything else that you wouldn't want to fall into the wrong hands. Signing is best for when you think there might be concern about your identity, or as a way of demonstrating that you know how to use GnuPG and will be able to decrypt emails. If you're already encrypting, there's no reason not to sign as well, to give the recipient added assurance that the message is from you.</p>
-						<p>If you're using your email program (or wherever you have GnuPG set up) often, we recommend that you sign all outgoing messages because it turns you into an ambassador for GnuPG. Anyone can read a signed email, so it doesn't matter if the recipient doesn't yet know how to use email encryption. The more you encrypt the better, but you won't be able to do so unless the recipient has a public key. However, if you've set it up for an email program on your computer, but you primarily use email through your phone, then you'll only want to fire up the email program and use GnuPG for special occasions. If this describes you, we recommend you use </p>
+						<h3>When should I encrypt?</h3>
+
+						<p>The more you can encrypt your messages, the better. This is because, if you only encrypt emails occasionally, each encrypted message could raise a red flag for surveillance systems. If all or most of your email is encrypted, people doing surveillance won't know where to start.</p>
+
+</p>That's not to say that only encrypting some of your email isn't helpful -- it's a great start and it makes bulk surveillance more difficult. And even people that encrypt as much as they can are still limited to those of their contacts that have public keys.</p>
+					
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
 
 				<div id="step-5b" class="step">
 					<div class="main">
-						<h3><em>Step 5b</em> Be wary of invalid keys</h3>
+						<h3>Be wary of invalid keys</h3>
 						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
 						<p>In your email program, go back to the second email that Adele sent you. Because it was encrypted with her key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
 <p><b>When using GnuPG, make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
-						<h3><em>Step 5c</em> Make it part of your online identity</h3>
-						<p>Start writing your key ID anywhere someone would see your email address. Add it to your email signature, social media profile, blog, Website, or business card.</p>
+						<h3>Copy your revocation certificate to somewhere safe</h3>
+						<p>Remember when you created your keys and saved the revocation cerfiticate that GnuPG made? It's time to copy that cerfiticate onto the safest digital storage that you have -- the ideal thing is a flash drive, disk or hard drive stored in a safe place in your home.</p>
+<p>If your private key ever gets lost or stolen, you'll need this certificate file.</p>
 					</div><!-- End .main -->
-				</div><!-- End #step-5c .step-->
+				</div><!-- End #step-5c .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-lost_key" class="step">
 					<div class="main">
-						<h3><em>Important:</em> act swiftly if you lose your key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing your computer), it's important to revoke it immediately before someone else uses it to steal your identity. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						<h3><em>Important:</em> act swiftly if someone gets your private key</h3>
+						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to steal your identity. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-5d" class="step">
+					<div class="main">
+						<h3>Make it part of your online identity</h3>
+						<p>Start writing your key ID anywhere someone would see your email address. Add it to your email signature, so that anyone corresponding with you knows that they can donwload your public key and verify that it's the correct one. It's also good to post it on your media profile, blog, Website, or business card. We need to get our culture to the point that we feel like something is missing when we see an email address without a public key ID.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-5d .step-->
+
 
 			</div>
 		</section><!-- End #section5 -->
