@@ -40,10 +40,12 @@
 			<div>
 				<h1>Email Self-Defense</h1>
 				<div class="intro">
-					<p>The goal of this guide is to make it easy to set up email encryption on your computer. Once you've finished the guide, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it. </p>
-					<p>This isn't something you'd do with every email, or even every day. Rather, it's a tool to have handy when you need to send something sensitive.</p>
-					<p>You'll also be able to sign emails to show reliably that they are from you. Though the need for signing may be less obvious, you'll actually do it more often.</p>
-					<p>All you need is a computer with GNU/Linux or Windows and an Internet connection. You can use your existing email account for this without affecting it.</p> 
+					<p>The goal of this guide is to make it easy to set up email encryption on your computer. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it. </p>
+					<!--<p>You'll also be able to sign emails to show reliably that they are from you. Though the need for signing may be less obvious, you'll actually do it more often.</p>-->
+					<p>All you need is a computer with an Internet connection, and email account and about half an hour. You can use your existing email account for this without affecting it.</p>
+
+<p>This guide relies on software which is freely licensed; it's completely transparent and anyone can copy it or make their own version. This makes it safer from surveillance than proprietary software (like Windows). Learn more about free software at <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+
 				</div>
 				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
 				<div id="fsf-intro">
@@ -123,6 +125,7 @@
 							<dl>
 								<dt>I can't find the menu.</dt>
 									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars.</dd>
+
 								<dt class="feedback">Don't see a solution to your problem?</dt>
 									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
 							</dl>
@@ -162,6 +165,9 @@
 							<dl>
 								<dt>I can't find the OpenPGP menu.</dt>
 									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars. OpenPGP may be inside a section called Tools.</dd>
+    <dt>The wizard says that it cannot find GnuPG.</dt>
+
+                                         <dd>Open whatever program you usually use for installing  software, and search for GnuPG, then install it. Then restart the  Engimail setup wizard by going to OpenPGP -> Setup Wizard.</dd>
 								<dt class="feedback">Don't see a solution to your problem?</dt>
 									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
 							</dl>
@@ -242,17 +248,19 @@
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+<!-- STEP 3D IS COMMENTED OUT UNTIL WE FIND A WAY TO VALIDATE SIGNATURES
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ --
 				<div id="step-3d" class="step">
 					<div class="main">
 						<h3><em>Step 3.d</em> Send a test signed email to a friend</h3>
 						<p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
 						<p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
 						<p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
-					</div><!-- End .main -->
+					</div><!-- End .main --
 				</div><!-- End #step-3d .step -->
 			</div>
-		</section><!-- End #section3 -->
+		</section><!-- End #section3 --
+
 
 <!-- ~~~~~~~~~ Section 4: Learn the Web of Trust  ~~~~~~~~~ -->
 		<section class="row" id="section4">
@@ -335,17 +343,6 @@
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-gnulinux" class="step">
-					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/placeholders/placeholder.png" alt="Placeholder" /></p>
-					</div><!-- /.sidebar -->
-					<div class="main">
-						<h3>Switch to GNU/Linux</h3>
-						<p>Coming soon</p>
-					</div><!-- End .main -->
-				</div><!-- End #step-gnulinux .step -->
-
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-keysigning_party" class="step">
 					<div class="main">
 						<h3>Go to a keysigning party</h3>
@@ -357,7 +354,7 @@
 				<div id="step-programming" class="step">
 					<div class="main">
 						<h3>Make these tools even better</h3>
-						<p>Like programming? Contribute code to <a href="https://www.gnupg.org/">GnuPG</a> or <a href="https://www.enigmail.net/home/index.php">Enigmail</a>.</p>
+						<p>Like programming? Contribute code to <a href="https://www.gnupg.org/">GnuPG</a> or <a href="https://www.enigmail.net/home/index.php">Enigmail</a>. Have an idea for improving this guide? Leave us <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback</a>.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-programming .step -->
 
