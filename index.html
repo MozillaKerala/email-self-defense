@@ -434,6 +434,46 @@
 		<script src="http://static.fsf.org/nosvn/enc-dev0/js/jquery-1.11.0.min.js"></script>
 		<script src="http://static.fsf.org/nosvn/enc-dev0/js/scripts.js"></script>
 
+                <!-- Piwik -->
+                <script type="text/javascript">
+                 /*
+                 @licstart The following is the entire license notice for the
+                    JavaScript code in this page.
+
+                 Copyright 2014 Matthieu Aubry
+
+                  This program is free software: you can redistribute it and/or modify
+                 it under the terms of the GNU General Public License as published by
+                 the Free Software Foundation, either version 3 of the License, or
+                 (at your option) any later version.
+
+                  This program is distributed in the hope that it will be useful,
+                 but WITHOUT ANY WARRANTY; without even the implied warranty of
+                 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                 GNU General Public License for more details.
+
+                  You should have received a copy of the GNU General Public License
+                 along with this program.  If not, see http://www.gnu.org/licenses/.
+
+                  @licend The above is the entire license notice
+                     for the JavaScript code in this page.
+                 */
+                 var _paq = _paq || [];
+                 _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+                 _paq.push(["setCookieDomain", "*.www.fsf.org"]);
+                 _paq.push(["setDomains", ["*.www.fsf.org","*.www.fsf.org"]]);
+                 _paq.push(["trackPageView"]);
+                 _paq.push(["enableLinkTracking"]);
+
+                 (function() {
+                   var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.fsf.org/";
+                   _paq.push(["setTrackerUrl", u+"piwik.php"]);
+                   _paq.push(["setSiteId", "5"]);
+                   var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+                   g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+                 })();
+                </script>
+                <!-- End Piwik Code -->
+
 	</body>
 </html>
-
