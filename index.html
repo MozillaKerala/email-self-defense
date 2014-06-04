@@ -39,19 +39,12 @@
 
 			<div>
 				<h1>Email Self-Defense</h1>
-				<div class="intro">
-					<p>The goal of this guide is to make it easy to set up email encryption on your computer. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it. </p>
-					<!--<p>You'll also be able to sign emails to show reliably that they are from you. Though the need for signing may be less obvious, you'll actually do it more often.</p>-->
-					<p>All you need is a computer with an Internet connection, an email account and about half an hour. You can use your existing email account for this without affecting it.</p>
 
-<p>This guide relies on software which is freely licensed; it's completely transparent and anyone can copy it or make their own version. This makes it safer from surveillance than proprietary software (like Windows). Learn more about free software at <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
-
-				</div>
 				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
-				<div id="fsf-intro">
-					<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
-					<p>Email Self-Defense is a project of the Free Software Foundation. The FSF works to secure freedom for computer users by promoting the development and use of free (as in freedom) software and documentation.</p><p>We have big plans to get it in the hands of people under bulk surveillance all over the world, and make more tools like it. Can you make a donation to help us achieve that goal?   
-</p>
+								<div id="fsf-intro">
+									<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
+									<p>Email Self-Defense is a project of the Free Software Foundation. The FSF works to secure freedom for computer users by promoting the development and use of free (as in freedom) software and documentation.</p><p>We have big plans to get it in the hands of people under bulk surveillance all over the world, and make more tools like it. Can you make a donation to help us achieve that goal?   
+				</p>
 
 					<!--<p><a href="https://u.fsf.org/yr"><img alt="Join now" src="http://static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>-->
 					<p><a href="https://u.fsf.org/7w"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a></p>
@@ -68,6 +61,20 @@
 					</div><!-- End .newsletter -->
 				</div><!-- End #fsf-intro -->
 
+				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
+				<div class="intro">
+					<p id="infographic">
+						<a class="img-link" href="http://emailselfdefense.fsf.org/infographic"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="Email Self-Defense, Infographic" /></a>
+						<a class="text-link" href="http://emailselfdefense.fsf.org/infographic">View &amp; share our infographic &rarr;</a>
+					</p>
+					<p>The goal of this guide is to make it easy to set up email encryption on your computer. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it. </p>
+					<!--<p>You'll also be able to sign emails to show reliably that they are from you. Though the need for signing may be less obvious, you'll actually do it more often.</p>-->
+					<p>All you need is a computer with an Internet connection, an email account and about half an hour. You can use your existing email account for this without affecting it.</p>
+
+<p>This guide relies on software which is freely licensed; it's completely transparent and anyone can copy it or make their own version. This makes it safer from surveillance than proprietary software (like Windows). Learn more about free software at <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+
+				</div>
+				
 			</div>
 		</header><!-- End #header -->
 
@@ -276,6 +283,15 @@
 						<p class="highlight">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person. Before signing a real person's key, always make sure it actually belongs to them, and answer honestly in the window that pops up and asks "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?".</p>
 						<p class="highlight">It's important to take keysigning seriously because it will affect people beyond just you and the person who's key you are signing. If someone doubts that a key actually belongs to the person that is says it does, they can go on a keyserver and see the number of signatures that it has. The more it has, the more they are likely to trust it.</p>
 						<p class="highlight">The Web of Trust takes this concept to the next level. It is a network of key signatures that is saved in keyservers on the Internet. It builds chains of trust between individuals that do not know each other by passing through others, a bit like the famous <a href="http://en.wikipedia.org/wiki/Six_degrees_of_separation">"six degrees of separation" game</a>. You don't need to understand it in detail to use email encryption, but it will become a powerful tool if you become an advanced user.</p>
+
+						<div id="pgp-pathfinder">
+							<form enctype="application/x-www-form-urlencoded" action="/mk_path.cgi" method="get">
+								<p><strong>From:</strong> <input type="text" name="FROM"></p>
+								<p><strong>To:</strong> <input type="text" name="TO"></p>
+								<p class="buttons"><input type="submit" value="trust paths" name="PATHS"> <input type="reset" value="reset" name=".reset"></p>
+							</form>
+						</div><!-- End #pgp-pathfinder -->
+
 					</div><!-- End .main -->
 				</div><!-- End #step-4a .step -->
 			</div>
