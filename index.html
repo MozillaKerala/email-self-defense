@@ -11,6 +11,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="http://static.fsf.org/nosvn/enc-dev0/css/main.css">
   		<link rel="shortcut icon" href="http://static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
+
+<!--			<link rel="stylesheet" href="http://static.fsf.org/nosvn/enc-dev0/css/main.css">
+-->
+
 	</head>
 	<body>
 		<nav class="nav">
@@ -169,44 +173,78 @@
 					<div class="main">
 						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. You'd follow the same steps if communicating with a real person. Then you'll send your first signed email to a real person!</p>
 					</div><!-- End .main -->
-				</div><!-- End .section-intro -->
 
+				</div><!-- End .section-intro -->
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3a" class="step">
 					<div class="sidebar">
 						<p><img src="http://static.fsf.org/nosvn/enc-dev0/img/placeholders/placeholder.png" alt="Placeholder" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 3.a</em> Download Adele's public key from a keyserver</h3>
-						<p>In your email program's menu, go to OpenPGP -> Key Management -> Keyserver -> Search for Keys.</p>
-						<p>In the "Search for keys" field, type adele-en@gnupp.de. That's Adele's email address.</p>
-						<p>Check the first result (Key ID starting with 9) and hit OK.</p>
+						<h3><em>Step 3.a</em> Send Adele your public key</h3>
+						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP -> Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+
+<p>Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+
+<p>It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the Use it well section of this guide. Once she's responded, head to the next step. From here one, you'll be doing just the same thing as when corresponding with a real person.</p>
+
+				<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Troubleshooting</h4>
+							<dl>
+								<dt>PLACEHOLDER</dt>
+									<dd>PLACEHOLDER</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
-				</div><!-- End #step-3a .step -->
+				</div><!-- End #step-3b .step -->
+	
+
+			</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-3b" class="step">
-					<div class="main">
+				<div id="step-3a" class="step">
+										<div class="main">
 						<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-						<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body.</p>
-						<p>Before sending the email, click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="highlight">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p>It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the Use it well section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p class="highlight">Notice the bar that Enigmail shows you with information about the status of Adele's key.</p>
+						<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
+						<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
+						<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+
+<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+
+<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+				<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Troubleshooting</h4>
+							<dl>
+								<dt>Enigmail can't find Adele's key</dt>
+									<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Send a test signed email to a friend</h3>
+						<h3><em>Step 3.c</em> Receive a response</h3>
+						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
+						<p class="highlight">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
+						<p>It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the Use it well section of this guide.</p>
+						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
+						<p class="highlight">Notice the bar that Enigmail shows you with information about the status of Adele's key.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-3c .step -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-3d" class="step">
+					<div class="main">
+						<h3><em>Step 3.d</em> Send a test signed email to a friend</h3>
 						<p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
 						<p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
 						<p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
 					</div><!-- End .main -->
-				</div><!-- End #step-3c .step -->
+				</div><!-- End #step-3d .step -->
 			</div>
 		</section><!-- End #section3 -->
 
