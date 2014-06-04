@@ -23,9 +23,9 @@
 					<li><a href="mac.html">Mac OS</a></li>
 					<li><a href="windows.html">Windows</a></li>
 				</ul>
-				<ul class="lang">
+				<!--<ul class="lang">
 					<li class="help"><a href="http://libreplanet.org/wiki/GPG_guide">Translate this guide!</a></li>
-				</ul>
+				</ul> -->
 			</div>
 		</nav>
 
@@ -104,13 +104,18 @@
 				</div><!-- End #step1-a .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-1c" class="step">
+				<div id="step-1b" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-tools-addons.png" alt="Step 1.B: Tools -> Add-ons" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-01-tools-addons.png" alt="Step 1.B: Tools -> Add-ons" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Step 1.b</em> Install the Enigmail plugin for your email program</h3>
 						<p>In your email program's menu, select Add-ons (it may be in the Tools section). Make sure Extensions is selected on the left. Do you see Enigmail? if so, skip this step.</p>
+
+						<ul class="images">
+							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-02-search.png" alt="Step 1.B: Search Add-ons" /></li><li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-03-install.png" alt="Step 1.B: Install Add-ons" /></li>
+						</ul>
+
 						<p>If not, search "Enigmail" with the search bar in the upper right. You can take it from here. Restart your email program when you're done.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
@@ -123,7 +128,7 @@
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
-				</div><!-- End #step-1c .step -->
+				</div><!-- End #step-1b .step -->
 			</div>
 		</section><!-- End #section1 -->
 
@@ -307,13 +312,17 @@
 					<div class="main">
 						<h3><em>Step 5c</em> Make it part of your online identity</h3>
 						<p>Start writing your key ID anywhere someone would see your email address. Add it to your email signature, social media profile, blog, Website, or business card.</p>
-					<!-- ~~~~~~~~~ highlight  ~~~~~~~~~ -->
-						<div class="highlight">
-							<h4>Important: act swiftly if you lose your key</h4>
-							<p>If you lose your private key or someone else gets ahold of it (say, by stealing your computer), it's important to revoke it immediately before someone else uses it to steal your identity. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
-						</div><!-- End .highlight -->
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step-->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-lost_key" class="step">
+					<div class="main">
+						<h3><em>Important:</em> act swiftly if you lose your key</h3>
+						<p>If you lose your private key or someone else gets ahold of it (say, by stealing your computer), it's important to revoke it immediately before someone else uses it to steal your identity. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-lost_key .step-->
+
 			</div>
 		</section><!-- End #section5 -->
 
@@ -367,17 +376,31 @@
 						<p>There are a lot more features of GnuPG to discover, including encrypting files on your computer. There are a variety of resources accessible via Google, but we recommend starting with the links on the <a href="https://www.gnupg.org/documentation/">GnuPG Web site</a>.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-learn_more .step -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-contribute" class="step">
+					<div class="main">
+						<h3>Contribute to this guide</h3>
+						<ul>
+							<li><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Leave feedback and suggest improvements</a></li>
+							<li>Email us at <a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a> if you'd like to help maintain and improve this guide, or to translate it</a></li>
+							<li><a href="https://u.fsf.org/7w">Donate to the Free Software Foundation</a></li>
+						</ul>
+					</div><!-- End .main -->
+				</div><!-- End #step-contribute .step -->
 					
 			</div>
 		</section><!-- End #section6 -->
 
 <!-- ~~~~~~~~~ FAQ  ~~~~~~~~~ -->
+<!-- When un-commenting this section go to main.css and search
+		for /* Guide Sections Background */ then add #faq to the desired color
+		
 		<section class="row" id="faq">
 			<div>
-				<!-- ~~~~~~~~~ section title + graphics  ~~~~~~~~~ -->
 				<div class="sidebar">
 					<h2>FAQ</h2>
-				</div><!-- /.sidebar -->
+				</div>
 
 				<div class="main">
 					<dl>
@@ -390,20 +413,13 @@
 						<dt>My email program is opening at times I don't want it to open/is now my default program and I don't want it to be.</dt>
 							<dd>Answer coming soon.</dd>
 					</dl>
-				</div><!-- /.main -->
+				</div>
 			</div>
-		</section><!-- End #faq -->
+		</section> --><!-- End #faq -->
 
 <!-- ~~~~~~~~~ Footer  ~~~~~~~~~ -->
 		<footer class="row" id="footer">
 			<div>
-				<div id="contribute">
-					<h4>Contribute to this guide</h4>
-					<ul>
-						<li><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Leave feedback and suggest improvements</a></li>
-						<li>Email us at <a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a> if you'd like to help maintain and improve this guide, or to translate it</a></li>
-						<li><a href="https://u.fsf.org/7w">Donate to the Free Software Foundation</a></li>
-				</div><!-- /#contribute -->
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
