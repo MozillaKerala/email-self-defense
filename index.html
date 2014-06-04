@@ -12,20 +12,20 @@
 			<link rel="stylesheet" href="http://static.fsf.org/nosvn/enc-dev0/css/main.css">
   		<link rel="shortcut icon" href="http://static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
 
-<!--			<link rel="stylesheet" href="http://static.fsf.org/nosvn/enc-dev0/css/main.css">
--->
+<!-- -->			<link rel="stylesheet" href="static/css/main.css">
+
 
 	</head>
 	<body>
 		<nav class="nav">
 			<div>
 				<ul class="os">
-					<li><a href="#" class="current">GNU/Linux</a></li>
-					<li><a href="#">Mac OS</a></li>
-					<li><a href="#">Windows</a></li>
+					<li><a href="index.html" class="current">GNU/Linux</a></li>
+					<li><a href="mac.html">Mac OS</a></li>
+					<li><a href="windows.html">Windows</a></li>
 				</ul>
 				<ul class="lang">
-					<li><a href="/">English</a></li>
+					<li class="help"><a href="/">Translate this guide!</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -34,7 +34,7 @@
 <!-- ~~~~~~~~~  Revision as of 18:53, 1 June 2014 by Zakkai ~~~~~~~~~ -->
 		<header class="row"  id="header">
 			<div>
-				<h1><a href="#">Email Self-Defense</a></h1>
+				<h1>Email Self-Defense</h1>
 				<div class="intro">
 					<p>The goal of this guide is to make it easy to set up email encryption on your computer. Once you've finished the guide, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it. </p>
 					<p>This isn't something you'd do with every email, or even every day. Rather, it's a tool to have handy when you need to send something sensitive.</p>
@@ -65,16 +65,11 @@
 <!-- ~~~~~~~~~ Section 1: Get the pieces  ~~~~~~~~~ -->
 		<section class="row" id="section1">
 			<div>
-				<!-- ~~~~~~~~~ section title + graphics + intro ~~~~~~~~~ -->
-				<div class="section-intro">
-					<div class="sidebar">
-						<h2><em>#1</em> Get the pieces</h2>
-					</div><!-- /.sidebar -->
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-					<div class="main">
+				<div class="section-intro">
+						<h2><em>#1</em> Get the pieces</h2>
 						<p>Most GNU/Linux operating systems come with GnuPG installed on them, so you don't have to get it. Before starting though, you'll need any one of these desktop email programs installed on your computer: <a href="http://directory.fsf.org/wiki/Icedove">Icedove</a> (for Debian GNU/Linux) or Thunderbird (for other GNU/Linux flavors. Email programs are another way to access the same email accounts you can access in a browser (like GMail), but provide extra features.</p>
 						<p>If you are already have one of these, you can skip to <a href="#step-1b">Step 1.b</a>.</p>
-					</div><!-- End .main -->
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -94,6 +89,8 @@
 									<dd>A wizard is a series of windows that pop up to make it easy to get something done on a computer, like installing a program. You click through it, selecting options as you go.</dd>
 								<dt>My email program can't find my account or isn't downloading my mail?</dt>
 									<dd>Before Googling, we recommend you start by asking other people who use your email system, to figure out the correct settings.</dd>
+								<dt class="feedback">You didn't find an answer for you problem?</dt>
+									<dd class="feedback">Leave <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback</a> so we can improve.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 
@@ -112,6 +109,8 @@
 							<dl>
 								<dt>I can't find the menu.</dt>
 									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars.</dd>
+								<dt class="feedback">You didn't find an answer for you problem?</dt>
+									<dd class="feedback">Leave <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback</a> so we can improve.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
@@ -122,15 +121,10 @@
 <!-- ~~~~~~~~~ Section 2: Make your keys  ~~~~~~~~~ -->
 		<section class="row" id="section2">
 			<div>
-				<!-- ~~~~~~~~~ section title + graphics + intro ~~~~~~~~~ -->
-				<div class="section-intro">
-					<div class="sidebar">
-					<h2><em>#2</em> Make your keys</h2>
-					</div><!-- /.sidebar -->
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-					<div class="main">
+				<div class="section-intro">
+					<h2><em>#2</em> Make your keys</h2>
 						<p>To use the GnuPG system, you'll need a public key and a private key (known together as a keypair). Each is a long string of randomly generated numbers that are unique to you. Your public and private keys are linked together by a special mathematical function.</p>
-					</div><!-- End .main -->
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -154,6 +148,8 @@
 							<dl>
 								<dt>I can't find the OpenPGP menu.</dt>
 									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars. OpenPGP may be inside a section called Tools.</dd>
+								<dt class="feedback">You didn't find an answer for you problem?</dt>
+									<dd class="feedback">Leave <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback</a> so we can improve.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
@@ -164,17 +160,12 @@
 <!-- ~~~~~~~~~ Section 3: Try it out  ~~~~~~~~~ -->
 		<section class="row" id="section3">
 			<div>
-				<!-- ~~~~~~~~~ section title + graphics + intro ~~~~~~~~~ -->
-				<div class="section-intro">
-					<div class="sidebar">
-						<h2><em>#3</em> Try it out!</h2>
-					</div><!-- /.sidebar -->
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-					<div class="main">
+				<div class="section-intro">
+						<h2><em>#3</em> Try it out!</h2>
 						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. You'd follow the same steps if communicating with a real person. Then you'll send your first signed email to a real person!</p>
-					</div><!-- End .main -->
-
 				</div><!-- End .section-intro -->
+
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3a" class="step">
 					<div class="sidebar">
@@ -194,35 +185,36 @@
 							<dl>
 								<dt>PLACEHOLDER</dt>
 									<dd>PLACEHOLDER</dd>
+								<dt class="feedback">You didn't find an answer for you problem?</dt>
+									<dd class="feedback">Leave <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback</a> so we can improve.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
-	
-
-			</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-3a" class="step">
-										<div class="main">
-						<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-						<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-						<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-						<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+				<div id="step-3b" class="step">
+					<div class="main">
+							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
+							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
+							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
+							<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
 
-<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
 
-<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
-				<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
-						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
-							<dl>
-								<dt>Enigmail can't find Adele's key</dt>
-									<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-							</dl>
-						</div><!-- /.troubleshooting -->
-					</div><!-- End .main -->
-				</div><!-- End #step-3b .step -->
+							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+							<div class="troubleshooting">
+								<h4>Troubleshooting</h4>
+								<dl>
+									<dt>Enigmail can't find Adele's key</dt>
+										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
+								<dt class="feedback">You didn't find an answer for you problem?</dt>
+									<dd class="feedback">Leave <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback</a> so we can improve.</dd>
+								</dl>
+							</div><!-- /.troubleshooting -->
+						</div><!-- End .main -->
+					</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
@@ -251,16 +243,11 @@
 <!-- ~~~~~~~~~ Section 4: Learn the Web of Trust  ~~~~~~~~~ -->
 		<section class="row" id="section4">
 			<div>
-				<!-- ~~~~~~~~~ section title + graphics + intro ~~~~~~~~~ -->
-				<div class="section-intro">
-					<div class="sidebar">
-						<h2><em>#4</em> Learn the Web of Trust</h2>
-					</div><!-- /.sidebar -->
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-					<div class="main">
+				<div class="section-intro">
+						<h2><em>#4</em> Learn the Web of Trust</h2>
 						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's keypair is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friends name, creating a keypair to go with it and impersonating your friend. They would then be able to impersonate your friend by signing messages with the private key they'd created, and decrypt messages intended for your friend with the public key.</p>
 						<p>That's why the programmers that developed email encryption created keysigning and the Web of Trust. Keysigning allows a person to publicly state that they trust that a public key belongs to a specific person. To sign someone's public key, you need to use your private key, so the world will know that it was you.</p>
-					</div><!-- End .main -->
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -283,17 +270,11 @@
 		</section><!-- End #section4 -->
 
 <!-- ~~~~~~~~~ Section 5: Use it well  ~~~~~~~~~ -->
-		<section class="row section5">
+		<section id="section5" class="row">
 			<div>
-				<!-- ~~~~~~~~~ section title + graphics + intro ~~~~~~~~~ -->
-				<div class="section-intro">
-					<div class="sidebar">
-						<h2><em>#5</em> Use it well</h2>
-					</div><!-- /.sidebar -->
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-					<div class="main">
-						<p>...</p>
-					</div><!-- End .main -->
+				<div class="section-intro">
+						<h2><em>#5</em> Use it well</h2>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -318,10 +299,10 @@
 						<h3><em>Step 5c</em> Make it part of your online identity</h3>
 						<p>Start writing your key ID anywhere someone would see your email address. Add it to your email signature, social media profile, blog, Website, or business card.</p>
 					<!-- ~~~~~~~~~ highlight  ~~~~~~~~~ -->
-					<div class="highlight">
-						<h3>Important: act swiftly if you lose your key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing your computer), it's important to revoke it immediately before someone else uses it to steal your identity. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
-					</div><!-- End .highlight -->
+						<div class="highlight">
+							<h4>Important: act swiftly if you lose your key</h4>
+							<p>If you lose your private key or someone else gets ahold of it (say, by stealing your computer), it's important to revoke it immediately before someone else uses it to steal your identity. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						</div><!-- End .highlight -->
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step-->
 			</div>
@@ -332,9 +313,7 @@
 			<div>
 				<!-- ~~~~~~~~~ section title + graphics  ~~~~~~~~~ -->
 				<div class="section-intro">
-					<div class="sidebar">
 						<h2><em>#6</em> Next steps</h2>
-					</div><!-- /.sidebar -->
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -347,6 +326,7 @@
 						<p>Coming soon</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-gnulinux .step -->
+
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-keysigning_party" class="step">
 					<div class="main">
@@ -354,6 +334,7 @@
 						<p>Keysigning parties are social events designed to build the Web of Trust. Participants match each others' photo IDs and Key IDs, and then get out their laptops and sign each other's public keys. They're a great way to meet likeminded people and learn about new privacy tools, as well as build up people's trust in your key. Look for keysigning at tech events, hackerspaces and nerdy parties.</p>
 					</div><!-- End .main -->
 				</div><!-- End #keysigning_party .step -->
+
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-programming" class="step">
 					<div class="main">
@@ -361,6 +342,7 @@
 						<p>Like programming? Contribute code to <a href="https://www.gnupg.org/">GnuPG</a> or <a href="https://www.enigmail.net/home/index.php">Enigmail</a>.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-programming .step -->
+
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-more_technologies" class="step">
 					<div class="main">
@@ -377,8 +359,6 @@
 					</div><!-- End .main -->
 				</div><!-- End #step-learn_more .step -->
 					
-					
-				</div><!-- End .step /.main -->
 			</div>
 		</section><!-- End #section6 -->
 
