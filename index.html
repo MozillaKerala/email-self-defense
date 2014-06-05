@@ -89,7 +89,7 @@
 				<div class="section-intro">
 						<h2><em>#1</em> Get the pieces</h2>
 						<p>All you need to start is a computer with an Internet connection, an email account and about half an hour. You can use your existing email account for this without affecting it.</p>
-<p>Most GNU/Linux operating systems come with GnuPG installed on them, so you don't have to download it. Before configuring GnuPG though, you'll need any one of these desktop email programs installed on your computer: <a href="http://directory.fsf.org/wiki/Icedove">Icedove</a> (for Debian GNU/Linux) or Thunderbird (for other GNU/Linux flavors). Email programs are another way to access the same email accounts you can access in a browser (like GMail), but provide extra features.</p>
+<p>Most GNU/Linux operating systems come with GnuPG installed on them, so you don't have to download it. Before configuring GnuPG though, you'll need a desktop email program installed on your computer. This guide works with <a href="http://directory.fsf.org/wiki/Icedove">Icedove</a> (for Debian GNU/Linux) or Thunderbird (for other GNU/Linux flavors). Email programs are another way to access the same email accounts you can access in a browser (like GMail), but provide extra features.</p>
 						<p>If you are already have one of these, you can skip to <a href="#step-1b">Step 1.b</a>.</p>
 				</div><!-- End .section-intro -->
 
@@ -171,7 +171,7 @@
 						<p>On the second screen, titled "Signing," select "No, I want to create per-recipient rules for emails that need to be signed."</p>
 						<p>Use the default options until you reach the screen titled "Create Key".</p>
 						<p>On the screen titled "Create Key," pick a strong password! Your password should be at least 12 characters and include at least one lower case and upper case letter and at least one number or punctuation symbol. Don't forget the password, or all this work will be wasted!</p>
-		  			<p>The program will take a little while to finish the next step, the "Key Creation" screen. While you wait, do something else with your computer, like watching a movie or browsing the Web. The more you use the computer at this point, the faster the key creation will go.</p>
+		  			<p class="notes">The program will take a little while to finish the next step, the "Key Creation" screen. While you wait, do something else with your computer, like watching a movie or browsing the Web. The more you use the computer at this point, the faster the key creation will go.</p>
 						<p>When the OpenPGP Confirm screen pops up, select Generate Certificate and choose to save it in a safe place on your computer (we recommend making a folder called "Revocation Certificate" in your home folder and keeping it there. You'll learn more about the revocation certificate in <a href="#section5">Section 5</a>. The setup wizard will ask you to move it onto an external device, but that isn't necessary at this moment.</p>
 						<p class="notes">After creating your key, the Enigmail set-up wizard automatically uploaded it to a keyserver, an online computer that makes everyone's keys available through the Internet.</p>
 
@@ -198,7 +198,7 @@
 						<h3><em>Step 2.b</em> Upload your public key to a keyserver</h3>
 						<p>In your email program's menu, select OpenPGP &rarr; Key Management.</p>
 <p>Right click on your key and select Upload Public Keys to Keyserver. Use the default keyserver in the popup.</p>
-<p>Now anyone who wants to send you an encrypted message can download your public key from the Internet.</b>
+<p class="notes">Now someone who wants to send you an encrypted message can download your public key from the Internet.</b>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>Troubleshooting</h4>
@@ -233,7 +233,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Section 5: Use it Well" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Step 3.a</em> Send Adele your public key</h3>
@@ -241,7 +241,7 @@
 
 <p>Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
 
-<p>It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the Use it well section of this guide. Once she's responded, head to the next step. From here one, you'll be doing just the same thing as when corresponding with a real person.</p>
+<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here one, you'll be doing just the same thing as when corresponding with a real person.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
@@ -284,9 +284,9 @@
 						<h3><em>Step 3.c</em> Receive a response</h3>
 						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
 						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p>It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the Use it well section of this guide.</p>
+						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
 						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p class="notes">Notice the bar that Enigmail shows you with information about the status of Adele's key.</p>
+						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
@@ -386,7 +386,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>Be wary of invalid keys</h3>
+						<h3><em>Important:</em> Be wary of invalid keys</h3>
 						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
 						<p>In your email program, go back to the second email that Adele sent you. Because it was encrypted with her key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
 <p><b>When using GnuPG, make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
@@ -406,7 +406,7 @@
 				<div id="step-lost_key" class="step">
 					<div class="main">
 						<h3><em>Important:</em> act swiftly if someone gets your private key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to read your encrypted email. This guide doesn't cover how to revoke a key, but it only takes a minute. We recommend you Google it or seek help from a skilled friend. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to read your encrypted email. This guide doesn't cover how to revoke a key, but you can follow the <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instructions on the GnuPG site</a>. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
 
