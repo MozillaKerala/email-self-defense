@@ -164,7 +164,7 @@
 						<p>On the screen titled "Create Key," pick a strong password! Your password should be at least 8 characters and include at least one lower case and upper case letter and at least one punctuation mark. Don't forget it, or all this work will be wasted!</p>
 		  			<p>The program will take a little while to finish the next step, the "Key Creation" screen. While you wait, do something else with your computer, like watching a movie or browsing the Web. The more you use the computer at this point, the faster the key creation will go.</p>
 						<p>When the OpenPGP Confirm screen pops up, select Generate Certificate and choose to save it in a safe place on your computer (we recommend making a folder called "Revocation Certificate" in your home folder and keeping it there. You'll learn more about the revocation certificate in <a href="#section5">Section 5</a>. The setup wizard will ask you to move it onto an external device, but that isn't necessary at this moment.</p>
-						<p class="highlight">After creating your key, the Enigmail set-up wizard automatically uploaded it to a keyserver, an online computer that makes everyone's keys available through the Internet.</p>
+						<p class="notes">After creating your key, the Enigmail set-up wizard automatically uploaded it to a keyserver, an online computer that makes everyone's keys available through the Internet.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
@@ -237,10 +237,10 @@
 					<div class="main">
 						<h3><em>Step 3.c</em> Receive a response</h3>
 						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="highlight">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
+						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
 						<p>It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the Use it well section of this guide.</p>
 						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p class="highlight">Notice the bar that Enigmail shows you with information about the status of Adele's key.</p>
+						<p class="notes">Notice the bar that Enigmail shows you with information about the status of Adele's key.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
@@ -282,7 +282,7 @@
 						<p>Right click on Adele's public key and select Sign Key from the context menu.</p>
 						<p>In the window that pops up, select "I will not answer" and click OK.</p>
 						<p>In your email program's menu, go to OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys and hit OK.</p>
-						<p class="highlight">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
+						<p class="notes">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
 
 
 						<div id="pgp-pathfinder">
@@ -467,7 +467,7 @@
 					<p>Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
 				</div><!-- /#copyright -->
 				<p class="credits">
-					Infographic and full guide by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
+					Infographic and guide design by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
 				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->
