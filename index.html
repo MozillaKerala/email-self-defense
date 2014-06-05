@@ -8,26 +8,23 @@
       <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="http://static.fsf.org/nosvn/enc-dev0/css/main.css">
-  		<link rel="shortcut icon" href="http://static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
+			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
+  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
 
 			<!-- our local static folder url -->
 			<link rel="stylesheet" href="static/css/main.css">
 
 	</head>
 	<body>
+<!--
 		<nav class="nav">
 			<div>
-				<ul class="os">
-					<li><a href="index.html" class="current">GNU/Linux</a></li>
-					<li><a href="mac.html">Mac OS</a></li>
-					<li><a href="windows.html">Windows</a></li>
-				</ul>
-				<!--<ul class="lang">
+				<ul class="lang">
 					<li class="help"><a href="http://libreplanet.org/wiki/GPG_guide">Translate this guide!</a></li>
-				</ul> -->
+				</ul>
 			</div>
 		</nav>
+-->
 
 <!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
 <!-- ~~~~~~~~~  Revision as of 18:53, 1 June 2014 by Zakkai ~~~~~~~~~ -->
@@ -39,13 +36,18 @@
 
 			<div>
 				<h1>Email Self-Defense</h1>
+				<ul class="os">
+					<li><a href="index.html" class="current">GNU/Linux</a></li>
+					<li><a href="mac.html">Mac OS</a></li>
+					<li><a href="windows.html">Windows</a></li>
+				</ul>
 
 				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
 				<div id="fsf-intro">
 					<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
 					<p>Email Self-Defense is a project of the Free Software Foundation. The FSF works to secure freedom for computer users by promoting the development and use of free (as in freedom) software and documentation.</p><p>We have big plans to get it in the hands of people under bulk surveillance all over the world, and make more tools like it. Can you make a donation to help us achieve that goal?</p>
 
-					<!--<p><a href="https://u.fsf.org/yr"><img alt="Join now" src="http://static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>-->
+					<!--<p><a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>-->
 					<p><a href="https://u.fsf.org/7w"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a></p>
 					<div class="newsletter">
 						<h5>Sign up</h5>
@@ -63,8 +65,7 @@
 				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
 				<div class="intro">
 					<p id="infographic">
-						<a class="img-link" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="Email Self-Defense, Infographic" /></a>
-						<a class="text-link" href="infographic.html">View &amp; share our infographic &rarr;</a>
+						<a href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
 					</p>
 					<p>The goal of this guide is to make it easy to set up email encryption on your computer. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it. </p>
 					<!--<p>You'll also be able to sign emails to show reliably that they are from you. Though the need for signing may be less obvious, you'll actually do it more often.</p>-->
@@ -218,7 +219,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/placeholders/placeholder.png" alt="Placeholder" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Step 3.a</em> Send Adele your public key</h3>
@@ -276,17 +277,16 @@
 				</div><!-- End #step-3c .step -->
 
 <!-- STEP 3D IS COMMENTED OUT UNTIL WE FIND A WAY TO VALIDATE SIGNATURES
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ --
 				<div id="step-3d" class="step">
 					<div class="main">
 						<h3><em>Step 3.d</em> Send a test signed email to a friend</h3>
 						<p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
 						<p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
 						<p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
-					</div><!-- End .main --
-				</div><!-- End #step-3d .step -->
+					</div>
+				</div>-->
 			</div>
-		</section><!-- End #section3 --
+		</section><!-- End #section3 -->
 
 
 <!-- ~~~~~~~~~ Section 4: Learn the Web of Trust  ~~~~~~~~~ -->
@@ -306,7 +306,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-4a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/placeholders/placeholder.png" alt="Placeholder" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Step 4.a</em> Sign a key</h3>
@@ -352,7 +352,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-use-it-well.png" alt="Section 5: Use it Well" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3>When should I encrypt?</h3>
@@ -364,7 +364,11 @@
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
 
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5b" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
+					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3>Be wary of invalid keys</h3>
 						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
@@ -373,6 +377,7 @@
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
 						<h3>Copy your revocation certificate to somewhere safe</h3>
@@ -411,6 +416,9 @@
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-keysigning_party" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section6-next-steps.png" alt="Section 6: Next Steps" /></p>
+					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3>Go to a keysigning party</h3>
 						<p>Keysigning parties are social events designed to build the Web of Trust. Participants match each others' photo IDs and Key IDs, and then get out their laptops and sign each other's public keys. They're a great way to meet likeminded people and learn about new privacy tools, as well as build up people's trust in your key. Look for keysigning at tech events, hackerspaces and nerdy parties.</p>
@@ -447,7 +455,7 @@
 						<h3>Contribute to this guide</h3>
 						<ul>
 							<li><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Leave feedback and suggest improvements</a></li>
-							<li>Email us at <a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a> if you'd like to help maintain and improve this guide, or to translate it</a></li>
+							<li>Email us at <a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a> if you'd like to help maintain and improve this guide, or to translate it</li>
 							<li><a href="https://u.fsf.org/7w">Donate to the Free Software Foundation</a></li>
 						</ul>
 					</div><!-- End .main -->
@@ -488,12 +496,16 @@
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
 					<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
+					<p>Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
 				</div><!-- /#copyright -->
+				<p class="credits">
+					Infographic and full guide by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
+				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->
 
-		<script src="http://static.fsf.org/nosvn/enc-dev0/js/jquery-1.11.0.min.js"></script>
-		<script src="http://static.fsf.org/nosvn/enc-dev0/js/scripts.js"></script>
+		<script src="//static.fsf.org/nosvn/enc-dev0/js/jquery-1.11.0.min.js"></script>
+		<script src="//static.fsf.org/nosvn/enc-dev0/js/scripts.js"></script>
 
                 <!-- Piwik -->
                 <script type="text/javascript">
