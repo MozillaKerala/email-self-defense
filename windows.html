@@ -45,15 +45,15 @@
 					<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
 					<span  style="font-size:125%"><p>Email Self-Defense is a project of the Free Software Foundation. We fight for computer user's rights, and promote the development of free (as in freedom) software like GnuPG, which is used in this guide.</p><p><strong>We have big plans to get this guide in the hands of people under bulk surveillance all over the world, and to make more tools like it. Can you make a donation to help us achieve these goals?</strong></p></span>
 
-					<p><a href="https://u.fsf.org/7w"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
+					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
 					
 				</div><!-- End #fsf-intro -->
 
 				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
 				<div class="intro">
 					<p>
-							<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-							Bulk surveillance violates our fundamental rights and makes free speech risky. This guide will teach you a basic surveillance self-defense skill: email encryption. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief can't intercept your email and read it.</p>
+						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
+					Bulk surveillance violates our fundamental rights and makes free speech risky. This guide will teach you a basic surveillance self-defense skill: email encryption. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief that intercepts your email can't read it.</p>
 
 <p>Even if you have nothing to hide, using encryption helps protect the privacy of people you communicate with, and makes life difficult for bulk surveillance systems. If you do have something important to hide, you're in good company; these are the same tools that Edward Snowden used to share his famous secrets about the NSA.</p>
 
@@ -168,7 +168,6 @@
 						<p>On the screen titled "Create Key," pick a strong password! Your password should be at least 12 characters and include at least one lower case and upper case letter and at least one number or punctuation symbol. Don't forget the password, or all this work will be wasted!</p>
 		  			<p class="notes">The program will take a little while to finish the next step, the "Key Creation" screen. While you wait, do something else with your computer, like watching a movie or browsing the Web. The more you use the computer at this point, the faster the key creation will go.</p>
 						<p>When the OpenPGP Confirm screen pops up, select Generate Certificate and choose to save it in a safe place on your computer (we recommend making a folder called "Revocation Certificate" in your home folder and keeping it there. You'll learn more about the revocation certificate in <a href="#section5">Section 5</a>. The setup wizard will ask you to move it onto an external device, but that isn't necessary at this moment.</p>
-						<p class="notes">After creating your key, the Enigmail set-up wizard automatically uploaded it to a keyserver, an online computer that makes everyone's keys available through the Internet.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
@@ -176,9 +175,6 @@
 							<dl>
 								<dt>I can't find the OpenPGP menu.</dt>
 									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars. OpenPGP may be inside a section called Tools.</dd>
-    <dt>The wizard says that it cannot find GnuPG.</dt>
-
-                                         <dd>Open whatever program you usually use for installing  software, and search for GnuPG, then install it. Then restart the  Engimail setup wizard by going to OpenPGP &rarr; Setup Wizard.</dd>
     <dt>What does OpenPGP mean?</dt>
 
                                          <dd>OpenPGP is a protocol that GnuPG uses, just like HTTP is a protocol for the Web. It's a slightly confusing name that Enigmail uses for its menus.</dd>
@@ -268,8 +264,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Subject lines are not encrypted</h3>
+						<h3><em>Important:</em> Security tips</h3>
 						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system.</p>
+<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -383,7 +380,7 @@
 					<div class="main">
 						<h3><em>Important:</em> Be wary of invalid keys</h3>
 						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
-						<p>In your email program, go back to the second email that Adele sent you. Because it was encrypted with her key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
+						<p>In your email program, go back to the second email that Adele sent you. Because Adele encrypted it with your public key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
 <p><b>When using GnuPG, make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
@@ -489,7 +486,7 @@
 						<p>If you like programming, you can contribute code to <a href="https://www.gnupg.org/">GnuPG</a> or <a href="https://www.enigmail.net/home/index.php">Enigmail</a>.</p>
 
 <p>If you can't do any of these, please donate to the Free Software Foundation so we can get Email Self-Defense into the hands of as many people as possible, and make more tools like it.</a></p>
-<p><a href="https://u.fsf.org/7w"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a></p>
+<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a></p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-better .step -->
