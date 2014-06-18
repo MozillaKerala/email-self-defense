@@ -1,0 +1,2 @@
+devserver:
+	python -m SimpleHTTPServer
