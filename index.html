@@ -180,7 +180,7 @@
 						<h3><em>Step 2.b</em> Upload your public key to a keyserver</h3>
 						<p>In your email program's menu, select OpenPGP &rarr; Key Management.</p>
 <p>Right click on your key and select Upload Public Keys to Keyserver. Use the default keyserver in the popup.</p>
-<p class="notes">Now someone who wants to send you an encrypted message can download your public key from the Internet.</b>
+<p class="notes">Now someone who wants to send you an encrypted message can download your public key from the Internet. There are multiple keyservers that you can select from the menu when you upload, but they are all copies of each other, so it doesn't matter which one you use. However, it sometimes takes a few hours for them to match each other when a new key is uploaded.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>Troubleshooting</h4>
@@ -296,7 +296,7 @@
 						<h2><em>#4</em> Learn the Web of Trust</h2>
 						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
 
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, into a giant Web. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, into a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
 
 <p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
 
