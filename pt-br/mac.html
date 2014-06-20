@@ -304,14 +304,14 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Aprenda a @@Web of Trust@@</h2>
-						<p>@@encryption@@ por e-mail é uma tecnologia poderosa, mas tem uma fraqueza; ela requer uma maneira de verificar que a chave pública de uma pessoa é dela mesmo. Senão, não há nada que impeça um adversário de criar um endereço de e-mail com o nome de uma pessoa, criando chaves pra esse endereço e fazendo-se passar por ela. É por isso que os programadores de software livre que desenvolveram a @@encryption@@ por e-mail criaram a assinatura de chave e a @@Web of Trust@@.</p>
+						<h2><em>#4</em> Aprenda a Rede de Confiabilidade</h2>
+						<p>A criptografia por e-mail é uma tecnologia poderosa, mas tem uma fraqueza; ela requer uma maneira de verificar que a chave pública de uma pessoa é dela mesmo. Senão, não há nada que impeça um adversário de criar um endereço de e-mail com o nome de uma pessoa, criando chaves pra esse endereço e fazendo-se passar por ela. É por isso que os programadores de software livre que desenvolveram a criptografia por e-mail criaram a assinatura de chave e a Rede de Confiabilidade.</p>
 
-<p>Quando você assina a chave de alguém, está dizendo publicamente que confia que a chave pertence mesmo a essa pessoa e não a um impostor. Pessoas que usam sua chave pública podem ver o número de assinaturas que ela tem. Quando já tiver usado o GnuPG por algum tempo, sua chave pode ter centenas de assinaturas. A @@Web of Trust@@ é uma constelação de todas as pessoas que usam o GnuPG, conectadas umas às outras por correntes de confiança expressadas através de assinaturas, formando uma rede gigante. Quanto mais assinaturas uma chave tiver, e quanto mais assinaturas essas pessoas que assinaram tiverem, mais confiável é essa chave.</p>
+<p>Quando você assina a chave de alguém, está dizendo publicamente que confia que a chave pertence mesmo a essa pessoa e não a um impostor. Pessoas que usam sua chave pública podem ver o número de assinaturas que ela tem. Quando já tiver usado o GnuPG por algum tempo, sua chave pode ter centenas de assinaturas. A Rede de Confiabilidade é uma constelação de todas as pessoas que usam o GnuPG, conectadas umas às outras por correntes de confiança expressadas através de assinaturas, formando uma rede gigante. Quanto mais assinaturas uma chave tiver, e quanto mais assinaturas essas pessoas que assinaram tiverem, mais confiável é essa chave.</p>
 
 <p>As chaves públicas das pessoas geralmente são identificadas pela impressão digital de sua chave, que é uma série de dígitos como DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 para a chave de Adele). Você pode ver a imprsesão digital de sua chave pública, e de outras chaves públicas salvas no seu computador, indo em 
 
-<p class="notes">Você também pode ver chaves públicas serem citadas por seus @@key ID@@, que são simplesmente os últimos 8 dígitos da imprsesão digital, como 92AB3FF7 para a Adele. O @@key ID@@ é visível diretamente da Janela @@Key Management@@. Esse @@key ID@@ é como o primeiro nome de uma pessoa (é uma abreviação útil mas pode mãn ser única para uma determinada chave), enquanto a impressão digital realmente identifica a chave unicamente sem a possibilidade de confusão. Se você só tem o @@key ID@@, você ainda pode encontrar a chave (assim como a impressão digital), como fez no Passo 3, mas se múltiplas opções aparecerem, você vai precisar da impressão digital da pessoa com quem está tentando se comunicar pra ver qual delas usar.</p>
+<p class="notes">Você também pode ver chaves públicas serem citadas por seus ID's, que são simplesmente os últimos 8 dígitos da imprsesão digital, como 92AB3FF7 para a Adele. O ID da chave é visível diretamente da Janela @@Key Management@@. O ID da chave é como o primeiro nome de uma pessoa (é uma abreviação útil mas pode mãn ser única para uma determinada chave), enquanto a impressão digital realmente identifica a chave unicamente sem a possibilidade de confusão. Se você só tem o ID da chave, você ainda pode encontrar a chave (assim como a impressão digital), como fez no Passo 3, mas se múltiplas opções aparecerem, você vai precisar da impressão digital da pessoa com quem está tentando se comunicar pra ver qual delas usar.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -319,7 +319,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-4a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Seção 4: @@Web of Trust@@" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Seção 4: Rede de Confiabilidade" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Passo 4.a</em> Assine uma chave</h3>
@@ -359,7 +359,7 @@
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 						<h2><em>#5</em> Use bem</h2>
-<p>Cada pessoa usa o GnuPG de um jeito um pouquinho diferente, mas é importante seguir algumas práticas básicas pra manter seu e-mail seguro. Se você não as seguir, estará ponto em risco a privacidade das pessoas com as quais se comunica, assim como a sua própria, e danificando a @@Web of Trust@@.</p>
+<p>Cada pessoa usa o GnuPG de um jeito um pouquinho diferente, mas é importante seguir algumas práticas básicas pra manter seu e-mail seguro. Se você não as seguir, estará ponto em risco a privacidade das pessoas com as quais se comunica, assim como a sua própria, e danificando a Rede de Confiabilidade.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -368,11 +368,11 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-01-use-it-well.png" alt="Section 5: Use bem" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>Quando devo @@encrypt@@?</h3>
+						<h3>Quando devo codificar?</h3>
 
-						<p>Quanto mais você puder @@encrypt@@ suas mensagens, melhor. Isso porque se vocêsó @@encrypt@@ e-mails ocasionalmente, cada mensagem @@encrypted@@ pode despertar suspeitas em sistemas de vigilância. Se todos os quase todos os seus e-mails são @@encrypted@@, as pessoas que conduzem a vigilância não saberão por onde começar.</p>
+						<p>Quanto mais você puder codificar suas mensagens, melhor. Isso porque se você só codificar e-mails ocasionalmente, cada mensagem codificada pode despertar suspeitas em sistemas de vigilância. Se todos os quase todos os seus e-mails são codificados, as pessoas que conduzem a vigilância não saberão por onde começar.</p>
 
-<p>Não queremos dizer que @@encrypt@@ só uma parte do seus e-mails não ajuda -- é um ótimo começo e torna a vigilância em massa mais difícil.</p>
+<p>Não queremos dizer que codificar só uma parte do seus e-mails não ajuda -- é um ótimo começo e torna a vigilância em massa mais difícil.</p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
@@ -384,17 +384,17 @@
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Importante:</em> Cuidado com chaves inválidas</h3>
-						<p>O GnuPG torna o e-mail mais seguro, mas ainda é importante estar atento para chaves inválidas, que podem ter caído em mãos erradas. E-mails @@encrypted@@ com chaves inválidas podem ser lidos por programas de vigilância.</p>
-						<p>Em seu programa de e-mail, volte à segunda mensagem que Adele mandou. Como Adele @@encrypted@@ ele com a sua chave pública, vai haver uma mensagem do OpenPGP no topo, que provavelmente diz "@@OpenPGP: Part of this message encrypted.@@"</p>
-<p><b>Quando usar o GnuPG, torne prestar atenção nessa barra um hábito. O programa vai te alertar por ali se você receber um e-mail @@encrypted@@ com uma chave na qual não se pode confiar.</b></p>
+						<p>O GnuPG torna o e-mail mais seguro, mas ainda é importante estar atento para chaves inválidas, que podem ter caído em mãos erradas. E-mails codificados com chaves inválidas podem ser lidos por programas de vigilância.</p>
+						<p>Em seu programa de e-mail, volte à segunda mensagem que Adele mandou. Como Adele o codificou com a sua chave pública, vai haver uma mensagem do OpenPGP no topo, que provavelmente diz "@@OpenPGP: Part of this message encrypted.@@"</p>
+<p><b>Quando usar o GnuPG, torne prestar atenção nessa barra um hábito. O programa vai te alertar por ali se você receber um e-mail codificado com uma chave na qual não se pode confiar.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
-						<h3>Copie seu certificado de @@revocation@@ para algum lugar seguro</h3>
-						<p>Lembra quando você criou suas chaves e salvou o certificado de @@revocation@@ que o GnuPG fez? É hora de copiar esse certificado para o armazenamento digital mais seguro que você tiver -- o ideal é um pendrive, CD ou HD guardados em um local seguro na sua casa.</p>
+						<h3>Copie seu certificado de revogação para algum lugar seguro</h3>
+						<p>Lembra quando você criou suas chaves e salvou o certificado de revogação que o GnuPG fez? É hora de copiar esse certificado para o armazenamento digital mais seguro que você tiver -- o ideal é um pendrive, CD ou HD guardados em um local seguro na sua casa.</p>
 <p>Se um dia você perder sua chave privada, ou se a roubarem, você vai precisar desse arquivo de certificado.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step -->
@@ -403,7 +403,7 @@
 				<div id="step-lost_key" class="step">
 					<div class="main">
 						<h3><em>Importante:</em> aja rápido se alguém pegar sua chave privada</h3>
-						<p>Se você perder sua chave privada ou se alguém tomar posse dela (por exemplo, roubando ou invadindo seu computador), é importante revogá-la imediatamente antes que alguém a use para ler suas mensagens encriptadas. Esse guia não cobre como @@revoke@@ uma chave, mas você pode seguir as <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instruções no site do GnuPG</a>. Depois que tiver @@revoked@@, mande um e-mail pra todas as pessoas com as quais você costuma usar sua chave pra ter certeza de que elas saberão disso.</p>
+						<p>Se você perder sua chave privada ou se alguém tomar posse dela (por exemplo, roubando ou invadindo seu computador), é importante revogá-la imediatamente antes que alguém a use para ler suas mensagens encriptadas. Esse guia não cobre os passos pra revogar uma chave, mas você pode seguir as <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instruções no site do GnuPG</a>. Depois que tiver , mande um e-mail pra todas as pessoas com as quais você costuma usar sua chave pra ter certeza de que elas saberão disso.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
 
