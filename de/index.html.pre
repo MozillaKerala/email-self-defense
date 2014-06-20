@@ -1,25 +1,3 @@
-	<body>
-
-<!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
-
-		<header class="row"  id="header">
-			<div>
-			  <h1>Email Self-Defense</h1>
-                          <!-- Language list for browsers that do not have JS enabled -->
-                          <ul id="languages" class="os">
-                            <li><a class="current" href="/en">english</a></li>
-                            <li><a href="/es">español</a></li>
-                            <li><a href="/fr">français</a></li>
-                            <li><a href="/de">deutsch</a></li>
-                            <li><a href="/pt-br">português do Brasil</a></li>
-                            <li><a href="/tr">türkçe</a></li>
-                            <li><a href="/ro">română</a></li>
-                            <li><a href="/ru">русский</a></li>
-                            <li><a href="/ml">മലയാളം</a></li>
-                            <li><a href="/ko">한국어</a></li>
-                            <li><a href="/ja">日本語</a></li>
-                          </ul>
-
                           <ul id="menu" class="os">
 			    <li class="spacer">
                               <a href="index.html" class="current">GNU/Linux</a>
