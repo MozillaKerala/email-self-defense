@@ -95,11 +95,11 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#1</em> Get the pieces</h2>
-<p class="notes">This guide relies on software which is freely licensed; it's completely transparent and anyone can copy it or make their own version. This makes it safer from surveillance than proprietary software (like Windows). Learn more about free software at <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+						<h2><em>#1</em> 프로그램 얻기</h2>
+<p class="notes">이 가이드는 자유롭게 이용허락된 몇 가지의 소프트웨어에 의존합니다; 이 소프트웨어들은 완전히 투명하며 누구나 소스 코드를 복제하여 자신만의 버전을 만들 수 있습니다. 이러한 자유는 (윈도우즈와 같은) 상용 소프트웨어와 다르게 감시에서 더욱 안전하게 합니다. 자유 소프트웨어에 대한 더 많은 정보를 <a href="https://u.fsf.org/ys">fsf.org</a>에서 알아보세요.</p>
 
-<p>Most GNU/Linux operating systems come with GnuPG installed on them, so you don't have to download it. Before configuring GnuPG though, you'll need a desktop email program installed on your computer. Most GNU/Linux distributions have a free software version of the Thunderbird email program available to install. This guide will work with them, in addition to Thunderbird itself. Email programs are another way to access the same email accounts you can access in a browser (like GMail), but provide extra features.</p>
-                        <p>If you are already have one of these, you can skip to <a href="#step-1b">Step 1.b</a>.</p>
+<p>대부분의 GNU/리눅스 운영체제는 GnuPG가 설치된 상태로 출시되기 때문에 별도로 설치할 필요가 없습니다. 하지만 GnuPG를 설정하기 전에, 컴퓨터에 이메일 프로그램을 설치한 상태여야 합니다. 대부분의 GNU/리눅스 배포판은 Thunderbird 이메일 프로그램을 설치할 수 있는 방법을 가지고 있습니다. 이메일 프로그램은 G메일 같은 브라우저 기반 이메일과 완전히 같지만, 몇가지의 기능을 더 제공합니다.</p>
+                        <p>이미 이 프로그램들을 가지고 있다면, <a href="#step-1b">순서 1.b</a>로 넘어갈 수 있습니다.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -108,19 +108,19 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1a-install-wizard.png" alt="Step 1.A: Install Wizard" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 1.a</em> Set your email program up with your email account (if it isn't already)</h3>
-						<p>Open your email program and follow the wizard that sets it up with your email account.</p>
+						<h3><em>순서 1.a</em> (이미 하지 않았다면) 이메일 프로그램을 이메일 계정과 설정하기</h3>
+						<p>이메일 프로그램을 열고 이메일 계정을 설정하는 마법사를 따르세요.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>문제해결</h4>
 							<dl>
-								<dt>What's a wizard?</dt>
-									<dd>A wizard is a series of windows that pop up to make it easy to get something done on a computer, like installing a program. You click through it, selecting options as you go.</dd>
-								<dt>My email program can't find my account or isn't downloading my mail</dt>
-									<dd>Before searching the Web, we recommend you start by asking other people who use your email system, to figure out the correct settings.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt>마법사가 무엇인가요?</dt>
+									<dd>마법사는 컴퓨터에서 사용자가 설치 같은 작업을 쉽게 할 수 있도록 돕기 위해 띄워지는 팝업창입니다. 버튼을 클릭하고, 옵션을 선택하며 진행합니다.</dd>
+								<dt>내 이메일 프로그램이 계정을 찾지 못하거나 내 메일을 다운로드하지 않아요</dt>
+									<dd>인터넷을 검색하기 전에, 정확한 이메일 설정을 알아보기 위해 같은 이메일 설정을 사용하는 다른 사람에 물어볼 것을 추천합니다.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 
@@ -137,18 +137,18 @@
 						</ul>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 1.b</em> Install the Enigmail plugin for your email program</h3>
-						<p>In your email program's menu, select Add-ons (it may be in the Tools section). Make sure Extensions is selected on the left. Do you see Enigmail? if so, skip this step.</p>
-						<p>If not, search "Enigmail" with the search bar in the upper right. You can take it from here. Restart your email program when you're done.</p>
+						<h3><em>순서 1.b</em> 이메일 프로그램에 Enigmail 플러그인 설치하기</h3>
+						<p>이메일 프로그램의 메뉴에 부가 기능 버튼을 선택하세요 (도구 부분에 있을 수 있습니다). 확장 기능이 왼쪽에 선택되어 있는지 확인하세요. Enigmail이 보이나요? 보인다면 이 순서를 생략하세요.</p>
+						<p>안 보인다면, 우측 상단의 검색창에 "Enigmail"을 검색하세요. 이제 다운로드할 수 있습니다. 완료했을 때 이메일 프로그램을 재시작하세요.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>문제 해결</h4>
 							<dl>
-								<dt>I can't find the menu.</dt>
-									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars.</dd>
+								<dt>메뉴를 찾을 수 없어요.</dt>
+									<dd>대부분의 이메일 프로그램에서, 메인 메뉴는 세 줄의 수평선으로 표시됩니다.</dd>
 
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
