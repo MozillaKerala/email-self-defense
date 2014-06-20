@@ -218,45 +218,45 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#3</em> Try it out!</h2>
-						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
+						<h2><em>#3</em> Experimente!</h2>
+						<p>Você agora vai tentar uma correspondência de teste com um programa de computador chamado Adele, que sabe como usar criptografia. Exceto onde avisarmos, esses são os mesmos passos que você vai seguir quando se corresponder com uma pessoa viva, real.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Experimente." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 3.a</em> Send Adele your public key</h3>
-						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+						<h3><em>Passo 3.a</em> Mande sua chave pública para Adele</h3>
+						<p>Esse é um passo especial que você não vai ter que fazer quando estiver se correspondendo com pessoas de verdade. No menu do seu programa de e-mail, vá para @@OpenPGP &rarr; Key Management@@. Você deve ver sua chave na lista que aparece. Clique com o botão direito na chave e selecione @@Send Public Keys by Email@@. Isso vai criar uma nova mensagem, como se você tivesse clicado no botão @@Write@@.</p>
 
-<p>Address the message to adele-en@gnupp.de. Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+<p>Destine a mensagem pra adele-en@gnupp.de. Coloque pelo menos uma palavra (a que quiser) no assunto e no corpo do e-mail, e clique em @@Send@@.</p>
 
-<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
+<p class="notes">Pode levar de dois a três minutos pra Adele responder. Enquanto isso, você pode querer avançar e checar a seção <a href="#section5">Use bem</a> desse guia. Assim que ela tiver respondido, passe para o próximo passo. Daqui pra frente, você vai fazer tudo do mesmo jeito que fará quando se corresponder com uma pessoa real.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, uniqe signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+							<h3><em>Passo 3.b</em> Envie um e-mail codificado de teste</h3>
+							<p>Componha uma nova mensagem em seu programa de e-mail, endereçado a adele-en@gnupp.de. Escreva "Teste de criptografia" ou algo parecido no assunto, e escreva alguma coisa no corpo. Não envie ainda.</p>
+							<p>Clique no ícone de chave no canto inferior direito da janela de composição (ele deve ficar amarelo). Isso diz pro Enigmail codificar a mensagem com a chave que você baixou no passo anterior.</p>
+							<p class="notes">Próximo à chave, você vai notar o ícone de um lápis. Clicar nele diz pro Enigmail adicionar uma assinatura especial e única à sua mensagem, gerada usando sua chave privada. Isso é uma funcionalidade separada da codificação, e você não tem que usá-la nesse guia.</p>
+							<p>Clique @@Send@@. O Enigmail vai abrir uma janela que diz "@@Recipients not valid, not trusted or not found."</p>
 
-							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+							<p>Para codificar e enviar o  e-mail para Adele, você deve ter a chave pública dela, e então agora você vai fazer o Enigmail baixá-la de um servidor de chaves. Clique @@Download Missing Keys@@ e use a padrão na janela que pede a você pra escolher um servidor. Assim que encontrar as chaves, marque a primeira (a chave com ID que começa com 9), e selecione OK. Selecione OK na próxima janela.</p>
 
-							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+							<p>Você agora está de volta à tela "@@Recipients not valid, not trusted or not found@@". Escolha a chave da Adele na sua lista e clique em OK. Se a mensagem não for enviada automaticamente, você já pode enviá-la.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
-								<h4>Troubleshooting</h4>
+								<h4>Resolução de Problemas</h4>
 								<dl>
-									<dt>Enigmail can't find Adele's key</dt>
-										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+									<dt>O Enigmail não encontra a chave de Adele</dt>
+										<dd>Feche as janelas que apareceram desde que você clicou. Tenha certeza de que está conectado à Internet e tente novamente. Se isso não funcionar, repita o processo, escolhendo um servidor de chaves diferente quando o programa lhe pedir pra escolher um.</dd>
+								<dt class="feedback">Não encontra uma solução pro seu problema?</dt>
+									<dd class="feedback">Por favor nos informe na <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">página de feedback</a>.</dd>
 								</dl>
 							</div><!-- /.troubleshooting -->
 						</div><!-- End .main -->
@@ -265,9 +265,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
+						<h3><em>Importante:</em> Dicas de segurança</h3>
+						<p>Mesmo se você codificar seu e-mail, a linha do assunto não será codificada, então não coloque informações privadas ali. Os endereços de origem e destino também não são codificados, então podem ser lidos por um sistema de vigilância. Quando você enviar anexos, o Enigmail te dará a opção de codificá-los ou não.</p>
+<p>Também é uma boa prática clicar no ícone de chave da janela de composição <strong>antes</strong> de começar a escrever. Se não fizer isso, seu cliente de e-mail pode salvar um rascunho não-codificado no servidor de e-mail, potencialmente expondo a mensagem a bisbilhoteiros.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -275,12 +275,12 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
+						<h3><em>Passo 3.c</em> Receba uma resposta</h3>
+						<p>Quando Adele receber sua mensagem, ela vai usar a chave privada dela pra decodificá-la, baixar sua chave pública de um servidor de chaves e usá-la para codificar uma mensagem de volta pra você.</p>
+						<p class="notes">Como você codificou essa mensagem com a chave pública de Adele, a chave privada de Adele é necessária pra decodificá-la. A Adele é a única que tem essa chave, então ninguém exceto ela &mdash; nem mesmo você &mdash; pode decodificar.</p>
+						<p class="notes">Pode levar dois ou três minutos pra Adele responder. Enquanto isso, você pode querer avançar e checar a seção <a href="#section5">Use bem</a> desse guia.</p>
+                        <p>Quando você receber e abrir a mensagem de Adele, o Enigmail vai detectar automaticamente que ela está codificada com sua chave pública, e então vai usar sua chave privada para decodificá-la.</p>
+						<p>Note a barra que o Enigmail mostra acima da mensagem, com informações sobre o estado da chave de Adele.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
