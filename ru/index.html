@@ -405,25 +405,25 @@
 					<div class="main">
 						<h3><em>Важно:</em> Будьте осторожны с недействительными ключами</h3>
 						<p>GnuPG позволяет обезопасить электронную почту, но очень важно остерегаться попадания недействительных ключей в чужие руки. Электронная переписка, зашифрованная при помощи недействительных ключей, может распознаваться программами мониторинга и слежения.</p>
-						<p>Откройте вашу почтовую программу и откройте второе письмо, которое вам отправила Адель. Так как Адель зашифровала его при помощи вашего открытого ключа, вверху сообщения вы увидите уведомление от OpenPGP, которое, скорее всего, гласит: «OpenPGP: Часть этого сообщения зашифрована».</p>
-<p><b>При использовании GnuPG, привыкайте обращать внимание на такие сообщения make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
+						<p>Запустите вашу почтовую программу и откройте второе письмо, которое вам отправила Адель. Так как Адель зашифровала его при помощи вашего открытого ключа, в верхней части сообщения вы увидите уведомление от OpenPGP, которое, скорее всего, гласит: «OpenPGP: Часть этого сообщения зашифрована».</p>
+<p><b>При использовании GnuPG, привыкайте обращать внимание на такие уведомления. Программа предупредит вас, если вы получите сообщение, зашифрованное ключом, которому нельзя доверять.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
-						<h3>Copy your revocation certificate to somewhere safe</h3>
-						<p>Remember when you created your keys and saved the revocation certificate that GnuPG made? It's time to copy that certificate onto the safest digital storage that you have -- the ideal thing is a flash drive, disk or hard drive stored in a safe place in your home.</p>
-<p>If your private key ever gets lost or stolen, you'll need this certificate file.</p>
+						<h3>Скопируйте свой сертификат отзыва в безопасное место</h3>
+						<p>Помните, как вы создали себе ключи и сохранили сертификат отзыва, сгенерированный программой GnuPG? Пришло время скопировать этот сертификат на самый безопасный внешний носитель, который у вас есть. Идеальным вариантом является флешка, диск или жесткий диск, который вы храните в безопасном месте вашего дома.</p>
+<p>Если вы потеряете свой закрытый ключ или его украдут, вам понадобится файл с этим сертификатом.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-lost_key" class="step">
 					<div class="main">
-						<h3><em>Важно:</em> act swiftly if someone gets your private key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to read your encrypted email. This guide doesn't cover how to revoke a key, but you can follow the <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instructions on the GnuPG site</a>. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						<h3><em>Важно:</em> в случае, если кто-то завладеет вашим закрытым ключом, действуйте без промедлений</h3>
+						<p>Если вы потеряете свой закрытый ключ или он попадёт в руки постороннему человеку (например, в результате кражи или взлома вашего компьютера), важно сразу его отозвать до того, как кто-то воспользуется им для чтения ваших зашифрованных сообщений. Освещение процесса отзыва ключа не является частью данного руководства, мы рекомендуем вам следовать<a href="https://www.gnupg.org/gph/en/manual.html#AEN305">инструкциям, представленным на сайте GnuPG</a>. После того, как вы отозвали ключ, отправьте уведомление всем тем, с кем вы вели зашифрованную переписку при помощи данного ключа.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
 
@@ -484,19 +484,19 @@
 			<div>
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
-					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
-                                        <p><em>Version 2.0, launched 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
-<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
-					<p>Download the source packages for <a href="gnupg-guide.zip">this guide</a> and for <a href="gnupg-infographic.zip">the infographic</a>. Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
+					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Политика конфиденциальности</a>. <a href="https://u.fsf.org/yr">Присоединяйтесь.</a></p>
+                                        <p><em>Версия 2.0, запущена 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
+<p>Изображения, представленные на данной странице, лицензированы в соответствии с <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (или более поздней версии)</a>, все остальное лицензировано в соответствии с <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (или более поздней версии)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Почему эти лицензии?</a></p>
+					<p>Скачайте пакеты с исходным кодом для <a href="gnupg-guide.zip">данного руководства</a> и для <a href="gnupg-infographic.zip">инфографики</a>. Шрифты, использованные в данном руководстве &amp; инфографика: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> от Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> от Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> от Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> от Florian Cramer.</p>
                                         <p>
                                           <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
                                              rel="jslicense">
-                                            JavaScript license information
+                                            Информация о лицензии JavaScript
                                           </a>
                                         </p>
 				</div><!-- /#copyright -->
 				<p class="credits">
-					Infographic and guide design by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0n/img/jplusplus.png" alt="Journalism++" /></a>
+					Дизайн инфографики и руководства подготовлен <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0n/img/jplusplus.png" alt="Journalism++" /></a>
 				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->
