@@ -242,87 +242,103 @@
 
 <!-- ~~~~~~~~~ Section 3: Try it out  ~~~~~~~~~ -->
 <section class="row" id="section3">
-			<div>
-					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-				<div class="section-intro">
-						<h2><em>#3</em> Try it out!</h2>
-						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
-				</div><!-- End .section-intro -->
+  <div>
+    <h2><em>#3</em> Probiere es aus!</h2>
+    <p> Jetzt wirst du mit einem Programm namens Edward kommunizieren, das weiß, wie man E-Mails verschlüsselt.
+    Das ist so, als würdest du mit einer echten Person kommunizieren.</p>
+    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+    <div class="section-intro">
+      
+    </div><!-- End .section-intro -->
+    
+    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+    <div id="step-3a" class="step">
+      <div class="sidebar">
+	<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
+	<div class="main">
+	<h3><em>Schritt 3.a</em>Schicke Edward deinen öffentlichen Schlüssel</h3>
+	<p>Dies ist ein spezieller Schritt, den du nicht machen musst, wenn du mit echten Menschen kommunizierst. Im Menü deines E-Mail programms, gehe auf OpenPGP &rarr; Schlüsselverwaltung. Du solltest deinen Schlüssel in der Liste sehen. Klicke auf deinen Schlüssel mit der rechten Maustaste und wähle dann Öffentliche Schlüssel per E-Mail senden. Dies erstellt eine neue Nachricht, so als hättest du auf Schreiben gedrückt.</p>
 
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-3a" class="step">
-					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
-					</div><!-- /.sidebar -->
-					<div class="main">
-						<h3><em>Step 3.a</em> Send Adele your public key</h3>
-						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+	<p>Schreibe die Nachricht an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe mindestens ein Wort in den Betreff und in den Körper der E-Mail und klicke auf Senden.</p>
 
-<p>Address the message to adele-en@gnupp.de. Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+	<p class="notes">Es könnte sein, dass Edward einige Minuten braucht, um zurückzuschreiben. Lese derweil die Sektion <a href="#section5">Nutze es richtig</a>. Gehe weiter zum nächsten Schritt, wenn sie geantwortet hat. Ab hier tust du das gleiche wie wenn du mit einer normalen Person kommunizierst.</p>
+      </div><!-- End .main -->
+    </div><!-- End #step-3b .step -->
 
-<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
-					</div><!-- End .main -->
-				</div><!-- End #step-3b .step -->
+    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+    <div id="step-3b" class="step">
+      <div class="main">
+	<h3><em>Schritt 3.b</em>Sende eine Verschlüsselte E-Mail</h3>
+	<p>Schreibe eine E-Mail an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe "Verschlüsselungstest" oder etwas ähnliches in den Betreff und schreibe irgendetwas in den Text der Nachricht. Schicke sie noch nicht ab.</p>
+	<p>
+	  Klicke auf das Icon mit dem Schlüssel am unteren Rand des Fensters (er sollte gelb werden).
+	  Das sagt Enigmail, dass die E-Mail verschlüsselt werden soll.
+	</p>
+	<p>Drücke auf Senden. Es sollte eine Meldung kommen, auf der steht "Nicht gefundene Empfänger".</p>
 
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-3b" class="step">
-					<div class="main">
-							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, uniqe signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-							<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+	<p>Um Adele verschlüsselte E-Mails zu senden, benötigst du ihren öffentlichen Schlüssel, also muss Enigmail ihn jetzt vom einem Schlüsselserver herunterladen. Klicke auf Fehlende Schlüssel herunterladen und klicke auf den ersten (in dem "der freundliche E-Mail-Roboter" in der Benutzer-ID steht, dan klicke auf OK.</p>
 
-							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+	<p>
+	Jetzt bist du zurück am "Nicht gefundene Empfänger"-Dialog. Jetzt musst du auf OK klicken. Sollte die E-Mail nicht automatisch versendet werden, dann kannst du jetzt auf Senden drücken.
+	</p>
+	<!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
+	<div class="troubleshooting">
+	  <h4>Probleme?</h4>
+	  <dl>
+	    <dt>Enigmail kann Edwards Schlüssel nicht finden.</dt>
+	    <dd>
+	    Schließe alle Pop-Ups die seitdem du geklickt hast aufgetreten sind. Vergewissere dich, dass du mit dem Internet verbunden bist und versuche es nochmal. Wenn dies nicht funktioniert, wähle einen anderen Schlüsselserver aus.</dd>
+	    <dt class="feedback">Fidest du keine Lösung für deine Probleme?</dt>
+	    <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	  </dl>
+	</div><!-- /.troubleshooting -->
+      </div><!-- End .main -->
+    </div><!-- End #step-3b .step -->
 
-							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
-					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
-							<div class="troubleshooting">
-								<h4>Troubleshooting</h4>
-								<dl>
-									<dt>Enigmail can't find Adele's key</dt>
-										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
-								</dl>
-							</div><!-- /.troubleshooting -->
-						</div><!-- End .main -->
-					</div><!-- End #step-3b .step -->
-
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-headers_unencrypted" class="step">
-					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
-					</div><!-- End .main -->
-				</div><!-- End #step-headers_unencrypted .step-->
+    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+    <div id="step-headers_unencrypted" class="step">
+      <div class="main">
+	<h3><em>Wichtig:</em> Der Betreff wird nicht verschlüsselt</h3>
+	<p>
+	  Auch wenn du die E-Mail verschlüsselst, ist der Betreff nicht verschlüsselt, also solltest du dort keine
+	  privaten Informationen hineinschreiben. Die Sender- und Empfängeradressen sind ebenfalls unverschlüsselt (woher sollte sonst das Programm sonst wissen, wohin die E-Mail geht?).
+	</p>
+      </div><!-- End .main -->
+    </div><!-- End #step-headers_unencrypted .step-->
 
 
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-3c" class="step">
-					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
-					</div><!-- End .main -->
-				</div><!-- End #step-3c .step -->
-
-<!-- STEP 3D IS COMMENTED OUT UNTIL WE FIND A WAY TO VALIDATE SIGNATURES
-				<div id="step-3d" class="step">
-					<div class="main">
-						<h3><em>Step 3.d</em> Send a test signed email to a friend</h3>
-						<p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
-						<p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
-						<p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
-					</div>
-				</div>-->
-			</div>
-		</section><!-- End #section3 -->
-
+    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+    <div id="step-3c" class="step">
+      <div class="main">
+	<h3><em>Schritt 3.c</em> Empfange eine Antwort</h3>
+	<p>
+	  Wenn Edward deine E-Mail empfangen hat, entschlüsselt er sie mit ihrem privaten Schlüssel. Dann wird er deinen öffentlichen Schlüssel von einem Schlüsselserver holen und ihn verwenden um die Antwort zu verschlüsseln.
+	</p>
+	<p class="notes">
+	  Da du die E-Mail mit Edwards öffentlichen Schlüssel verschlüsselt hast, braucht man Edwards privaten Schlüssel um die E-Mail zu entschlüsseln. Nur Edward besitzt den privaten Schlüssel, aslo kann niemand außer ihr &mdash; nicht einmal du &mdash; die E-Mail entschlüsseln..
+	</p>
+	<p class="notes">
+	  Edward braucht einige Minuten um zu antworten. In der zwischenzeit wäre es eine gute Idee, die Sektion <a href="#section5">Nutze es richtig</a> zu lesen.</p>
+	<p>
+	  Wenn du Edwards E-Mail bekommen und geöffnet hast, stellt Enigmail automatisch fest, dass sie mit deinem öffentlichen Schlüssel verschlüsselt wurde und entschlüsselt dann die E-Mail mit deinem privaten Schlüssel.
+	</p>
+	<p>
+	  Beachte die Leiste die über der Nachricht erscheint mit Informationen über Edwards Schlüssel.
+	</p>
+      </div><!-- End .main -->
+    </div><!-- End #step-3c .step -->
+    
+    <!-- STEP 3D IS COMMENTED OUT UNTIL WE FIND A WAY TO VALIDATE SIGNATURES
+	 <div id="step-3d" class="step">
+	   <div class="main">
+	     <h3><em>Schritt 3.d</em> Send a test signed email to a friend</h3>
+	     <p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
+	     <p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
+	     <p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
+	   </div>
+	 </div>-->
+  </div>
+</section>
 <!-- ~~~~~~~~~ Section 4: Learn the Web of Trust  ~~~~~~~~~ -->
 <section class="row" id="section4">
   <div>
@@ -334,7 +350,7 @@
 
       <p>Wenn du den Schlüssel von jemandem signierst, dann sagst du öffentlich, dass du glaubst, dass der Schlüssel tatsächlich dieser Person gehört und nicht einem Angreifer. Man kann sehen, wer deinen Schlüssel signiert hast. Wenn du GnuPG einige Jahre lang verwendet hast, kannst du hunderte Signaturen haben. Die Web of Trust ist eine Konstellation aller GnuPG-Nutzer, die durch Signaturenketten zu einem Netz verbunden sind. Je mehr signaturen ein Schlüssel hat, desto vertrauenswürdiger ist er.</p>
 
-      <p>Öffentliche Schlüssel werden normalerweiße mit einer 8-stelligen Schlüssel-ID wie 92AB3FF7 (für Adeles Schlüssel) identifiziert. Du kannst deine Schlüssel-ID in OpenPGP &rarr; Key Management im Menü deines E-Mail-Programms sehen. Auf diese Schlüssel-ID sollte man sich jedoch nicht vollständig verlassen, da es Schlüssel geben kann, die die gleiche Schlüssel-ID besitzen.</p>
+      <p>Öffentliche Schlüssel werden normalerweiße mit einer 8-stelligen Schlüssel-ID wie 92AB3FF7 (für Edwards Schlüssel) identifiziert. Du kannst deine Schlüssel-ID in OpenPGP &rarr; Key Management im Menü deines E-Mail-Programms sehen. Auf diese Schlüssel-ID sollte man sich jedoch nicht vollständig verlassen, da es Schlüssel geben kann, die die gleiche Schlüssel-ID besitzen.</p>
       <p>
 	Es ist einie gute Idee, deine Schlüssel-ID zu verbreiten, sodass Leute einfacher deinen Schlüssel auf dem Schlüsselserver finden können. Du wirst auch öffentliche Schlüssel finden, die mit dem Fingerabdruck identifiziert werden, welcher eine wesentlich längere Zahlenfolge ist, wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7. Die Schlüssel-ID besteht nur aus den letzten 8 Stellen des Fingerabdrucks. Dieser Fingerabdruck ist tatsächlich einzigartig.
       </p>
@@ -347,10 +363,10 @@
       <div class="main">
 	<h3><em>Schritt 4.a</em>Signiere einen Schlüssel</h3>
 	<p>In deinen E-Mail-Programm, gehe zu OpenPGP &rarr; Schlüsselverwaltung.</p>
-	<p>Klicke mit der rechten Maustaste auf Adeles öffentlichen Schlüssel und wähle jetzt Unterschreiben.</p>
+	<p>Klicke mit der rechten Maustaste auf Edwards öffentlichen Schlüssel und wähle jetzt Unterschreiben.</p>
 	<p>In dem Fenster was erscheint, wähle "Keine Antwort" und klicke auf OK.</p>
-	<p>Wähle Adeles Schlüssel aus der Liste aus und gehe dann auf Schlüsselserver &rarr; Schlüssel Hochladen und klicke auf OK.</p>
-	<p class="notes">Du hast gerade gesagt, dass du darauf vertraust, dass Adeles Schlüssel tatsächlich Adele gehört. Dies bedeutet wenig, da Adele keine echte Person ist, ist aber eine gute Praxis.</p>
+	<p>Wähle Edwards Schlüssel aus der Liste aus und gehe dann auf Schlüsselserver &rarr; Schlüssel Hochladen und klicke auf OK.</p>
+	<p class="notes">Du hast gerade gesagt, dass du darauf vertraust, dass Edwards Schlüssel tatsächlich Edward gehört. Dies bedeutet wenig, da Edward keine echte Person ist, ist aber eine gute Praxis.</p>
 
 
 	<!--<div id="pgp-pathfinder">
@@ -411,7 +427,7 @@
 	<p>
 	  GnuPG macht E-Mails sicherer, es ist aber wichtig für ungültige Schlüssel Ausschau zu halten. E-Mails, die mit ungültigen Schlüsseln verschlüsselt wurden könnten von Überwachungsprogrammen gelesen werden. </p>
 	<p>
-	Gehe in deinem E-Mail-Programm zurück zur zweiten E-Mail, die dir Adele gesendet hat. Weil sie mit ihrem Schlüssel verschlüsselt wurde, gibt es oben eine Leiste die sagt, dass die E-Mail verschlüsselt ist.</p>
+	Gehe in deinem E-Mail-Programm zurück zur zweiten E-Mail, die dir Edward gesendet hat. Weil sie mit ihrem Schlüssel verschlüsselt wurde, gibt es oben eine Leiste die sagt, dass die E-Mail verschlüsselt ist.</p>
 	<p><b>
 Gewöhne es dir an, dass du auf diese Leiste schaust. Enigmail wird dich warnen, wenn E-Mails mit ungültigen Schlüsseln verschlüsselt wurden.</b></p>
       </div><!-- End .main -->
