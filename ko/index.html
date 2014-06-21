@@ -241,7 +241,7 @@
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 						<h2><em>#3</em> 써 봅시다!</h2>
-						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
+						<p>이제 어떻게 암호화를 사용하는 지 아는 Edward라는 테스트 프로그램을 이용해 실험 통신을 해 봅시다. 별도로 적혀 있는 내용을 제외하고, 모든 부분은 실제 사람과 통신할 때의 방법과 동일합니다.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -250,35 +250,35 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 3.a</em> Send Adele your public key</h3>
-						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+						<h3><em>순서 3.a</em> Edward에게 공개키 보내기</h3>
+						<p>이 부분은 실제 사람과 통신할 때는 불필요한 특수한 부분입니다. 이메일 프로그램의 메뉴에서 OpenPGP &rarr; 키 관리 로 가세요. 팝업에서 당신의 키를 볼 수 있을 것입니다. 당신의 키를 우클릭하고 전자 메일로 공개키 보내기 를 누르세요. 이제 당신이 쓰기 버튼을 눌렀을 때와 같은 새로운 메일 창이 열립니다.</p>
 
-<p>Address the message to adele-en@gnupp.de. Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+<p>받는 사람을 edward-ko@fsf.org 로 변경하세요. 제목과 내용에 한 글자 이상을 넣고, 보내세요.</p>
 
-<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
+<p class="notes">Edward가 답신을 보내는 데 2분에서 3분 정도의 시간이 소요될 수 있습니다. 그동안 이 부분을 생략하고 아래의 <a href="#section5">Use it Well</a> 부분을 볼 수 있습니다. Edward가 답변을 하면, 다시 이곳으로 와서 다음 부분을 보세요. 이제, 다른 일반적인 사람과 통신할 때도 같은 방법을 사용합니다. </p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, uniqe signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-							<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+							<h3><em>순서 3.b</em> 테스트 암호화 메일 보내기</h3>
+							<p>이메일 프로그램에서 받는이가 edward-ko@fsf.org 인 새 이메일을 작성하세요. 제목을 "암호화 테스트"혹은 비슷한 내용으로 하고, 아무 내용이나 쓰세요. 아직 이메일을 보내지는 마세요.</p>
+							<p>보내는 창의 아래의 키 아이콘을 누릅니다. (노랗게 변할 것입니다!) 이렇게 하면 Enigmail이 당신이 이전 순서에서 다운로드받은 키로 암호화하게 됩니다.</p>
+							<p class="notes">키 옆에 연필이 있습니다. 이 버튼을 클릭하면, Enigmail은 당신의 비밀키로 생성한 특별하고 고유한 서명을 메시지에 추가합니다. 이 기능은 암호화와는 다른 기능이므로, 이 가이드에서는 사용하지 않습니다.</p>
+							<p>보내기 를 누르세요. Enigmail은 "받는이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다"라는 팝업을 보여 줄 것입니다.</p>
 
-							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+							<p>Edward에게 암호화하고 이메일을 보내려면, 그의 공개키가 필요하기 때문에, Enigmail에게 공개키를 다운로드 하게 해야 합니다. 없는 키 다운로드를 클릭한 후, 기본 키서버를 이용합니다. 키를 찾으면, 첫번째 키를 선택하고, 완료 를 누릅니다. 다음 팝업에서도 완료 를 누릅니다.</p>
 
-							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+							<p>이제 다시 "받는이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다" 창으로 돌아왔습니다. Edward의 키를 리스트에서 클릭하고 완료를 누릅니다. 메시지가 자동으로 보내지지 않는다면, 발송을 누르세요.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
-								<h4>Troubleshooting</h4>
+								<h4>문제 해결</h4>
 								<dl>
-									<dt>Enigmail can't find Adele's key</dt>
-										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+									<dt>Enigmail이 Edward의 키를 찾지 못해요</dt>
+										<dd>클릭한 후의 팝업창을 닫으세요. 인터넷에 연결된 지 확인한 후 다시 시도하세요. 그래도 안 된다면 다른 키서버를 선택한 후 다시 해 보세요.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 								</dl>
 							</div><!-- /.troubleshooting -->
 						</div><!-- End .main -->
@@ -287,9 +287,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
+						<h3><em>중요:</em>보안 팁</h3>
+						<p>당신이 당신의 이메일을 암호화해도, 제목은 암호화되지 않으므로 제목에 개인정보를 넣지 마세요. 보낸 이와 받는이의 주소도 암호화되지 않으므로, 이러한 정보는 감시 시스템이 읽을 수 있습니다. 첨부 파일이 있다면, 메일을 보낼 떄 Enigmail은 첨부 파일을 암호화할 것인지 물을 것입니다.</p>
+<p>키 아이콘을 이메일 작성 <strong>전</strong>에 클릭하는 것도 좋은 생각입니다. 그렇지 않다면, 암호화되지 않은 초안이 이메일 서버로 전송되며, 이 초안은 스누핑의 타겟이 될 수 있습니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -297,12 +297,12 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
+						<h3><em>순서 3.c</em> 답장 받기/h3>
+						<p>Edward가 이메일을 받으면, 그는 그의 개인키를 이용해 복호화한 후, 키서버에서 당신의 공개키를 받아온 후 암호화된 답신을 보내는 데 쓰일 것입니다.</p>
+						<p class="notes">당신이 Edward의 공개키로 암호화했기 때문에, 복호화에는 Edward의 비밀키가 필요합니다. Edward를 제외한 모든 사람 &mdash; 심지어 당신도 &mdash; 은 이 이메일을 복호화할 수 없습니다.</p>
+						<p class="notes">Edward가 답장하는 데 2분에서 3분 정도가 걸릴 수 있습니다. 그 동안, 잠시 뒤로 넘어가 <a href="#section5">Use it Well</a>문단을 읽을 수 있습니다.</p>
+						<p>Edward의 답장을 받고 열게 되면, Enigmail은 자동적으로 이메일이 당신의 공개키로 암호화 되어있음을 감지하고, 당신의 개인키로 복호화할 것입니다.</p>
+						<p>메일 위에 뜨는 Enigmail 바는 Edward의 키에 대한 정보를 가지고 있습니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
