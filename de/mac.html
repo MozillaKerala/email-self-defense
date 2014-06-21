@@ -265,16 +265,17 @@
     <div id="step-3a" class="step">
       <div class="sidebar">
 	<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
-	<div class="main">
+      </div>
+      <div class="main">
 	<h3><em>Schritt 3.a</em>Schicke Edward deinen öffentlichen Schlüssel</h3>
 	<p>Dies ist ein spezieller Schritt, den du nicht machen musst, wenn du mit echten Menschen kommunizierst. Im Menü deines E-Mail programms, gehe auf OpenPGP &rarr; Schlüsselverwaltung. Du solltest deinen Schlüssel in der Liste sehen. Klicke auf deinen Schlüssel mit der rechten Maustaste und wähle dann Öffentliche Schlüssel per E-Mail senden. Dies erstellt eine neue Nachricht, so als hättest du auf Schreiben gedrückt.</p>
-
+	
 	<p>Schreibe die Nachricht an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe mindestens ein Wort in den Betreff und in den Körper der E-Mail und klicke auf Senden.</p>
-
+	
 	<p class="notes">Es könnte sein, dass Edward einige Minuten braucht, um zurückzuschreiben. Lese derweil die Sektion <a href="#section5">Nutze es richtig</a>. Gehe weiter zum nächsten Schritt, wenn sie geantwortet hat. Ab hier tust du das gleiche wie wenn du mit einer normalen Person kommunizierst.</p>
       </div><!-- End .main -->
-    </div><!-- End #step-3b .step -->
-
+    </div><!-- End #Step-3b .step -->
+    
     <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
     <div id="step-3b" class="step">
       <div class="main">
@@ -282,14 +283,14 @@
 	<p>Schreibe eine E-Mail an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe "Verschlüsselungstest" oder etwas ähnliches in den Betreff und schreibe irgendetwas in den Text der Nachricht. Schicke sie noch nicht ab.</p>
 	<p>
 	  Klicke auf das Icon mit dem Schlüssel am unteren Rand des Fensters (er sollte gelb werden).
-	  Das sagt Enigmail, dass die E-Mail verschlüsselt werden soll.
+	    Das sagt Enigmail, dass die E-Mail verschlüsselt werden soll.
 	</p>
 	<p>Drücke auf Senden. Es sollte eine Meldung kommen, auf der steht "Nicht gefundene Empfänger".</p>
-
-	<p>Um Adele verschlüsselte E-Mails zu senden, benötigst du ihren öffentlichen Schlüssel, also muss Enigmail ihn jetzt vom einem Schlüsselserver herunterladen. Klicke auf Fehlende Schlüssel herunterladen und klicke auf den ersten (in dem "der freundliche E-Mail-Roboter" in der Benutzer-ID steht, dan klicke auf OK.</p>
-
+	
+	<p>Um Edward verschlüsselte E-Mails zu senden, benötigst du ihren öffentlichen Schlüssel, also muss Enigmail ihn jetzt vom einem Schlüsselserver herunterladen. Klicke auf Fehlende Schlüssel herunterladen und klicke auf den ersten (in dem "der freundliche E-Mail-Roboter" in der Benutzer-ID steht, dan klicke auf OK.</p>
+	
 	<p>
-	Jetzt bist du zurück am "Nicht gefundene Empfänger"-Dialog. Jetzt musst du auf OK klicken. Sollte die E-Mail nicht automatisch versendet werden, dann kannst du jetzt auf Senden drücken.
+	  Jetzt bist du zurück am "Nicht gefundene Empfänger"-Dialog. Jetzt musst du auf OK klicken. Sollte die E-Mail nicht automatisch versendet werden, dann kannst du jetzt auf Senden drücken.
 	</p>
 	<!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
 	<div class="troubleshooting">
@@ -297,14 +298,14 @@
 	  <dl>
 	    <dt>Enigmail kann Edwards Schlüssel nicht finden.</dt>
 	    <dd>
-	    Schließe alle Pop-Ups die seitdem du geklickt hast aufgetreten sind. Vergewissere dich, dass du mit dem Internet verbunden bist und versuche es nochmal. Wenn dies nicht funktioniert, wähle einen anderen Schlüsselserver aus.</dd>
+	      Schließe alle Pop-Ups die seitdem du geklickt hast aufgetreten sind. Vergewissere dich, dass du mit dem Internet verbunden bist und versuche es nochmal. Wenn dies nicht funktioniert, wähle einen anderen Schlüsselserver aus.</dd>
 	    <dt class="feedback">Fidest du keine Lösung für deine Probleme?</dt>
 	    <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
 	  </dl>
-	</div><!-- /.troubleshooting -->
-      </div><!-- End .main -->
+	  </div><!-- /.troubleshooting -->
+	</div><!-- End .main -->
     </div><!-- End #step-3b .step -->
-
+    
     <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
     <div id="step-headers_unencrypted" class="step">
       <div class="main">
@@ -312,11 +313,11 @@
 	<p>
 	  Auch wenn du die E-Mail verschlüsselst, ist der Betreff nicht verschlüsselt, also solltest du dort keine
 	  privaten Informationen hineinschreiben. Die Sender- und Empfängeradressen sind ebenfalls unverschlüsselt (woher sollte sonst das Programm sonst wissen, wohin die E-Mail geht?).
-	</p>
+	  </p>
       </div><!-- End .main -->
     </div><!-- End #step-headers_unencrypted .step-->
-
-
+    
+    
     <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
     <div id="step-3c" class="step">
       <div class="main">
@@ -365,8 +366,8 @@
 	Es ist einie gute Idee, deine Schlüssel-ID zu verbreiten, sodass Leute einfacher deinen Schlüssel auf dem Schlüsselserver finden können. Du wirst auch öffentliche Schlüssel finden, die mit dem Fingerabdruck identifiziert werden, welcher eine wesentlich längere Zahlenfolge ist, wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7. Die Schlüssel-ID besteht nur aus den letzten 8 Stellen des Fingerabdrucks. Dieser Fingerabdruck ist tatsächlich einzigartig.
       </p>
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-4a" class="step">
+      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+      <div id="step-4a" class="step">
       <div class="sidebar">
 	<p><img src="/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
       </div><!-- /.sidebar -->
