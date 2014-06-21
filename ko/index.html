@@ -324,14 +324,14 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Learn the Web of Trust</h2>
-						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
+						<h2><em>#4</em> 신뢰의 웹 배우기</h2>
+						<p>이메일 암호화는 강력한 기술이지만, 약점을 가지고 있습니다; 그 사람의 공개키가 정말 그 사람의 것인지 증명할 수 있어야 합니다. 그렇지 않다면, 공격자가 당신 친구의 이름으로 이메일을 만들고, 키쌍을 만든 후 당신의 친구를 사칭할 수 있습니다. 그래서 이메일 암호화를 개발한 자유 소프트웨어 개발자들이 키서명과 신뢰의 웹이라는 기술을 개발했습니다.</p>
 
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, into a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+<p>다른 사람의 키에 서명할 때, 당신은 공개적으로 "나는 이 사람이 이 키를 소유하며 사칭이 아닙니다" 라는 것을 선언하는 것입니다. 공개키를 가진 사람은 이 키로 서명한 횟수를 볼 수 있습니다. 오랫동안 GnuPG를 사용한다면, 당신이 서명한 횟수가 많음을 발견할 것입니다. 신뢰의 웹은 모든 GnuPG 사용자가 서로를 서명을 통한 신뢰로 묶어 거대한 네트워크로 묶습니다. 키에 더 많은 서명이 있다는 것은 그 키가 믿을 만 하다는 것을 의미합니다.</p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>사람들의 공개키는 일반적으로 (Edward's fingerprint) 와 같은 그들의 키 지문으로 알려집니다. 이메일 프로그램의 OpenPGP &rarr; 키 관리 에서 키를 우클릭하고 키 속성 보기 를 클릭하면 당신과 사람들의 공개키를 볼 수 있습니다. 당신의 이메일 주소를 공유할 때 키 지문을 알려주는 것은 좋은 습관이며, 이를 통해 사람들이 자신이 당신의 키를 키서버에서 다운로드 받을 때 그것이 정말 당신의 것인지 확인할 수 있습니다.</p>
 
-<p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to are trying to communicate to verify which one to use.</p>
+<p class="notes">아마 사람들이 자신의 공개키를 키 지문의 마지막 8자리인 키 ID로 (Edward's key ID) 알리는 것을 볼 수 있을 수 있습니다. 키 ID는 키 관리창에서 확인할 수 있습니다. 키 ID는 키의 이름과 비슷합니다만 (유용하지만 모든 키에 동일하지 않을 수 있습니다) 키 지문이 실제로 혼동의 여지 없이 그 사람이라는 것을 알려 줄 것입니다. 키 ID만 갖고 있더라도 키를 찾을 수 있지만, 키가 여러 개 나온다면, 받는 사람의 공개키를 쓰기 위해 그 사람의 키 지문을 알아야 할 것입니다.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -342,12 +342,12 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 4.a</em> Sign a key</h3>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management.</p>
-						<p>Right click on Adele's public key and select Sign Key from the context menu.</p>
-						<p>In the window that pops up, select "I will not answer" and click OK.</p>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys and hit OK.</p>
-						<p class="notes">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
+						<h3><em>순서 4.a</em> 키에 서명하기</h3>
+						<p>이메일 프로그램의 메뉴에서 OpenPGP &rarr; 키 관리로 가세요.</p>
+						<p>Edward의 공개키를 우클릭한 후 메뉴에서 키에 서명하기 를 선택하세요.</p>
+						<p>팝업 창에서 "대답하지 않겠습니다"를 선택하고 완료를 누르세요.</p>
+						<p>이메일 프로그램에서 OpenPGP &rarr; 키 관리 &rarr; 키서버 &rarr; 키서버에 공개키 업로드 를 찾고 완료를 누르세요.</p>
+						<p class="notes">당신은 방금 "나는 Edward의 공개키가 Edward에게 소유함을 믿습니다" 라고 선언했습니다. 사실 이 절차는 Edward가 프로그램이기 때문에 별 의미가 없지만, 좋은 습관이 될 것입니다.</p>
 
 
 						<!--<div id="pgp-pathfinder">
@@ -363,8 +363,8 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-sign_real_keys" class="step">
 					<div class="main">
-						<h3><em>Important:</em> check people's identification before signing their keys</h3>
-						<p>Before signing a real person's key, always make sure it actually belongs to them, and that they are who they say they are. Ask them to show you their ID (unless you trust them very highly) and their public key fingerprint -- not just the shorter public key ID, which could refer to another key as well. In Enigmail, answer honestly in the window that pops up and asks "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?".</p>
+						<h3><em>중요:</em>키에 서명하기 전에 그 사람을 확인하세요</h3>
+						<p>진짜 사람의 키에 서명하기 전에, 키가 그 사람의 소유인지 확인하세요. (당신이 그를 매우 믿지 않는 한) 그에게 그들의 ID, 공개키, 지문을 보여줄 것을 요구하세요. Enigmail에서, "서명하려고 하는 키가 위에 표시된 이름의 사람이 실제로 소유하고 있는 것인지 면밀하게 확인했습니까?"라는 질문에 정직하게 대답하세요.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-sign_real_keys .step-->
 
