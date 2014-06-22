@@ -3,46 +3,73 @@
 	<head>
 			<meta charset="utf-8">
 
-			<title>Email Self-Defense - a guide to fighting surveillance with GnuPG encryption</title>
+			<title>Защита эл. почты - руководство по борьбе со слежкой посредством шифрования GnuPG</title>
 			<meta name="keywords" content="GnuPG, GPG, openpgp, surveillance, privacy, email, Enigmail" />
       <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
+
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
   		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
 
 	</head>
 	<body>
-<!--
-		<nav class="nav">
-			<div>
-				<ul class="lang">
-					<li class="help"><a href="http://libreplanet.org/wiki/GPG_guide">Translate this guide!</a></li>
-				</ul>
-			</div>
-		</nav>
--->
 
 <!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
-<!-- ~~~~~~~~~  Revision as of 18:53, 1 June 2014 by Zakkai ~~~~~~~~~ -->
+
 		<header class="row"  id="header">
-
-<!--		<div class="highlight" style="background: red;">
-				<h3 style="text-align: center;"><strong style="color: white;">Website Under Construction</strong></h3>
-		</div>-->
-
 			<div>
-				<h1>Email Self-Defense</h1>
-				<ul class="os">
-					<li><a href="index.html">GNU/Linux</a></li>
-					<li><a href="mac.html" class="current">Mac OS</a></li>
-					<li><a href="windows.html">Windows</a></li>
-					<li class="share"><a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Email encryption for everyone via %40fsf">#EmailSelfDefense</a></li>
-				</ul>
+			  <h1>Защита эл. почты</h1>
+
+                          <!-- Language list for browsers that do not have JS enabled -->
+                          <ul id="languages" class="os">
+                            <li><a class="current" href="/en">english</a></li>
+                            <li><a href="/es">español</a></li>
+                            <li><a href="/fr">français</a></li>
+                            <li><a href="/de">deutsch</a></li>
+                            <li><a href="/pt-br">português do Brasil</a></li>
+                            <li><a href="/tr">türkçe</a></li>
+                            <li><a href="/ro">română</a></li>
+                            <li><a href="/ru">русский</a></li>
+                            <li><a href="/ml">മലയാളം</a></li>
+                            <li><a href="/ko">한국어</a></li>
+                            <li><a href="/ja">日本語</a></li>
+                          </ul>
+
+                          <ul id="menu" class="os">
+			    <li class="spacer">
+                              <a href="index.html" class="current">GNU/Linux</a>
+                            </li>
+			    <li>
+                              <a href="mac.html">Mac OS</a>
+                            </li>
+			    <li>
+                              <a href="windows.html">Windows</a>
+                            </li>
+			    <li class="spacer">
+                              <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Email encryption for everyone via %40fsf">
+                                #EmailSelfDefense
+                              </a>
+                            </li>
+			  </ul>
 
 				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
 				<div id="fsf-intro">
-					<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
-					<span  style="font-size:125%"><p>We fight for computer user's rights, and promote the development of free (as in freedom) software. Resisting bulk surveillance is very important to us.</p><p><strong>We want to heavily promote tools like this in-person and online, to help as many people as possible take the first step towards using free software to protect their privacy. Can you make a donation or become a member to help us achieve this goal?</strong></p></span>
+				  <h3>
+                                    <a href="http://u.fsf.org/ys">
+                                      <img alt="Free Software Foundation"
+                                           src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png">
+                                    </a>
+                                  </h3>
+                                  <div class="fsf-emphasis">
+                                    <p>
+                                      Мы боремся за права пользователей и поддерживаем разработку свободного программного обеспечения. Противостояние массовой слежке является очень важным для нас делом.
+                                    </p>
+                                    <p>
+                                      <strong>
+                                        Мы хотим активно продвигать использование таких инструментов, как при личных встречах, так и в сети, чтобы помочь как можно большему числу людей сделать первый шаг в направлении свободного программного обеспечения для защиты их конфиденциальности. Можете ли вы сделать пожертвование или стать членом нашей команды и помочь нам в достижении этой цели?
+                                      </strong>
+                                    </p>
+                                  </div>
 
 					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
 
@@ -52,11 +79,11 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					Bulk surveillance violates our fundamental rights and makes free speech risky. This guide will teach you a basic surveillance self-defense skill: email encryption. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief that intercepts your email can't read it. All you need is a computer with an Internet connection, an email account and about half an hour.</p>
+					Массовая слежка нарушает наши фундаментальные права и подвергает риску свободу слова. Это руководство научит вас основному навыку самозащиты от слежки - шифрованию электронной почты. После ознакомления, вы сможете отправлять и получать зашифрованные сообщения, таким образом, агент по мониторингу и слежению или вор, перехватывающий вашу электронную почту, не сможет её прочитать. Всё, что для этого понадобится, - это компьютер с подключением к интернету, учётная запись электронной почты и около получаса вашего времени.</p>
 
-<p>Even if you have nothing to hide, using encryption helps protect the privacy of people you communicate with, and makes life difficult for bulk surveillance systems. If you do have something important to hide, you're in good company; these are the same tools that Edward Snowden used to share his famous secrets about the NSA.</p>
+<p>Даже если вам нечего скрывать, использование шифрования позволит защитить конфиденциальность тех людей, с которыми вы общаетесь, и усложнить работу системам массовой слежки. Если есть что-то важное, что вам необходимо скрыть, вы пришли по адресу; это те же самые инструменты, которые Эдвард Сноуден использовал для передачи секретной информации о АНБ (Агентство Национальной Безопасности США).</p>
 
-<p>In addition to using encryption, standing up to surveillance requires fighting politically for a <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">reduction in the amount of data collected on us</a>, but the essential first step is to protect yourself and make surveillance of your communication as difficult as possible. Let's get started!</p>
+<p>В дополнение к использованию шифрования, противостояние слежке подразумевает политическую борьбу за <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">уменьшение количества собираемых о нас данных</a>, но важнейшим первым шагом является самозащита и максимальное усложнение перехвата ваших коммуникаций. Давайте начнём!</p>
 
 				</div>
 
@@ -144,12 +171,12 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-					<h2><em>#2</em> Make your keys</h2>
-						<p>To use the GnuPG system, you'll need a public key and a private key (known together as a keypair). Each is a long string of randomly generated numbers and letters that are unique to you. Your public and private keys are linked together by a special mathematical function.</p>
+					<h2><em>#2</em> СОЗДАЙТЕ КЛЮЧИ</h2>
+						<p>Чтобы использовать систему GnuPG, вам понадобится открытый и закрытый ключи (или, так называемая, ключевая пара). Каждый из них является длинной последовательностью случайно сгенерированных цифр и букв, которая является уникальной. Ваш открытый и закрытый ключи связаны друг с другом посредством  особой математической функции.</p>
 
-<p>Your public key isn't like a physical key, because it's stored in the open in an online directory called a keyserver. People download it and use it, along with GnuPG, to encrypt emails they send to you. You can think of the keyserver as phonebook, where people who want to send you an encrypted email look up your public key.</p>
+<p>Ваш открытый ключ не похож на физический ключ, потому что он сохраняется в открытой онлайновой директории, называемой сервер ключей (Keysevrer). Каждый может скачать его и использовать при помощи GnuPG, чтобы шифровать отправляемые вам сообщения. Сервер ключей иначе можно представить в виде телефонной книги, где люди, желающие отправить вам зашифрованное сообщение, находят ваш открытый ключ.</p>
 
-<p>Your private key is more like a physical key, because you keep it to yourself (on your computer). You use GnuPG and your private key to decode encrypted emails other people send to you.</p>
+<p>Ваш закрытый ключ больше похож на физический ключ, потому что вы сохраняете его для собственного использования (на своём компьютере). Вы используете GnuPG и ваш закрытый ключ для расшифровки посылаемых вам зашифрованных сообщений.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -158,13 +185,14 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 2.a</em> Make a keypair</h3>
-						<p>In your email program's menu, select OpenPGP &rarr; Setup Wizard. You don't need to read the text in the window that pops up unless you'd like to, but it's good to read the text on the later screens of the wizard.</p>
-						<p>On the second screen, titled "Signing," select "No, I want to create per-recipient rules for emails that need to be signed."</p>
-						<p>Use the default options until you reach the screen titled "Create Key".</p>
-						<p>On the screen titled "Create Key," pick a strong password! Your password should be at least 12 characters and include at least one lower case and upper case letter and at least one number or punctuation symbol. Don't forget the password, or all this work will be wasted!</p>
-		  			<p class="notes">The program will take a little while to finish the next step, the "Key Creation" screen. While you wait, do something else with your computer, like watching a movie or browsing the Web. The more you use the computer at this point, the faster the key creation will go.</p>
-						<p>When the OpenPGP Confirm screen pops up, select Generate Certificate and choose to save it in a safe place on your computer (we recommend making a folder called "Revocation Certificate" in your home folder and keeping it there. You'll learn more about the revocation certificate in <a href="#section5">Section 5</a>. The setup wizard will ask you to move it onto an external device, but that isn't necessary at this moment.</p>
+						<h3><em>Действие 2.а</em> СОЗДАНИЕ КЛЮЧЕВОЙ ПАРЫ</h3>
+						<p>В меню вашей почтовой программы выберите OpenPGP  &rarr; Мастер установки. Вам необязательно читать текст в появившемся окне, ознакомьтесь с ним только если хотите. Однако мы рекомендуем прочитать текст последующих окон мастера установки.</p>
+						<p>Во втором окне с заголовком «Подпись» выберите «Нет, я создам правила для тех писем, которые должны быть подписаны».</p>
+						<p>Выбирайте опции, установленные по умолчанию, пока не дойдёте до окна с заголовком «Создать ключ».</p>
+						<p>В окне с заголовком «Создать ключ» выберите сильный пароль! Ваш пароль должен состоять, как минимум, из 12 символов и содержать хотя бы одну заглавную и прописную буквы, а также хотя бы одну цифру или знак препинания. Не забудьте пароль, иначе вся эта работа пойдёт насмарку!</p>
+		  			<p class="notes">Программе понадобится некоторое время, чтобы завершить процесс «Создание ключа». Пока вы ждёте, займите компьютер чем-нибудь другим, например, посмотрите фильм или полистайте веб. Чем более активно вы используете компьютер на данном этапе, тем быстрее проходит процесс создания ключа.</p>
+						<p>Когда появится окно «Подтверждение OpenPGP», выберите «Генерировать сертификат» и сохраните его в безопасном месте на вашем компьютере (мы рекомендуем создать папку под названием «Сертификат отзыва» в вашей личной папке и сохранить его там). Вы узнаете больше о сертификате отзыва в <a href="#section5">Разделе 5</a>. Мастер установки попросит вас перенести его на внешний носитель, но на данном этапе это необязательно.</p>
+
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
@@ -203,15 +231,38 @@
 
 
 
+					<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-2b" class="step">
+					<div class="main">
+						<h3><em>Действие 2.б</em> ПОДГРУЗИТЕ ОТКРЫТЫЙ КЛЮЧ НА СЕРВЕР КЛЮЧЕЙ</h3>
+						<p>В меню вашей почтовой программы выберите OpenPGP &rarr; Управление ключами.</p>
+<p>Кликните правой кнопкой мыши по вашему ключу и выберите Подгрузить открытые ключи на сервер ключей. В появившемся окне выберите сервер ключей, указанный по умолчанию.</p>
+<p class="notes">Теперь тот, кто захочет отправить вам зашифрованное сообщение сможет скачать ваш открытый ключ с Интернета. Существует множество серверов ключей, которые вы можете выбрать из меню при выполнении этого действия, но все они являются копиями друг друга, поэтому неважно, какой из них вы используете. Однако в некоторых случаях процесс синхронизации между серверами после появления новых ключей может занимать до нескольких часов.</p>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>УСТРАНЕНИЕ НЕПОЛАДОК</h4>
+							<dl>
+								<dt>Процесс подгрузки не завершается</dt>
+										<dd>Закройте всплывающее окно, убедитесь, что вы подключены к интернету и попробуйте снова. Если это не помогло, повторите процесс, выбрав другой сервер ключей.</dd>
+<dt>Мой ключ не появляется в списке</dt>
+										<dd>Выберите функцию Отображать все ключи по умолчанию.</dd>
+
+								<dt class="feedback">Не нашли решение для своей проблемы?</dt>
+									<dd class="feedback">Пожалуйста, сообщите нам, воспользовавшись страницей <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">обратной связи</a>.</dd>
+
+							</dl>
+						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="terminology" class="step">
 					<div class="main">
-						<h3>GnuPG, OpenPGP, what?</h3>
-						<p>You're using a program called GnuPG, but the menu in your email program is called OpenPGP. Confusing, right? In general, the terms GnuPG, GPG, GNU Privacy Guard, OpenPGP and PGP are used interchangeably, though they all have slightly different meanings.</p>
+						<h3>GNUPG, OPENPGP, ЧТО?</h3>
+						<p>Вы используете программу под названием GnuPG, но меню в вашей почтовой программе называется OpenPGP. Можно и запутаться, правда? Обычно, термины GnuPG, GPG, GNU Privacy Guard, OpenPGP и PGP используются, как взаимозаменяемые, хоть они и имеют слегка разные значения.</p>
 					</div><!-- End .main -->
 				</div><!-- End #terminology.step-->
+
+
 			</div>
 		</section><!-- End #section2 -->
 
@@ -220,8 +271,8 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#3</em> Try it out!</h2>
-						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
+						<h2><em>#3</em> Проведите тест!</h2>
+						<p>Сейчас вы попробуете осуществить тестовую переписку с компьютерной программой под названием Адель, которая знает, как использовать шифрование. За исключением нескольких отмеченных моментов, эта переписка будет включать те же самые действия, которые вы будете выполнять при переписке с настоящим, живым человеком.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -230,35 +281,35 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 3.a</em> Send Adele your public key</h3>
-						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+						<h3><em>Действие 3.а</em> ОТПРАВЬТЕ АДЕЛЬ СВОЙ ОТКРЫТЫЙ КЛЮЧ</h3>
+						<p>Это особое действие, которое вам не придётся выполнять при общении с настоящими людьми. Из меню вашей почтовой программы перейдите в OpenPGP &rarr; Управление ключами. В открывшемся списке вы должны видеть свой ключ. Нажмите на него правой кнопкой мыши и выберите Отправить открытые ключи по эл. почте. Это действие приведёт к созданию чернового сообщения, как если бы вы просто нажали на кнопку Создать. </p>
 
-<p>Address the message to adele-en@gnupp.de. Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+<p>В адресной строке укажите adele-en@gnupp.de. В теме и теле письма укажите хотя бы одно слово (какое хотите) и затем нажмите отправить.</p>
 
-<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
+<p class="notes">Может пройти две или три минуты до тех пор, пока Адель ответит. Тем временем вы, возможно, хотите перейти к разделу <a href="#section5">Используйте с умом </a> данного руководства. После того, как она ответила, переходите к следующему действию. С этого момента вы будете делать то же самое, что и при общении с настоящим человеком.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, uniqe signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+							<h3><em>Действие 3.б</em> ОТПРАВЬТЕ ЗАШИФРОВАННОЕ ПИСЬМО</h3>
+							<p>Напишите новое письмо в своей почтовой программе, в поле адрес укажите: adele-en@gnupp.de. В теме письма напишите «Тест шифрования» или нечто похожее и напишите что-нибудь в теле письма. Пока не отправляйте.</p>
+							<p>Нажмите на изображение ключа, расположенное в нижнем правом углу экрана (оно должно стать жёлтым). Это действие сообщает Enigmail, что необходимо зашифровать письмо с помощью ключа, который вы скачали на предыдущем этапе.</p>
+							<p class="notes">Рядом с ключом вы заметите изображение карандаша. Нажав на него вы сообщите Enigmail, что к вашему сообщению необходимо добавить специальную, уникальную подпись, сгенерированную при помощи вашего закрытого ключа. Эта функция является независимой от шифрования и вам не обязательно её использовать в рамках этого руководства.</p>
+							<p>Нажмите отправить. Появится окно Enigmail с сообщением «Адресаты неверны, не найдены или к ним нет доверия».</p>
 
-							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+							<p>Чтобы отправить зашифрованное сообщение Адель, вам понадобится её открытый ключ и сейчас программа Enigmail скачает его с сервера ключей. Нажмите Загрузить отсутствующие ключи и не менейте указанный по умолчанию сервер в следующем окне. После того, как программа найдет ключи, выберите первый (ключ, идентификатор которого начинается с 9), а затем нажмите ОК. Нажмите ОК в следующем всплывающем окне.</p>
 
-							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+							<p>Теперь вы вернулись к окну «Адресаты неверны, не найдены или к ним нет доверия». Выберите ключ Адель из списка и нажмите ОК. Если сообщение не было отправлено автоматически, можете нажать кнопку отправить сейчас.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
-								<h4>Troubleshooting</h4>
+								<h4>УСТРАНЕНИЕ НЕПОЛАДОК</h4>
 								<dl>
-									<dt>Enigmail can't find Adele's key</dt>
-										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+									<dt>Программа Enigmail не может найти ключ Адель</dt>
+										<dd>Закройте все появившиеся с момента нажатия окна. Убедитесь, что вы подключены к интернету и попробуйте снова. Если это не помогло, повторите процесс, выбрав другой сервер ключей.</dd>
+								<dt class="feedback">Не нашли решение для своей проблемы?</dt>
+									<dd class="feedback">Пожалуйста, сообщите нам, воспользовавшись страницей <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">обратной связи</a>.</dd>
 								</dl>
 							</div><!-- /.troubleshooting -->
 						</div><!-- End .main -->
@@ -267,9 +318,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
+						<h3><em>Важно:</em> Советы по обеспечению безопасности</h3>
+						<p>Даже если вы зашифровали своё письмо, поле тема остаётся незашифрованным, поэтому не указывайте в нём никакую конфиденциальную информацию. Адреса отправителя и получателя также незашифрованы, то есть они могут распознаваться системами слежения. При отправке вложений, программа Enigmail спросит вас, хотите ли вы зашифровать их или нет.</p>
+<p>Мы советуем вам нажимать на иконку ключа в окне Создание сообщения <strong>до</strong> того, как вы начнёте писать. В противном случае, ваша почтовая программа может сохранить незашифрованную черновую версию вашего письма на почтовом сервере, что потенциально может привести к перехвату его содержимого.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -277,12 +328,12 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
+						<h3><em>Действие 3.в</em> Получите ответ</h3>
+						<p>Когда Адель получит ваше письмо, она воспользуется своим закрытым ключом, чтобы его расшифровать, затем получит ваш открытый ключ с сервера ключей и использует его для шифрования ответного сообщения.</p>
+						<p class="notes">Так как вы зашифровали это письмо при помощи открытого ключа Адель, её закрытый ключ необходим для его расшифрования. Только у Адель есть доступ к её закрытому ключу, то есть никто кроме неё &mdash; включая вас &mdash; не может его расшифровать.</p>
+						<p class="notes">На ответ Адель понадобится от двух до трёх минут. Тем временем вы, возможно, хотите перейти к разделу <a href="#section5">Используйте с умом</a> данного руководства.</p>
+						<p>Когда вы получите ответ Адель и откроете его, программа Enigmail автоматически распознает, что сообщение зашифровано вашим открытым ключом и использует ваш закрытый ключ для его расшифровки.</p>
+						<p>Обратите внимание на панель, содержащую информацию о статусе ключа Адель, которую показывает Enigmail над сообщением.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
@@ -304,14 +355,14 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Learn the Web of Trust</h2>
-						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
+						<h2><em>#4</em> Добро пожаловать в Сеть доверия</h2>
+						<p>Шифрование почты - это мощная технология, но у неё тоже есть слабые стороны; она требует верификации пренадлежности ключа конкретному человеку. В противном случае, нет никакой гарантии, что злоумышленник не создаст эл. почту от имени вашего друга, включая соответствующие ключи, и не станет выдавать себя за него. Именно поэтому разрабатывающие свободное программное обеспечение програмисты создали подписи ключей и Сеть доверия.</p>
 
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, into a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+<p>Когда вы подписываете чей-то ключ, вы публично сообщаете, что он действительно принадлежит этому человеку, а не самозванцу. Тот, кто захочет воспользоваться вашим открытым ключом, увидит сколько раз он был подписан. Когда вы используете GnuPG продолжительное время, у вас может набраться сотня другая подписей. Сеть доверия - это группа всех пользователей GnuPG, связанных друг с другом в огромную сеть цепями доверия, выраженными в виде подписей. Чем больше у ключа подписей и чем больше подписей у подписавших его, тем более надёжен этот ключ.</p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>Открытые ключи, как правило, идентифицируются при помощи отпечатка, который является последовательностью символов, например, DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (отпечаток ключа Адель). Вы можете проверить отпечаток своего открытого ключа и других открытых ключей, сохранённых на вашем компьютере. Для этого необходимо через меню вашей почтовой программы открыть пункт OpenPGP &rarr; Управление ключами, затем кликнуть правой кнопкой мыши на ключе и выбрать Свойства ключа. Мы рекомендуем вместе с адресом эл. почты распространять отпечаток вашего ключа для того, чтобы люди могли проверить правильность вашего публичного ключа перед скачиванием его с сервера ключей.</p>
 
-<p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to are trying to communicate to verify which one to use.</p>
+<p class="notes">Иногда вы также можете встретиться с обозначением открытых ключей в виде их идентификаторов (ID), которые, всего навсего, являются последовательностью последних 8 символов отпечатков как, например, 92AB3FF7 в случае Адель. Идентификатор ключа отображается сразу в окне Управление ключами. Идентификатор ключа - это аналог имени человека (это удобное сокращение, но оно не является уникальным для данного ключа), тогда как отпечаток является полностью уникальным и безошибочно идентифицирует ключ. Если у вас есть только идентификатор, вы все равно сможете найти ключ (а также его отпечаток), выполнив Действие 3, но если будет отображено несколько вариантов, чтобы определиться вам понадобится отпечаток ключа человека, с которым вы хотите связаться.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -322,12 +373,12 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 4.a</em> Sign a key</h3>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management.</p>
-						<p>Right click on Adele's public key and select Sign Key from the context menu.</p>
-						<p>In the window that pops up, select "I will not answer" and click OK.</p>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys and hit OK.</p>
-						<p class="notes">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
+						<h3><em>Действие 4.а</em> Подпишите ключ</h3>
+						<p>В меню вашей почтовой программы откройте OpenPGP &rarr; Управление ключами.</p>
+						<p>Нажмите правой кнопкой мыши на открытом ключе Адель и из контекстного меню выберите пункт Подписать ключ.</p>
+						<p>В появившемся окне выберите «Я не хочу отвечать» и нажмите ОК.</p>
+						<p>В меню вашей почтовой программы откройте OpenPGP &rarr; Управление ключами &rarr; Сервер ключей &rarr; Подгрузить открытые ключи и нажмите ОК.</p>
+						<p class="notes">Только что вы эффективно сообщили: «я верю, что открытый ключ Адель действительно принадлежит ей». Это, по сути, ничего не меняет, так как Адель не является настоящим человеком, но практика хорошая.</p>
 
 
 						<!--<div id="pgp-pathfinder">
@@ -343,8 +394,8 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-sign_real_keys" class="step">
 					<div class="main">
-						<h3><em>Important:</em> check people's identification before signing their keys</h3>
-						<p>Before signing a real person's key, always make sure it actually belongs to them, and that they are who they say they are. Ask them to show you their ID (unless you trust them very highly) and their public key fingerprint -- not just the shorter public key ID, which could refer to another key as well. In Enigmail, answer honestly in the window that pops up and asks "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?".</p>
+						<h3><em>Важно:</em> перед тем, как подписать чьи-либо ключи, обязательно установите их подлинность</h3>
+						<p>Перед тем, как подписать ключ человека, обязательно убедитесь, что ключ действительно принадлежит ей/ему и что она/он является тем, за кого себя выдаёт. Попросите её/его показать идентифицирующий документ (если только уровень доверия не достаточно высок) и отпечаток открытого ключа. Но только не короткий идентификатор, который также может относиться к другому ключу. Честно отвечайте на вопрос всплывающего окна Enigmail «Насколько тщательно вы проверили, действительно ли ключ, который вы собираетесь подписать, принадлежит лицу(ам) указанному(ым) выше?».</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-sign_real_keys .step-->
 
@@ -358,8 +409,8 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#5</em> Use it well</h2>
-<p>Everyone uses GnuPG a little differently, but it's important to follow some basic practices to keep your email secure. Not following them, you risk the privacy of the people you communicate with, as well as your own, and damage the Web of Trust.</p>
+						<h2><em>#5</em> Используйте с умом</h2>
+<p>Каждый использует GnuPG по своему, но чтобы обеспечить безопасность электронной почты, очень важно следовать некоторым базовым правилам. Если закрыть на них глаза, вы рискуете конфиденциальностью людей, с которыми общаетесь, собственной конфиденциальностью, а также можете нанести урон Сети доверия.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -368,11 +419,11 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>When should I encrypt?</h3>
+						<h3>Когда надо шифровать?</h3>
 
-						<p>The more you can encrypt your messages, the better. This is because, if you only encrypt emails occasionally, each encrypted message could raise a red flag for surveillance systems. If all or most of your email is encrypted, people doing surveillance won't know where to start.</p>
+						<p>Чем чаще вы можете шифровать свои сообщения, тем лучше. Связано это с тем, что если вы будете шифровать сообщения только время от времени, каждое зашифрованное письмо, возможно, будет вызывать тревогу систем слежения. Если все или большинство ваших писем зашифрованы, сотрудники агентств по мониторингу и слежению не будут знать с чего им начать.</p>
 
-<p>That's not to say that only encrypting some of your email isn't helpful -- it's a great start and it makes bulk surveillance more difficult.</p>
+<p>Но это не значит, что шифровать лишь часть своих сообщений малоэффективно - это хорошее начало и оно усложняет осуществление массовой слежки.</p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
@@ -383,27 +434,27 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Important:</em> Be wary of invalid keys</h3>
-						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
-						<p>In your email program, go back to the second email that Adele sent you. Because Adele encrypted it with your public key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
-<p><b>When using GnuPG, make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
+						<h3><em>Важно:</em> Будьте осторожны с недействительными ключами</h3>
+						<p>GnuPG позволяет обезопасить электронную почту, но очень важно остерегаться попадания недействительных ключей в чужие руки. Электронная переписка, зашифрованная при помощи недействительных ключей, может распознаваться программами мониторинга и слежения.</p>
+						<p>Запустите вашу почтовую программу и откройте второе письмо, которое вам отправила Адель. Так как Адель зашифровала его при помощи вашего открытого ключа, в верхней части сообщения вы увидите уведомление от OpenPGP, которое, скорее всего, гласит: «OpenPGP: Часть этого сообщения зашифрована».</p>
+<p><b>При использовании GnuPG, привыкайте обращать внимание на такие уведомления. Программа предупредит вас, если вы получите сообщение, зашифрованное ключом, которому нельзя доверять.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
-						<h3>Copy your revocation certificate to somewhere safe</h3>
-						<p>Remember when you created your keys and saved the revocation certificate that GnuPG made? It's time to copy that certificate onto the safest digital storage that you have -- the ideal thing is a flash drive, disk or hard drive stored in a safe place in your home.</p>
-<p>If your private key ever gets lost or stolen, you'll need this certificate file.</p>
+						<h3>Скопируйте свой сертификат отзыва в безопасное место</h3>
+						<p>Помните, как вы создали себе ключи и сохранили сертификат отзыва, сгенерированный программой GnuPG? Пришло время скопировать этот сертификат на самый безопасный внешний носитель, который у вас есть. Идеальным вариантом является флешка, диск или жесткий диск, который вы храните в безопасном месте вашего дома.</p>
+<p>Если вы потеряете свой закрытый ключ или его украдут, вам понадобится файл с этим сертификатом.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-lost_key" class="step">
 					<div class="main">
-						<h3><em>Important:</em> act swiftly if someone gets your private key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to read your encrypted email. This guide doesn't cover how to revoke a key, but you can follow the <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instructions on the GnuPG site</a>. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						<h3><em>Важно:</em> в случае, если кто-то завладеет вашим закрытым ключом, действуйте без промедлений</h3>
+						<p>Если вы потеряете свой закрытый ключ или он попадёт в руки постороннему человеку (например, в результате кражи или взлома вашего компьютера), важно сразу его отозвать до того, как кто-то воспользуется им для чтения ваших зашифрованных сообщений. Освещение процесса отзыва ключа не является частью данного руководства, мы рекомендуем вам следовать <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">инструкциям, представленным на сайте GnuPG</a>. После того, как вы отозвали ключ, отправьте уведомление всем тем, с кем вы вели зашифрованную переписку при помощи данного ключа.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
 
@@ -415,17 +466,19 @@
 
 <p class="notes">Start writing your public key fingerprint anywhere someone would see your email address: your social media profiles, blog, Website, or business card. (At the Free Software Foundation, we put ours on our <a href="https://fsf.org/about/staff">staff page</a>.) We need to get our culture to the point that we feel like something is missing when we see an email address without a public key fingerprint.</p>
 					</div><!-- End .main
-				</div><!-- End #step-5d .step-->
+				</div> End #step-5d .step-->
 
 
 			</div>
 		</section><!-- End #section5 -->
 
+
+
 <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
 		<section class="row" id="section6">
 			<div id="step-click_here" class="step">
 					<div class="main">
-					  <h2><a href="next_steps.html">Click here when you're done</a></h2>
+					  <h2><a href="next_steps.html">Если закончили, жмите сюда</a></h2>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-click_here .step-->
@@ -462,19 +515,19 @@
 			<div>
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
-					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
-                                        <p><em>Version 2.0, launched 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
-<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
-					<p>Download the source packages for <a href="gnupg-guide.zip">this guide</a> and for <a href="gnupg-infographic.zip">the infographic</a>. Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
+					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Политика конфиденциальности</a>. <a href="https://u.fsf.org/yr">Присоединяйтесь.</a></p>
+                                        <p><em>Версия 2.0, запущена 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
+<p>Изображения, представленные на данной странице, лицензированы в соответствии с <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (или более поздней версии)</a>, все остальное лицензировано в соответствии с <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (или более поздней версии)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Почему эти лицензии?</a></p>
+					<p>Скачайте пакеты с исходным кодом для <a href="gnupg-guide.zip">данного руководства</a> и для <a href="gnupg-infographic.zip">инфографики</a>. Шрифты, использованные в данном руководстве &amp; инфографика: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> от Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> от Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> от Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> от Florian Cramer.</p>
                                         <p>
                                           <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
                                              rel="jslicense">
-                                            JavaScript license information
+                                            Информация о лицензии JavaScript
                                           </a>
                                         </p>
 				</div><!-- /#copyright -->
 				<p class="credits">
-					Infographic and guide design by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
+					Дизайн инфографики и руководства подготовлен <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0n/img/jplusplus.png" alt="Journalism++" /></a>
 				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->
