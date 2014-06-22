@@ -1,0 +1,76 @@
+<!-- begin index.html.pre -->
+<li class="spacer">
+  <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=E-Mail-Verschlüsselung%20für%20alle%20von%20%40fsf%20%23EmailSelbstverteidigung">
+    #EmailSelbstverteidigung
+  </a>
+</li>
+</ul>
+
+<!--  FSF Introduction -->
+<div id="fsf-intro">
+  <h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
+  <div  style="font-size:125%"><p>E-Mail-Selbstverteidigung ist ein Projekt der Free Software Foundation. Wir setzen uns für die Rechte der Nutzer ein und unterstützen die Entwicklung von freier Software wie GnuPG, das in dieser Anleitung eingsetzt wird.</p><p><strong>
+	Wir möchten Programme wie dieses so weit wie möglich verbreiten, um so vielen Leuten wie möglich den ersten Schritt zur Nutzung von freier Software zum Schutz der Privatsphäre zu erleichtern. Könntest du bitte eine Spende machen um uns zu helfen, diese Ziele zu erreichen?
+  </strong></p></div>
+  
+  <p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&amp;id=14&amp;pk_campaign=esd&amp;pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
+  
+</div><!-- End #fsf-intro -->
+
+<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
+<div class="intro">
+  <p>
+    <a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
+    Massive Überwachung verstößt gegen unsere Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachungs-Agenten oder verbrechern nicht gelesen werden können.
+  </p>
+  
+  <p>
+    Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre deiner Kommunikationspartner und macht Überwachungssystemen das Leben schwer. Solltest du doch etwas zu verbergen haben, dies sind die selben Programme die Edward Snowden verwendet hat, um die bekannten Geheimnisse über die NSA zu teilen.
+  </p>
+  
+  <p>
+    Um Überwachung zu bekämpfen, müssen wir auch uns politisch für eine <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">Verringerung der Anzahl der Daten, die über uns gesammelt werden</a>, aber der erste Schritt ist uns selber vor Überwachung zu schützen und sie so schwer wie möglich zu machen. Lasst uns anfangen!</p>
+  
+</div>
+</div>
+
+</header><!-- End #header -->
+
+<!-- ~~~~~~~~~ Section 1: Get the pieces  ~~~~~~~~~ -->
+<section class="row" id="section1">
+  <div>
+    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+    <div class="section-intro">
+      <h2><em>#1</em> Installiere die Programme</h2>
+      <p class="notes">
+	Diese Anleitung beruht auf freier Software, sie ist transparent und jeder darf sie vervielfältigen oder eine eigene Version produzieren. Das macht es schwieriger für Überwachung als unfreie Software (wie Windows). Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+      
+      <p>Das einzige was du benötigst ist ein Computer mit einem Internetanschluss, ein E-Mail-Konto und etwa eine halbe Stunde. Du kannst dein existierendes E-Mail-Account hierfür verwenden ohne Nebenwirkungen.</p>
+      <p>
+	Auf den  meisten GNU/Linux-Systemen ist GnuPG bereits installiert, also musst du es nicht herunterladen. Bevor du GnuPG konfigurierst, brauchst du ein E-Mail-Programm. Bei den meisten GNU/Linux distributionen kann man eine Version des Programms Thunderbird installieren. E-Mail-Programme sind eine andere Art auf E-Mails zuzugreifen, die ähnlich wie Webmail funktioniert, aber wesentlich mehr Funktionen besitzt.</p>
+      <p>Wenn du bereits eines hast, dann gehe zum <a href="#step-1b">Schritt 1.b</a>.</p>
+
+    </div><!-- End .section-intro -->
+    
+    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+    <div class="main">
+      <h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Account (wenn es nicht schon getan wurde).</h3>
+      <p>Öffne dein E-Mail -Programm und folge dem Assistenten.</p>
+      
+      <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
+      <div class="troubleshooting">
+	<h4>Probleme?</h4>
+	<dl>
+	  <dt>Was ist ein Assistent?</dt>
+	  <dd>
+	    Ein Assistent besteht aus mehreren Fenstern, die erscheinen und es einfach machen etwas am Computer zu verändern, wie ein Programm zu installieren.</dd>
+	  <dt>Mein E-Mail-Programm kann keine E-Mails empfangen.</dt>
+	  <dd>Frage erst andere Leute die dein System benutzen, suche dann im Internet.</dd>
+	  <dt class="feedback">Fidest du keine Lösung für deine Probleme?</dt>
+	  <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	</dl>
+      </div><!-- /.troubleshooting -->
+      
+    </div><!-- End .main -->
+  </div><!-- End #step1-a .step -->
+  
