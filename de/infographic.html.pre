@@ -4,7 +4,7 @@
 		<header class="row centered" id="header">
 			<div>
 					<p class="back">&larr; Lies die <a href="index.html">Anleitung</a></p>
-					<h3><a href="https://fsf.org/share?u=https://u.fsf.org/zc&amp;t=How public-key encryption works. Infographic via %40fsf %23EmailSelfDefense">Teile unsere Infographik</a> mit dem Hashtag #EmailSelbstverteidigung</h3>
+					<h3><a href="https://fsf.org/share?u=https://u.fsf.org/zc&amp;t=Wie%20asymmetrische%20Verschlüsselung%20funktioniert.%20Infographik%20von%20%40fsf%20%23EmailSelbstverteidigung">Teile unsere Infographik</a> mit dem Hashtag #EmailSelbstverteidigung</h3>
 
 					<p><img src="//static.fsf.org/nosvn/enc-dev0/img/de/gnupg-infographic.de.png" alt="Teile unsere Infographik!" /></p>
 
