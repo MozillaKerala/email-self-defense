@@ -3,7 +3,7 @@
 	<head>
 			<meta charset="utf-8">
 
-			<title>Email Self-Defense - a guide to fighting surveillance with GnuPG encryption</title>
+			<title>스스로 이메일 보호하기 - GnuPG 암호화를 이용한 감시 방어 가이드</title>
 			<meta name="keywords" content="GnuPG, GPG, openpgp, surveillance, privacy, email, Enigmail" />
       <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,18 +31,18 @@
 		</div>-->
 
 			<div>
-				<h1>Email Self-Defense</h1>
+				<h1>스스로 이메일 보호하기</h1>
 				<ul class="os">
-					<li><a href="index.html">GNU/Linux</a></li>
-					<li><a href="mac.html" class="current">Mac OS</a></li>
-					<li><a href="windows.html">Windows</a></li>
+					<li><a href="index.html">GNU/리눅스</a></li>
+					<li><a href="mac.html" class="current">맥 OS</a></li>
+					<li><a href="windows.html">윈도우즈</a></li>
 					<li class="share"><a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Email encryption for everyone via %40fsf">#EmailSelfDefense</a></li>
 				</ul>
 
 				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
 				<div id="fsf-intro">
 					<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
-					<span  style="font-size:125%"><p>We fight for computer user's rights, and promote the development of free (as in freedom) software. Resisting bulk surveillance is very important to us.</p><p><strong>We want to heavily promote tools like this in-person and online, to help as many people as possible take the first step towards using free software to protect their privacy. Can you make a donation or become a member to help us achieve this goal?</strong></p></span>
+					<span  style="font-size:125%"><p>자유 소프트웨어 재단은 컴퓨터 사용자들의 권리를 위해 싸우며, 자유 소프트웨어의 개발을 지원합니다. 정부 감시에 저항하는 것은 자유 소프트웨어 재단에 있어 매우 중요한 일입니다.</p><p><strong>자유 소프트웨어 재단은 많은 사람들이 자신의 개인정보를 보호하기 위해 첫 발을 떼는 것을 돕기 위해 이러한 일대일 혹은 온라인 도구를 지원하고자 합니다. 기부 혹은 회원이 되는 것으로써 저희를 도와 주시겠습니까?</strong></p></span>
 
 					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
 
@@ -52,11 +52,11 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					Bulk surveillance violates our fundamental rights and makes free speech risky. This guide will teach you a basic surveillance self-defense skill: email encryption. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief that intercepts your email can't read it. All you need is a computer with an Internet connection, an email account and about half an hour.</p>
+					대량 감시는 우리의 근본적인 권리를 침해하며 자유로운 발언을 할 권리를 위협합니다. 이 가이드는 간단한 감시로부터의 자가 보호 기술인 이메일 암호화를 안내할 것입니다. 이 가이드를 끝내면 당신은 암호화된 이메일을 통해 정보기관과 당신의 이메일을 읽으려는 도둑으로부터 자신을 보호할 수 있을 것입니다. 필요한 것은 인터넷이 연결된 컴퓨터와 이메일 계정, 30분 정도의 시간입니다.</p>
 
-<p>Even if you have nothing to hide, using encryption helps protect the privacy of people you communicate with, and makes life difficult for bulk surveillance systems. If you do have something important to hide, you're in good company; these are the same tools that Edward Snowden used to share his famous secrets about the NSA.</p>
+<p>비록 당신이 숨길 것이 없더라도, 암호화는 감시 시스템의 감시를 어렵게 하고, 자신과 상대방의 개인정보를 보호합니다. 만약 중요한 내용이 있어 그것을 숨겨야 한다면, 좋은 선택입니다; 이 툴은 에드워드 스노든이 그의 유명한 비밀을 NSA로부터 숨기는 데 사용한 도구입니다.</p>
 
-<p>In addition to using encryption, standing up to surveillance requires fighting politically for a <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">reduction in the amount of data collected on us</a>, but the essential first step is to protect yourself and make surveillance of your communication as difficult as possible. Let's get started!</p>
+<p>암호화 도구의 사용과 더불어, 감시에 저항하는 것은 <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">수집하는 개인정보의 수를 줄이는 것</a>과 같은 정치적인 투쟁이 필요하지만, 기본적인 첫 번째 절차는 스스로를 보호하고 당신의 의사소통을 감시하기 어렵게 하는 것입니다. 시작해 봅시다!</p>
 
 				</div>
 
@@ -68,10 +68,10 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#1</em> Get the pieces</h2>
-						<p class="notes">This guide relies on software which is freely licensed; it's completely transparent and anyone can copy it or make their own version. This makes it safer from surveillance than proprietary software (like Windows). To defend your freedom as well as protect yourself from surveillance, we recommend you switch to a free software operating system like GNU/Linux. Learn more about free software at <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
-                        <p>To get started, you'll need a desktop email program installed on your computer. This guide works with free software versions of the Thunderbird email program, and with Thunderbird itself. Email programs are another way to access the same email accounts you can access in a browser (like GMail), but provide extra features.</p>
-                        <p>If you are already have one of these, you can skip to <a href="#step-1b">Step 1.b</a>.</p>
+						<h2><em>#1</em> 프로그램 얻기</h2>
+						<p class="notes">이 가이드는 자유롭게 이용허락된 몇 가지의 소프트웨어에 의존합니다; 이 소프트웨어들은 완전히 투명하며 누구나 소스 코드를 복제하여 자신만의 버전을 만들 수 있습니다. 이러한 자유는 (윈도우즈와 같은) 상용 소프트웨어와 다르게 감시에서 더욱 안전하게 합니다. 자유 소프트웨어에 대한 더 많은 정보를 <a href="https://u.fsf.org/ys">fsf.org</a>에서 알아보세요.</p>
+                        <p>시작하려면, 이메일 프로그램이 설치된 데스크톱이 필요합니다. 이 가이드는 Thunderbird 이메일 프로그램을 이용해 진행됩니다. 이메일 프로그램은 G메일 같은 브라우저 기반 이메일과 완전히 같지만, 몇가지의 기능을 더 제공합니다.</p>
+                        <p>만약 이미 이메일 프로그램을 가지고 있다면, <a href="#step-1b">순서 1.b</a> 로 넘어가세요.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -80,19 +80,19 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1a-install-wizard.png" alt="Step 1.A: Install Wizard" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 1.a</em> Set your email program up with your email account (if it isn't already)</h3>
-						<p>Open your email program and follow the wizard that sets it up with your email account.</p>
+						<h3><em>순서 1.a</em> (이미 하지 않았다면) 이메일 프로그램을 이메일 계정과 설정하기</h3>
+						<p>이메일 프로그램을 열고 이메일 계정을 설정하는 마법사를 따르세요.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>문제해결/h4>
 							<dl>
-								<dt>What's a wizard?</dt>
-									<dd>A wizard is a series of windows that pop up to make it easy to get something done on a computer, like installing a program. You click through it, selecting options as you go.</dd>
-								<dt>My email program can't find my account or isn't downloading my mail</dt>
-									<dd>Before searching the Web, we recommend you start by asking other people who use your email system, to figure out the correct settings.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt>마법사가 무엇인가요?</dt>
+									<dd>마법사는 컴퓨터에서 사용자가 설치 같은 작업을 쉽게 할 수 있도록 돕기 위해 띄워지는 팝업창입니다. 버튼을 클릭하고, 옵션을 선택하며 진행합니다.</dd>
+								<dt>내 이메일 프로그램이 계정을 찾지 못하거나 내 메일을 다운로드하지 않아요</dt>
+									<dd>인터넷을 검색하기 전에, 정확한 이메일 설정을 알아보기 위해 같은 이메일 설정을 사용하는 다른 사람에 물어볼 것을 추천합니다.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 
@@ -104,8 +104,8 @@
 				<div id="step-1b" class="step">
 
 					<div class="main">
-						<h3><em>Step 1.b</em> Get GnuPG by downloading GPGTools</h3>
-						<p>GPGTools is a software package that includes GnuPG. <a href="https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg">Download</a> and install it, choosing default options whenever asked. After it's installed, you can close any windows that it creates.</p>
+						<h3><em>순서 1.b</em> GPGTools를 다운로드하기</h3>
+						<p>GPGTools 는 GnuPG를 포함하는 소프트웨어입니다. <a href="https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg">다운로드</a> 하고 기본 설정으로 설치하세요. 설치가 완료되면, 설치에 사용된 모든 창을 닫아도 좋습니다.</p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step1-b .step -->
@@ -120,18 +120,18 @@
 						</ul>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 1.c</em> Install the Enigmail plugin for your email program</h3>
-						<p>In your email program's menu, select Add-ons (it may be in the Tools section). Make sure Extensions is selected on the left. Do you see Enigmail? if so, skip this step.</p>
-						<p>If not, search "Enigmail" with the search bar in the upper right. You can take it from here. Restart your email program when you're done.</p>
+						<h3><em>순서 1.c</em> 이메일 프로그램에 Enigmail 플러그인 설치하기</h3>
+						<p>이메일 프로그램의 메뉴에 부가 기능 버튼을 선택하세요 (도구 부분에 있을 수 있습니다). 확장 기능이 왼쪽에 선택되어 있는지 확인하세요. Enigmail이 보이나요? 보인다면 이 순서를 생략하세요.</p>
+						<p>안 보인다면, 우측 상단의 검색창에 "Enigmail"을 검색하세요. 이제 다운로드할 수 있습니다. 완료했을 때 이메일 프로그램을 재시작하세요.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>문제 해결</h4>
 							<dl>
-								<dt>I can't find the menu.</dt>
-									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars.</dd>
+								<dt>메뉴를 찾을 수 없어요.</dt>
+									<dd>대부분의 이메일 프로그램에서, 메인 메뉴는 세 줄의 수평선으로 표시됩니다.</dd>
 
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
@@ -144,12 +144,12 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-					<h2><em>#2</em> Make your keys</h2>
-						<p>To use the GnuPG system, you'll need a public key and a private key (known together as a keypair). Each is a long string of randomly generated numbers and letters that are unique to you. Your public and private keys are linked together by a special mathematical function.</p>
+					<h2><em>#2</em> 키 만들기</h2>
+						<p>GnuPG 시스템을 사용하기 위해서는 공개키와 비밀키가 필요한데, 이 두 가지를 묶어 키쌍이라고 부릅니다. 이 두 가지는 사람마다 다른 임의로 생성된 긴 숫자와 글자들의 집합입니다. 공개키와 비밀키는 특수한 수학적인 함수로 묶여 있습니다.</p>
 
-<p>Your public key isn't like a physical key, because it's stored in the open in an online directory called a keyserver. People download it and use it, along with GnuPG, to encrypt emails they send to you. You can think of the keyserver as phonebook, where people who want to send you an encrypted email look up your public key.</p>
+<p>당신의 공개키는 물리적인 키와는 다른데, 이는 키서버라고 불리는 공개적인 폴더에 저장되기 때문입니다. 사람들은 공개키를 다운로드하고 GnuPG를 이용해 이메일을 암호화해서 당신에게 보내는 데 사용합니다. 키서버는 사람들이 당신에게 암호화를 하기 위해 공개키를 찾는 전화번호부와 같은 역할을 합니다.</p>
 
-<p>Your private key is more like a physical key, because you keep it to yourself (on your computer). You use GnuPG and your private key to decode encrypted emails other people send to you.</p>
+<p>당신의 비밀키는 물리적인 키와 비슷한 역할을 하는데, 비밀키는 당신의 컴퓨터에 보관되기 때문입니다. GnuPG 와 비밀키를 이용해 다른 사람이 당신에게 암호화해 보낸 메일을 복호화합니다.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -158,60 +158,63 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 2.a</em> Make a keypair</h3>
-						<p>In your email program's menu, select OpenPGP &rarr; Setup Wizard. You don't need to read the text in the window that pops up unless you'd like to, but it's good to read the text on the later screens of the wizard.</p>
-						<p>On the second screen, titled "Signing," select "No, I want to create per-recipient rules for emails that need to be signed."</p>
-						<p>Use the default options until you reach the screen titled "Create Key".</p>
-						<p>On the screen titled "Create Key," pick a strong password! Your password should be at least 12 characters and include at least one lower case and upper case letter and at least one number or punctuation symbol. Don't forget the password, or all this work will be wasted!</p>
-		  			<p class="notes">The program will take a little while to finish the next step, the "Key Creation" screen. While you wait, do something else with your computer, like watching a movie or browsing the Web. The more you use the computer at this point, the faster the key creation will go.</p>
-						<p>When the OpenPGP Confirm screen pops up, select Generate Certificate and choose to save it in a safe place on your computer (we recommend making a folder called "Revocation Certificate" in your home folder and keeping it there. You'll learn more about the revocation certificate in <a href="#section5">Section 5</a>. The setup wizard will ask you to move it onto an external device, but that isn't necessary at this moment.</p>
+						<h3><em>순서 2.a</em> 키쌍 만들기</h3>
+						<p>이메일 프로그램의 메뉴에서 OpenPGP &rarr; 설정 마법사를 선택합니다. 창에 뜨는 내용은 읽고자 하는 경우가 아니라면 읽을 필요는 없습니다만, 마법사의 다른 창의 내용은 읽으면 좋습니다.</p>
+						<p>다른 창에서, "서명하기" 창에서는 "아니오, 서명이 필요한 전자 메일에 대해서는 받는 사람별로 규칙을 만들겠습니다" 를 클릭하세요.</p>
+						<p>"키 생성" 제목이 나올 때까지 기본 옵션을 사용하세요.</p>
+						<p>"키 생성" 창에서, 강한 패스프레이즈를 사용하세요! 당신의 비밀번호는 최소한 12자가 되어야 하며 한 개의 소문자와 대문자, 숫자와 특수기호를 포함해야 합니다. 패스프레이즈를 잊어버린다면, 이 모든 일들은 시간 낭비가 될 것입니다!</p>
+		  			<p class="notes">프로그램은 다음 순서에서 "키 생성" 스크린을 완료하는 데 약간의 시간이 소요됩니다. 컴퓨터로 영화를 본다거나 인터넷 검색을 한다던지 등의 다른 작업을 하세요. 컴퓨터를 더 많이 사용하면 할수록, 키 생성에 걸리는 시간이 짧아집니다.</p>
+						<p>OpenPGP 확인 창이 뜨면, 인증서 생성 을 누르고 컴퓨터의 안전한 곳에 보관하기를 선택합니다. ("폐기 인증서"라는 별도의 창을 만들고 그곳에 저장하기를 권합니다. 폐기 저장소가 무엇인지에 대해서는 <a href="#section5">문단 5</a>에서 알아볼 수 있습니다. 설정 마법사는 폐기 인증서를 별도의 기기에 저장할 것을 권하지만, 현재로선 그럴 필요는 없습니다. </p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>문제해결</h4>
 							<dl>
-								<dt>I can't find the OpenPGP menu.</dt>
-									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars. OpenPGP may be inside a section called Tools.</dd>
+								<dt>OpenPGP 메뉴를 찾을 수 없어요.</dt>
+									<dd>이메일 프로그램에서, 메인 메뉴는 세 줄의 수평선으로 표시됩니다. OpenPGP는 도구 문단에 있을 지도 모릅니다..</dd>
+    <dt>마법사가 GnuPG를 찾을 수 없다고 말합니다.</dt>
 
+                                         <dd>프로그램을 설치할 때 쓰는 프로그램을 열고, GnuPG를 검색한 후, 설치하세요. 그리고, OpenPGP &rarr; 설정 마법사를 다시 여세요.</dd>
 
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-2b" class="step">
 					<div class="main">
-						<h3><em>Step 2.b</em> Upload your public key to a keyserver</h3>
-						<p>In your email program's menu, select OpenPGP &rarr; Key Management.</p>
-<p>Right click on your key and select Upload Public Keys to Keyserver. Use the default keyserver in the popup.</p>
-<p class="notes">Now someone who wants to send you an encrypted message can download your public key from the Internet. There are multiple keyservers that you can select from the menu when you upload, but they are all copies of each other, so it doesn't matter which one you use. However, it sometimes takes a few hours for them to match each other when a new key is uploaded.</p>
+						<h3><em>순서 2.b</em> 공개키를 키서버에 올리기</h3>
+						<p>이메일 프로그램의 메뉴에서 OpenPGP &rarr; 키 관리 창을 여세요.</p>
+<p>당신의 키를 오른쪽 클릭하고 "키 서버로 공개키 업로드"를 선택하세요. 팝업의 기본 키서버를 사용하세요.</p>
+<p class="notes">이제 당신에게 암호화된 이메일을 보내고자 하는 사람은 당신의 공개키를 인터넷에서 다운로드할 수 있습니다. 키서버에 올릴 때 여러 키서버를 선택할 수 있지만, 모든 키서버는 동기화가 지원되므로 어느 것을 사용하든 문제가 없습니다. 하지만, 동기화에 수 시간이 소요되기도 합니다.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>문제 해결</h4>
 							<dl>
-								<dt>The progress bar never finishes</dt>
-										<dd>Close the upload popup, make sure you are on the Internet and try again. If that doesn't work, try again, selecting a different keyserver.</dd>
-<dt>My key doesnt appear in the list</dt>
-										<dd>Try checking Show Default Keys.</dd>
+								<dt>진행 바가 끝나지 않아요</dt>
+										<dd>업로드 팝업을 종료하고, 인터넷이 연결되어 있는지 확인한 후에 다시 시도하세요. 그래도 안 된다면, 다른 키서버를 선택해 진행해 보세요.</dd>
+<dt>내 키가 리스트에서 보이지 않아요</dt>
+										<dd>기본 키 보기 를 선택해 보세요.</dd>
 
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 
 							</dl>
 						</div><!-- /.troubleshooting -->
-
-
-
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="terminology" class="step">
 					<div class="main">
-						<h3>GnuPG, OpenPGP, what?</h3>
-						<p>You're using a program called GnuPG, but the menu in your email program is called OpenPGP. Confusing, right? In general, the terms GnuPG, GPG, GNU Privacy Guard, OpenPGP and PGP are used interchangeably, though they all have slightly different meanings.</p>
+						<h3>GnuPG, OpenPGP, 이게 다 뭐죠?</h3>
+						<p>GnuPG라는 프로그램을 설치했는데 메뉴는 OpenPGP라 혼란스러우신가요? 일반적으로, GnuPG, GPG, GNU Privacy Guard, OpenPGP, PGP는 다른 의미가 있지만 같이 쓰입니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #terminology.step-->
+
+
 			</div>
 		</section><!-- End #section2 -->
 
@@ -220,8 +223,8 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#3</em> Try it out!</h2>
-						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
+						<h2><em>#3</em> 써 봅시다!</h2>
+						<p>이제 어떻게 암호화를 사용하는 지 아는 Edward라는 테스트 프로그램을 이용해 실험 통신을 해 봅시다. 별도로 적혀 있는 내용을 제외하고, 모든 부분은 실제 사람과 통신할 때의 방법과 동일합니다.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -230,35 +233,35 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 3.a</em> Send Adele your public key</h3>
-						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+						<h3><em>순서 3.a</em> Edward에게 공개키 보내기</h3>
+						<p>이 부분은 실제 사람과 통신할 때는 불필요한 특수한 부분입니다. 이메일 프로그램의 메뉴에서 OpenPGP &rarr; 키 관리 로 가세요. 팝업에서 당신의 키를 볼 수 있을 것입니다. 당신의 키를 우클릭하고 전자 메일로 공개키 보내기 를 누르세요. 이제 당신이 쓰기 버튼을 눌렀을 때와 같은 새로운 메일 창이 열립니다.</p>
 
-<p>Address the message to adele-en@gnupp.de. Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+<p>받는 사람을 edward-ko@fsf.org 로 변경하세요. 제목과 내용에 한 글자 이상을 넣고, 보내세요.</p>
 
-<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
+<p class="notes">Edward가 답신을 보내는 데 2분에서 3분 정도의 시간이 소요될 수 있습니다. 그동안 이 부분을 생략하고 아래의 <a href="#section5">Use it Well</a> 부분을 볼 수 있습니다. Edward가 답변을 하면, 다시 이곳으로 와서 다음 부분을 보세요. 이제, 다른 일반적인 사람과 통신할 때도 같은 방법을 사용합니다. </p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, uniqe signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+							<h3><em>순서 3.b</em> 테스트 암호화 메일 보내기</h3>
+							<p>이메일 프로그램에서 받는이가 edward-ko@fsf.org 인 새 이메일을 작성하세요. 제목을 "암호화 테스트"혹은 비슷한 내용으로 하고, 아무 내용이나 쓰세요. 아직 이메일을 보내지는 마세요.</p>
+							<p>보내는 창의 아래의 키 아이콘을 누릅니다. (노랗게 변할 것입니다!) 이렇게 하면 Enigmail이 당신이 이전 순서에서 다운로드받은 키로 암호화하게 됩니다.</p>
+							<p class="notes">키 옆에 연필이 있습니다. 이 버튼을 클릭하면, Enigmail은 당신의 비밀키로 생성한 특별하고 고유한 서명을 메시지에 추가합니다. 이 기능은 암호화와는 다른 기능이므로, 이 가이드에서는 사용하지 않습니다.</p>
+							<p>보내기 를 누르세요. Enigmail은 "받는이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다"라는 팝업을 보여 줄 것입니다.</p>
 
-							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+							<p>Edward에게 암호화하고 이메일을 보내려면, 그의 공개키가 필요하기 때문에, Enigmail에게 공개키를 다운로드 하게 해야 합니다. 없는 키 다운로드를 클릭한 후, 기본 키서버를 이용합니다. 키를 찾으면, 첫번째 키를 선택하고, 완료 를 누릅니다. 다음 팝업에서도 완료 를 누릅니다.</p>
 
-							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+							<p>이제 다시 "받는이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다" 창으로 돌아왔습니다. Edward의 키를 리스트에서 클릭하고 완료를 누릅니다. 메시지가 자동으로 보내지지 않는다면, 발송을 누르세요.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
-								<h4>Troubleshooting</h4>
+								<h4>문제 해결</h4>
 								<dl>
-									<dt>Enigmail can't find Adele's key</dt>
-										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+									<dt>Enigmail이 Edward의 키를 찾지 못해요</dt>
+										<dd>클릭한 후의 팝업창을 닫으세요. 인터넷에 연결된 지 확인한 후 다시 시도하세요. 그래도 안 된다면 다른 키서버를 선택한 후 다시 해 보세요.</dd>
+								<dt class="feedback">당신의 문제에 대한 해결책이 없나요?</dt>
+									<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">피드백 문서</a>에 글을 남겨 주세요.</dd>
 								</dl>
 							</div><!-- /.troubleshooting -->
 						</div><!-- End .main -->
@@ -267,9 +270,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
+						<h3><em>중요:</em>보안 팁</h3>
+						<p>당신이 당신의 이메일을 암호화해도, 제목은 암호화되지 않으므로 제목에 개인정보를 넣지 마세요. 보낸 이와 받는이의 주소도 암호화되지 않으므로, 이러한 정보는 감시 시스템이 읽을 수 있습니다. 첨부 파일이 있다면, 메일을 보낼 떄 Enigmail은 첨부 파일을 암호화할 것인지 물을 것입니다.</p>
+<p>키 아이콘을 이메일 작성 <strong>전</strong>에 클릭하는 것도 좋은 생각입니다. 그렇지 않다면, 암호화되지 않은 초안이 이메일 서버로 전송되며, 이 초안은 스누핑의 타겟이 될 수 있습니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -277,12 +280,12 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
+						<h3><em>순서 3.c</em> 답장 받기/h3>
+						<p>Edward가 이메일을 받으면, 그는 그의 개인키를 이용해 복호화한 후, 키서버에서 당신의 공개키를 받아온 후 암호화된 답신을 보내는 데 쓰일 것입니다.</p>
+						<p class="notes">당신이 Edward의 공개키로 암호화했기 때문에, 복호화에는 Edward의 비밀키가 필요합니다. Edward를 제외한 모든 사람 &mdash; 심지어 당신도 &mdash; 은 이 이메일을 복호화할 수 없습니다.</p>
+						<p class="notes">Edward가 답장하는 데 2분에서 3분 정도가 걸릴 수 있습니다. 그 동안, 잠시 뒤로 넘어가 <a href="#section5">Use it Well</a>문단을 읽을 수 있습니다.</p>
+						<p>Edward의 답장을 받고 열게 되면, Enigmail은 자동적으로 이메일이 당신의 공개키로 암호화 되어있음을 감지하고, 당신의 개인키로 복호화할 것입니다.</p>
+						<p>메일 위에 뜨는 Enigmail 바는 Edward의 키에 대한 정보를 가지고 있습니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
@@ -304,14 +307,14 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Learn the Web of Trust</h2>
-						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
+						<h2><em>#4</em> 신뢰의 웹 배우기</h2>
+						<p>이메일 암호화는 강력한 기술이지만, 약점을 가지고 있습니다; 그 사람의 공개키가 정말 그 사람의 것인지 증명할 수 있어야 합니다. 그렇지 않다면, 공격자가 당신 친구의 이름으로 이메일을 만들고, 키쌍을 만든 후 당신의 친구를 사칭할 수 있습니다. 그래서 이메일 암호화를 개발한 자유 소프트웨어 개발자들이 키서명과 신뢰의 웹이라는 기술을 개발했습니다.</p>
 
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, into a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+<p>다른 사람의 키에 서명할 때, 당신은 공개적으로 "나는 이 사람이 이 키를 소유하며 사칭이 아닙니다" 라는 것을 선언하는 것입니다. 공개키를 가진 사람은 이 키로 서명한 횟수를 볼 수 있습니다. 오랫동안 GnuPG를 사용한다면, 당신이 서명한 횟수가 많음을 발견할 것입니다. 신뢰의 웹은 모든 GnuPG 사용자가 서로를 서명을 통한 신뢰로 묶어 거대한 네트워크로 묶습니다. 키에 더 많은 서명이 있다는 것은 그 키가 믿을 만 하다는 것을 의미합니다.</p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>사람들의 공개키는 일반적으로 (Edward's fingerprint) 와 같은 그들의 키 지문으로 알려집니다. 이메일 프로그램의 OpenPGP &rarr; 키 관리 에서 키를 우클릭하고 키 속성 보기 를 클릭하면 당신과 사람들의 공개키를 볼 수 있습니다. 당신의 이메일 주소를 공유할 때 키 지문을 알려주는 것은 좋은 습관이며, 이를 통해 사람들이 자신이 당신의 키를 키서버에서 다운로드 받을 때 그것이 정말 당신의 것인지 확인할 수 있습니다.</p>
 
-<p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to are trying to communicate to verify which one to use.</p>
+<p class="notes">아마 사람들이 자신의 공개키를 키 지문의 마지막 8자리인 키 ID로 (Edward's key ID) 알리는 것을 볼 수 있을 수 있습니다. 키 ID는 키 관리창에서 확인할 수 있습니다. 키 ID는 키의 이름과 비슷합니다만 (유용하지만 모든 키에 동일하지 않을 수 있습니다) 키 지문이 실제로 혼동의 여지 없이 그 사람이라는 것을 알려 줄 것입니다. 키 ID만 갖고 있더라도 키를 찾을 수 있지만, 키가 여러 개 나온다면, 받는 사람의 공개키를 쓰기 위해 그 사람의 키 지문을 알아야 할 것입니다.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -322,12 +325,12 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 4.a</em> Sign a key</h3>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management.</p>
-						<p>Right click on Adele's public key and select Sign Key from the context menu.</p>
-						<p>In the window that pops up, select "I will not answer" and click OK.</p>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys and hit OK.</p>
-						<p class="notes">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
+						<h3><em>순서 4.a</em> 키에 서명하기</h3>
+						<p>이메일 프로그램의 메뉴에서 OpenPGP &rarr; 키 관리로 가세요.</p>
+						<p>Edward의 공개키를 우클릭한 후 메뉴에서 키에 서명하기 를 선택하세요.</p>
+						<p>팝업 창에서 "대답하지 않겠습니다"를 선택하고 완료를 누르세요.</p>
+						<p>이메일 프로그램에서 OpenPGP &rarr; 키 관리 &rarr; 키서버 &rarr; 키서버에 공개키 업로드 를 찾고 완료를 누르세요.</p>
+						<p class="notes">당신은 방금 "나는 Edward의 공개키가 Edward에게 소유함을 믿습니다" 라고 선언했습니다. 사실 이 절차는 Edward가 프로그램이기 때문에 별 의미가 없지만, 좋은 습관이 될 것입니다.</p>
 
 
 						<!--<div id="pgp-pathfinder">
@@ -343,8 +346,8 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-sign_real_keys" class="step">
 					<div class="main">
-						<h3><em>Important:</em> check people's identification before signing their keys</h3>
-						<p>Before signing a real person's key, always make sure it actually belongs to them, and that they are who they say they are. Ask them to show you their ID (unless you trust them very highly) and their public key fingerprint -- not just the shorter public key ID, which could refer to another key as well. In Enigmail, answer honestly in the window that pops up and asks "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?".</p>
+						<h3><em>중요:</em>키에 서명하기 전에 그 사람을 확인하세요</h3>
+						<p>진짜 사람의 키에 서명하기 전에, 키가 그 사람의 소유인지 확인하세요. (당신이 그를 매우 믿지 않는 한) 그에게 그들의 ID, 공개키, 지문을 보여줄 것을 요구하세요. Enigmail에서, "서명하려고 하는 키가 위에 표시된 이름의 사람이 실제로 소유하고 있는 것인지 면밀하게 확인했습니까?"라는 질문에 정직하게 대답하세요.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-sign_real_keys .step-->
 
@@ -358,8 +361,8 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#5</em> Use it well</h2>
-<p>Everyone uses GnuPG a little differently, but it's important to follow some basic practices to keep your email secure. Not following them, you risk the privacy of the people you communicate with, as well as your own, and damage the Web of Trust.</p>
+						<h2><em>#5</em> 잘 사용하기</h2>
+<p>사람마다 GnuPG를 약간씩 다르게 사용하지만, 이메일을 안전하게 보호하기 위해 몇가지의 습관을 들이는 것이 중요합니다. 이를 따르지 않으면, 당신과 통신하는 사람과의 보안을 위협할 뿐만 아니라, 신뢰의 웹을 손상시킵니다.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -368,11 +371,11 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>When should I encrypt?</h3>
+						<h3>언제 암호화를 해야 하죠?</h3>
 
-						<p>The more you can encrypt your messages, the better. This is because, if you only encrypt emails occasionally, each encrypted message could raise a red flag for surveillance systems. If all or most of your email is encrypted, people doing surveillance won't know where to start.</p>
+						<p>더 많은 메시지를 암호화할수록 좋습니다! 왜냐하면, 만약 당신이 가끔 암호화를 하면 암호화된 메시지를 보낼 때 감시 시스템이 경보를 보낼 수 있지만, 대부분의 이메일, 혹은 모든 이메일, 이 암호화되면, 정보기관에서는 어디서부터 시작해야 할 지 모르게 되기 때문입니다.</p>
 
-<p>That's not to say that only encrypting some of your email isn't helpful -- it's a great start and it makes bulk surveillance more difficult.</p>
+<p>일부분의 이메일을 암호화하는 것이 나쁘다는 것은 아닙니다 -- 일부분의 암호화도 좋은 시작이며, 감시 시스템의 작동을 어렵게 합니다.</p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
@@ -383,27 +386,27 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Important:</em> Be wary of invalid keys</h3>
-						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
-						<p>In your email program, go back to the second email that Adele sent you. Because Adele encrypted it with your public key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
-<p><b>When using GnuPG, make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
+						<h3><em>중요:</em>폐기된 키를 경계하세요</h3>
+						<p>GnuPG는 이메일을 안전하게 만들지만, 폐기된 키를 조심하는 것 또한 조심합니다. 이러한 키는 다른 사람에게 넘어갔을 수 있습니다. 폐기된 키로 암호화된 내용은 감시 시스템에서 읽을 수 있을 수 있습니다.</p>
+						<p>이메일 프로그램에서, Edward가 보낸 두번째 이메일로 돌아가세요. Edward가 당신의 공개키로 이메일을 암호화했기 때문에, OpenPGP가 "OpenPGP:암호화됨 메시지의 일부분"이라는 메시지를 갖고 있을 것입니다.</p>
+<p><b>GnuPG를 사용할 때, 그 부분을 주의깊게 보는 습관을 들이세요. 프로그램은 신뢰할 수 없는 키로 암호화된 이메일에 대해 경고할 것입니다.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
-						<h3>Copy your revocation certificate to somewhere safe</h3>
-						<p>Remember when you created your keys and saved the revocation certificate that GnuPG made? It's time to copy that certificate onto the safest digital storage that you have -- the ideal thing is a flash drive, disk or hard drive stored in a safe place in your home.</p>
-<p>If your private key ever gets lost or stolen, you'll need this certificate file.</p>
+						<h3>폐기 인증서를 안전한 다른 곳에 저장하세요</h3>
+						<p>키를 만들 때 폐기 인증서를 생성하고 다른 곳에 저장헀던 것을 기억하시나요? 이제 이 인증서를 당신이 가진 가장 안전한 저장소로 옮길 때입니다 -- 이상적인 장소는 집에 있는 플래시 드라이브, CD, 혹은 안전한 장소에 있는 하드 디스크입니다.</p>
+<p>만약 당신이 당신의 개인키를 잃었거나 도둑맞았다면, 이 폐기 인증서가 필요할 것입니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-lost_key" class="step">
 					<div class="main">
-						<h3><em>Important:</em> act swiftly if someone gets your private key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to read your encrypted email. This guide doesn't cover how to revoke a key, but you can follow the <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instructions on the GnuPG site</a>. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						<h3><em>중요:</em> 다른 사람이 개인키를 얻었을 때 빠르게 행동하세요</h3>
+						<p>당신이 개인키를 잃었거나 다른 사람이 개인키를 얻었다면 (컴퓨터를 훔치거나 크래킹 등의 방식으로) 다른 사람이 그 키로 암호화된 이메일을 읽기 전에 폐기하는 것이 중요합니다. 이 가이드에서는 그러한 방법을 다루고 있지는 않지만, <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">GnuPG 사이트의 정보 (영어)</a>가 도움이 될 것입니다. 폐기를 한 후에, 당신의 키를 자주 사용하는 사람에게 당신의 키를 폐기했다는 사실을 알리세요.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
 
@@ -415,17 +418,19 @@
 
 <p class="notes">Start writing your public key fingerprint anywhere someone would see your email address: your social media profiles, blog, Website, or business card. (At the Free Software Foundation, we put ours on our <a href="https://fsf.org/about/staff">staff page</a>.) We need to get our culture to the point that we feel like something is missing when we see an email address without a public key fingerprint.</p>
 					</div><!-- End .main
-				</div><!-- End #step-5d .step-->
+				</div> End #step-5d .step-->
 
 
 			</div>
 		</section><!-- End #section5 -->
 
+
+
 <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
 		<section class="row" id="section6">
 			<div id="step-click_here" class="step">
 					<div class="main">
-					  <h2><a href="next_steps.html">Click here when you're done</a></h2>
+					  <h2><a href="next_steps.html">완료했으면 여기를 클릭하세요</a></h2>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-click_here .step-->
@@ -462,19 +467,19 @@
 			<div>
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
-					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
-                                        <p><em>Version 2.0, launched 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
-<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
-					<p>Download the source packages for <a href="gnupg-guide.zip">this guide</a> and for <a href="gnupg-infographic.zip">the infographic</a>. Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
+					<p>저작권 &copy; 2014 <a href="https://u.fsf.org/ys">자유 소프트웨어 재단</a> <a href="https://my.fsf.org/donate/privacypolicy.html">개인정보 정책</a>. <a href="https://u.fsf.org/yr">가입하기.</a></p>
+                                        <p><em>버전 2.0, 2014년 6월 18일 공개 한국어 번역 홍용민 </em></p>
+<p>이 문서의 이미지는 <a href="https://creativecommons.org/licenses/by/4.0/deed.ko">크리에이티브 커먼즈 저작자표시 4.0 (혹은 이후 버전)으로</a>, 그리고 나머지 내용은 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 (혹은 이후 버전)</a>으로 배포됩니다. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">왜 이런 라이선스인가요?</a></p>
+					<p><a href="gnupg-guide.zip">이 가이드</a>와 <a href="gnupg-infographic.zip">인포그래픽</a>의 소스 패키지를 다운로드 받으세요. 이 가이드에 사용된 폰트&amp; 인포그래픽: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
                                         <p>
                                           <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
                                              rel="jslicense">
-                                            JavaScript license information
+                                            자바스크립트 라이선스 정보
                                           </a>
                                         </p>
 				</div><!-- /#copyright -->
 				<p class="credits">
-					Infographic and guide design by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
+					인포그래픽과 가이드 디자인은 <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong>에서 제공합니다. <img src="//static.fsf.org/nosvn/enc-dev0n/img/jplusplus.png" alt="Journalism++" /></a>
 				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->

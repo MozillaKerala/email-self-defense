@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<meta charset="utf-8">
-
-			<title>E-Mail-Selbstverteidigung - Eine Anleitung zur Bekämpfung der Überwachung mit GnuPG</title>
-			<meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, Enigmail" />
-      <meta name="description" content="E-Mail-Überwachung verstößt gegen grundlegende Rechte und bedroht die Meinungsfreiheit. Diese Anleitung zeigt dir, wie du in 30 Minuten mit GnuPG verschlüsseln kannst.">
-
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
-
+	  <meta charset="utf-8">
+	  
+	  <title>E-Mail-Selbstverteidigung - Eine Anleitung zur Bekämpfung der Überwachung mit GnuPG</title>
+	  <meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, Enigmail" />
+	  <meta name="description" content="E-Mail-Überwachung verstößt gegen grundlegende Rechte und bedroht die Meinungsfreiheit. Diese Anleitung zeigt dir, wie du in 30 Minuten mit GnuPG verschlüsseln kannst.">
+	  
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
+  	  <link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
+	  <style type="text/css" >
+	    h1 { font-size: 4.5 em !important} 
+	  </style>
 	</head>
 
 	<body>
@@ -18,7 +20,7 @@
 		<header class="row centered" id="header">
 			<div>
 					<p class="back">&larr; Lies die <a href="index.html">Anleitung</a></p>
-					<h3><a href="https://fsf.org/share?u=https://u.fsf.org/zc&amp;t=How public-key encryption works. Infographic via %40fsf %23EmailSelfDefense">Teile unsere Infographik</a> mit dem Hashtag #EmailSelbstverteidigung</h3>
+					<h3><a href="https://fsf.org/share?u=https://u.fsf.org/zc&amp;t=Wie%20asymmetrische%20Verschlüsselung%20funktioniert.%20Infographik%20von%20%40fsf%20%23EmailSelbstverteidigung">Teile unsere Infographik</a> mit dem Hashtag #EmailSelbstverteidigung</h3>
 
 					<p><img src="//static.fsf.org/nosvn/enc-dev0/img/de/gnupg-infographic.de.png" alt="Teile unsere Infographik!" /></p>
 
@@ -33,13 +35,13 @@
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Datenschutzerklärung</a>. <a href="https://u.fsf.org/yr">Beitreten</a></p>
-                                        <p><em>Version 2.0, launched 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--> Deutsche Übersetzung von <a href="http://de.gpcf.eu" >Gabriel Pérez-Cerezo</a></em></p>
-<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
-					<p>Download the source packages for <a href="gnupg-guide.zip">this guide</a> and for <a href="gnupg-infographic.zip">the infographic</a>. Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
+                                        <p><em>Version 2.0. <!--LANGUAGE translation by NAME, NAME and NAME.--> Deutsche Übersetzung von <a href="http://de.gpcf.eu" >Gabriel Pérez-Cerezo</a></em></p>
+<p>Die Bilder auf dieser Seite unterliegen einer <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative-Commons-Namensnennung-4.0-Lizenz (oder eine neuere Version) </a> und der Rest unterliegt einer <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Namensnennung-Weitergabe-unter-gleichen-Bedigungen-4.0-Lizenz (oder eine neuere Version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Warum diese Lizenzen?</a></p>
+					<p>Lade dir den Quellcode für <a href="gnupg-guide.zip">diese Anleitung</a> und für <a href="gnupg-infographic.zip">die Infographik</a> herunter. In der Anleitung &amp; Infographik verwendete Schriftarten: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> von Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> von Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> von Florian Cramer.</p>
                                         <p>
                                           <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
                                              rel="jslicense">
-                                            JavaScript Lizenzinformationen
+                                            JavaScript-Lizenzinformationen
                                           </a>
                                         </p>
 				</div><!-- /#copyright -->

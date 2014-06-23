@@ -1,161 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-			<meta charset="utf-8">
-
-			<title>Email Self-Defense - a guide to fighting surveillance with GnuPG encryption</title>
-			<meta name="keywords" content="GnuPG, GPG, openpgp, surveillance, privacy, email, Enigmail" />
-      <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
-
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
-
-	</head>
-	<body>
-
-<!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
-
-		<header class="row"  id="header">
-			<div>
-			  <h1>Email Self-Defense</h1>
-
-                          <!-- Language list for browsers that do not have JS enabled -->
-                          <ul id="languages" class="os">
-                            <li><a class="current" href="/en">english</a></li>
-                            <li><a href="/es">español</a></li>
-                            <li><a href="/fr">français</a></li>
-                            <li><a href="/de">deutsch</a></li>
-                            <li><a href="/pt-br">português do Brasil</a></li>
-                            <li><a href="/tr">türkçe</a></li>
-                            <li><a href="/ro">română</a></li>
-                            <li><a href="/ru">русский</a></li>
-                            <li><a href="/ml">മലയാളം</a></li>
-                            <li><a href="/ko">한국어</a></li>
-                            <li><a href="/ja">日本語</a></li>
-                            <li><a href="/el">ελληνικά</a></li>
-                          </ul>
-
-                          <ul id="menu" class="os">
-			    <li class="spacer">
-                              <a href="index.html" class="current">GNU/Linux</a>
-                            </li>
-			    <li>
-                              <a href="mac.html">Mac OS</a>
-                            </li>
-			    <li>
-                              <a href="windows.html">Windows</a>
-                            </li>
-			    <li class="spacer">
-                              <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Email encryption for everyone via %40fsf">
-                                #EmailSelfDefense
-                              </a>
-                            </li>
-			  </ul>
-
-				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
-				<div id="fsf-intro">
-				  <h3>
-                                    <a href="http://u.fsf.org/ys">
-                                      <img alt="Free Software Foundation"
-                                           src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png">
-                                    </a>
-                                  </h3>
-                                  <div class="fsf-emphasis">
-                                    <p>
-                                      We fight for computer user's rights, and promote the development of free (as in freedom) software. Resisting bulk surveillance is very important to us.
-                                    </p>
-                                    <p>
-                                      <strong>
-                                        We want to heavily promote tools like this in-person and online, to help as many people as possible take the first step towards using free software to protect their privacy. Can you make a donation or become a member to help us achieve this goal?
-                                      </strong>
-                                    </p>
-                                  </div>
-
-					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
-
-				</div><!-- End #fsf-intro -->
-
-				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
-				<div class="intro">
-					<p>
-						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					Bulk surveillance violates our fundamental rights and makes free speech risky. This guide will teach you a basic surveillance self-defense skill: email encryption. Once you've finished, you'll be able to send and receive emails that are coded to make sure that a surveillance agent or thief that intercepts your email can't read it. All you need is a computer with an Internet connection, an email account and about half an hour.</p>
-
-<p>Even if you have nothing to hide, using encryption helps protect the privacy of people you communicate with, and makes life difficult for bulk surveillance systems. If you do have something important to hide, you're in good company; these are the same tools that Edward Snowden used to share his famous secrets about the NSA.</p>
-
-<p>In addition to using encryption, standing up to surveillance requires fighting politically for a <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">reduction in the amount of data collected on us</a>, but the essential first step is to protect yourself and make surveillance of your communication as difficult as possible. Let's get started!</p>
-
-				</div>
-
-			</div>
-		</header><!-- End #header -->
-
-<!-- ~~~~~~~~~ Section 1: Get the pieces  ~~~~~~~~~ -->
-		<section class="row" id="section1">
-			<div>
-					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-				<div class="section-intro">
-						<h2><em>#1</em> Get the pieces</h2>
-<p class="notes">This guide relies on software which is freely licensed; it's completely transparent and anyone can copy it or make their own version. This makes it safer from surveillance than proprietary software (like Windows). Learn more about free software at <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
-
-<p>Most GNU/Linux operating systems come with GnuPG installed on them, so you don't have to download it. Before configuring GnuPG though, you'll need a desktop email program installed on your computer. Most GNU/Linux distributions have a free software version of the Thunderbird email program available to install. This guide will work with them, in addition to Thunderbird itself. Email programs are another way to access the same email accounts you can access in a browser (like GMail), but provide extra features.</p>
-                        <p>If you are already have one of these, you can skip to <a href="#step-1b">Step 1.b</a>.</p>
-				</div><!-- End .section-intro -->
-
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-1a" class="step">
-					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1a-install-wizard.png" alt="Step 1.A: Install Wizard" /></p>
-					</div><!-- /.sidebar -->
-					<div class="main">
-						<h3><em>Step 1.a</em> Set your email program up with your email account (if it isn't already)</h3>
-						<p>Open your email program and follow the wizard that sets it up with your email account.</p>
-
-						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
-						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
-							<dl>
-								<dt>What's a wizard?</dt>
-									<dd>A wizard is a series of windows that pop up to make it easy to get something done on a computer, like installing a program. You click through it, selecting options as you go.</dd>
-								<dt>My email program can't find my account or isn't downloading my mail</dt>
-									<dd>Before searching the Web, we recommend you start by asking other people who use your email system, to figure out the correct settings.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
-							</dl>
-						</div><!-- /.troubleshooting -->
-
-					</div><!-- End .main -->
-				</div><!-- End #step1-a .step -->
-
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-				<div id="step-1b" class="step">
-					<div class="sidebar">
-						<ul class="images">
-							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-01-tools-addons.png" alt="Step 1.B: Tools -> Add-ons" /></li>
-							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-02-search.png" alt="Step 1.B: Search Add-ons" /></li>
-							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-03-install.png" alt="Step 1.B: Install Add-ons" /></li>
-						</ul>
-					</div><!-- /.sidebar -->
-					<div class="main">
-						<h3><em>Step 1.b</em> Install the Enigmail plugin for your email program</h3>
-						<p>In your email program's menu, select Add-ons (it may be in the Tools section). Make sure Extensions is selected on the left. Do you see Enigmail? if so, skip this step.</p>
-						<p>If not, search "Enigmail" with the search bar in the upper right. You can take it from here. Restart your email program when you're done.</p>
-						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
-						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
-							<dl>
-								<dt>I can't find the menu.</dt>
-									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars.</dd>
-
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
-							</dl>
-						</div><!-- /.troubleshooting -->
-					</div><!-- End .main -->
-				</div><!-- End #step-1b .step -->
-			</div>
-		</section><!-- End #section1 -->
 
 <!-- ~~~~~~~~~ Section 2: Make your keys  ~~~~~~~~~ -->
 		<section class="row" id="section2">
@@ -190,9 +32,7 @@
 							<dl>
 								<dt>I can't find the OpenPGP menu.</dt>
 									<dd>In many new email programs, the main menu is represented by an image of three stacked horizontal bars. OpenPGP may be inside a section called Tools.</dd>
-    <dt>The wizard says that it cannot find GnuPG.</dt>
 
-                                         <dd>Open whatever program you usually use for installing software, and search for GnuPG, then install it. Then restart the  Engimail setup wizard by going to OpenPGP &rarr; Setup Wizard.</dd>
 
 								<dt class="feedback">Don't see a solution to your problem?</dt>
 									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
@@ -200,8 +40,6 @@
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
-
-				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-2b" class="step">
 					<div class="main">
 						<h3><em>Step 2.b</em> Upload your public key to a keyserver</h3>
@@ -222,6 +60,9 @@
 
 							</dl>
 						</div><!-- /.troubleshooting -->
+
+
+
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -231,8 +72,6 @@
 						<p>You're using a program called GnuPG, but the menu in your email program is called OpenPGP. Confusing, right? In general, the terms GnuPG, GPG, GNU Privacy Guard, OpenPGP and PGP are used interchangeably, though they all have slightly different meanings.</p>
 					</div><!-- End .main -->
 				</div><!-- End #terminology.step-->
-
-
 			</div>
 		</section><!-- End #section2 -->
 
@@ -267,7 +106,7 @@
 							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
 							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
 							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, uniqe signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-							<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
 
 							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
 
@@ -436,13 +275,11 @@
 
 <p class="notes">Start writing your public key fingerprint anywhere someone would see your email address: your social media profiles, blog, Website, or business card. (At the Free Software Foundation, we put ours on our <a href="https://fsf.org/about/staff">staff page</a>.) We need to get our culture to the point that we feel like something is missing when we see an email address without a public key fingerprint.</p>
 					</div><!-- End .main
-				</div> End #step-5d .step-->
+				</div><!-- End #step-5d .step-->
 
 
 			</div>
 		</section><!-- End #section5 -->
-
-
 
 <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
 		<section class="row" id="section6">
@@ -479,71 +316,3 @@
 				</div>
 			</div>
 		</section> --><!-- End #faq -->
-
-<!-- ~~~~~~~~~ Footer  ~~~~~~~~~ -->
-		<footer class="row" id="footer">
-			<div>
-				<div id="copyright">
-					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
-					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
-                                        <p><em>Version 2.0, launched 6/18/2014. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
-<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
-					<p>Download the source packages for <a href="gnupg-guide.zip">this guide</a> and for <a href="gnupg-infographic.zip">the infographic</a>. Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
-                                        <p>
-                                          <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
-                                             rel="jslicense">
-                                            JavaScript license information
-                                          </a>
-                                        </p>
-				</div><!-- /#copyright -->
-				<p class="credits">
-					Infographic and guide design by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0n/img/jplusplus.png" alt="Journalism++" /></a>
-				</p><!-- /.credits -->
-			</div>
-		</footer><!-- End #footer -->
-
-		<script src="//static.fsf.org/nosvn/enc-dev0/js/jquery-1.11.0.min.js"></script>
-		<script src="//static.fsf.org/nosvn/enc-dev0/js/scripts.js"></script>
-
-                <!-- Piwik -->
-                <script type="text/javascript">
-                 /*
-                 @licstart The following is the entire license notice for the
-                    JavaScript code in this page.
-
-                 Copyright 2014 Matthieu Aubry
-
-                  This program is free software: you can redistribute it and/or modify
-                 it under the terms of the GNU General Public License as published by
-                 the Free Software Foundation, either version 3 of the License, or
-                 (at your option) any later version.
-
-                  This program is distributed in the hope that it will be useful,
-                 but WITHOUT ANY WARRANTY; without even the implied warranty of
-                 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-                 GNU General Public License for more details.
-
-                  You should have received a copy of the GNU General Public License
-                 along with this program.  If not, see http://www.gnu.org/licenses/.
-
-                  @licend The above is the entire license notice
-                     for the JavaScript code in this page.
-                 */
-                 var _paq = _paq || [];
-                 _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-                 _paq.push(["setCookieDomain", "*.www.fsf.org"]);
-                 _paq.push(["setDomains", ["*.www.fsf.org","*.www.fsf.org"]]);
-                 _paq.push(["trackPageView"]);
-                 _paq.push(["enableLinkTracking"]);
-
-                 (function() {
-                   var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.fsf.org/";
-                   _paq.push(["setTrackerUrl", u+"piwik.php"]);
-                   _paq.push(["setSiteId", "5"]);
-                   var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-                   g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-                 })();
-                </script>
-                <!-- End Piwik Code -->
-	</body>
-</html>
