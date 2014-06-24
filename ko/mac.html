@@ -5,7 +5,7 @@
 
 			<title>스스로 이메일 보호하기 - GnuPG 암호화를 이용한 감시 방어 가이드</title>
 			<meta name="keywords" content="GnuPG, GPG, openpgp, surveillance, privacy, email, Enigmail" />
-      <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
+       <meta name="description" content="이메일 감시는 우리의 기본적인 권리를 침해하고 자유로운 발언을 할 권리를 위협합니다. 이 가이드는 30분 안에 GnuPG를 이용해 이메일을 스스로 보호하는 법에 대해 알려줍니다. ">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
   		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
@@ -52,7 +52,7 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					대량 감시는 우리의 근본적인 권리를 침해하며 자유로운 발언을 할 권리를 위협합니다. 이 가이드는 간단한 감시로부터의 자가 보호 기술인 이메일 암호화를 안내할 것입니다. 이 가이드를 끝내면 당신은 암호화된 이메일을 통해 정보기관과 당신의 이메일을 읽으려는 도둑으로부터 자신을 보호할 수 있을 것입니다. 필요한 것은 인터넷이 연결된 컴퓨터와 이메일 계정, 30분 정도의 시간입니다.</p>
+					대량 감시는 우리의 근본적인 권리를 침해하며 자유로운 발언을 할 권리를 위협합니다. 이 가이드는 간단한 감시로부터의 자가 보호 기술인 이메일 암호화를 안내할 것입니다. 이 가이드를 끝내면 당신은 암호화된 이메일을 통해 정보기관과 당신의 이메일을 읽으려는 도둑으로부터 자신을 보호할 수 있을 것입니다. 인터넷이 연결된 컴퓨터, 이메일 계정, 30분 정도의 시간이 필요합니다.</p>
 
 <p>비록 당신이 숨길 것이 없더라도, 암호화는 감시 시스템의 감시를 어렵게 하고, 자신과 상대방의 개인정보를 보호합니다. 만약 중요한 내용이 있어 그것을 숨겨야 한다면, 좋은 선택입니다; 이 툴은 에드워드 스노든이 그의 유명한 비밀을 NSA로부터 숨기는 데 사용한 도구입니다.</p>
 
@@ -246,14 +246,14 @@
 				<div id="step-3b" class="step">
 					<div class="main">
 							<h3><em>순서 3.b</em> 테스트 암호화 메일 보내기</h3>
-							<p>이메일 프로그램에서 받는이가 edward-ko@fsf.org 인 새 이메일을 작성하세요. 제목을 "암호화 테스트"혹은 비슷한 내용으로 하고, 아무 내용이나 쓰세요. 아직 이메일을 보내지는 마세요.</p>
+							<p>이메일 프로그램에서 받는 이가 edward-ko@fsf.org 인 새 이메일을 작성하세요. 제목을 "암호화 테스트"혹은 비슷한 내용으로 하고, 아무 내용이나 쓰세요. 아직 이메일을 보내지는 마세요.</p>
 							<p>보내는 창의 아래의 키 아이콘을 누릅니다. (노랗게 변할 것입니다!) 이렇게 하면 Enigmail이 당신이 이전 순서에서 다운로드받은 키로 암호화하게 됩니다.</p>
 							<p class="notes">키 옆에 연필이 있습니다. 이 버튼을 클릭하면, Enigmail은 당신의 비밀키로 생성한 특별하고 고유한 서명을 메시지에 추가합니다. 이 기능은 암호화와는 다른 기능이므로, 이 가이드에서는 사용하지 않습니다.</p>
-							<p>보내기 를 누르세요. Enigmail은 "받는이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다"라는 팝업을 보여 줄 것입니다.</p>
+							<p>보내기 를 누르세요. Enigmail은 "받는 이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다"라는 팝업을 보여 줄 것입니다.</p>
 
 							<p>Edward에게 암호화하고 이메일을 보내려면, 그의 공개키가 필요하기 때문에, Enigmail에게 공개키를 다운로드 하게 해야 합니다. 없는 키 다운로드를 클릭한 후, 기본 키서버를 이용합니다. 키를 찾으면, 첫번째 키를 선택하고, 완료 를 누릅니다. 다음 팝업에서도 완료 를 누릅니다.</p>
 
-							<p>이제 다시 "받는이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다" 창으로 돌아왔습니다. Edward의 키를 리스트에서 클릭하고 완료를 누릅니다. 메시지가 자동으로 보내지지 않는다면, 발송을 누르세요.</p>
+							<p>이제 다시 "받는 이가 존재하지 않거나, 신뢰되지 않거나, 찾을 수 없습니다" 창으로 돌아왔습니다. Edward의 키를 리스트에서 클릭하고 완료를 누릅니다. 메시지가 자동으로 보내지지 않는다면, 발송을 누르세요.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
 								<h4>문제 해결</h4>
@@ -271,7 +271,7 @@
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
 						<h3><em>중요:</em>보안 팁</h3>
-						<p>당신이 당신의 이메일을 암호화해도, 제목은 암호화되지 않으므로 제목에 개인정보를 넣지 마세요. 보낸 이와 받는이의 주소도 암호화되지 않으므로, 이러한 정보는 감시 시스템이 읽을 수 있습니다. 첨부 파일이 있다면, 메일을 보낼 떄 Enigmail은 첨부 파일을 암호화할 것인지 물을 것입니다.</p>
+						<p>당신이 당신의 이메일을 암호화해도, 제목은 암호화되지 않으므로 제목에 개인정보를 넣지 마세요. 보낸 이와 받는 이의 주소도 암호화되지 않으므로, 이러한 정보는 감시 시스템이 읽을 수 있습니다. 첨부 파일이 있다면, 메일을 보낼 떄 Enigmail은 첨부 파일을 암호화할 것인지 물을 것입니다.</p>
 <p>키 아이콘을 이메일 작성 <strong>전</strong>에 클릭하는 것도 좋은 생각입니다. 그렇지 않다면, 암호화되지 않은 초안이 이메일 서버로 전송되며, 이 초안은 스누핑의 타겟이 될 수 있습니다.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
