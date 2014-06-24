@@ -3,25 +3,34 @@
 	<head>
 			<meta charset="utf-8">
 
-			<title>Auto-Defesa no E-mail - um guia para combater a vigilância encriptando com GnuPG</title>
-			<meta name="keywords" content="GnuPG, GPG, privacidade, e-mail, Enigmail" />
-      <meta name="description" content="A vigilância por e-mail viola nossos direitos fundamentais e torna a livre expressão arriscada. Esse guia vai lhe ensinar auto-defesa no e-mail em 30 minutos com GnuPG.">
+			<title>Email Self-Defense - a guide to fighting surveillance with GnuPG encryption</title>
+			<meta name="keywords" content="GnuPG, GPG, privacy, email, Enigmail" />
+      <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/pt-br/favicon.ico" />
+  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
 
 	</head>
 	<body>
 
 		<header class="row centered" id="header">
 			<div>
-					<p class="back">&larr; Leia o <a href="index.html">guia completo</a></p>
-					<h3><a href="https://fsf.org/share?u=https://u.fsf.org/zc&amp;t=Como a criptografia de chave pública funciona. Infográfico via %40fsf %23EmailSelfDefense">Compartilhe nosso infográfico</a> com a hashtag #EmailSelfDefense</h3>
+<p>
 
-					<p><img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/full-infographic.png" alt="Veja &amp; compartilhe nosso infográfico" /></p>
 
-					<p class="back">&larr; Leia o <a href="index.html">guia completo</a></p>
+<p><strong>Please check your email for a confirmation link now. Thanks for joining our list!</strong></p>
+
+<p>If you don't receive the confirmation link, send us an email at info@fsf.org to be added manually.</p>
+
+
+<br><p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section3-try-it-out.png" alt="Try it out." /></p><br>
+
+<p>Join us on microblogging services for day-to-day updates:</p>
+<p style="font-size:150%"><a href="https://status.fsf.org/fsf">GNU Social</a> | <a href="http://microca.st/fsf">Pump.io</a> | <a href="https://www.twitter.com/fsf">Twitter</a></p>
+<p><small><a href="https://www.fsf.org/twitter">Read why GNU Social and Pump.io are better than Twitter.</a></small></p>
+<hr>
+					<p class="back" style="font-size:150%">&larr; Return to <a href="index.html">Email Self-Defense</a></p>
 			</div>
 		</header><!-- End #header -->
 
@@ -29,20 +38,20 @@
 		<footer class="row" id="footer">
 			<div>
 				<div id="copyright">
-					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/fsf-logo.png"></a></h4>
-					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Política de Privacidade</a>. <a href="https://u.fsf.org/yr">Junte-se a nós.</a></p>
-					<p><em>Versão 2.0. Tradução pra português do Brasil por <a href="mailto:thiago@marinello.eng.br">Thiago Marinello</a> e <a href="mailto:cmi-rio@riseup.net">CMI-Rio</a></em></p>
-<p>As imagens dessa página estão sob a licença de uso <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR">Creative Commons Atribuição 4.0 Internacional (ou uma versão mais nova)</a>, e o resto está sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (ou uma versão mais nova)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.pt-br.html#OtherLicenses">Por quê essas licenças?</a></p>
-					<p>Baixe os pacotes com o código-fonte pra <a href="gnupg-guide.zip">esse guia</a> e pra <a href="gnupg-infographic.zip">o infográfico</a>. As fontes usadas no guia &amp; infográfico: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> por Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> por Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> por Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> por Florian Cramer.</p>
+					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
+					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
+                                        <p><em>Version 2.0. <!--LANGUAGE translation by NAME, NAME and NAME.--></em></p>
+<p>The images on this page are under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>, and the rest of it is under a <a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Why these licenses?</a></p>
+					<p>Download the source package for <a href="emailselfdefense_source.zip">this guide</a>. Fonts used in the guide &amp; infographic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
                                         <p>
                                           <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
                                              rel="jslicense">
-                                            Informações sobre a licença do Javascript
+                                            JavaScript license information
                                           </a>
                                         </p>
 				</div><!-- /#copyright -->
 				<p class="credits">
-					Design do guia e do infográfico por <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/jplusplus.png" alt="Journalism++" /></a>
+					Infographic and guide design by <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
 				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->
