@@ -264,9 +264,9 @@
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Passo 3.a</em> Mande sua chave pública para Edward</h3>
-						<p>Esse é um passo especial que você não vai ter que fazer quando estiver se correspondendo com pessoas de verdade. No menu do seu programa de e-mail, vá para @@OpenPGP &rarr; Key Management@@. Você deve ver sua chave na lista que aparece. Clique com o botão direito na chave e selecione @@Send Public Keys by Email@@. Isso vai criar uma nova mensagem, como se você tivesse clicado no botão @@Write@@.</p>
+						<p>Esse é um passo especial que você não vai ter que fazer quando estiver se correspondendo com pessoas de verdade. No menu do seu programa de e-mail, vá para OpenPGP &rarr; Gerenciamento de Chaves OpenPGP. Você deve ver sua chave na lista que aparece. Clique com o botão direito na chave e selecione Enviar Chaves Públicas por Email. Isso vai criar uma nova mensagem, como se você tivesse clicado no botão Nova Mensagem.</p>
 
-<p>Destine a mensagem pra edward-pt-br@fsf.org. Coloque pelo menos uma palavra (a que quiser) no assunto e no corpo do e-mail, e clique em @@Send@@.</p>
+<p>Destine a mensagem pra edward-pt-br@fsf.org. Coloque pelo menos uma palavra (a que quiser) no assunto e no corpo do e-mail, e clique em Enviar.</p>
 
 <p class="notes">Pode levar de dois a três minutos pra Edward responder. Enquanto isso, você pode querer avançar e checar a seção <a href="#section5">Use bem</a> desse guia. Assim que ela tiver respondido, passe para o próximo passo. Daqui pra frente, você vai fazer tudo do mesmo jeito que fará quando se corresponder com uma pessoa real.</p>
 					</div><!-- End .main -->
@@ -279,11 +279,11 @@
 							<p>Componha uma nova mensagem em seu programa de e-mail, endereçado a edward-pt-br@fsf.org. Escreva "Teste de criptografia" ou algo parecido no assunto, e escreva alguma coisa no corpo. Não envie ainda.</p>
 							<p>Clique no ícone de chave no canto inferior direito da janela de composição (ele deve ficar amarelo). Isso diz pro Enigmail codificar a mensagem com a chave que você baixou no passo anterior.</p>
 							<p class="notes">Próximo à chave, você vai notar o ícone de um lápis. Clicar nele diz pro Enigmail adicionar uma assinatura especial e única à sua mensagem, gerada usando sua chave privada. Isso é uma funcionalidade separada da codificação, e você não tem que usá-la nesse guia.</p>
-							<p>Clique @@Send@@. O Enigmail vai abrir uma janela que diz "@@Recipients not valid, not trusted or not found."</p>
+							<p>Clique em Enviar. O Enigmail vai abrir uma janela que diz "Destinatários não são válidos, não confiáveis ou não encontrados"</p>
 
-							<p>Para codificar e enviar o  e-mail para Edward, você deve ter a chave pública dele, e então agora você vai fazer o Enigmail baixá-la de um servidor de chaves. Clique @@Download Missing Keys@@ e use a padrão na janela que pede a você pra escolher um servidor. Assim que encontrar as chaves, marque a primeira (a chave com ID que começa com 9), e selecione OK. Selecione OK na próxima janela.</p>
+							<p>Para codificar e enviar o  e-mail para Edward, você deve ter a chave pública dele, e então agora você vai fazer o Enigmail baixá-la de um servidor de chaves. Clique em Baixar Chaves Não Existentes e use a padrão na janela que pede a você pra escolher um servidor. Assim que encontrar as chaves, marque a primeira (a chave com ID que começa com 9), e selecione OK. Selecione OK na próxima janela.</p>
 
-							<p>Você agora está de volta à tela "@@Recipients not valid, not trusted or not found@@". Escolha a chave da Edward na sua lista e clique em OK. Se a mensagem não for enviada automaticamente, você já pode enviá-la.</p>
+							<p>Você agora está de volta à tela "Destinatários não são válidos, não confiáveis ou não encontrados". Escolha a chave da Edward na sua lista e clique em OK. Se a mensagem não for enviada automaticamente, você já pode enviá-la.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
 								<h4>Resolução de Problemas</h4>
@@ -344,7 +344,7 @@
 
 <p>As chaves públicas das pessoas geralmente são identificadas pela impressão digital de sua chave, que é uma série de dígitos como DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 para a chave de Edward). Você pode ver a imprsesão digital de sua chave pública, e de outras chaves públicas salvas no seu computador, indo em
 
-<p class="notes">Você também pode ver chaves públicas serem citadas por seus ID's, que são simplesmente os últimos 8 dígitos da imprsesão digital, como 92AB3FF7 para a Edward. O ID da chave é visível diretamente da Janela @@Key Management@@. O ID da chave é como o primeiro nome de uma pessoa (é uma abreviação útil mas pode mãn ser única para uma determinada chave), enquanto a impressão digital realmente identifica a chave unicamente sem a possibilidade de confusão. Se você só tem o ID da chave, você ainda pode encontrar a chave (assim como a impressão digital), como fez no Passo 3, mas se múltiplas opções aparecerem, você vai precisar da impressão digital da pessoa com quem está tentando se comunicar pra ver qual delas usar.</p>
+<p class="notes">Você também pode ver chaves públicas serem citadas por seus ID's, que são simplesmente os últimos 8 dígitos da imprsesão digital, como 92AB3FF7 para a Edward. O ID da chave é visível diretamente da janela Gerenciamento de Chaves OpenPGP. O ID da chave é como o primeiro nome de uma pessoa (é uma abreviação útil mas pode mãn ser única para uma determinada chave), enquanto a impressão digital realmente identifica a chave unicamente sem a possibilidade de confusão. Se você só tem o ID da chave, você ainda pode encontrar a chave (assim como a impressão digital), como fez no Passo 3, mas se múltiplas opções aparecerem, você vai precisar da impressão digital da pessoa com quem está tentando se comunicar pra ver qual delas usar.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -356,10 +356,10 @@
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Passo 4.a</em> Assine uma chave</h3>
-						<p>No menu do seu programa de e-mail, vá para @@OpenPGP &rarr; Key Management@@.</p>
-						<p>Dê dois cliques na chave pública de Edward e selecione @@Select Key@@ do menu de contexto.</p>
-						<p>Na janela que aparece, selecione "@@I will not answer@@" e clique em OK.</p>
-						<p>No menu do seu programa de e-mail, vá para @@OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys@@ e clique em OK.</p>
+						<p>No menu do seu programa de e-mail, vá para OpenPGP &rarr; Gerenciamento de Chaves OpenPGP.</p>
+						<p>Dê dois cliques na chave pública de Edward e selecione Assinar Chaves do menu de contexto.</p>
+						<p>Na janela que aparece, selecione "Não irei responder" e clique em OK.</p>
+						<p>No menu do seu programa de e-mail, vá para OpenPGP &rarr; Gerenciamento de Chaves OpenPGP &rarr; Servidor de Chaves &rarr; Enviar Chaves Públicas e clique em OK.</p>
 						<p class="notes">Você efetivamente disse "Eu confio que a chave pública de Edward pertence mesmo a Edward." Isso não significa muito porque Edward não é uma pessoa de verdade, mas é uma boa prática.</p>
 
 
@@ -377,7 +377,7 @@
 				<div id="step-sign_real_keys" class="step">
 					<div class="main">
 						<h3><em>Importante:</em> cheque a identidade das pessoas antes de assinar as chaves delas</h3>
-                        <p>Antes de assinar a chave de uma pessoa de verdade, sempre tenha certeza de que ela pertence mesmo a quem diz, e que elas são quem dizem ser. Peça a elas pra mostrar seus ID's (a não ser que confie muito nelas) e a impressão digital de suas chaves públicas -- não somente o ID da chave pública mais curto, que pode se referir a mais de uma chave. No Enigmail, responda honestamente a janela que aparece e pergunta "@@How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?@@.</p>
+                        <p>Antes de assinar a chave de uma pessoa de verdade, sempre tenha certeza de que ela pertence mesmo a quem diz, e que elas são quem dizem ser. Peça a elas pra mostrar seus ID's (a não ser que confie muito nelas) e a impressão digital de suas chaves públicas -- não somente o ID da chave pública mais curto, que pode se referir a mais de uma chave. No Enigmail, responda honestamente a janela que aparece e pergunta "Você tem certeza de que verificou que a chave que você está prestes a assinar realmente pertence à(s) pessoa(s) acima?.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-sign_real_keys .step-->
 
@@ -418,7 +418,7 @@
 					<div class="main">
 						<h3><em>Importante:</em> Cuidado com chaves inválidas</h3>
 						<p>O GnuPG torna o e-mail mais seguro, mas ainda é importante estar atento para chaves inválidas, que podem ter caído em mãos erradas. E-mails codificados com chaves inválidas podem ser lidos por programas de vigilância.</p>
-						<p>Em seu programa de e-mail, volte à segunda mensagem que Edward mandou. Como Edward o codificou com a sua chave pública, vai haver uma mensagem do OpenPGP no topo, que provavelmente diz "@@OpenPGP: Part of this message encrypted.@@"</p>
+						<p>Em seu programa de e-mail, volte à segunda mensagem que Edward mandou. Como Edward o codificou com a sua chave pública, vai haver uma mensagem do OpenPGP no topo, que provavelmente diz "OpenPGP: Parte da mensagem criptografada"</p>
 <p><b>Quando usar o GnuPG, torne prestar atenção nessa barra um hábito. O programa vai te alertar por ali se você receber um e-mail codificado com uma chave na qual não se pode confiar.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
