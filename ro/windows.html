@@ -5,7 +5,7 @@
 
 			<title>Autoapărarea pe e-mail - un ghid pentru combaterea supravegherii folosind criptarea GnuPG</title>
 			<meta name="keywords" content="GnuPG, GPG, openpgp, supraveghere, confidențialitate, e-mail, Enigmail" />
-      <meta name="description" content="Supravegherea e-mailului ne încalcă drepturile fundamentale și face din exprimarea liberă un risc. Acest ghid vă învață autoapărarea pe e-mail în 30 de minute cu GnuPG.">
+      <meta name="description" content="Supravegherea e-mailului ne încalcă drepturile fundamentale și face riscantă exprimarea liberă. Acest ghid vă învață autoapărarea pe e-mail în 30 de minute cu GnuPG.">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
@@ -70,13 +70,14 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/ro/infographic-button.png" alt="Vedeți și distribuiți infograficul nostru &rarr;" /></a>
-          Supravegherea în masă ne încalcă drepturile fundamentale și face din exprimarea liberă un risc. Acest ghid vă învață o deprindere de bază pentru autoapărare împotriva supravegherii: criptarea e-mailului. Odată ce terminați, veți putea trimite și primi e-mailuri care sunt cifrate ca să garanteze că un agent de supraveghere sau un hoț care vă interceptează e-mailul nu îl pot citi. Tot ce vă trebuie este un calculator cu legătură la Internet, un cont de e-mail și circa o jumătate de oră.</p>
+          Supravegherea în masă ne încalcă drepturile fundamentale și face riscantă exprimarea liberă. Prezentul ghid vă va învăța o deprindere de bază în autoapărarea de supraveghere: criptarea e-mailului. După parcurgere, veți putea trimite și primi e-mailuri care sunt cifrate ca să garanteze că un agent de supraveghere sau un hoț care vă interceptează mesajele nu le pot citi. Aveți nevoie doar de un calculator conectat la Internet, de un cont de e-mail și de circa o jumătate de oră.</p>
 
-<p>Chiar dacă nu aveți nimic de ascuns, folosirea criptării protejează intimitatea oamenilor cu care comunicați și le face viața grea sistemelor de supraveghere în masă. Dacă aveți ceva important de ascuns, sunteți într-o companie bună; acestea sunt uneltele pe care le-a folosit Edward Snowden ca să distribuie faimoasele lui secrete despre NSA.</p>
+<p>Chiar dacă nu aveți nimic de ascuns, folosind criptarea protejați intimitatea celor cu care comunicați și perturbați sistemele de supraveghere în masă. Dacă aveți ceva important de ascuns, nu sunteți singurul; acestea sunt uneltele pe care le-a folosit Edward Snowden ca să distribuie faimoasele lui secrete despre NSA.</p>
 
-<p>Pe lângă folosirea criptării, rezistența la supraveghere necesită o luptă politică pentru <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">reducerea volumului de date colectate despre noi</a>, dar primul pas esențial este să vă apărați pe dumneavoastră înșivă și să faceți supravegherea comunicărilor dumneavoastră cât mai dificilă. Să începem!</p>
+<p>Pe lângă folosirea criptării, opoziția la supraveghere necesită lupta politică pentru <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">reducerea volumului de date colectate despre noi (link în engleză)</a>, dar primul pas esențial este să vă apărați propria persoană și să faceți cât mai dificilă supravegherea corespondenței dumneavoastră. Să începem!</p>
 
 				</div>
+
 			</div>
 		</header><!-- End #header -->
 
@@ -85,10 +86,10 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#1</em> Obțineți părțile</h2>
-						<p class="notes">Acest ghid se bazează pe software cu licență liberă; este complet transparent și oricine îl poate copia sau își poate crea propria versiune. Aceasta rezultă în software mai ferit de supraveghere decât software-ul privat (ca Windows). Pentru a vă apăra libertatea și a vă proteja de supraveghere, vă recomandăm să treceți la un sistem de operare format din software liber, ca GNU/Linux. Puteți afla mai multe despre software-ul liber la <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
-            <p>Pentru început, veți avea nevoie să instalați un program de e-mail pentru desktop pe calculatorul dumneavoastră. Acest ghid va merge cu versiunile de software liber ale programului de e-mail Thunderbird, ca și cu Thunderbird în sine. Programele de e-mail sunt un alt mod de a accesa aceleași conturi de e-mail pe care le puteți accesa într-un browser (ca Gmail), dar oferă funcții în plus.</p>
-            <p>Dacă aveți deja unul, puteți sări la <a href="#step-1b">Pasul 1.b</a>.</p>
+						<h2><em>#1</em> Obțineți componentele</h2>
+						<p class="notes">Acest ghid se bazează pe software cu licență liberă; este complet transparent și oricine îl poate copia sau își poate crea propria versiune. Aceste calități îl fac mai sigur contra supravegherii decât software-ul neliber (ca Windows). Pentru a vă apăra libertatea și a vă proteja de supraveghere, vă recomandăm să treceți la un sistem de operare format din software liber, ca GNU/Linux. Aflați mai multe despre software-ul liber la <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+            <p>Pentru început, veți avea nevoie să instalați un program de e-mail pentru desktop pe calculatorul dumneavoastră. Acest ghid va funcționa cu versiunile de software liber ale programului de e-mail Thunderbird, ca și cu Thunderbird în sine. Programele acestea sunt un alt mod de a accesa aceleași conturi de e-mail din browser (ca Gmail), dar vă oferă funcții în plus.</p>
+            <p>Dacă aveți deja un astfel de program, puteți trece la <a href="#step-1b">Pasul 1.b</a>.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -97,15 +98,15 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/ro/screenshots/step1a-install-wizard.png" alt="Pasul 1.A: Wizardul de instalare" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Pasul 1.a</em> Configurați-vă programul de e-mail cu contul dumneavoastră de e-mail (dacă nu este deja)</h3>
-						<p>Deschideți programul de e-mail și urmați wizardul care îl configurează cu contul dumneavoastră de e-mail.</p>
+						<h3><em>Pasul 1.a</em> Configurați clientul de e-mail pentru contul dumneavoastră de e-mail (dacă este nevoie)</h3>
+						<p>Deschideți clientul de e-mail și urmați wizardul care configurează programul cu contul dumneavoastră de e-mail.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>Depanare</h4>
 							<dl>
 								<dt>Ce este un wizard?</dt>
-									<dd>Un wizard este o serie de ferestre care apar ca să simplifice îndeplinirea unei activități pe calculator, cum ar fi instalarea unui program. Dați clic prin el, alegând opțiuni pe parcurs.</dd>
+									<dd>Un wizard este o succesiune de ferestre care apar pe ecran pentru a simplifica o activitate, cum ar fi instalarea unui program. Dați clic prin el, alegând opțiuni pe parcurs.</dd>
 								<dt>Programul meu de e-mail nu îmi poate găsi contul sau nu îmi descarcă mesajele.</dt>
 									<dd>Înainte de a căuta pe Web, vă recomandăm să începeți prin a întreba alți oameni care folosesc sistemul dumneavoastră de e-mail, pentru a găsi setările corecte.</dd>
 								<dt class="feedback">Nu găsiți o soluție la problema dumneavoastră?</dt>
@@ -137,14 +138,14 @@
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Pasul 1.c</em> Instalați extensia Enigmail pentru programul de e-mail</h3>
-						<p>Din meniul programului de e-mail, selectați Suplimente (este posibil să fie în secțiunea Unelte). Asigurați-vă că Extensii este selectat în stânga. Vedeți Enigmail? Dacă da, săriți acest pas.</p>
+						<p>Din meniul programului de e-mail, selectați Suplimente (este posibil să fie în secțiunea Unelte). Asigurați-vă că Extensii este selectat în stânga. Vedeți Enigmail? Dacă da, treceți la pasul următor.</p>
 						<p>Dacă nu, căutați „Enigmail” în cutia de căutare din dreapta-sus. De aici vă puteți descurca. Reporniți programul de e-mail când terminați.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>Depanare</h4>
 							<dl>
 								<dt>Nu găsesc meniul.</dt>
-									<dd>În multe programe noi de e-mail, meniul principal este reprezentat printr-o imagine cu trei linii orizontale.</dd>
+									<dd>În multe programe recente de e-mail, meniul principal este reprezentat printr-o imagine cu trei linii orizontale.</dd>
 
 								<dt class="feedback">Nu găsiți o soluție la problema dumneavoastră?</dt>
 									<dd class="feedback">Vă rugăm să ne dați de veste pe <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">pagina de păreri</a>.</dd>
@@ -160,26 +161,26 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-					<h2><em>#2</em> Produceți-vă cheile</h2>
-						<p>Pentru a folosi sistemul GnuPG, veți avea nevoie de o cheie publică și de o cheie privată (cunoscute împreună ca pereche de chei). Fiecare este un șir lung de cifre și litere generate aleator care sunt unice pentru dumneavoastră. Cheia dumneavoastră publică și cea privată sunt legate una de alta printr-o funcție matematică specială.</p>
+					<h2><em>#2</em> Generați-vă cheile</h2>
+						<p>Pentru a folosi sistemul GnuPG, veți avea nevoie de o cheie publică și de o cheie privată (cunoscute împreună ca „pereche de chei”). Fiecare este un șir lung de cifre și litere generate aleator care sunt unice pentru dumneavoastră. Cheia dumneavoastră publică și cea privată sunt legate una de alta printr-o funcție matematică specială.</p>
 
-<p>Cheia dumneavoastră publică nu este ca o cheie fizică, deoarece este păstrată la vedere într-un registru pe Internet numit keyserver. Oamenii o descarcă și o folosesc, împreună cu GnuPG, pentru a cripta mesajele pe care vi le trimit. Vă puteți gândi la keyserver ca la o agendă telefonică, în care oamenii care doresc să vă trimită un e-mail criptat vă caută cheia publică.</p>
+<p>Cheia publică nu seamănă cu o cheie fizică, deoarece este păstrată la vedere într-un registru pe Internet numit keyserver. Oamenii o descarcă și o folosesc, împreună cu GnuPG, pentru a cripta mesajele pe care vi le trimit. Vă puteți gândi la keyserver ca la o carte de telefoane, în care oamenii care doresc să vă trimită un e-mail criptat vă caută cheia publică.</p>
 
-<p>Cheia dumneavoastră privată seamănă cu o cheie fizică, deoarece o păstrați ascunsă (pe calculatorul dumneavoastră). Folosiți GnuPG și cheia privată pentru a descifra mesajele criptate pe care vi le trimit alți oameni.</p>
+<p>Cheia privată seamănă cu o cheie fizică, deoarece o păstrați pentru dumneavoastră (pe calculatorul personal). Folosiți GnuPG și cheia privată pentru a descifra mesajele criptate pe care vi le trimit alți oameni.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-2a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/ro/screenshots/step2a-01-make-keypair.png" alt="Pasul 2.A: Produceți o pereche de chei" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/ro/screenshots/step2a-01-make-keypair.png" alt="Pasul 2.A: Generați o pereche de chei" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Pasul 2.a</em> Produceți o pereche de chei</h3>
-						<p>În meniul programului dumneavoastră de e-mail, selectați OpenPGP &rarr; Setup Wizard. Nu este nevoie să citiți textul ferestrei care apare dacă nu doriți, dar este bine să citiți textul de pe ecranele următoare ale wizardului.</p>
+						<h3><em>Pasul 2.a</em> Generați o pereche de chei</h3>
+						<p>În meniul programului dumneavoastră de e-mail, selectați OpenPGP &rarr; Setup Wizard. Nu este necesar să citiți textul ferestrei care apare dacă nu doriți, dar este bine să citiți textul de pe următoarele ecranele ale wizardului.</p>
 						<p>Pe al doilea ecran, intitulat „Semnare”, alegeți „Nu, vreau să creez reguli per destinatar pentru e-mailurile care trebuie semnate.”</p>
 						<p>Folosiți opțiunile implicite până ajungeți la ecranul intitulat „Creează cheia”.</p>
-						<p>Pe ecranul intitulat „Creează cheia”, alegeți o parolă puternică! Parola dumneavoastră ar trebui să aibă cel puțin 12 caractere și să includă cel puțin o literă mică și o literă mare și cel puțin un număr sau semn de punctuație. Nu uitați parola sau tot acest efort va fi irosit!</p>
-		  			<p class="notes">Programul va dura ceva până să termine următorul pas, ecranul „Crearea cheii”. În timp ce așteptați, faceți altceva cu calculatorul, cum ar fi să vedeți un film sau să navigați pe Web. Cu cât folosiți mai mult calculatorul în această fază, cu atât crearea cheii va merge mai repede.</p>
+						<p>Pe ecranul intitulat „Creează cheia”, alegeți o parolă puternică! Parola dumneavoastră ar trebui să aibă cel puțin 12 caractere și să includă cel puțin o literă mică și o literă mare și cel puțin o cifră sau un semn de punctuație. Nu uitați parola sau tot acest efort va fi irosit!</p>
+		  			<p class="notes">Veți aștepta până să se termine următorul pas, ecranul „Crearea cheii”. În timp ce așteptați, faceți altceva la calculator, cum ar fi să vedeți un film sau să navigați pe Web. Cu cât folosiți mai mult calculatorul în această fază, cu atât crearea cheii se va finaliza mai repede.</p>
 						<p>Când apare ecranul de confirmare OpenPGP, alegeți „Generează certificat” și alegeți să îl salvați într-un loc sigur pe calculatorul dumneavoastră (vă recomandăm să creați un director numit „Certificat de revocare” în directorul dumneavoastră „Acasă” și să îl păstrați acolo). Veți învăța mai multe despre certificatul de revocare în <a href="#section5">Secțiunea 5</a>. Wizardul de configurare vă va cere să îl mutați pe un dispozitiv extern, dar momentan nu este necesar.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -187,7 +188,7 @@
 							<h4>Depanare</h4>
 							<dl>
 								<dt>Nu găsesc meniul OpenPGP.</dt>
-									<dd>În multe programe noi de e-mail, meniul principal este reprezentat printr-o imagine cu trei linii orizontale. OpenPGP poate fi într-o secțiune numită Unelte.</dd>
+									<dd>În multe programe recente de e-mail, meniul principal este reprezentat printr-o imagine cu trei linii orizontale. OpenPGP poate fi într-o secțiune numită Unelte.</dd>
 
 								<dt class="feedback">Nu găsiți o soluție la problema dumneavoastră?</dt>
 									<dd class="feedback">Vă rugăm să ne dați de veste pe <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">pagina de păreri</a>.</dd>
@@ -195,18 +196,20 @@
 						</div><!-- /.troubleshooting -->
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-2b" class="step">
 					<div class="main">
 						<h3><em>Pasul 2.b</em> Încărcați-vă cheia publică pe un keyserver</h3>
 						<p>În meniul programului dumneavoastră de e-mail, selectați OpenPGP &rarr; Key Management.</p>
 <p>Dați clic dreapta pe cheie și selectați Upload Public Keys to Keyserver. Folosiți keyserverul implicit în pop-up.</p>
-<p class="notes">Acum cineva care dorește să vă trimită un mesaj criptat poate să descarce cheia dumneavoastră publică de pe Internet. Există keyservere multiple pe care le puteți selecta în meniu când faceți încărcarea, dar toate sunt copii, deci nu contează pe care îl folosiți. Totuși, uneori durează câteva ore până la concordanță când o cheie nouă este încărcată.</p>
+<p class="notes">Acum cineva care dorește să vă trimită un mesaj criptat poate să descarce de pe Internet cheia dumneavoastră publică. Puteți selecta diverse keyservere în meniu când faceți încărcarea, dar toate sunt copii identice, deci nu contează pe care îl folosiți. Totuși, uneori durează câteva ore până la concordanță când o cheie nouă este încărcată.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>Depanare</h4>
 							<dl>
 								<dt>Bara de progres nu termină niciodată</dt>
-										<dd>Închideți pop-upul de încărcare, asigurați-vă că sunteți conectat(ă) la Internet și încercați din nou. Dacă tot nu merge, încercați din nou, selectând un keyserver diferit.</dd>
+										<dd>Închideți pop-upul de încărcare, asigurați-vă că sunteți conectat(ă) la Internet și încercați din nou. Dacă tot nu merge, încercați din nou, selectând un alt keyserver.</dd>
 <dt>Cheia mea nu apare în listă</dt>
 										<dd>Încercați să bifați Show Default Keys.</dd>
 
@@ -215,18 +218,17 @@
 
 							</dl>
 						</div><!-- /.troubleshooting -->
-
-
-
 					</div><!-- End .main -->
 				</div><!-- End #step-2a .step  -->
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="terminology" class="step">
 					<div class="main">
-						<h3>GnuPG, OpenPGP, ce?</h3>
+						<h3>GnuPG, OpenPGP, poftim?</h3>
 						<p>Folosiți un program numit GnuPG, dar meniul din programul de e-mail se numește OpenPGP. Derutant, nu-i așa? În general, termenii GnuPG, GPG, GNU Privacy Guard, OpenPGP and PGP sunt folosiți alternativ, deși fiecare are un sens ușor diferit.</p>
 					</div><!-- End .main -->
 				</div><!-- End #terminology.step-->
+
+
 			</div>
 		</section><!-- End #section2 -->
 
@@ -435,6 +437,8 @@
 
 			</div>
 		</section><!-- End #section5 -->
+
+
 
 <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
 		<section class="row" id="section6">
