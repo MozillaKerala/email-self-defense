@@ -15,8 +15,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="gnupg-infographic_fr_autodéf_clef.svg"
-   inkscape:export-filename="/home/rouge/Framalang/gnupg-infographic_fr_autodéf_clef.png"
+   sodipodi:docname="gnupg-infographic.svg"
+   inkscape:export-filename="/home/therese/GNU/enc/fr/emailselfdefense_source/img/full-infographic.png"
    inkscape:export-xdpi="134.34776"
    inkscape:export-ydpi="134.34776">
   <sodipodi:namedview
@@ -27,16 +27,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.1"
-     inkscape:cx="267.30012"
-     inkscape:cy="1860.0697"
+     inkscape:cx="155.07288"
+     inkscape:cy="68.374954"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:snap-page="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="753"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-width="1680"
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:object-nodes="true"
      inkscape:snap-global="true"
@@ -1225,7 +1225,7 @@
              height="148.23763"
              width="223.85947"
              id="rect5385" /></flowRegion><flowPara
-           id="flowPara5387">Des milliers de personnes utilisent déjà  GnuPG, des activistes, des journalistes, des lanceurs d’alertes ou des gens de tous les jours. Chaque personne l’utilisant renforce notre communauté, et montre aux agences de surveillance que nous sommes prêt pour la riposte. </flowPara></flowRoot>    </g>
+           id="flowPara5387">Des milliers de personnes utilisent déjà  GnuPG, des activistes, des journalistes, des lanceurs d’alertes ou des gens de tous les jours. Chaque personne l’utilisant renforce notre communauté, et montre aux agences de surveillance que nous sommes prêts pour la riposte. </flowPara></flowRoot>    </g>
     <rect
        style="color:#000000;fill:#6b8e23;fill-opacity:1;fill-rule:nonzero;stroke:#213149;stroke-width:1.76498926;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect5984"
@@ -1305,7 +1305,7 @@
              id="rect5532" /></flowRegion><flowPara
            id="flowPara5540">GnuPG est un <flowSpan
    style="font-size:12.75px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#213149;fill-opacity:1;font-family:Dosis;-inkscape-font-specification:Dosis Medium"
-   id="flowSpan5536">logiciel sous licence libre</flowSpan> ; Il est totalement transparent et tout le monde peut le copier ou faire sa propre version. Cela le rend plus sûr vis-à-vis de la surveillance qu’un logiciel privateur (comme Windows ou Word). Plus d’infos sur <flowSpan
+   id="flowSpan5536">logiciel sous licence libre</flowSpan> ; Il est totalement transparent et tout le monde peut le copier ou  faire sa propre version. Cela le rend plus sûr vis-à-vis de la surveillance qu’un logiciel privateur (comme Windows ou Word). Plus d’infos sur <flowSpan
    style="font-size:12.75px;font-weight:bold;fill:#213149;fill-opacity:1;-inkscape-font-specification:Dosis Bold"
    id="flowSpan7575">FSF.org</flowSpan>. </flowPara></flowRoot>    </g>
     <g
@@ -7920,19 +7920,22 @@
     </g>
     <g
        id="g7577"
-       transform="translate(3.5931754e-7,5.7164063e-5)">
+       transform="translate(4.7691407e-6,5.7164063e-5)">
       <rect
          y="1948.3807"
          x="0.0071760751"
          height="15.591553"
          width="500"
          id="rect7273"
-         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#008000;stroke-width:1.76499999999999990;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#008000;stroke-width:1.76499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <flowRoot
          xml:space="preserve"
          id="flowRoot7103"
          style="font-size:7.32900047px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008000;fill-opacity:1;stroke:none;font-family:Dosis;-inkscape-font-specification:Dosis Bold"
-         transform="matrix(1.3644425,0,0,1.3644425,297.16921,-631.25239)"><flowRegion
+         transform="matrix(1.3644425,0,0,1.3644425,254.5809,-631.83595)"
+         inkscape:export-filename="/home/therese/GNU/enc/fr/emailselfdefense_source/img/full-infographic.png"
+         inkscape:export-xdpi="180.27"
+         inkscape:export-ydpi="180.27"><flowRegion
            id="flowRegion7105"><rect
              id="rect7107"
              width="282.05722"
@@ -7941,7 +7944,7 @@
              y="1891.0315"
              style="font-size:7.32900047px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#008000;fill-opacity:1;font-family:Dosis;-inkscape-font-specification:Dosis Bold" /></flowRegion><flowPara
            id="flowPara7113"
-           style="font-size:7.32900047px;font-weight:normal;fill:#008000;fill-opacity:1;-inkscape-font-specification:Dosis">Infographic and guide design by <flowSpan
+           style="font-size:7.32900047px;font-weight:normal;fill:#008000;fill-opacity:1;-inkscape-font-specification:Dosis">Conception de l'infographie et du guide par <flowSpan
    id="flowSpan7121"
    style="font-weight:bold;fill:#008000;fill-opacity:1;-inkscape-font-specification:Dosis Bold">Journalism++</flowSpan></flowPara></flowRoot>    </g>
     <path
@@ -7984,7 +7987,7 @@
            style="font-weight:normal;-inkscape-font-specification:Dosis"
            id="flowPara16302">Copyright 2014 Free Software Foundation.  </flowPara><flowPara
            style="font-weight:bold;-inkscape-font-specification:Dosis Bold"
-           id="flowPara7101">Remixing encouraged! Get the source at the URL above.</flowPara></flowRoot>      <g
+           id="flowPara7101">Remix encouragé ! Prenez la source à l'URL ci-dessus.</flowPara></flowRoot>      <g
          style="fill:#ffffff"
          id="g7241"
          transform="matrix(0.06823027,0,0,0.06823027,12.766899,1890.9297)">
