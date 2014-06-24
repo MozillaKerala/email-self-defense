@@ -1,0 +1,19 @@
+/* Necessary because the global fonts cannot render AĂÂIÎSȘTȚ uniformly */
+
+body {
+  font-family: 'DejaVu Sans', Arial, sans-serif;
+  font-size: 1.15em;
+}
+
+h2,
+h3 {
+  font-family: 'DejaVu Sans', Arial, sans-serif;
+}
+
+ul.os a.current,
+.main dt,
+.troubleshooting dt,
+strong {
+  font-family: 'DejaVu Sans';
+  font-weight: bold;
+}
