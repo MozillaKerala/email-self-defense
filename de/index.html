@@ -70,16 +70,14 @@
 <div class="intro">
   <p>
     <a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-    Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachungs-Agenten oder Verbrechern nicht gelesen werden können.
+    Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachern oder Kriminellen, die deine E-Mails abfangen, nicht gelesen werden können. Alles, was du brauchst, ist ein Computer mit einer Internetverbindung, ein E-Mail-Konto und eine halbe Stunde Zeit.
   </p>
 
   <p>
-    Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre deiner Kommunikationspartner und macht Überwachungssystemen das Leben schwer. Solltest du doch etwas zu verbergen haben, dies sind die selben Programme die Edward Snowden verwendet hat, um die bekannten Geheimnisse über die NSA zu teilen.
+    Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre der Menschen, mit denen du kommunizierst und macht den Systemen der Massenüberwachung das Leben schwer. Wenn du doch etwas wichtiges verbergen möchtest, bist du in guter Gesellschaft: dies sind die gleichen Werkzeuge die Edward Snowden benutzt hat, um seine bekannten Geheimnisse über die NSA zu verbreiten.
   </p>
 
-  <p>
-    Um Überwachung zu bekämpfen, müssen wir uns auch politisch für eine <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">Verringerung der Anzahl der Daten, die über uns gesammelt werden</a> einsetzen, aber der erste Schritt ist uns selbst vor Überwachung zu schützen und sie so schwer wie möglich zu machen. Lasst uns anfangen!</p>
-
+	<p>Sich gegen Überwachung zu wehren, erfordert neben der Verwendung von Verschlüsselung den politischen Kampf dafür, dass <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">weniger Daten über uns gesammelt werden</a>. Aber der erste Schritt ist es, dich selber zu schützen und die Überwachung deiner Kommunikation so schwer wie möglich zu machen. Lasst uns anfangen!</p>
 </div>
 </div>
 
@@ -92,19 +90,19 @@
     <div class="section-intro">
       <h2><em>#1</em> Installiere die Programme</h2>
       <p class="notes">
-	Diese Anleitung beruht auf freier Software, sie ist transparent und jeder darf sie vervielfältigen oder eine eigene Version produzieren. Das macht es für Überwachungssysteme schwieriger als es bei unfreier Software (wie Windows) ist. Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+	Diese Anleitung basiert auf freier Software. Freie Software ist transparent und kann von Allen kopiert und angepasst werden. Dadurch ist sie sicherer vor Überwachung als nicht-freie Software (wie Windows). Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
 
       <p>Das einzige was du benötigst ist ein Computer mit einem Internetanschluss, ein E-Mail-Konto und etwa eine halbe Stunde. Du kannst hierfür auch deinen existierenden E-Mail-Account verwenden.</p>
       <p>
-	Auf den  meisten GNU/Linux-Systemen ist GnuPG bereits installiert, also musst du es nicht herunterladen. Bevor du GnuPG konfigurierst, brauchst du ein E-Mail-Programm. Bei den meisten GNU/Linux distributionen kann man eine Version des Programms Thunderbird installieren. E-Mail-Programme sind eine andere Art auf E-Mails zuzugreifen, die ähnlich wie Webmail funktioniert, aber wesentlich mehr Funktionen bietet.</p>
-      <p>Wenn du bereits eines hast, dann gehe zum <a href="#step-1b">Schritt 1.b</a>.</p>
+	Auf den  meisten GNU/Linux-Systemen ist GnuPG bereits installiert, also musst du es nicht herunterladen. Bevor du GnuPG konfigurierst, brauchst du jedoch ein E-Mail-Programm. Bei den meisten GNU/Linux-Distributionen kann man eine freie Version des Programms Thunderbird installieren. E-Mail-Programme sind eine weitere Art auf E-Mail-Konten zuzugreifen, die ähnlich wie Webmail funktioniert, aber mehr Funktionen bieten.</p>
+      <p>Wenn du bereits eines dieser Programme hast, kannst du zu <a href="#step-1b">Schritt 1.b</a>.</p>
 
     </div><!-- End .section-intro -->
 
     <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
     <div class="main">
-      <h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Account (wenn es nicht schon getan wurde).</h3>
-      <p>Öffne dein E-Mail -Programm und folge dem Assistenten.</p>
+      <h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Programm für dein E-Mail-Konto (wenn es nicht schon getan wurde).</h3>
+      <p>Öffne dein E-Mail-Programm und folge dem Assistenten, der es für dein E-Mail-Konto konfiguriert.</p>
 
       <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
       <div class="troubleshooting">
@@ -112,11 +110,11 @@
 	<dl>
 	  <dt>Was ist ein Assistent?</dt>
 	  <dd>
-	    Ein Assistent besteht aus mehreren Fenstern, die nacheinander erscheinen und es einfach machen, etwas am Computer zu verändern, wie beispielsweise ein Programm zu installieren.</dd>
-	  <dt>Mein E-Mail-Programm kann keine E-Mails empfangen.</dt>
-	  <dd>Frage erst andere Leute die dein System benutzen und suche dann im Internet nach einer Lösung.</dd>
-	  <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	  <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	    Ein Assistent besteht aus mehreren Fenstern, die nacheinander erscheinen und es einfach machen, etwas am Computer zu erledigen, z.B. beispielsweise ein Programm zu installieren. Du klickst dich durch die Fenster und wählst gleichzeitig die Optionen aus.</dd>
+	  <dt>Mein E-Mail-Programm findet mein E-Mail-Konto nicht oder lädt keine E-Mails herunter.</dt>
+	  <dd>Bevor du im Web suchst empfehlen wir andere Menschen zu fragen, die das gleiche E-Mail-System benutzen, nach den richtigen Einstellungen zu fragen.</dd>
+	  <dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
 	</dl>
       </div><!-- /.troubleshooting -->
 
@@ -147,7 +145,7 @@
 	  In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt.</dd>
 
 	<dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	<dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
       </dl>
     </div><!-- /.troubleshooting -->
   </div><!-- End .main -->
@@ -202,7 +200,7 @@
 
               <dd>OpenPGP ist ein Protokoll, das von GnuPG benutzt wird, so ähnlich wie HTTP, das zum Surfen im Internet verwendet wird. Es ist eine etwas missverständliche Bezeichung die Enigmail verwendet.</dd>-->
 	      <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	      <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
 	    </dl>
 	  </div><!-- /.troubleshooting -->
 	</div><!-- End .main -->
@@ -225,7 +223,7 @@
 	    <dd>Klicke auf das Feld &quot;Standardmäßig alle Schlüssel anzeigen&quot;</dd>
 
 	    <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	    <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>bescheid.</dd>
 	  </dl>
 	</div><!-- /.troubleshooting -->
       </div>
@@ -290,7 +288,7 @@
 	    <dd>
 	      Schließe alle Pop-Ups, die seitdem du geklickt hast aufgetaucht sind. Vergewissere dich, dass du mit dem Internet verbunden bist und versuche es nochmal. Wenn dies nicht funktioniert, wähle einen anderen Schlüsselserver aus.</dd>
 	    <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	    <dd class="feedback">Frage uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>.</dd>
+	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
 	  </dl>
 	  </div><!-- /.troubleshooting -->
 	</div><!-- End .main -->
@@ -384,7 +382,7 @@
       <div id="step-sign_real_keys" class="step">
 	<div class="main">
 	  <h3><em>Wichtig:</em> Überprüfe die Identität der Leute, deren Schlüssel du signierst.</h3>
-	  <p>Bevor du einen Schlüssel signierst, überprüfe die Identität des Eigentümers, am Besten mit einem Ausweis. Hierfür sollte man sich idealerweise persönlich treffen. Du solltest auf die Frage, wie gut du die Identität überprüft hast, immer mit "Keine Antwort" antworten, da diese Frage wenig nutzen hat und viel mehr Informationen über deine Sozialen Kontakte liefert als normale signaturen.</p>
+	  <p>Bevor du einen Schlüssel signierst, überprüfe die Identität des Eigentümers, am Besten mit einem Ausweis. Hierfür sollte man sich idealerweise persönlich treffen. Du solltest auf die Frage, wie gut du die Identität überprüft hast, immer mit "Keine Antwort" antworten, da diese Frage wenig Nutzen hat und viel mehr Informationen über deine Sozialen Kontakte liefert als normale Signaturen.</p>
 	</div><!-- End .main -->
       </div><!-- End #step-sign_real_keys .step-->
     </div>
