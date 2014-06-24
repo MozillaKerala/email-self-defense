@@ -83,7 +83,7 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					A vigilância por e-mail viola nossos direitos fundamentais e torna a livre expressão arriscada. Esse guia vai lhe ensinar uma habilidade básica de auto-defesa contra vigilância: criptografia por e-mail. Assim que terminar, você estará apto a enviar e receber e-mails codificados para que um agente de vigilância ou bandido que intercepte seus e-mails não possam lê-los. Tudo que você precisa é de um computador com conexão à Internet, uma conta de e-mail e cerca de meia hora.</p>
+					A vigilância por e-mail viola nossos direitos fundamentais e torna a livre expressão arriscada. Esse guia vai lhe ensinar uma habilidade básica de auto-defesa contra vigilância: criptografia por e-mail. Assim que terminar, você estará apto a enviar e receber e-mails cifrados para que um agente de vigilância ou bandido que intercepte seus e-mails não possam lê-los. Tudo que você precisa é de um computador com conexão à Internet, uma conta de e-mail e cerca de meia hora.</p>
 
 <p>Mesmo se você não tiver nada a esconder, usar criptografia protege a privacidade das pessoas com quem você se comunica, e torna a vida difícil para sistemas de vigilância em massa. Se você tem algo importante a esconder, está em boa companhia: essas são as mesmas ferramentas que Edward Snowden usou para compartilhar seus famosos segredos sobre a NSA.</p>
 
@@ -176,9 +176,9 @@
 					<h2><em>#2</em> Crie suas chaves</h2>
 						<p>Para usar o sistema GnuPG você vai precisar de um par de chaves (ou keypair), uma chave pública e uma chave privada. Cada uma delas é uma longa sequência de números e letras geradas aleatoriamente e de forma exclusiva para você. Suas chaves pública e privada estão ligadas entre si por uma função matemática especial.</p>
 
-<p>Sua chave pública é armazenada em um servidor de chaves on-line, e fica disponível para ser baixada e usada com o GnuPG para codificar os emails enviados a você.  O servidor de chaves funciona como uma agenda, onde as pessoas que desejam lhe enviar um email codificado podem procurar por sua chave pública.</p>
+<p>Sua chave pública é armazenada em um servidor de chaves on-line, e fica disponível para ser baixada e usada com o GnuPG para cifrar os emails enviados a você.  O servidor de chaves funciona como uma agenda, onde as pessoas que desejam lhe enviar um email cifrado podem procurar por sua chave pública.</p>
 
-<p>Sua chave privada é mais parecida com uma chave física, e deve ser guardada em seu computador, só para você.  Com o GnuPG e com sua chave privada, você pode decodificar os emails com criptografia enviados a você. </p>
+<p>Sua chave privada é mais parecida com uma chave física, e deve ser guardada em seu computador, só para você.  Com o GnuPG e com sua chave privada, você pode decifrar os emails com criptografia enviados a você. </p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -213,7 +213,7 @@
 						<h3><em>Etapa 2.b</em> Subindo sua chave pública para um servidor de chaves</h3>
 						<p>No menu do programa de email selecione OpenPGP &rarr; Gerenciamento de Chaves OpenPGP.</p>
 <p>Clique com o botão direito na sua chave e selecione "Enviar Chaves Públicas para Servidor de Chaves". Na próxima tela, use o servidor padrão, já selecionado.</p>
-<p class="notes">Agora, qualquer um que quiser mandar um email codificado para você pode fazer o download de sua chave pública. Existem diversos servidores de chave, mas todos são cópias uns dos outros, então não importa para qual você vai subir sua chave. No entanto, pode demorar algumas horas até que uma nova chave seja sincronizada em todos eles. </p>
+<p class="notes">Agora, qualquer um que quiser mandar um email cifrado para você pode fazer o download de sua chave pública. Existem diversos servidores de chave, mas todos são cópias uns dos outros, então não importa para qual você vai subir sua chave. No entanto, pode demorar algumas horas até que uma nova chave seja sincronizada em todos eles. </p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>Resolução de problemas</h4>
@@ -269,13 +269,13 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>Passo 3.b</em> Envie um e-mail codificado de teste</h3>
+							<h3><em>Passo 3.b</em> Envie um e-mail cifrado de teste</h3>
 							<p>Componha uma nova mensagem em seu programa de e-mail, endereçado a edward-pt-br@fsf.org. Escreva "Teste de criptografia" ou algo parecido no assunto, e escreva alguma coisa no corpo. Não envie ainda.</p>
-							<p>Clique no ícone de chave no canto inferior direito da janela de composição (ele deve ficar amarelo). Isso diz pro Enigmail codificar a mensagem com a chave que você baixou no passo anterior.</p>
-							<p class="notes">Próximo à chave, você vai notar o ícone de um lápis. Clicar nele diz pro Enigmail adicionar uma assinatura especial e única à sua mensagem, gerada usando sua chave privada. Isso é uma funcionalidade separada da codificação, e você não tem que usá-la nesse guia.</p>
+							<p>Clique no ícone de chave no canto inferior direito da janela de composição (ele deve ficar amarelo). Isso diz pro Enigmail cifrar a mensagem com a chave que você baixou no passo anterior.</p>
+							<p class="notes">Próximo à chave, você vai notar o ícone de um lápis. Clicar nele diz pro Enigmail adicionar uma assinatura especial e única à sua mensagem, gerada usando sua chave privada. Isso é uma funcionalidade separada da criptografia, e você não tem que usá-la nesse guia.</p>
 							<p>Clique em Enviar. O Enigmail vai abrir uma janela que diz "Destinatários não são válidos, não confiáveis ou não encontrados"</p>
 
-							<p>Para codificar e enviar o  e-mail para Edward, você deve ter a chave pública dele, e então agora você vai fazer o Enigmail baixá-la de um servidor de chaves. Clique em Baixar Chaves Não Existentes e use a padrão na janela que pede a você pra escolher um servidor. Assim que encontrar as chaves, marque a primeira (a chave com ID que começa com 9), e selecione OK. Selecione OK na próxima janela.</p>
+							<p>Para cifrar e enviar o  e-mail para Edward, você deve ter a chave pública dele, e então agora você vai fazer o Enigmail baixá-la de um servidor de chaves. Clique em Baixar Chaves Não Existentes e use a padrão na janela que pede a você pra escolher um servidor. Assim que encontrar as chaves, marque a primeira (a chave com ID que começa com 9), e selecione OK. Selecione OK na próxima janela.</p>
 
 							<p>Você agora está de volta à tela "Destinatários não são válidos, não confiáveis ou não encontrados". Escolha a chave da Edward na sua lista e clique em OK. Se a mensagem não for enviada automaticamente, você já pode enviá-la.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -295,8 +295,8 @@
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
 						<h3><em>Importante:</em> Dicas de segurança</h3>
-						<p>Mesmo se você codificar seu e-mail, a linha do assunto não será codificada, então não coloque informações privadas ali. Os endereços de origem e destino também não são codificados, então podem ser lidos por um sistema de vigilância. Quando você enviar anexos, o Enigmail te dará a opção de codificá-los ou não.</p>
-<p>Também é uma boa prática clicar no ícone de chave da janela de composição <strong>antes</strong> de começar a escrever. Se não fizer isso, seu cliente de e-mail pode salvar um rascunho não-codificado no servidor de e-mail, potencialmente expondo a mensagem a bisbilhoteiros.</p>
+						<p>Mesmo se você cifrar seu e-mail, a linha do assunto não será cifrada, então não coloque informações privadas ali. Os endereços de origem e destino também não são cifrados, então podem ser lidos por um sistema de vigilância. Quando você enviar anexos, o Enigmail te dará a opção de cifrá-los ou não.</p>
+<p>Também é uma boa prática clicar no ícone de chave da janela de composição <strong>antes</strong> de começar a escrever. Se não fizer isso, seu cliente de e-mail pode salvar um rascunho não-cifrado no servidor de e-mail, potencialmente expondo a mensagem a bisbilhoteiros.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -305,10 +305,10 @@
 				<div id="step-3c" class="step">
 					<div class="main">
 						<h3><em>Passo 3.c</em> Receba uma resposta</h3>
-						<p>Quando Edward receber sua mensagem, ele vai usar a chave privada dela pra decodificá-la, baixar sua chave pública de um servidor de chaves e usá-la para codificar uma mensagem de volta pra você.</p>
-						<p class="notes">Como você codificou essa mensagem com a chave pública de Edward, a chave privada de Edward é necessária pra decodificá-la. A Edward é o único que tem essa chave, então ninguém exceto ele &mdash; nem mesmo você &mdash; pode decodificar.</p>
+						<p>Quando Edward receber sua mensagem, ele vai usar a chave privada dela pra decifrá-la, baixar sua chave pública de um servidor de chaves e usá-la para cifrar uma mensagem de volta pra você.</p>
+						<p class="notes">Como você cifrou essa mensagem com a chave pública de Edward, a chave privada de Edward é necessária pra decifrá-la. A Edward é o único que tem essa chave, então ninguém exceto ele &mdash; nem mesmo você &mdash; pode decifrar.</p>
 						<p class="notes">Pode levar dois ou três minutos pra Edward responder. Enquanto isso, você pode querer avançar e checar a seção <a href="#section5">Use bem</a> desse guia.</p>
-                        <p>Quando você receber e abrir a mensagem de Edward, o Enigmail vai detectar automaticamente que ele está codificada com sua chave pública, e então vai usar sua chave privada para decodificá-la.</p>
+                        <p>Quando você receber e abrir a mensagem de Edward, o Enigmail vai detectar automaticamente que ele está cifrada com sua chave pública, e então vai usar sua chave privada para decifrá-la.</p>
 						<p>Note a barra que o Enigmail mostra acima da mensagem, com informações sobre o estado da chave de Edward.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
@@ -395,11 +395,11 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/screenshots/section5-01-use-it-well.png" alt="Section 5: Use bem" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>Quando devo codificar?</h3>
+						<h3>Quando devo cifrar?</h3>
 
-						<p>Quanto mais você puder codificar suas mensagens, melhor. Isso porque se você só codificar e-mails ocasionalmente, cada mensagem codificada pode despertar suspeitas em sistemas de vigilância. Se todos os quase todos os seus e-mails são codificados, as pessoas que conduzem a vigilância não saberão por onde começar.</p>
+						<p>Quanto mais você puder cifrar suas mensagens, melhor. Isso porque se você só cifrar e-mails ocasionalmente, cada mensagem cifrada pode despertar suspeitas em sistemas de vigilância. Se todos os quase todos os seus e-mails são cifrados, as pessoas que conduzem a vigilância não saberão por onde começar.</p>
 
-<p>Não queremos dizer que codificar só uma parte do seus e-mails não ajuda -- é um ótimo começo e torna a vigilância em massa mais difícil.</p>
+<p>Não queremos dizer que cifrar só uma parte do seus e-mails não ajuda -- é um ótimo começo e torna a vigilância em massa mais difícil.</p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
@@ -411,9 +411,9 @@
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Importante:</em> Cuidado com chaves inválidas</h3>
-						<p>O GnuPG torna o e-mail mais seguro, mas ainda é importante estar atento para chaves inválidas, que podem ter caído em mãos erradas. E-mails codificados com chaves inválidas podem ser lidos por programas de vigilância.</p>
-						<p>Em seu programa de e-mail, volte à segunda mensagem que Edward mandou. Como Edward o codificou com a sua chave pública, vai haver uma mensagem do OpenPGP no topo, que provavelmente diz "OpenPGP: Parte da mensagem criptografada"</p>
-<p><b>Quando usar o GnuPG, torne prestar atenção nessa barra um hábito. O programa vai te alertar por ali se você receber um e-mail codificado com uma chave na qual não se pode confiar.</b></p>
+						<p>O GnuPG torna o e-mail mais seguro, mas ainda é importante estar atento para chaves inválidas, que podem ter caído em mãos erradas. E-mails cifrados com chaves inválidas podem ser lidos por programas de vigilância.</p>
+						<p>Em seu programa de e-mail, volte à segunda mensagem que Edward mandou. Como Edward o cifrou com a sua chave pública, vai haver uma mensagem do OpenPGP no topo, que provavelmente diz "OpenPGP: Parte da mensagem criptografada"</p>
+<p><b>Quando usar o GnuPG, torne prestar atenção nessa barra um hábito. O programa vai te alertar por ali se você receber um e-mail cifrado com uma chave na qual não se pode confiar.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
