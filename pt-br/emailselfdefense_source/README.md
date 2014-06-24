@@ -1,7 +1,7 @@
 Arquivos-fonte para o infográfico do GnuPG
 ==========================================
 
-Essas são as fontes gráficas do guia Auto-Defesa no E-mail da Free Software
+Essas são as fontes gráficas do guia Autodefesa no E-mail da Free Software
 Foundation, disponível em <http://EmailSelfDefense.fsf.org>.
 
 Licença
