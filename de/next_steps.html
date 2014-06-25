@@ -1,143 +1,152 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <meta charset="utf-8">
-	  
-	  <title>E-Mail-Selbstverteidigung - Eine Anleitung zur Bekämpfung der Überwachung mit GnuPG</title>
-	  <meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, Enigmail" />
-	  <meta name="description" content="E-Mail-Überwachung verstößt gegen grundlegende Rechte und bedroht die Meinungsfreiheit. Diese Anleitung zeigt dir, wie du in 30 Minuten mit GnuPG verschlüsseln kannst.">
-	  
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  	  <link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
-	  <style type="text/css" >
-	    h1 { font-size: 4.5 em !important} 
-	  </style>
+			<meta charset="utf-8">
+
+			<title>E-Mail-Selbstverteidigung - eine Anleitung zur Bekämpfung der Überwachung durch Verschlüsselung mit GnuPG</title>
+			<meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, E-Mail, Enigmail" />
+      <meta name="description" content="Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die freie Meinungsäußerung. Diese Anleitung zeigt dir in 30 Minuten, wie du dich mit Hilfe von GnuPG selbst verteidigen kannst.">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
+  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
+
 	</head>
-<body>
+	<body>
 
-  <!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
+<!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
 
-  <header class="row"  id="header">
-    <div>
-      <h1>Gut Gemacht!</h1>
+		<header class="row"  id="header">
+			<div>
+			  <h1>Gut gemacht!</h1>
 
-    </div>
-  </header><!-- End #header -->
-
-
-  <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
-  <section class="row" id="section6">
-    <div>
-      <!-- ~~~~~~~~~ section title + graphics  ~~~~~~~~~ -->
-      <div class="section-intro">
-	<h2><em>#6</em> Nächste Schritte</h2>
-	<p>
-	Du hast jetzt die Grundlagen von GnuPG gelernt und tust etwas gegen massive Überwachung. Herzlichen Glückwunsch! Die nächsten Schritte zeigen dir, wie du mehr aus dem Aufwand, den du heute geleistet hast, machen kannst.</p>
-      </div><!-- End .section-intro -->
+			</div>
+		</header><!-- End #header -->
 
 
-      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-      <div id="step-political" class="step">
-	<div class="sidebar">
-	  <p><a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a></p>
-	</div><!-- /.sidebar -->
-	<div class="main">
-	  <h3>Trete der Bewegung bei</h3>
-
-	  <p>
-	    Du hast gerade einen großen Schritt in Richtung des Schutzes deiner Privatsphäre getan.
-	    Aber wenn jeder dies alleine tut, ist das nicht genug, wir müssen eine Bewegung aufbauen
-	    für die Freiheit und Selbstständigkeit aller Computernutzer. Trete der Community der Free 
-	    Software Foundation bei um Gleichgesinnte zu treffen und zusammen für den Wandel zu arbeiten.</p>
-	  <div class="newsletter">
-	    <form method="post" action="https://crm.fsf.org/civicrm/profile/create&amp;reset=1&amp;gid=31">
-	      <input type="text" placeholder="Schreibe deine E-Mail-Adresse..." name="email-Primary" id="frmEmail">
-              <input type="submit" value="Füge mich hinzu" name="_qf_Edit_next">
-	      <input type="hidden" value="confirmation.html" name="postURL">
-              <input type="hidden" value="1" name="group[25]">
-              <input type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" name="cancelURL">
-              <input type="hidden" value="Edit:cancel" name="_qf_default">
-	    </form>
-	    <p><small>Dies abonniert unseren Newsletter, der zur Zeit leider nur auf Englisch, Französisch und Spanisch verfügbar ist. <a href="https://my.fsf.org/donate/privacypolicy.html">Datenschutzerklärung</a>.</small></p>
-	  </div><!-- End .newsletter -->
-	  <br>
-	  <p>Folge uns auf Microblogging-Diensten:</p>
-	  <p style="font-size:150%"><a href="https://status.fsf.org/fsf">GNU Social</a> | <a href="http://microca.st/fsf">Pump.io</a> | <a href="https://www.twitter.com/fsf">Twitter</a></p>
-	  <p><a href="https://www.fsf.org/twitter">Lies, warum GNU Social und Pump.io besser als Twitter sind.</a></p>
-
-	</div><!-- End .main -->
-      </div><!-- End #step-political .step -->
-      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-      <div id="step-friends" class="step">
-	<div class="main">
-
-	  <h3>Hilf deinen Freunden</h3>
-	  <p>Bevor du diese Anleitung schließt, nutze unsere <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Nuztze%20Verschlüsselung%20mit%20mir%20und%20%40fsf%20%23EmailSelbstverteidigung">Seite zum Teilen</a>, um eine Nachricht an einige Freunde zu schicken, in der du sie bittest, mit dir vsrschlüsselte E-Mails zu schreiben. Denke daran, deine <a href="#section4">Schlüssel-ID</a> hinzuzufügen, sodass sie deinen öffentlichen Schlüssel herunterladen können.</p>
-
-	</div><!-- End .main -->
-      </div><!-- End #step-friends .step -->
-
-      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-      <div id="step-more_technologies" class="step">
-	<div class="main">
-	  <h3>Schütze mehr Teile deines digitalen Lebens</h3>
-	  <p>Lerne über überwachungsresistente Software-Lösungen auf <a href="https://directory.fsf.org/wiki/Collection:Privacy_pack">der Seite zum Schutz der Privatsphäre des Free Software Directorys</a> und <a href="https://prism-break.org">prism-break.org</a>.</p>			<p> Wenn du Windows, Mac OS oder ein anderes proprietäres Betriebbsystem verwendest, ist der wechsel zu einen freien Betriebssystem wie GNU/Linux ein großer Schitt in die richtige Richtung, denn freie Software ist weniger anfällig für Angriffe durch versteckte Hintertüren. Schaue dir die <a href="http://www.gnu.org/distros/free-distros.html">empfohlenen Versionen von GNU/Linux</a> an.</p>
-	</div><!-- End .main -->
-      </div><!-- End #step-more_technologies .step -->
-
-      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-      <div id="step-better" class="step">
-	<div class="sidebar">
-	  <p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section6-next-steps.png" alt="Section 6: Next Steps" /></p>					<br><p class="back" style="text-align:center">&larr; <a href="index.html">Zurück zur Anleitung</a></p>
-	</div><!-- /.sidebar -->
-	<div class="main">
-	  <h3>Verbessere die E-Mail-Selbstverteidigungsprogramme</h3>
-	  <p><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Gib uns ein Feedback oder schlage Verbesserungen vor</a>. Wir können Übersetzungen gut gebrauchen, kontaktiere uns aber zuerst (<a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a>) bevor du anfängst, sodass wir dich mit den anderen Übersetzern deiner Sprache in Verbindung bringen können.</p>
-
-	  <p>Wenn du gerne programmierst, kannst du bei <a href="https://www.gnupg.org/">GnuPG</a> oder <a href="https://www.enigmail.net/home/index.php">Enigmail</a> mithelfen.</p>
-
-	  <p>Du kannst auch die Free Software Foundation unterstützen, sodass sie die E-Mail-Selbstverteidigung so viel wie möglich verbreiten kann und mehr ähnliche Werkzeuge produzieren kann.<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&amp;id=14&amp;pk_campaign=esd&amp;pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
-
-</div><!-- End .main -->
-</div><!-- End #step-better .step -->
-
-<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~
-     <div id="step-learn_more" class="step">
-       <div class="main">
-	 <h3>Learn more about GnuPG</h3>
-	 <p>There are a lot more features of GnuPG to discover, including encrypting files on your computer. There are a variety of resources accessible via Google, but we recommend starting with the links on the <a href="https://www.gnupg.org/documentation/">GnuPG Web site</a>.</p>
-       </div>
-		  </div> End #step-learn_more .step -->
+<!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
+		<section class="row" id="section6">
+			<div>
+				<!-- ~~~~~~~~~ section title + graphics  ~~~~~~~~~ -->
+				<div class="section-intro">
+						<h2><em>#6</em> Nächste Schritte</h2>
+					<p>Du hast jetzt die Grundlagen von E-Mail-Verschlüsselung mit GnuPG gelernt und tust damit etwas gegen die Massenüberwachung. Herzlichen Glückwunsch! Die nächsten Schritte helfen dir, mehr aus deinen heutigen Anstrengungen zu machen.</p>
+				</div><!-- End .section-intro -->
 
 
-</div>
-</section><!-- End #section6 -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-political" class="step">
+					<div class="sidebar">
+						<p><a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/de/infographic-button.png" alt="Sieh dir unsere Infografik an und verbreite sie weiter &rarr;" /></a></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3>Trete der Bewegung bei</h3>
+
+<p>Du hast gerade einen großen Schritt in Richtung Schutz deiner Privatsphäre getan. Aber wenn wir dies alle alleine tun, ist es nicht genug. Um die Massenüberwachung zu stürzen, müssen wir eine Bewegung aufbauen für die Autonomie und Freiheit aller Computernutzer. Trete der Community der Free Software Foundation bei, um Gleichgesinnte zu treffen und zusammen für einen Wandel zu arbeiten:</p>
+<div class="newsletter">
+						<form method="post" action="https://crm.fsf.org/civicrm/profile/create&amp;reset=1&amp;gid=31">
+						  <input type="text" placeholder="Schreibe deine E-Mail-Adresse..." name="email-Primary" id="frmEmail">
+                                                  <input type="submit" value="Füge mich hinzu" name="_qf_Edit_next">
+						  <input type="hidden" value="confirmation.html" name="postURL">
+                                                  <input type="hidden" value="1" name="group[25]">
+                                                  <input type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" name="cancelURL">
+                                                  <input type="hidden" value="Edit:cancel" name="_qf_default">
+						</form>
+<p><small>Du wirst Aktionsweise und Updates von unserer wenig frequentierten Mailingliste erhalten. Lies unsere <a href="https://my.fsf.org/donate/privacypolicy.html">Datenschutzerklärung</a>.</small></p>
+					</div><!-- End .newsletter -->
+<br>
+<p>Folge uns auf Microblogging-Diensten:</p>
+<p style="font-size:150%"><a href="https://status.fsf.org/fsf">GNU Social</a> | <a href="http://microca.st/fsf">Pump.io</a> | <a href="https://www.twitter.com/fsf">Twitter</a></p>
+<p><a href="https://www.fsf.org/twitter">Lies, warum GNU Social und Pump.io besser sind als Twitter.</a></p>
+
+					</div><!-- End .main -->
+				</div><!-- End #step-political .step -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-friends" class="step">
+<div class="main">
+
+			<h3>Hilf deinen Freundinnen und Freunden</h3>
+<p><strong>Dies ist die wichtigste einzelne Sache, die du tun kannst, um E-Mail-Verschlüsselung zu fördern.</strong></p>
+
+<p>Bevor du diese Anleitung schließt, nutze unsere <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Nutze Verschlüsselung mit mir durch #EmailSelbstverteidigung %40fsf ">Seite zum Teilen</a>, um eine Nachricht an einige Freunde zu schicken, in der du sie bittest, genauso wie du E-Mails zu verschlüsseln. Denke daran, deinen <a href="#section4">Schlüssel-Fingerabdruck</a> hinzuzufügen, so dass sie deinen öffentlichen Schlüssel einfach herunterladen können.</p>
+
+<p>Es ist außerdem gut, den Fingerabdruck deines öffentlichen Schlüssels deiner E-Mail-Signatur hinzuzufügen, so dass Leute, mit denen du kommunizierst, wissen, dass du verschlüsselte E-Mails annimmst.</p>
+
+<p class="notes">Wir empfehlen, noch einen Schritt weiter zu gehen und ihn zu deinen Profilen in sozialen Netzwerken, Blog, Webseiten oder Visitenkarten hinzuzufügen. (Bei der Free Software Foundation schreiben wir unseren Schlüssel auf unsere <a href="https://fsf.org/about/staff">Mitarbeiterseiten</a>.) Wir müssen unsere Kultur so verändern, dass wir den Eindruck haben, dass etwas fehlt, wenn wir eine E-Mail-Adresse ohne einen Schlüssel-Fingerabdruck sehen.</p>
+
+					</div><!-- End .main -->
+				</div><!-- End #step-friends .step -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-more_technologies" class="step">
+
+
+
+<div class="main">
+
+
+
+			<h3>Schütze mehr Teile deines digitalen Lebens</h3>
+
+						<p>Lerne mehr über überwachungsresistente Software-Lösungen auf <a href="https://directory.fsf.org/wiki/Collection:Privacy_pack">der Seite zum Schutz der Privatsphäre des Free Software Directorys</a> und <a href="https://prism-break.org">prism-break.org</a>.</p>			<p> Wenn du Windows, Mac OS oder ein anderes proprietäres Betriebbsystem verwendest, ist der Wechsel zu einem freien Betriebssystem wie GNU/Linux ein großer Schitt in die richtige Richtung, denn freie Software ist weniger anfällig für Angriffe durch versteckte Hintertüren. Schaue dir die von der Free Software Foundation <a href="http://www.gnu.org/distros/free-distros.html">empfohlenen Versionen von GNU/Linux</a> an.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-more_technologies .step -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-better" class="step">
+<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/de/screenshots/section6-next-steps.png" alt="Rubrik 6: Nächste Schritte" /></p>					<br><p class="back" style="text-align:center">&larr; <a href="index.html">Zurück zur Anleitung</a></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3>Mach die Programme zur E-Mail-Selbstverteidigung noch besser</h3>
+<p><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Gib uns ein Feedback oder schlage Verbesserungen vor</a>. Wir können Übersetzungen gut gebrauchen, kontaktiere uns aber zuerst (<a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a>) bevor du anfängst, so dass wir dich mit den anderen Übersetzern deiner Sprache in Verbindung bringen können.</p>
+
+						<p>Wenn du gerne programmierst, kannst du bei <a href="https://www.gnupg.org/">GnuPG</a> oder <a href="https://www.enigmail.net/home/index.php">Enigmail</a> mithelfen.</p>
+
+<p>Du kannst auch die Free Software Foundation unterstützen, so dass sie die E-Mail-Selbstverteidigung so viel wie möglich verbreiten kann und mehr ähnliche Werkzeuge produzieren kann.</p><p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Spenden" src="//static.fsf.org/nosvn/enc-dev0/img/de/donate.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Beitreten now" src="//static.fsf.org/nosvn/enc-dev0/img/de/join.png"></a></p>
+
+<br>
+
+					</div><!-- End .main -->
+				</div><!-- End #step-better .step -->
+
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ --
+				<div id="step-learn_more" class="step">
+					<div class="main">
+						<h3>Learn more about GnuPG</h3>
+						<p>There are a lot more features of GnuPG to discover, including encrypting files on your computer. There are a variety of resources accessible via Google, but we recommend starting with the links on the <a href="https://www.gnupg.org/documentation/">GnuPG Web site</a>.</p>
+					</div><!-- End .main --
+				</div><!-- End #step-learn_more .step -->
+
+
+			</div>
+		</section><!-- End #section6 -->
 
 <!-- ~~~~~~~~~ FAQ  ~~~~~~~~~ -->
 <!-- When un-commenting this section go to main.css and search
-     for /* Guide Sections Background */ then add #faq to the desired color
+		for /* Guide Sections Background */ then add #faq to the desired color
 
-     <section class="row" id="faq">
-       <div>
-	 <div class="sidebar">
-	   <h2>FAQ</h2>
-	 </div>
+		<section class="row" id="faq">
+			<div>
+				<div class="sidebar">
+					<h2>FAQ</h2>
+				</div>
 
-	 <div class="main">
-	   <dl>
-	     <dt>My key expired</dt>
-	     <dd>Answer coming soon.</dd>
+				<div class="main">
+					<dl>
+						<dt>My key expired</dt>
+							<dd>Answer coming soon.</dd>
 
-	     <dt>Who can read encrypted messages? Who can read signed ones?</dt>
-	     <dd>Answer coming soon.</dd>
+						<dt>Who can read encrypted messages? Who can read signed ones?</dt>
+							<dd>Answer coming soon.</dd>
 
-	     <dt>My email program is opening at times I don't want it to open/is now my default program and I don't want it to be.</dt>
-	     <dd>Answer coming soon.</dd>
-	   </dl>
-	 </div>
-       </div>
-     </section> --><!-- End #faq -->
+						<dt>My email program is opening at times I don't want it to open/is now my default program and I don't want it to be.</dt>
+							<dd>Answer coming soon.</dd>
+					</dl>
+				</div>
+			</div>
+		</section> --><!-- End #faq -->
+
 <!-- ~~~~~~~~~ Footer  ~~~~~~~~~ -->
 		<footer class="row" id="footer">
 			<div>
@@ -145,8 +154,8 @@
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Datenschutzerklärung</a>. <a href="https://u.fsf.org/yr">Beitreten</a></p>
                                         <p><em>Version 2.0. <!--LANGUAGE translation by NAME, NAME and NAME.--> Deutsche Übersetzung von <a href="http://de.gpcf.eu" >Gabriel Pérez-Cerezo</a></em></p>
-<p>Die Bilder auf dieser Seite unterliegen einer <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative-Commons-Namensnennung-4.0-Lizenz (oder eine neuere Version) </a> und der Rest unterliegt einer <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Namensnennung-Weitergabe-unter-gleichen-Bedigungen-4.0-Lizenz (oder eine neuere Version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Warum diese Lizenzen?</a></p>
-					<p>Lade dir den Quellcode für <a href="gnupg-guide.zip">diese Anleitung</a> und für <a href="gnupg-infographic.zip">die Infographik</a> herunter. In der Anleitung &amp; Infographik verwendete Schriftarten: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> von Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347; <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> von Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> von Florian Cramer.</p>
+<p>Die Bilder auf dieser Seite unterliegen einer <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative-Commons-Namensnennung-4.0-Lizenz (oder eine neuere Version)</a> und der Rest unterliegt einer <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Namensnennung-Weitergabe-unter-gleichen-Bedigungen-4.0-Lizenz (oder eine neuere Version)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">Warum diese Lizenzen?</a></p>
+					<p>Lade die Quellen für <a href="emailselfdefense_source.zip">diese Anleitung</a> herunter. Schriftarten in Anleitung &amp; Infografik: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> von Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> von Anna Giedry&#347;, <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> von Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> von Florian Cramer.</p>
                                         <p>
                                           <a href="//weblabels.fsf.org/emailselfdefense.fsf.org/"
                                              rel="jslicense">
