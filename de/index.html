@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <meta charset="utf-8">
+			<meta charset="utf-8">
 
-	  <title>E-Mail-Selbstverteidigung - Eine Anleitung zur Bekämpfung der Überwachung mit GnuPG</title>
-	  <meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, Enigmail" />
-	  <meta name="description" content="E-Mail-Überwachung verstößt gegen Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung zeigt dir, wie du in 30 Minuten mit GnuPG verschlüsseln kannst.">
+			<title>E-Mail-Selbstverteidigung - Eine Anleitung zur Bekämpfung der Überwachung mit GnuPG</title>
+			<meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, Enigmail" />
+      <meta name="description" content="E-Mail-Überwachung verstößt gegen Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung zeigt dir, wie du in 30 Minuten mit GnuPG verschlüsseln kannst.">
 
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  	  <link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
+  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
 	  <style type="text/css" >
 	    h1 { font-size: 4.5 em !important}
 	  </style>
 	</head>
-<body>
+	<body>
 
-  <!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
+<!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
 
-  <header class="row"  id="header">
-    <div>
-      <h1 style="font-size: 4.5em;" >E-Mail-Selbstverteidigung</h1>
-      <!-- Language list for browsers that do not have JS enabled -->
-      <ul id="languages" class="os">
-        <li><a href="/en">english</a></li>
-        <li><a href="/es">español</a></li>
-        <li><a href="/fr">français</a></li>
-        <li><a class="current" href="/de">deutsch</a></li>
-        <li><a href="/pt-br">português do Brasil</a></li>
-        <li><a href="/tr">türkçe</a></li>
-        <li><a href="/ro">română</a></li>
-        <li><a href="/ru">русский</a></li>
-        <li><a href="/ml">മലയാളം</a></li>
-        <li><a href="/ko">한국어</a></li>
-        <li><a href="/ja">日本語</a></li>
+		<header class="row"  id="header">
+			<div>
+			  <h1 style="font-size: 4.5em;" >E-Mail-Selbstverteidigung</h1>
+
+                          <!-- Language list for browsers that do not have JS enabled -->
+                          <ul id="languages" class="os">
+                            <li><a href="/en">english</a></li>
+                            <li><a href="/es">español</a></li>
+                            <li><a href="/fr">français</a></li>
+                            <li><a class="current" href="/de">deutsch</a></li>
+                            <li><a href="/pt-br">português do Brasil</a></li>
+                            <li><a href="/tr">türkçe</a></li>
+                            <li><a href="/ro">română</a></li>
+                            <li><a href="/ru">русский</a></li>
+                            <li><a href="/ml">മലയാളം</a></li>
+                            <li><a href="/ko">한국어</a></li>
+                            <li><a href="/ja">日本語</a></li>
                             <li><a href="/el">ελληνικά</a></li>
-      </ul>
-<!-- top-bar-gnu.html -->
-<ul id="menu" class="os">
-  <li class="spacer">
-    <a href="index.html" class="current">GNU/Linux</a>
-  </li>
-  <li>
-    <a href="mac.html">Mac OS</a>
-  </li>
-  <li>
-    <a href="windows.html">Windows</a>
-  </li>
-<!-- begin index.html.pre -->
-<li class="spacer">
-  <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=E-Mail-Verschlüsselung%20für%20alle%20von%20%40fsf%20%23EmailSelbstverteidigung">
+                          </ul>
+
+                          <ul id="menu" class="os">
+			    <li class="spacer">
+                              <a href="index.html" class="current">GNU/Linux</a>
+                            </li>
+			    <li>
+                              <a href="mac.html">Mac OS</a>
+                            </li>
+			    <li>
+                              <a href="windows.html">Windows</a>
+                            </li>
+			    <li class="spacer">
+                              <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=E-Mail-Verschlüsselung%20für%20alle%20von%20%40fsf%20%23EmailSelbstverteidigung">
     #EmailSelbstverteidigung
   </a>
 </li>
@@ -64,414 +64,386 @@
 
   <p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&amp;id=14&amp;pk_campaign=esd&amp;pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
 
-</div><!-- End #fsf-intro -->
+				</div><!-- End #fsf-intro -->
 
-<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
-<div class="intro">
-  <p>
-    <a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-    Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachern oder Kriminellen, die deine E-Mails abfangen, nicht gelesen werden können. Alles, was du brauchst, ist ein Computer mit einer Internetverbindung, ein E-Mail-Konto und eine halbe Stunde Zeit.
-  </p>
+				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
+				<div class="intro">
+					<p>
+						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
+					Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die freie Meinungsäußerung. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachern oder Kriminellen, die deine E-Mails abfangen, nicht gelesen werden können. Alles, was du brauchst, ist ein Computer mit einer Internetverbindung, ein E-Mail-Konto und eine halbe Stunde Zeit.</p>
 
-  <p>
-    Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre der Menschen, mit denen du kommunizierst und macht den Systemen der Massenüberwachung das Leben schwer. Wenn du doch etwas wichtiges verbergen möchtest, bist du in guter Gesellschaft: dies sind die gleichen Werkzeuge die Edward Snowden benutzt hat, um seine bekannten Geheimnisse über die NSA zu verbreiten.
-  </p>
+<p>Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre der Menschen, mit denen du kommunizierst, und macht den Systemen der Massenüberwachung das Leben schwer. Wenn du doch etwas wichtiges verbergen möchtest, bist du in guter Gesellschaft: Dies sind die gleichen Werkzeuge die Edward Snowden benutzt hat, um seine bekannten Geheimnisse über die NSA zu verbreiten.</p>
 
-	<p>Sich gegen Überwachung zu wehren, erfordert neben der Verwendung von Verschlüsselung den politischen Kampf dafür, dass <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">weniger Daten über uns gesammelt werden</a>. Aber der erste Schritt ist es, dich selber zu schützen und die Überwachung deiner Kommunikation so schwer wie möglich zu machen. Lasst uns anfangen!</p>
-</div>
-</div>
+<p>Sich gegen Überwachung zu wehren, erfordert neben der Verwendung von Verschlüsselung den politischen Kampf dafür, dass <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">weniger Daten über uns gesammelt werden</a>. Aber der erste Schritt ist es, dich selber zu schützen und die Überwachung deiner Kommunikation so schwer wie möglich zu machen. Los geht's!</p>
 
-</header><!-- End #header -->
+				</div>
+
+			</div>
+		</header><!-- End #header -->
 
 <!-- ~~~~~~~~~ Section 1: Get the pieces  ~~~~~~~~~ -->
-<section class="row" id="section1">
-  <div>
-    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    <div class="section-intro">
-      <h2><em>#1</em> Installiere die Programme</h2>
-      <p class="notes">
-	Diese Anleitung basiert auf freier Software. Freie Software ist transparent und kann von Allen kopiert und angepasst werden. Dadurch ist sie sicherer vor Überwachung als nicht-freie Software (wie Windows). Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+		<section class="row" id="section1">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+						<h2><em>#1</em>  Installiere die Programme</h2>
+<p class="notes">Diese Anleitung basiert auf freier Software. Freie Software ist transparent und kann von allen kopiert und angepasst werden. Dadurch ist sie sicherer vor Überwachung als nicht-freie Software (wie Windows). Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
 
-      <p>Das einzige was du benötigst ist ein Computer mit einem Internetanschluss, ein E-Mail-Konto und etwa eine halbe Stunde. Du kannst hierfür auch deinen existierenden E-Mail-Account verwenden.</p>
-      <p>
-	Auf den  meisten GNU/Linux-Systemen ist GnuPG bereits installiert, also musst du es nicht herunterladen. Bevor du GnuPG konfigurierst, brauchst du jedoch ein E-Mail-Programm. Bei den meisten GNU/Linux-Distributionen kann man eine freie Version des Programms Thunderbird installieren. E-Mail-Programme sind eine weitere Art auf E-Mail-Konten zuzugreifen, die ähnlich wie Webmail funktioniert, aber mehr Funktionen bieten.</p>
-      <p>Wenn du bereits eines dieser Programme hast, kannst du zu <a href="#step-1b">Schritt 1.b</a>.</p>
+<p>Auf den  meisten GNU/Linux-Systemen ist GnuPG bereits installiert, also musst du es nicht herunterladen. Bevor du GnuPG konfigurierst, brauchst du jedoch ein E-Mail-Programm. Bei den meisten GNU/Linux-Distributionen kann man eine freie Version des Programms Thunderbird installieren. E-Mail-Programme sind eine weitere Art auf E-Mail-Konten zuzugreifen, die ähnlich wie Webmail funktioniert, aber mehr Funktionen bieten.</p>
+                        <p>Wenn du bereits eines dieser Programme hast, kannst du zu <a href="#step-1b">Schritt 1.b</a> springen.</p>
+</p>
+				</div><!-- End .section-intro -->
 
-    </div><!-- End .section-intro -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-1a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/step1a-install-wizard.png" alt="Step 1.A: Install Wizard" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Programm für dein E-Mail-Konto (wenn es nicht schon getan wurde)</h3>
+						<p>Öffne dein E-Mail-Programm und folge dem Assistenten, der es für dein E-Mail-Konto konfiguriert.</p>
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div class="main">
-      <h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Programm für dein E-Mail-Konto (wenn es nicht schon getan wurde).</h3>
-      <p>Öffne dein E-Mail-Programm und folge dem Assistenten, der es für dein E-Mail-Konto konfiguriert.</p>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Was ist ein Assistent?</dt>
+									<dd>Ein Assistent besteht aus mehreren Fenstern, die nacheinander erscheinen und es einfach machen, etwas am Computer zu erledigen, z.B. ein Programm zu installieren. Du klickst dich durch die Fenster und wählst gleichzeitig die Optionen aus.</dd>
+								<dt>Mein E-Mail-Programm findet mein E-Mail-Konto nicht oder lädt keine E-Mails herunter.</dt>
+									<dd>Bevor du im Web suchst empfehlen wir, andere Menschen, die das gleiche E-Mail-System benutzen, nach den richtigen Einstellungen zu fragen.</dd>
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
 
-      <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-      <div class="troubleshooting">
-	<h4>Probleme?</h4>
-	<dl>
-	  <dt>Was ist ein Assistent?</dt>
-	  <dd>
-	    Ein Assistent besteht aus mehreren Fenstern, die nacheinander erscheinen und es einfach machen, etwas am Computer zu erledigen, z.B. beispielsweise ein Programm zu installieren. Du klickst dich durch die Fenster und wählst gleichzeitig die Optionen aus.</dd>
-	  <dt>Mein E-Mail-Programm findet mein E-Mail-Konto nicht oder lädt keine E-Mails herunter.</dt>
-	  <dd>Bevor du im Web suchst empfehlen wir andere Menschen zu fragen, die das gleiche E-Mail-System benutzen, nach den richtigen Einstellungen zu fragen.</dd>
-	  <dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
-	</dl>
-      </div><!-- /.troubleshooting -->
+					</div><!-- End .main -->
+				</div><!-- End #step1-a .step -->
 
-    </div><!-- End .main -->
-  </div><!-- End #step1-a .step -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-1b" class="step">
+					<div class="sidebar">
+						<ul class="images">
+							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-01-tools-addons.png" alt="Step 1.B: Tools -> Add-ons" /></li>
+							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-02-search.png" alt="Step 1.B: Search Add-ons" /></li>
+							<li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-03-install.png" alt="Step 1.B: Install Add-ons" /></li>
+						</ul>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 1.b</em>Installiere das Enigmail-Plugin für dein E-Mail-Programm</h3>
+						<p>Im Menü deines E-Mail-Programmes, klicke auf Add-ons (es könnte auch im Untermenü &quot;Werkzeuge&quot; sein). Vergewissere dich, dass &quot; Erweiterungen&quot; links ausgewählt wurde. Kannst du Enigmail sehen? Wenn ja, dann überspringe diesen Schritt.</p>
+						<p>Wenn nicht, suche "Enigmail" mit Hilfe der Suchleiste. Installiere es und starte dein E-Mail-Programm anschließend neu.</p>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Ich kann das Menü nicht finden.</dt>
+									<dd>In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt.</dd>
 
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
+					</div><!-- End .main -->
+				</div><!-- End #step-1b .step -->
+			</div>
+		</section><!-- End #section1 -->
 
-<!-- a div for each step  -->
-<div id="step-1b" class="step">
-  <div class="sidebar">
-    <ul class="images">
-      <li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-01-tools-addons.png" alt="Step 1.B: Tools -> Add-ons" /></li>
-      <li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-02-search.png" alt="Step 1.B: Search Add-ons" /></li>
-      <li><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1b-03-install.png" alt="Step 1.B: Install Add-ons" /></li>
-    </ul>
-  </div><!-- /.sidebar -->
-  <div class="main">
-    <h3><em>Schritt 1.b</em>Installiere das Enigmail-Plugin für dein E-Mail-Programm</h3>
-    <p>
-      Im Menü deines E-Mail-Programmes, klicke auf Add-ons (es könnte auch im Untermenü &quot;Werkzeuge&quot; sein). Vergewissere dich, dass &quot; Erweiterungen&quot; links ausgewählt wurde. Kannst du Enigmail sehen? Wenn ja, dann überspringe diesen Schritt.</p>
-    <p>Wenn nicht, suche "Enigmail" mit Hilfe der Suchleiste. Installiere es und starte dein E-Mail-Programm anschließend neu.</p>
-    <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-    <div class="troubleshooting">
-      <h4>Probleme?</h4>
-      <dl>
-	<dt>Ich kann das Menü nicht finden.</dt>
-	<dd>
-	  In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt.</dd>
-
-	<dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
-      </dl>
-    </div><!-- /.troubleshooting -->
-  </div><!-- End .main -->
-</div><!-- End #step-1b .step -->
-</section><!-- End #section1 -->
-<!-- begin rest.html -->
 <!-- ~~~~~~~~~ Section 2: Make your keys  ~~~~~~~~~ -->
-<section class="row" id="section2">
-  <div>
-    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    <div class="section-intro">
-      <h2><em>#2</em> Erstelle deine Schlüssel</h2>
-      <p>Um GnuPG zu verwenden, benötigt man einen öffentlichen und einen privaten Schlüssel (beide bilden ein Schlüsselpaar). Jeder Schlüssel ist eine sehr große Zahl und ist einzigartig. Beide Schlüssel sind mit einer speziellen mathematischen Funktion verbunden.</p>
+		<section class="row" id="section2">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+					<h2><em>#2</em> Erstelle deine Schlüssel</h2>
+						<p>Um GnuPG zu verwenden, benötigt man einen öffentlichen und einen privaten Schlüssel (beide bilden ein Schlüsselpaar). Jeder Schlüssel ist eine sehr große Zahl und ist einzigartig. Beide Schlüssel sind mit einer speziellen mathematischen Funktion verbunden.</p>
 
-      <p>Dein öffentlicher Schlüssel ist nicht wie ein Hausschlüssel, da er im Internet auf einem Schlüsselserver gespeichert wird. Die Leute können ihn so herunterladen und ihn benutzen, wenn sie dir verschlüsselte E-Mails verschicken. Man kann sich den Schlüsselserver wie ein Telefonbuch vorstellen, von wo Leute, die dir eine Verschlüsselte E-Mail schicken möchten, deinen öffentlichen Schlüssel herunterladen können.</p>
+<p>Dein öffentlicher Schlüssel ist nicht wie ein Hausschlüssel, da er im Internet auf einem Schlüsselserver gespeichert wird. Die Leute können ihn so herunterladen und ihn benutzen, wenn sie dir verschlüsselte E-Mails verschicken. Man kann sich den Schlüsselserver wie ein Telefonbuch vorstellen, von wo Leute, die dir eine Verschlüsselte E-Mail schicken möchten, deinen öffentlichen Schlüssel herunterladen können.</p>
 
-      <p>
-	Dein privater Schlüssel ist eher wie ein Hausschlüssel, weil ihn niemand außer dir besitzen darf. Der private Schlüssel wird eingesetzt, wenn du E-Mails entschlüsselst.</p>
-    </div><!-- End .section-intro -->
+<p>Dein privater Schlüssel ist eher wie ein Hausschlüssel, weil ihn niemand außer dir besitzen darf. Der private Schlüssel wird eingesetzt, wenn du E-Mails entschlüsselst.</p>
+				</div><!-- End .section-intro -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-2a" class="step">
-      <div class="sidebar">
-	<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
-      </div><!-- /.sidebar -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-2a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 2.a</em>Erstelle ein Schlüsselpaar</h3>
+						<p>Wähle im Menü deines E-Mail-Programmes OpenPGP &rarr; Setup Wizard. Du musst den Text dese Setup Wizards nicht unbedingt lesen, wenn du nicht willst, aber es ist eine gute Idee die Texte der späteren Schritte nicht zu ignorieren.</p>
+						<p>Im zweiten Schritt, mit dem Titel "Unterschreiben", wähle "Nein, ich möchte in Empfängerregeln festlegen, wann unterschrieben werden soll."</p>
+						<p>Nutze die Standard-Optionen, bis du am Schritt "Schlüssel erzeugen" angelangt bist.</p>
+						<p>Beim Schritt namens "Schlüssel erzeugen", solltest du ein starkes Passwort verwenden. Vergesse es nicht, sonst ist die gesamte Arbeit umsonst!</p>
+		  			<p class="notes"> Das Programm wird einige Minuten brauchen um den nächsten Schritt auszuführen. Während du wartest, solltest du etwas anderes mit deinem Computer tun, wie einen Film anschauen oder im Internet surfen. Je mehr du deinen Computer in dieser Zeit nutzt, desto schneller wird der Schlüssel generiert.</p>
+						<p>Wenn der Schritt zur Bestätigung kommt, klicke auf Zertifikat generieren und speichere es an einem sicheren Ort (wir empfehlen einen externen Datenträger). Du wirst mehr über dieses Zertifikat in <a href="#section5">Sektion 5</a> lernen.</p>
 
-	<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-	<div class="main">
-	  <h3><em>Schritt 2.a</em>Erstelle ein Schlüsselpaar</h3>
-	  <p>Wähle im Menü deines E-Mail-Programmes OpenPGP &rarr; Setup Wizard.
-	    Du musst den Text dese Setup Wizards nicht unbedingt lesen, wenn du nicht willst, aber es ist eine gute Idee die Texte der späteren Schritte nicht zu ignorieren.</p>
-	  <p>Im zweiten Schritt, mit dem Titel "Unterschreiben", wähle "Nein, ich möchte in Empfängerregeln festlegen, wann unterschrieben werden soll."</p>
-	  <p>Nutze die Standard-Optionen, bis du am Schritt "Schlüssel erzeugen" angelangt bist.</p>
-	    <p>
-	      Beim Schritt namens "Schlüssel erzeugen", solltest du ein starkes Passwort verwenden. Vergesse es nicht, sonst ist die gesamte Arbeit umsonst!</p>
-	  <p class="notes"> Das Programm wird einige Minuten brauchen um den nächsten Schritt auszuführen. Während du wartest, solltest du etwas anderes mit deinem Computer tun, wie einen Film anschauen oder im Internet surfen. Je mehr du deinen Computer in dieser Zeit nutzt, desto schneller wird der Schlüssel generiert.</p>
-	  <p>Wenn der Schritt zur Bestätigung kommt, klicke auf Zertifikat generieren und speichere es an einem sicheren Ort (wir empfehlen einen externen Datenträger). Du wirst mehr über dieses Zertifikat in <a href="#section5">Sektion 5</a> lernen.</p>
-	  <!-- <p class="notes"> -->
-	  <!-- Nachdem du deinen Schlüssel generiert hast, lädt der Enigmail-Assistent den öffentlichen Schlüssel auf einen Schlüsselserver hoch. Das ist ein Computer, der alle Schlüssel über das Internet verfügbar macht.</p> -->
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Ich kann das OpenPGP-Menü nicht finden.</dt>
+									<dd>In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt. OpenPGP könnte in einer Sektion namens Tools sein.</dd>
+    <dt>Der assistent kann GnuPG nicht finden.</dt>
 
-	  <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-	  <div class="troubleshooting">
-	    <h4>Probleme?</h4>
-	    <dl>
-	      <dt>Ich kann das OpenPGP-Menü nicht finden.</dt>
-	      <dd>
-		In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt. OpenPGP könnte in einer Sektion namens Tools sein.</dd>
-	      <dt>Der assistent kann GnuPG nicht finden.</dt>
+                                         <dd>Öffne das Programm, das du benutzt um Software zu installieren, suche GnuPG und installiere es. Starte dann den Assistenten unter OpenPGP &rarr; OpenPGP-Assistent neu.</dd>
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
+					</div><!-- End .main -->
+				</div><!-- End #step-2a .step  -->
 
-              <dd>Öffne das Programm, das du benutzt um Software zu installieren, suche GnuPG und installiere es. Starte dann den Assistenten unter OpenPGP &rarr; OpenPGP-Assistent neu.</dd>
-	      <!--<dt>Was heißt OpenPGP?</dt>
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-2b" class="step">
+					<div class="main">
+						<h3><em>Schritt 2.b</em>Lade den öffentlichen Schlüssel auf den Schlüsselserver hoch</h3>
+						<p>Wähle OpenPGP &rarr; Schlüsselverwaltung im Menü aus.</p>
+<p>Rechtsklicke auf deinen Schlüssel und klicke dann auf Öffentlichen Schlüssel Hochladen. Wähle dazu den voreingestellten Schlüsselserver im Pop-up.</p>
+<p class="notes"> Jetzt kann jemand, der dir eine verschlüsselte Nachricht übermitteln möchte, deinen Schlüssel vom Internet herunterladen.</p>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Der Fortschrittsbalken bewegt sich nicht.</dt>
+										<dd>Schließe das Pop-Up, überprüfe deine Internetverbindung und probiere es noch einmal. Wenn das nicht funktioniert, versuche es noch einmal und wähle einen anderen Schlüsselserver.</dd>
+<dt>Mein Schlüssel taucht nicht in der Liste auf.</dt>
+										<dd>Probiere, auf das Feld "Standardmäßig alle Schlüssel anzeigen" zu klicken.</dd>
 
-              <dd>OpenPGP ist ein Protokoll, das von GnuPG benutzt wird, so ähnlich wie HTTP, das zum Surfen im Internet verwendet wird. Es ist eine etwas missverständliche Bezeichung die Enigmail verwendet.</dd>-->
-	      <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
-	    </dl>
-	  </div><!-- /.troubleshooting -->
-	</div><!-- End .main -->
-    </div><!-- End #step-2a .step  -->
-    <div id="step-2b" class="step">
-      <div class="main">
-	<h3><em>Schritt 2.b</em>Lade den öffentlichen Schlüssel auf den Schlüsselserver hoch</h3>
-	<p>Wähle OpenPGP &rarr; Schlüsselverwaltung im Menü aus.</p>
-	<p>Rechtsklicke auf deinen Schlüssel und klicke dann auf Öffentlichen Schlüssel Hochladen. Wähle dazu den voreingestellten Schlüsselserver im Pop-up.</p>
-	<p class="notes"> Jetzt kann jemand, der dir eine verschlüsselte Nachricht übermitteln möchte, deinen Schlüssel vom Internet herunterladen.</p>
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
 
-	<!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-	<div class="troubleshooting">
-	  <h4>Probleme?</h4>
-	  <dl>
-	    <dt>Der Fortschrittsbalken bewegt sich nicht.</dt>
-	    <dd>
-	      Schließe das Pop-Up, überprüfe deine Internetverbindung und probiere es noch einmal. Wenn das nicht funktioniert, versuche es noch einmal und wähle einen anderen Schlüsselserver.</dd>
-	    <dt>Mein Schlüssel erscheint nicht in der Liste.</dt>
-	    <dd>Klicke auf das Feld &quot;Standardmäßig alle Schlüssel anzeigen&quot;</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
+					</div><!-- End .main -->
+				</div><!-- End #step-2a .step  -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="terminology" class="step">
+					<div class="main">
+						<h3>GnuPG, OpenPGP, was?</h3>
+						<p>Du nutzt ein Programm namens GnuPG, im Menü steht aber OpenPGP. Missverständlich, oder? Die Begriffe GnuPG, GPG, GNU Privacy Guard, OpenPGP und PGP werden oft verwendet, um das gleiche zu bezeichnen, sie haben aber leicht unterschiedliche Bedeutungen.</p>
+					</div><!-- End .main -->
+				</div><!-- End #terminology.step-->
 
-	    <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a>bescheid.</dd>
-	  </dl>
-	</div><!-- /.troubleshooting -->
-      </div>
-    </div>
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="terminology" class="step">
-      <div class="main">
-	<h3>GnuPG, OpenPGP, was?</h3>
-	<p>
-	  Du nutzt ein Programm namens GnuPG, im Menü steht aber OpenPGP. Missverständlich, oder? Die Begriffe GnuPG, GPG, GNU Privacy Guard, OpenPGP und PGP werden oft verwendet, um das gleiche zu bezeichnen, sie haben aber leicht unterschiedliche Bedeutungen.</p>
-	</div><!-- End .main -->
-    </div><!-- End #terminology.step-->
-  </div>
-</section><!-- End #section2 -->
+
+			</div>
+		</section><!-- End #section2 -->
 
 <!-- ~~~~~~~~~ Section 3: Try it out  ~~~~~~~~~ -->
-<section class="row" id="section3">
-  <div>
-    <div class="section-intro">
-      <h2><em>#3</em> Probiere es aus!</h2>
-      <p> Jetzt wirst du mit einem Programm namens Edward kommunizieren, das weiß, wie man E-Mails verschlüsselt.
-	Das ist so, als würdest du mit einer echten Person kommunizieren.</p>
-      <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    </div><!-- End .section-intro -->
+		<section class="row" id="section3">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+						<h2><em>#3</em> Probier es aus!</h2>
+						<p>Jetzt wirst du mit einem Programm namens Edward kommunizieren, das weiß, wie man E-Mails verschlüsselt. Das ist so, als würdest du mit einer echten Person kommunizieren.</p>
+				</div><!-- End .section-intro -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-3a" class="step">
-      <div class="sidebar">
-	<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
-      </div>
-      <div class="main">
-	<h3><em>Schritt 3.a</em>Schicke Edward deinen öffentlichen Schlüssel</h3>
-	<p>Dies ist ein spezieller Schritt, den du nicht machen musst, wenn du mit echten Menschen kommunizierst. Im Menü deines E-Mail-Programms, gehe auf OpenPGP &rarr; Schlüsselverwaltung. Du solltest deinen Schlüssel in der Liste sehen. Klicke auf deinen Schlüssel mit der rechten Maustaste und wähle dann Öffentliche Schlüssel per E-Mail senden. Dies erstellt eine neue Nachricht, so als hättest du auf Schreiben gedrückt.</p>
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-3a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 3.a</em>Schicke Edward deinen öffentlichen Schlüssel</h3>
+						<p>Dies ist ein spezieller Schritt, den du nicht machen musst, wenn du mit echten Menschen kommunizierst. Im Menü deines E-Mail-Programms, gehe auf OpenPGP &rarr; Schlüsselverwaltung. Du solltest deinen Schlüssel in der Liste sehen. Klicke auf deinen Schlüssel mit der rechten Maustaste und wähle dann Öffentliche Schlüssel per E-Mail senden. Dies erstellt eine neue Nachricht, so als hättest du auf Schreiben gedrückt.</p>
 
-	<p>Schreibe die Nachricht an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe mindestens ein Wort in den Betreff und in den Körper der E-Mail und klicke auf Senden.</p>
+<p>Schreibe die Nachricht an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe mindestens ein Wort in den Betreff und in den Körper der E-Mail und klicke auf Senden.</p>
 
-	<p class="notes">Es könnte sein, dass Edward einige Minuten braucht, um zurückzuschreiben. Lese derweil die Sektion <a href="#section5">Nutze es richtig</a>. Gehe weiter zum nächsten Schritt, wenn er geantwortet hat. Ab hier tust du das gleiche wie wenn du mit einer normalen Person kommunizierst.</p>
-      </div><!-- End .main -->
-    </div><!-- End #Step-3b .step -->
+<p class="notes">Es könnte sein, dass Edward einige Minuten braucht, um zurückzuschreiben. Lese derweil die Sektion <a href="#section5">Nutze es richtig</a>. Gehe weiter zum nächsten Schritt, wenn er geantwortet hat. Ab hier tust du das gleiche wie wenn du mit einer normalen Person kommunizierst.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-3b .step -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-3b" class="step">
-      <div class="main">
-	<h3><em>Schritt 3.b</em>Sende eine Verschlüsselte E-Mail</h3>
-	<p>Schreibe eine E-Mail an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe "Verschlüsselungstest" oder etwas ähnliches in den Betreff und irgendetwas in den Text der Nachricht. Schicke sie noch nicht ab.</p>
-	<p>
-	  Klicke auf das Icon mit dem Schlüssel am unteren Rand des Fensters (er sollte gelb werden).
-	    Das sagt Enigmail, dass die E-Mail verschlüsselt werden soll.
-	</p>
-	<p>Drücke auf Senden. Es sollte eine Meldung kommen, auf der "Nicht gefundene Empfänger" steht.</p>
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-3b" class="step">
+					<div class="main">
+							<h3><em>Schritt 3.b</em>Sende eine Verschlüsselte E-Mail</h3>
+							<p>Schreibe eine E-Mail an <a href="mailto:edward-de@fsf.org" >edward-de@fsf.org</a>. Schreibe "Verschlüsselungstest" oder etwas ähnliches in den Betreff und irgendetwas in den Text der Nachricht. Schicke sie noch nicht ab.</p>
+							<p>Klicke auf das Icon mit dem Schlüssel am unteren Rand des Fensters (er sollte gelb werden).
+							<p class="notes">Das sagt Enigmail, dass die E-Mail verschlüsselt werden soll.</p>
+							<p>Drücke auf Senden. Es sollte eine Meldung kommen, auf der "Nicht gefundene Empfänger" steht.</p>
 
-	<p>Um Edward verschlüsselte E-Mails zu senden, benötigst du seinen öffentlichen Schlüssel, also muss Enigmail ihn jetzt vom einem Schlüsselserver herunterladen. Klicke auf Fehlende Schlüssel herunterladen, wähle den ersten (Schlüssel-ID 4C11BBB2) und klicke dann auf OK.</p>
+							<p>Um Edward verschlüsselte E-Mails zu senden, benötigst du seinen öffentlichen Schlüssel, also muss Enigmail ihn jetzt vom einem Schlüsselserver herunterladen. Klicke auf Fehlende Schlüssel herunterladen, wähle den ersten (Schlüssel-ID 4C11BBB2) und klicke dann auf OK.</p>
 
-	<p>
-	  Jetzt bist du zurück am "Nicht gefundene Empfänger"-Dialog. Hier kannst du einfach auf OK klicken. Sollte die E-Mail nicht automatisch versendet werden, dann kannst du jetzt auf Senden drücken.
-	</p>
-	<!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-	<div class="troubleshooting">
-	  <h4>Probleme?</h4>
-	  <dl>
-	    <dt>Enigmail kann Edwards Schlüssel nicht finden.</dt>
-	    <dd>
-	      Schließe alle Pop-Ups, die seitdem du geklickt hast aufgetaucht sind. Vergewissere dich, dass du mit dem Internet verbunden bist und versuche es nochmal. Wenn dies nicht funktioniert, wähle einen anderen Schlüsselserver aus.</dd>
-	    <dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
-	  </dl>
-	  </div><!-- /.troubleshooting -->
-	</div><!-- End .main -->
-    </div><!-- End #step-3b .step -->
+							<p>Jetzt bist du zurück am "Nicht gefundene Empfänger"-Dialog. Hier kannst du einfach auf OK klicken. Sollte die E-Mail nicht automatisch versendet werden, dann kannst du jetzt auf Senden drücken.</p>
+					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+							<div class="troubleshooting">
+								<h4>Probleme?</h4>
+								<dl>
+									<dt>Enigmail kann Edwards Schlüssel nicht finden.</dt>
+										<dd>Schließe alle Pop-Ups, die seitdem du geklickt hast aufgetaucht sind. Vergewissere dich, dass du mit dem Internet verbunden bist und versuche es nochmal. Wenn dies nicht funktioniert, wähle einen anderen Schlüsselserver aus.</dd>
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
+								</dl>
+							</div><!-- /.troubleshooting -->
+						</div><!-- End .main -->
+					</div><!-- End #step-3b .step -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-headers_unencrypted" class="step">
-      <div class="main">
-	<h3><em>Wichtig:</em> Der Betreff wird nicht verschlüsselt</h3>
-	<p>
-	  Auch wenn du die E-Mail verschlüsselst, wird der Betreff unverschlüsselt versendet, also solltest du dort keine
-	  privaten Informationen hineinschreiben. Die Sender- und Empfängeradressen bleiben ebenfalls unverschlüsselt (woher sollte das Programm sonst wissen, wohin die E-Mail geht?).
-	  </p>
-      </div><!-- End .main -->
-    </div><!-- End #step-headers_unencrypted .step-->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-headers_unencrypted" class="step">
+					<div class="main">
+						<h3><em>Wichtig:</em> Der Betreff wird nicht verschlüsselt</h3>
+						<p>Auch wenn du die E-Mail verschlüsselst, wird der Betreff unverschlüsselt versendet, also solltest du dort keine privaten Informationen hineinschreiben. Die Sender- und Empfängeradressen bleiben ebenfalls unverschlüsselt (woher sollte das Programm sonst wissen, wohin die E-Mail geht?).</p>
+
+					</div><!-- End .main -->
+				</div><!-- End #step-headers_unencrypted .step-->
 
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-3c" class="step">
-      <div class="main">
-	<h3><em>Schritt 3.c</em> Empfange eine Antwort</h3>
-	<p>
-	  Wenn Edward deine E-Mail empfangen hat, entschlüsselt er sie mit seinem privaten Schlüssel. Dann wird er deinen öffentlichen Schlüssel von einem Schlüsselserver holen und ihn verwenden, um die Antwort zu verschlüsseln.
-	</p>
-	<p class="notes">
-	  Da du die E-Mail mit Edwards öffentlichen Schlüssel verschlüsselt hast, braucht man Edwards privaten Schlüssel um die E-Mail entschlüsseln zu können. Nur Edward besitzt den privaten Schlüssel, also kann niemand außer ihm &mdash; nicht einmal du &mdash; die E-Mail entschlüsseln.
-	</p>
-	<p class="notes">
-	  Edward braucht einige Minuten um zu antworten. In der zwischenzeit wäre es eine gute Idee, die Sektion <a href="#section5">Nutze es richtig</a> zu lesen.</p>
-	<p>
-	  Wenn du Edwards E-Mail bekommen und geöffnet hast, erkennt Enigmail automatisch, dass sie mit deinem öffentlichen Schlüssel verschlüsselt wurde. Enigmail entschlüsselt dann die E-Mail ohne dein Zutun mit deinem privaten Schlüssel.
-	</p>
-	<p>
-	  Beachte die Leiste mit Informationen über Edwards Schlüssel, die über der Nachricht erscheint.
-	</p>
-      </div><!-- End .main -->
-    </div><!-- End #step-3c .step -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-3c" class="step">
+					<div class="main">
+						<h3><em>Schritt 3.c</em> Empfange eine Antwort</h3>
+						<p>Wenn Edward deine E-Mail empfangen hat, entschlüsselt er sie mit seinem privaten Schlüssel. Dann wird er deinen öffentlichen Schlüssel von einem Schlüsselserver holen und ihn verwenden, um die Antwort zu verschlüsseln.</p>
+						<p class="notes">Da du die E-Mail mit Edwards öffentlichen Schlüssel verschlüsselt hast, braucht man Edwards privaten Schlüssel um die E-Mail entschlüsseln zu können. Nur Edward besitzt den privaten Schlüssel, also kann niemand außer ihm &mdash; nicht einmal du &mdash; die E-Mail entschlüsseln.</p>
+						<p class="notes">Edward braucht einige Minuten um zu antworten. In der zwischenzeit wäre es eine gute Idee, die Sektion <a href="#section5">Nutze es richtig</a> zu lesen.</p>
+						<p>Wenn du Edwards E-Mail bekommen und geöffnet hast, erkennt Enigmail automatisch, dass sie mit deinem öffentlichen Schlüssel verschlüsselt wurde. Enigmail entschlüsselt dann die E-Mail ohne dein Zutun mit deinem privaten Schlüssel.</p>
+						<p>Beachte die Leiste mit Informationen über Edwards Schlüssel, die über der Nachricht erscheint.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-3c .step -->
 
-    <!-- STEP 3D IS COMMENTED OUT UNTIL WE FIND A WAY TO VALIDATE SIGNATURES
-	 <div id="step-3d" class="step">
-	   <div class="main">
-	     <h3><em>Schritt 3.d</em> Send a test signed email to a friend</h3>
-	     <p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
-	     <p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
-	     <p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
-	   </div>
-	 </div>-->
-  </div>
-</section>
+<!-- STEP 3D IS COMMENTED OUT UNTIL WE FIND A WAY TO VALIDATE SIGNATURES
+				<div id="step-3d" class="step">
+					<div class="main">
+						<h3><em>Step 3.d</em> Send a test signed email to a friend</h3>
+						<p>Write a new email in your email program, addressed to a friend. If you want, tell them about this guide!</p>
+						<p>Before sending the email, click the icon of the pencil in the bottom right of the composition window (it should turn yellow). This tells Enigmail to sign the email with you private key.</p>
+						<p>After you click send, Enigmail will ask you for your password. It will do this any time it needs to use your public key.</p>
+					</div>
+				</div>-->
+			</div>
+		</section><!-- End #section3 -->
+
+
 <!-- ~~~~~~~~~ Section 4: Learn the Web of Trust  ~~~~~~~~~ -->
-<section class="row" id="section4">
-  <div>
-    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    <div class="section-intro">
-      <h2><em>#4</em> Verwende das Web of Trust</h2>
-      <p>
-	E-Mail-Verschlüsselung ist zwar eine leistungsfähige Technologie, sie hat aber eine Schwäche: sie benötigt eine Methode um überprüfen zu können, ob ein öffentlicher Schlüssel tatsächlich der angegebenen Person gehört. Ansonsten gäbe es keine Möglichkeit, einen Angreifer davon abzuhalten, Schlüssel mit dem Namen deines Freundes zu erstellen und dich glauben zu lassen, er sei dein Freund. Also wurden Signaturen und das Web of Trust erfunden.</p>
+		<section class="row" id="section4">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+						<h2><em>#4</em>Verwende das Web of Trust</h2>
+						<p>E-Mail-Verschlüsselung ist zwar eine leistungsfähige Technologie, sie hat aber eine Schwäche: sie benötigt eine Methode um überprüfen zu können, ob ein öffentlicher Schlüssel tatsächlich der angegebenen Person gehört. Ansonsten gäbe es keine Möglichkeit, einen Angreifer davon abzuhalten, Schlüssel mit dem Namen deines Freundes zu erstellen und dich glauben zu lassen, er sei dein Freund. Also wurden Signaturen und das Web of Trust erfunden.</p>
 
-      <p>Wenn du den Schlüssel von jemandem signierst, dann sagst du öffentlich, dass du glaubst, dass der Schlüssel tatsächlich dieser Person gehört und nicht einem Angreifer. Man kann sehen, wer deinen Schlüssel signiert hat. Wenn du GnuPG einige Jahre lang verwendet hast, kannst du hunderte Signaturen haben. Das Web of Trust ist eine Konstellation aller GnuPG-Nutzer, die durch Signaturenketten zu einem Netz verbunden sind. Je mehr Signaturen ein Schlüssel hat, desto vertrauenswürdiger ist er.</p>
+<p>Wenn du den Schlüssel von jemandem signierst, dann sagst du öffentlich, dass du glaubst, dass der Schlüssel tatsächlich dieser Person gehört und nicht einem Angreifer. Man kann sehen, wer deinen Schlüssel signiert hat. Wenn du GnuPG einige Jahre lang verwendet hast, kannst du hunderte Signaturen haben. Das Web of Trust ist eine Konstellation aller GnuPG-Nutzer, die durch Signaturenketten zu einem Netz verbunden sind. Je mehr Signaturen ein Schlüssel hat, desto vertrauenswürdiger ist er.</p>
 
-      <p>Öffentliche Schlüssel werden normalerweise mit einer 8-stelligen Schlüssel-ID wie 4C11BBB2 (für Edwards Schlüssel) identifiziert. Du kannst deine Schlüssel-ID in OpenPGP &rarr; Key Management im Menü deines E-Mail-Programms sehen. Auf diese Schlüssel-ID sollte man sich jedoch nicht vollständig verlassen, da es Schlüssel geben kann, die die gleiche Schlüssel-ID besitzen.</p>
-      <p>
-	Es ist eine gute Idee, deine Schlüssel-ID zu verbreiten, sodass Leute deinen Schlüssel einfacher auf dem Schlüsselserver finden können. Du wirst auch öffentliche Schlüssel finden, die mit einem sogenannten Fingerabdruck identifiziert werden. Dabei handelt es sich um eine wesentlich längere Zahlenfolge, wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7. Die Schlüssel-ID entspricht den letzten 8 Stellen des Fingerabdrucks. Der Fingerabdruck selbst ist tatsächlich einzigartig.
-      </p>
+<p>Öffentliche Schlüssel werden normalerweise mit einer 8-stelligen Schlüssel-ID wie 4C11BBB2 (für Edwards Schlüssel) identifiziert. Du kannst deine Schlüssel-ID in OpenPGP &rarr; Key Management im Menü deines E-Mail-Programms sehen. Auf diese Schlüssel-ID sollte man sich jedoch nicht vollständig verlassen, da es Schlüssel geben kann, die die gleiche Schlüssel-ID besitzen.</p>
 
-      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-      <div id="step-4a" class="step">
-	<div class="sidebar">
-	  <p><img src="/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
-	</div><!-- /.sidebar -->
-	<div class="main">
-	  <h3><em>Schritt 4.a</em>Signiere einen Schlüssel</h3>
-	  <p>In deinen E-Mail-Programm, gehe zu OpenPGP &rarr; Schlüsselverwaltung.</p>
-	  <p>Klicke mit der rechten Maustaste auf Edwards öffentlichen Schlüssel und wähle jetzt Unterschreiben.</p>
-	  <p>Im Fenster das erscheint, wähle "Keine Antwort" und klicke auf OK.</p>
-	  <p>Wähle Edwards Schlüssel aus der Liste aus und gehe dann auf Schlüsselserver &rarr; Schlüssel Hochladen und klicke auf OK.</p>
-	  <p class="notes">Du hast gerade gesagt, dass du darauf vertraust, dass Edwards Schlüssel tatsächlich Edward gehört. Dies bedeutet wenig, da Edward keine echte Person ist, es ist aber eine gute Praxis.</p>
+<p class="notes">Es ist eine gute Idee, deine Schlüssel-ID zu verbreiten, sodass Leute deinen Schlüssel einfacher auf dem Schlüsselserver finden können. Du wirst auch öffentliche Schlüssel finden, die mit einem sogenannten Fingerabdruck identifiziert werden. Dabei handelt es sich um eine wesentlich längere Zahlenfolge, wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7. Die Schlüssel-ID entspricht den letzten 8 Stellen des Fingerabdrucks. Der Fingerabdruck selbst ist tatsächlich einzigartig.</p>
 
 
-	  <!--<div id="pgp-pathfinder">
-	      <form enctype="application/x-www-form-urlencoded" action="/mk_path.cgi" method="get">
-		<p><strong>From:</strong> <input type="text" placeholder="xD41A008"  name="FROM"></p>
-		<p><strong>To:</strong> <input type="text" placeholder="50BD01x4" name="TO"></p>
-		<p class="buttons"><input type="submit" value="trust paths" name="PATHS"> <input type="reset" value="reset" name=".reset"></p>
-	      </form>
-	  </div> -->
+				</div><!-- End .section-intro -->
 
-	</div><!-- End .main -->
-      </div><!-- End #step-4a .step -->
-      <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-      <div id="step-sign_real_keys" class="step">
-	<div class="main">
-	  <h3><em>Wichtig:</em> Überprüfe die Identität der Leute, deren Schlüssel du signierst.</h3>
-	  <p>Bevor du einen Schlüssel signierst, überprüfe die Identität des Eigentümers, am Besten mit einem Ausweis. Hierfür sollte man sich idealerweise persönlich treffen. Du solltest auf die Frage, wie gut du die Identität überprüft hast, immer mit "Keine Antwort" antworten, da diese Frage wenig Nutzen hat und viel mehr Informationen über deine Sozialen Kontakte liefert als normale Signaturen.</p>
-	</div><!-- End .main -->
-      </div><!-- End #step-sign_real_keys .step-->
-    </div>
-  </div>
-</section><!-- End #section4 -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-4a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 4.a</em>Signiere einen Schlüssel</h3>
+						<p>In deinen E-Mail-Programm, gehe zu OpenPGP &rarr; Schlüsselverwaltung.</p>
+						<p>Klicke mit der rechten Maustaste auf Edwards öffentlichen Schlüssel und wähle jetzt Unterschreiben.</p>
+						<p>Im Fenster das erscheint, wähle "Keine Antwort" und klicke auf OK.</p>
+						<p>Wähle Edwards Schlüssel aus der Liste aus und gehe dann auf Schlüsselserver &rarr; Schlüssel Hochladen und klicke auf OK.</p>
+						<p class="notes">Du hast gerade gesagt, dass du darauf vertraust, dass Edwards Schlüssel tatsächlich Edward gehört. Dies bedeutet wenig, da Edward keine echte Person ist, es ist aber eine gute Praxis.</p>
+
+
+						<!--<div id="pgp-pathfinder">
+							<form enctype="application/x-www-form-urlencoded" action="/mk_path.cgi" method="get">
+								<p><strong>From:</strong> <input type="text" placeholder="xD41A008"  name="FROM"></p>
+								<p><strong>To:</strong> <input type="text" placeholder="50BD01x4" name="TO"></p>
+								<p class="buttons"><input type="submit" value="trust paths" name="PATHS"> <input type="reset" value="reset" name=".reset"></p>
+							</form>
+						</div><!-- End #pgp-pathfinder -->
+
+					</div><!-- End .main -->
+				</div><!-- End #step-4a .step -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-sign_real_keys" class="step">
+					<div class="main">
+						<h3><em>Wichtig:</em> Überprüfe die Identität der Leute, deren Schlüssel du signierst.</h3>
+						<p>Bevor du einen Schlüssel signierst, überprüfe die Identität des Eigentümers, am Besten mit einem Ausweis. Hierfür sollte man sich idealerweise persönlich treffen. Du solltest auf die Frage, wie gut du die Identität überprüft hast, immer mit "Keine Antwort" antworten, da diese Frage wenig Nutzen hat und viel mehr Informationen über deine Sozialen Kontakte liefert als normale Signaturen.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-sign_real_keys .step-->
+
+
+
+			</div>
+		</section><!-- End #section4 -->
+
 <!-- ~~~~~~~~~ Section 5: Use it well  ~~~~~~~~~ -->
-<section id="section5" class="row">
-  <div>
-    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    <div class="section-intro">
-      <h2><em>#5</em> Nutze es richtig</h2>
-      <p>Jeder nutzt GnuPG auf seine Art und Weise, es ist aber wichtig einige einfache Praktiken zu befolgen. Wenn du sie nicht befolgst, riskierst du deine eigene Privatsphäre und die deiner Kommunikationspartner. Außerdem beschädigst du das Web of Trust.</p>
-    </div><!-- End .section-intro -->
+		<section id="section5" class="row">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+						<h2><em>#5</em> Nutze es richtig</h2>
+<p>Jeder nutzt GnuPG auf seine Art und Weise, es ist aber wichtig einige einfache Praktiken zu befolgen. Wenn du sie nicht befolgst, riskierst du deine eigene Privatsphäre und die deiner Kommunikationspartner. Außerdem beschädigst du das Web of Trust.</p>
+				</div><!-- End .section-intro -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-5a" class="step">
-      <div class="sidebar">
-	<p><img src="/img/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
-      </div><!-- /.sidebar -->
-      <div class="main">
-	<h3>Wann soll ich E-Mails verschlüsseln?</h3>
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-5a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3>Wann soll ich E-Mails verschlüsseln?</h3>
 
-	<p>
-	  Je öfters du verschlüsselst, desto besser. Wenn du nur E-Mails hin und wieder verschlüsselt, könnte jede verschlüsselte Nachricht aufmerksamer von den Geheimdiensten verfolgt werden. Wenn alle oder die meisten deiner Nachrichten verschlüsselt sind, wissen die Überwacher nicht, wo sie anfangen sollen.</p>
+						<p>Je öfters du verschlüsselst, desto besser. Wenn du nur E-Mails hin und wieder verschlüsselt, könnte jede verschlüsselte Nachricht aufmerksamer von den Geheimdiensten verfolgt werden. Wenn alle oder die meisten deiner Nachrichten verschlüsselt sind, wissen die Überwacher nicht, wo sie anfangen sollen.</p>
 
-	<p>
-	  Das heißt nicht, dass es sinnlos ist, nur einige Nachrichten zu verschlüsseln -- Es ist ein guter Start und macht Massenüberwachung schwieriger.</p>
+<p>Das heißt nicht, dass es sinnlos ist, nur einige Nachrichten zu verschlüsseln -- Es ist ein guter Start und macht Massenüberwachung schwieriger.</p>
 
-      </div><!-- End .main -->
-    </div><!-- End #step-5a .step -->
+					</div><!-- End .main -->
+				</div><!-- End #step-5a .step -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-5b" class="step">
-      <div class="sidebar">
-	<p><img src="/img/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
-      </div><!-- /.sidebar -->
-      <div class="main">
-	<h3><em>Wichtig:</em> Nimm dich vor ungültigen Schlüsseln in Acht!</h3>
-	<p>
-	  GnuPG macht E-Mails sicherer, es ist aber wichtig nach ungültigen Schlüsseln Ausschau zu halten. E-Mails, die mit ungültigen Schlüsseln verschlüsselt wurden könnten von Überwachungsprogrammen gelesen werden. </p>
-	<p>
-	Gehe in deinem E-Mail-Programm zurück zur zweiten E-Mail, die dir Edward gesendet hat. Weil sie mit deinem Schlüssel verschlüsselt wurde, gibt es oben eine Leiste die sagt, dass die E-Mail verschlüsselt ist.</p>
-	<p><b>
-Gewöhne es dir an, dass du auf diese Leiste schaust. Enigmail wird dich warnen, wenn E-Mails mit ungültigen Schlüsseln verschlüsselt wurden.</b></p>
-      </div><!-- End .main -->
-    </div><!-- End #step-5b .step -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-5b" class="step">
+					<div class="sidebar">
+						<p><img src="/img/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Wichtig:</em> Nimm dich vor ungültigen Schlüsseln in Acht!</h3>
+						<p>GnuPG macht E-Mails sicherer, es ist aber wichtig nach ungültigen Schlüsseln Ausschau zu halten. E-Mails, die mit ungültigen Schlüsseln verschlüsselt wurden könnten von Überwachungsprogrammen gelesen werden. </p>
+						<p>Gehe in deinem E-Mail-Programm zurück zur zweiten E-Mail, die dir Edward gesendet hat. Weil sie mit deinem Schlüssel verschlüsselt wurde, gibt es oben eine Leiste die sagt, dass die E-Mail verschlüsselt ist.</p>
+<p><b>Gewöhne es dir an, dass du auf diese Leiste schaust. Enigmail wird dich warnen, wenn E-Mails mit ungültigen Schlüsseln verschlüsselt wurden.</b></p>
+					</div><!-- End .main -->
+				</div><!-- End #step-5b .step -->>
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-5c" class="step">
-      <div class="main">
-	<h3>Speichere dein Widerrufszertifikat an einem sichren Ort.</h3>
-	<p>
-Kopiere das Widerrufszertifikat auf das sicherste Speichermedium das du hast. Das Ideale wäre ein Flash-Speicher, der an einem sicheren Ort aufbewahrt wird.</p>
-	<p>Sollte dein privater Schlüssel gestohlen werden oder verloren gehen, benötigst du dieses Zertifikat.</p>
-      </div><!-- End .main -->
-    </div><!-- End #step-5c .step -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-5c" class="step">
+					<div class="main">
+						<h3>Speichere dein Widerrufszertifikat an einem sichren Ort.</h3>
+						<p>Kopiere das Widerrufszertifikat auf das sicherste Speichermedium das du hast. Das Ideale wäre ein Flash-Speicher, der an einem sicheren Ort aufbewahrt wird.</p>
+<p>Sollte dein privater Schlüssel gestohlen werden oder verloren gehen, benötigst du dieses Zertifikat.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-5c .step -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-lost_key" class="step">
-      <div class="main">
-	<h3><em>Wichtig:</em> Reagiere schnell, wenn jemand deinen privaten Schlüssel bekommt!</h3>
-	<p> Wenn du deinen privaten Schlüssel verlierst (z.B. wenn jemand deinen Computer stiehlt, oder sich gegen deinen Willen zu ihm Zugang verschafft) ist es wichtig ihn sofort zu annulieren bevor ihn jemand benutzt, um deine E-Mails zu lesen. Wie dies geht wird in dieser Anleitung nicht beschrieben, du kannst dies aber im <a href="https://www.gnupg.org/gph/de/manual/c319.html#AEN389" >Handbuch von GnuPG</a> nachlesen.</p>
-      </div><!-- End .main -->
-    </div><!-- End #step-lost_key .step-->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-lost_key" class="step">
+					<div class="main">
+						<h3><em>Wichtig:</em> Reagiere schnell, wenn jemand deinen privaten Schlüssel bekommt!</h3>
+						<p> Wenn du deinen privaten Schlüssel verlierst (z.B. wenn jemand deinen Computer stiehlt, oder sich gegen deinen Willen zu ihm Zugang verschafft) ist es wichtig ihn sofort zu annulieren bevor ihn jemand benutzt, um deine E-Mails zu lesen. Wie dies geht wird in dieser Anleitung nicht beschrieben, du kannst dies aber im <a href="https://www.gnupg.org/gph/de/manual/c319.html#AEN389" >Handbuch von GnuPG</a> nachlesen.</p>
+					</div><!-- End .main -->
+				</div><!-- End #step-lost_key .step-->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-5d" class="step">
-      <div class="main">
-	<h3>Mache deinen öffentlichen Schlüssel zu einem Teil deiner Online-Identität.</h3>
-	<p>Füge als Erstes deine Schlüssel-ID zu deiner E-Mail-Signatur hinzu. Dann schreibe an mindestens fünf deiner Freunde ein E-Mail, in dem deine Schlüssel-ID steht und dass du gerade GnuPG installiert hast. Vergesse nicht, dass es eine tolle <a href="http://de.gpcf.eu/selbstvertidigung" >Infographik</a> gibt, die du mit deinen Freunden teilen kannst.</p>
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-5d" class="step">
+					<div class="main">
+						<h3>Mache deinen öffentlichen Schlüssel zu einem Teil deiner Online-Identität.</h3>
+						<p>Füge als Erstes deine Schlüssel-ID zu deiner E-Mail-Signatur hinzu. Dann schreibe an mindestens fünf deiner Freunde ein E-Mail, in dem deine Schlüssel-ID steht und dass du gerade GnuPG installiert hast. Vergesse nicht, dass es eine tolle <a href="http://de.gpcf.eu/selbstvertidigung" >Infographik</a> gibt, die du mit deinen Freunden teilen kannst.</p>
 
-	<p class="notes">
-	  Schreibe deine Schlüssel-ID überall hin, wo jemand deine E-Mail-Adresse sehen könnte: deine Profile auf sozialen Netzwerken, Blogs, Webseiten oder Visitenkarten. Wir müssen unsere E-Mail-Kultur so verändern, dass wir den Eindruck bekommen, dass etwas fehlt, wenn wir eine E-Mail-Adresse ohne eine Schlüssel-ID sehen.</p>
-      </div><!-- End .main -->
-    </div><!-- End #step-5d .step-->
-  </div>
-</section>
+<p class="notes">Schreibe deine Schlüssel-ID überall hin, wo jemand deine E-Mail-Adresse sehen könnte: deine Profile auf sozialen Netzwerken, Blogs, Webseiten oder Visitenkarten. Wir müssen unsere E-Mail-Kultur so verändern, dass wir den Eindruck bekommen, dass etwas fehlt, wenn wir eine E-Mail-Adresse ohne eine Schlüssel-ID sehen.</p>
+					</div><!-- End .main
+				</div> End #step-5d .step-->
+
+
+			</div>
+		</section><!-- End #section5 -->
+
 
 
 <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
-<section class="row" id="section6">
-  <div id="step-click_here" class="step">
-    <div class="main">
-      <h2><a href="next_steps.html">Klicke hier, wenn du fertig bist</a></h2>
+		<section class="row" id="section6">
+			<div id="step-click_here" class="step">
+					<div class="main">
+					  <h2><a href="next_steps.html">Klicke hier, wenn du fertig bist</a></h2>
 
-    </div><!-- End .main -->
-  </div><!-- End #step-click_here .step-->
+					</div><!-- End .main -->
+				</div><!-- End #step-click_here .step-->
 
-</section><!-- End #section6 -->
+		</section><!-- End #section6 -->
 
 <!-- ~~~~~~~~~ FAQ  ~~~~~~~~~ -->
 <!-- When un-commenting this section go to main.css and search
