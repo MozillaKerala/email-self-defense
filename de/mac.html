@@ -1,133 +1,141 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <meta charset="utf-8">
+			<meta charset="utf-8">
 
-	  <title>E-Mail-Selbstverteidigung - Eine Anleitung zur Bekämpfung der Überwachung mit GnuPG</title>
-	  <meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, Enigmail" />
-	  <meta name="description" content="E-Mail-Überwachung verstößt gegen grundlegende Rechte und bedroht die Meinungsfreiheit. Diese Anleitung zeigt dir, wie du in 30 Minuten mit GnuPG verschlüsseln kannst.">
+			<title>E-Mail-Selbstverteidigung - eine Anleitung zur Bekämpfung der Überwachung durch Verschlüsselung mit GnuPG</title>
+			<meta name="keywords" content="GnuPG, GPG, openpgp, Überwachung, Privatsphäre, E-Mail, Enigmail" />
+      <meta name="description" content="Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die freie Meinungsäußerung. Diese Anleitung zeigt dir in 30 Minuten, wie du dich mit Hilfe von GnuPG selbst verteidigen kannst.">
 
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  	  <link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
-	  <style type="text/css" >
-	    h1 { font-size: 4.5 em !important}
-	  </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
+  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
+
 	</head>
-<body>
+	<body>
 
-  <!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
+<!-- ~~~~~~~~~ GnuPG Header and introduction text  ~~~~~~~~~ -->
 
-  <header class="row"  id="header">
-    <div>
-      <h1 style="font-size: 4.5em;" >E-Mail-Selbstverteidigung</h1>
-      <!-- Language list for browsers that do not have JS enabled -->
-      <ul id="languages" class="os">
-        <li><a href="/en">english</a></li>
-        <li><a href="/es">español</a></li>
-        <li><a href="/fr">français</a></li>
-        <li><a class="current" href="/de">deutsch</a></li>
-        <li><a href="/pt-br">português do Brasil</a></li>
-        <li><a href="/tr">türkçe</a></li>
-        <li><a href="/ro">română</a></li>
-        <li><a href="/ru">русский</a></li>
-        <li><a href="/ml">മലയാളം</a></li>
-        <li><a href="/ko">한국어</a></li>
-        <li><a href="/ja">日本語</a></li>
+		<header class="row"  id="header">
+			<div>
+			  <h1>E-Mail-Selbstverteidigung</h1>
+
+                          <!-- Language list for browsers that do not have JS enabled -->
+                          <ul id="languages" class="os">
+                            <li><a href="/en">english</a></li>
+                            <li><a href="/es">español</a></li>
+                            <li><a href="/fr">français</a></li>
+                            <li><a class="current" href="/de">deutsch</a></li>
+                            <li><a href="/pt-br">português do Brasil</a></li>
+                            <li><a href="/tr">türkçe</a></li>
+                            <li><a href="/ro">română</a></li>
+                            <li><a href="/ru">русский</a></li>
+                            <li><a href="/ml">മലയാളം</a></li>
+                            <li><a href="/ko">한국어</a></li>
+                            <li><a href="/ja">日本語</a></li>
                             <li><a href="/el">ελληνικά</a></li>
-      </ul>
-<!-- top-bar-mac -->
-<ul id="menu" class="os">
-  <li class="spacer">
-    <a href="index.html" >GNU/Linux</a>
-  </li>
-  <li>
-    <a href="mac.html" class="current" >Mac OS</a>
-  </li>
-  <li>
-    <a href="windows.html">Windows</a>
-  </li>
-<!-- begin index.html.pre -->
-<li class="spacer">
-  <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=E-Mail-Verschlüsselung%20für%20alle%20von%20%40fsf%20%23EmailSelbstverteidigung">
-    #EmailSelbstverteidigung
-  </a>
-</li>
-</ul>
+                          </ul>
 
-<!--  FSF Introduction -->
-<div id="fsf-intro">
-  <h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
-  <div  style="font-size:125%"><p>E-Mail-Selbstverteidigung ist ein Projekt der Free Software Foundation. Wir setzen uns für die Rechte der Nutzer ein und unterstützen die Entwicklung von freier Software wie GnuPG, das in dieser Anleitung eingesetzt wird.</p><p><strong>
-	Wir möchten Programme wie dieses so weit wie möglich verbreiten, um so vielen Leuten wie möglich den ersten Schritt zur Nutzung von freier Software zum Schutz der Privatsphäre zu erleichtern. Könntest du bitte eine Spende machen um uns zu helfen, diese Ziele zu erreichen?
-  </strong></p></div>
+                          <ul id="menu" class="os">
+			    <li class="spacer">
+                              <a href="index.html">GNU/Linux</a>
+                            </li>
+			    <li>
+                              <a href="mac.html" class="current">Mac OS</a>
+                            </li>
+			    <li>
+                              <a href="windows.html">Windows</a>
+                            </li>
+			    <li class="spacer">
+                              <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=E-Mail-Verschlüsselung für alle via %40fsf">
+                                #EmailSelbstverteidigung
+                              </a>
+                            </li>
+			  </ul>
 
-  <p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&amp;id=14&amp;pk_campaign=esd&amp;pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
+				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
+				<div id="fsf-intro">
+				  <h3>
+                                    <a href="http://u.fsf.org/ys">
+                                      <img alt="Free Software Foundation"
+                                           src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png">
+                                    </a>
+                                  </h3>
+                                  <div class="fsf-emphasis">
+                                    <p>
+                                      Wie kämpfen für die Rechte von Computernutzerinnen und -nutzern und fördern die Entwicklung freier (wie in Freiheit) Software. Widerstand gegen die Massenüberwachung ist sehr wichtig für uns.
+                                    </p>
+                                    <p>
+                                      <strong>
+                                        Wir möchten Hilfsmittel wie dieses massiv fördern – persönlich und online –, um so vielen Leuten wie möglich die ersten Schritte zur Nutzung freier Software zum Schutz ihrer Privatheit zu erleichtern. Könntest du vielleicht eine Spende geben oder Mitglied werden, um uns beim Erreichen dieses Ziels zu helfen?
+                                      </strong>
+                                    </p>
+                                  </div>
 
-</div><!-- End #fsf-intro -->
+					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/de/donate.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/de/join.png"></a></p>
 
-<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
-<div class="intro">
-  <p>
-    <a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-    Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die Meinungsfreiheit. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachern oder Kriminellen, die deine E-Mails abfangen, nicht gelesen werden können. Alles, was du brauchst, ist ein Computer mit einer Internetverbindung, ein E-Mail-Konto und eine halbe Stunde Zeit.
-  </p>
+				</div><!-- End #fsf-intro -->
 
-  <p>
-    Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre der Menschen, mit denen du kommunizierst und macht den Systemen der Massenüberwachung das Leben schwer. Wenn du doch etwas wichtiges verbergen möchtest, bist du in guter Gesellschaft: dies sind die gleichen Werkzeuge die Edward Snowden benutzt hat, um seine bekannten Geheimnisse über die NSA zu verbreiten.
-  </p>
+				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
+				<div class="intro">
+					<p>
+						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/de/infographic-button.png" alt="Sieh dir unsere Infografik an und verbreite sie weiter &rarr;" /></a>
+					Massenüberwachung verstößt gegen unsere Grundrechte und bedroht die freie Meinungsäußerung. Diese Anleitung bringt dir eine einfache Selbstverteidigungsmethode bei: E-Mail-Verschlüsselung. Wenn du fertig bist, kannst du E-Mails senden und empfangen, die von Überwachern oder Kriminellen, die deine E-Mails abfangen, nicht gelesen werden können. Alles, was du brauchst, ist ein Computer mit einer Internetverbindung, ein E-Mail-Konto und eine halbe Stunde Zeit.</p>
 
-	<p>Sich gegen Überwachung zu wehren, erfordert neben der Verwendung von Verschlüsselung den politischen Kampf dafür, dass <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">weniger Daten über uns gesammelt werden</a>. Aber der erste Schritt ist es, dich selber zu schützen und die Überwachung deiner Kommunikation so schwer wie möglich zu machen. Lasst uns anfangen!</p>
-</div>
-</div>
+<p>Auch wenn du nichts zu verbergen hast, die Verwendung von Verschlüsselung schützt die Privatsphäre der Menschen, mit denen du kommunizierst, und macht den Systemen der Massenüberwachung das Leben schwer. Wenn du doch etwas wichtiges verbergen möchtest, bist du in guter Gesellschaft: Dies sind die gleichen Werkzeuge die Edward Snowden benutzt hat, um seine bekannten Geheimnisse über die NSA zu verbreiten.</p>
 
-</header><!-- End #header -->
+<p>Sich gegen Überwachung zu wehren, erfordert neben der Verwendung von Verschlüsselung den politischen Kampf dafür, dass <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">weniger Daten über uns gesammelt werden</a>. Aber der erste Schritt ist es, dich selber zu schützen und die Überwachung deiner Kommunikation so schwer wie möglich zu machen. Los geht's!</p>
+
+				</div>
+
+			</div>
+		</header><!-- End #header -->
 
 <!-- ~~~~~~~~~ Section 1: Get the pieces  ~~~~~~~~~ -->
-<section class="row" id="section1">
-  <div>
-    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    <div class="section-intro">
-      <h2><em>#1</em> Installiere die Programme</h2>
-      <p class="notes">
-	Diese Anleitung basiert auf freier Software. Freie Software ist transparent und kann von Allen kopiert und angepasst werden. Dadurch ist sie sicherer vor Überwachung als nicht-freie Software (wie Windows). Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
+		<section class="row" id="section1">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+						<h2><em>#1</em> Installiere die Programme</h2>
+<p class="notes">Diese Anleitung basiert auf freier Software. Freie Software ist transparent und kann von allen kopiert und angepasst werden. Dadurch ist sie sicherer vor Überwachung als nicht-freie Software (wie Windows). Um deine Freiheit zu verteidigen und dich vor Überwachung zu schützen, empfehlen wir dir, zu einem freien Betriebsystem wie GNU/Linux zu wechseln. Lerne mehr über freie Software auf <a href="https://u.fsf.org/ys">fsf.org</a>.</p>
 
-      <p>Das einzige was du benötigst ist ein Computer mit einem Internetanschluss, ein E-Mail-Konto und etwa eine halbe Stunde. Du kannst hierfür auch deinen existierenden E-Mail-Account verwenden.</p>
-      <p>
-	Auf den  meisten GNU/Linux-Systemen ist GnuPG bereits installiert, also musst du es nicht herunterladen. Bevor du GnuPG konfigurierst, brauchst du jedoch ein E-Mail-Programm. Bei den meisten GNU/Linux-Distributionen kann man eine freie Version des Programms Thunderbird installieren. E-Mail-Programme sind eine weitere Art auf E-Mail-Konten zuzugreifen, die ähnlich wie Webmail funktioniert, aber mehr Funktionen bieten.</p>
-      <p>Wenn du bereits eines dieser Programme hast, kannst du zu <a href="#step-1b">Schritt 1.b</a>.</p>
+<p>Zu Beginn brauchst du ein E-Mail-Programm. In dieser Anleitung wird eine freie Version des Programms Thunderbird verwendet. E-Mail-Programme sind eine weitere Art auf E-Mail-Konten zuzugreifen, die ähnlich wie Webmail funktioniert, aber mehr Funktionen bieten.</p>
+                        <p>Wenn du bereits eines dieser Programme hast, kannst du zu <a href="#step-1b">Schritt 1.b</a> springen.</p>
+</p>
+				</div><!-- End .section-intro -->
 
-    </div><!-- End .section-intro -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-1a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/de/screenshots/step1a-install-wizard.png" alt="Step 1.A: Install Wizard" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Programm für dein E-Mail-Konto (wenn es nicht schon getan wurde)</h3>
+						<p>Öffne dein E-Mail-Programm und folge dem Assistenten, der es für dein E-Mail-Konto konfiguriert.</p>
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div class="main">
-      <h3><em>Schritt 1.a</em> Konfiguriere dein E-Mail-Programm für dein E-Mail-Konto (wenn es nicht schon getan wurde).</h3>
-      <p>Öffne dein E-Mail-Programm und folge dem Assistenten, der es für dein E-Mail-Konto konfiguriert.</p>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Was ist ein Assistent?</dt>
+									<dd>Ein Assistent besteht aus mehreren Fenstern, die nacheinander erscheinen und es einfach machen, etwas am Computer zu erledigen, z.B. ein Programm zu installieren. Du klickst dich durch die Fenster und wählst gleichzeitig die Optionen aus.</dd>
+								<dt>Mein E-Mail-Programm findet mein E-Mail-Konto nicht oder lädt keine E-Mails herunter.</dt>
+									<dd>Bevor du im Web suchst empfehlen wir, andere Menschen, die das gleiche E-Mail-System benutzen, nach den richtigen Einstellungen zu fragen.</dd>
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
 
-      <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-      <div class="troubleshooting">
-	<h4>Probleme?</h4>
-	<dl>
-	  <dt>Was ist ein Assistent?</dt>
-	  <dd>
-	    Ein Assistent besteht aus mehreren Fenstern, die nacheinander erscheinen und es einfach machen, etwas am Computer zu erledigen, z.B. beispielsweise ein Programm zu installieren. Du klickst dich durch die Fenster und wählst gleichzeitig die Optionen aus.</dd>
-	  <dt>Mein E-Mail-Programm findet mein E-Mail-Konto nicht oder lädt keine E-Mails herunter.</dt>
-	  <dd>Bevor du im Web suchst empfehlen wir andere Menschen zu fragen, die das gleiche E-Mail-System benutzen, nach den richtigen Einstellungen zu fragen.</dd>
-	  <dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
-	</dl>
-      </div><!-- /.troubleshooting -->
-
-    </div><!-- End .main -->
-  </div><!-- End #step1-a .step -->
+					</div><!-- End .main -->
+				</div><!-- End #step1-a .step -->
 
 <!-- mac-step.html -->
 <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 <div id="step-1b" class="step">
 
   <div class="main">
-    <h3><em>Schritt 1.b</em> Hole dir GnuPG, indem du GPGTools herunterlädst</h3>
-    <p>GPGTools ist ein Software-Paket, das GnuPG enthält. <a href="https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg">Lade es herunter</a> und installiere es. Wähle immer die Standard-Antworten. Nachdem es installiert wurde, kannst du alle Fenster schließen, die es geöffnet hat.</p>
+    <h3><em>Schritt 1.b</em> Hol dir GnuPG, indem du GPGTools herunterlädst</h3>
+    <p>GPGTools ist ein Software-Paket, das GnuPG enthält. <a href="https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg">Lade es herunter</a>, installiere es und wähle dabei immer die vorgeschlagenen Standard-Optionen. Nachdem es installiert wurde, kannst du alle Fenster schließen, die es geöffnet hat.</p>
   </div><!-- End .main -->
 </div><!-- End #step1-b .step -->
 
@@ -141,66 +149,57 @@
     </ul>
   </div><!-- /.sidebar -->
   <div class="main">
-    <h3><em>Schritt 1.c</em>Installiere das Enigmail-Plugin für dein E-Mail-Programm</h3>
-    <p>
-      Im Menü deines E-Mail-Programmes, klicke auf Add-ons (es könnte auch im Untermenü &quot;Werkzeuge&quot; sein). Vergewissere dich, dass &quot; Erweiterungen&quot; links ausgewählt wurde. Kannst du Enigmail sehen? Wenn ja, dann überspringe diesen Schritt.</p>
-    <p>Wenn nicht, suche "Enigmail" mit Hilfe der Suchleiste. Installiere es und starte dein E-Mail-Programm anschließend neu.</p>
-    <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-    <div class="troubleshooting">
-      <h4>Probleme?</h4>
-      <dl>
-	<dt>Ich kann das Menü nicht finden.</dt>
-	<dd>
-	  In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt.</dd>
+    <h3><em>Schritt 1.c</em> Installiere das Enigmail-Plugin für dein E-Mail-Programm</h3>
+						<p>Klicke im Menü deines E-Mail-Programmes auf Add-ons (es könnte auch im Untermenü Extras sein). Vergewissere dich, dass auf der linken Seite Erweiterungen ausgewählt ist. Kannst du Enigmail sehen? Wenn ja, dann überspringe diesen Schritt.</p>
+						<p>Wenn nicht, suche "Enigmail" mit Hilfe der Suchleiste oben rechts. Installiere es und starte dein E-Mail-Programm anschließend neu.</p>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Ich kann das Menü nicht finden.</dt>
+									<dd>In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt.</dd>
 
-	<dt class="feedback">Findest du keine Lösung für deine Probleme?</dt>
-	  <dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> bescheid.</dd>
-      </dl>
-    </div><!-- /.troubleshooting -->
-  </div><!-- End .main -->
+								<dt class="feedback">Findest du keine Lösung für dein Problem?</dt>
+									<dd class="feedback">Sag uns auf unserer <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">Feedback-Seite</a> Bescheid.</dd>
+							</dl>
+						</div><!-- /.troubleshooting -->
+					</div><!-- End .main -->
+				</div><!-- End #step-1b .step -->
+			</div>
+		</section><!-- End #section1 -->
 
-</div><!-- End #step-1c .step -->
-</section><!-- End #section1 -->
-<!-- begin rest.html -->
 <!-- ~~~~~~~~~ Section 2: Make your keys  ~~~~~~~~~ -->
-<section class="row" id="section2">
-  <div>
-    <!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
-    <div class="section-intro">
-      <h2><em>#2</em> Erstelle deine Schlüssel</h2>
-      <p>Um GnuPG zu verwenden, benötigt man einen öffentlichen und einen privaten Schlüssel (beide bilden ein Schlüsselpaar). Jeder Schlüssel ist eine sehr große Zahl und ist einzigartig. Beide Schlüssel sind mit einer speziellen mathematischen Funktion verbunden.</p>
+		<section class="row" id="section2">
+			<div>
+					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
+				<div class="section-intro">
+					<h2><em>#2</em> Erstelle deine Schlüssel</h2>
+						<p>Um GnuPG zu verwenden, benötigt man einen öffentlichen und einen privaten Schlüssel (beide bilden ein Schlüsselpaar). Jeder Schlüssel ist eine sehr große Zahl und ist einzigartig. Beide Schlüssel sind mit einer speziellen mathematischen Funktion verbunden.</p>
 
-      <p>Dein öffentlicher Schlüssel ist nicht wie ein Hausschlüssel, da er im Internet auf einem Schlüsselserver gespeichert wird. Die Leute können ihn so herunterladen und ihn benutzen, wenn sie dir verschlüsselte E-Mails verschicken. Man kann sich den Schlüsselserver wie ein Telefonbuch vorstellen, von wo Leute, die dir eine Verschlüsselte E-Mail schicken möchten, deinen öffentlichen Schlüssel herunterladen können.</p>
+<p>Dein öffentlicher Schlüssel ist nicht wie ein Hausschlüssel, da er im Internet auf einem Schlüsselserver gespeichert wird. Die Leute können ihn so herunterladen und ihn benutzen, wenn sie dir verschlüsselte E-Mails verschicken. Man kann sich den Schlüsselserver wie ein Telefonbuch vorstellen, von wo Leute, die dir eine Verschlüsselte E-Mail schicken möchten, deinen öffentlichen Schlüssel herunterladen können.</p>
 
-      <p>
-	Dein privater Schlüssel ist eher wie ein Hausschlüssel, weil ihn niemand außer dir besitzen darf. Der private Schlüssel wird eingesetzt, wenn du E-Mails entschlüsselst.</p>
-    </div><!-- End .section-intro -->
+<p>Dein privater Schlüssel ist eher wie ein Hausschlüssel, weil ihn niemand außer dir besitzen darf. Der private Schlüssel wird eingesetzt, wenn du E-Mails entschlüsselst.</p>
+				</div><!-- End .section-intro -->
 
-    <!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-    <div id="step-2a" class="step">
-      <div class="sidebar">
-	<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
-      </div><!-- /.sidebar -->
+				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
+				<div id="step-2a" class="step">
+					<div class="sidebar">
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/de/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
+					</div><!-- /.sidebar -->
+					<div class="main">
+						<h3><em>Schritt 2.a</em> Erstelle ein Schlüsselpaar</h3>
+						<p>Wähle im Menü deines E-Mail-Programmes OpenPGP &rarr; OpenPGP-Assistent. Du musst den Text im nächsten Fenster nicht unbedingt lesen, wenn du nicht willst, aber es ist eine gute Idee, die Texte der späteren Schritte des Assistenten zu lesen.</p>
+						<p>Im zweiten Schritt mit dem Titel "Unterschreiben", wähle "Nein, ich möchte in Empfängerregeln festlegen, wann unterschrieben werden soll".</p>
+						<p>Nutze die Standard-Optionen, bis du am Schritt "OpenPGP-Schlüssel erzeugen" angelangt bist.</p>
+						<p>Beim Schritt namens "OpenPGP-Schlüssel erzeugen" solltest du ein starkes Passwort verwenden! Dein Passwort sollte mindestens 12 Zeichen lang sein und mindestens je einen Kleinbuchstaben und Großbuchstaben und mindestens eine Zahl oder ein Satzzeichen enthalten. Vergiss das Passwort nicht, sonst ist diese gesamte Arbeit umsonst!</p>
+		  			<p class="notes">Das Programm wird einige Minuten brauchen, um den nächsten Schritt "Schlüsselerzeugung" abzuschließen. Während du wartest, solltest du etwas anderes mit deinem Computer tun, wie einen Film anschauen oder im Web surfen. Je mehr du deinen Computer in dieser Zeit nutzt, desto schneller wird der Schlüssel generiert.</p>
+						<p>Wenn der Schritt "OpenPGP-Bestätigung" kommt, klicke auf "Zertifikat erzeugen" und speichere es an einem sicheren Ort auf deinem Computer (wir empfehlen einen Ordner namens "Widerrufszertifikat" in deinem Home-Verzeichnis). Du wirst mehr über das Widerrufszertifikat in <a href="#section5">Sektion 5</a> lernen. Der Assistent wird dich auffordern, es auf einen externen Datenträger zu verschieben, aber das ist in diesem Moment nicht nötig.</p>
 
-	<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
-	<div class="main">
-	  <h3><em>Schritt 2.a</em>Erstelle ein Schlüsselpaar</h3>
-	  <p>Wähle im Menü deines E-Mail-Programmes OpenPGP &rarr; Setup Wizard.
-	    Du musst den Text dese Setup Wizards nicht unbedingt lesen, wenn du nicht willst, aber es ist eine gute Idee die Texte der späteren Schritte nicht zu ignorieren.</p>
-	  <p>Im zweiten Schritt, mit dem Titel "Unterschreiben", wähle "Nein, ich möchte in Empfängerregeln festlegen, wann unterschrieben werden soll."</p>
-	  <p>Nutze die Standard-Optionen, bis du am Schritt "Schlüssel erzeugen" angelangt bist.</p>
-	    <p>
-	      Beim Schritt namens "Schlüssel erzeugen", solltest du ein starkes Passwort verwenden. Vergesse es nicht, sonst ist die gesamte Arbeit umsonst!</p>
-	  <p class="notes"> Das Programm wird einige Minuten brauchen um den nächsten Schritt auszuführen. Während du wartest, solltest du etwas anderes mit deinem Computer tun, wie einen Film anschauen oder im Internet surfen. Je mehr du deinen Computer in dieser Zeit nutzt, desto schneller wird der Schlüssel generiert.</p>
-	  <p>Wenn der Schritt zur Bestätigung kommt, klicke auf Zertifikat generieren und speichere es an einem sicheren Ort (wir empfehlen einen externen Datenträger). Du wirst mehr über dieses Zertifikat in <a href="#section5">Sektion 5</a> lernen.</p>
-	  <!-- <p class="notes"> -->
-	  <!-- Nachdem du deinen Schlüssel generiert hast, lädt der Enigmail-Assistent den öffentlichen Schlüssel auf einen Schlüsselserver hoch. Das ist ein Computer, der alle Schlüssel über das Internet verfügbar macht.</p> -->
-
-	  <!-- ~~~~~~~~~ Probleme?  ~~~~~~~~~ -->
-	  <div class="troubleshooting">
-	    <h4>Probleme?</h4>
-	    <dl>
-	      <dt>Ich kann das OpenPGP-Menü nicht finden.</dt>
+						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
+						<div class="troubleshooting">
+							<h4>Probleme?</h4>
+							<dl>
+								<dt>Ich kann das OpenPGP-Menü nicht finden.</dt>
 	      <dd>
 		In vielen neuen E-Mail-Programmen wird das Hauptmenü durch drei horizontale Balken dargestellt. OpenPGP könnte in einer Sektion namens Tools sein.</dd>
 	      <dt>Der assistent kann GnuPG nicht finden.</dt>
