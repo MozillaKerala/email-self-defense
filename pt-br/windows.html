@@ -5,11 +5,11 @@
 
 			<title>Autodefesa no E-mail - um guia para combater a vigilância encriptando com GnuPG</title>
 			<meta name="keywords" content="GnuPG, GPG, privacidade, e-mail, Enigmail" />
-      <meta name="description" content="A vigilância por e-mail viola nossos direitos fundamentais e torna a livre expressão arriscada. Esse guia vai lhe ensinar autodefesa no e-mail em 30 minutos com GnuPG.">
+      <meta name="description" content="A vigilância por e-mail viola nossos direitos fundamentais e põe em risco a liberdade de expressão. Esse guia vai lhe ensinar autodefesa no e-mail em 30 minutos com GnuPG.">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
-  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/pt-br/favicon.ico" />
+  		<link rel="shortcut icon" href="//static.fsf.org/nosvn/enc-dev0/img/favicon.ico" />
 
 	</head>
 	<body>
@@ -32,7 +32,7 @@
 		</div>-->
 
 			<div>
-				<h1>Autodefesa no E-mail</h1>
+				<h1>Autodefesa<br /> no E-mail</h1>
                           <!-- Language list for browsers that do not have JS enabled -->
                           <ul id="languages" class="os">
                             <li><a href="/en">english</a></li>
@@ -71,7 +71,7 @@
 				  <h3>
                                     <a href="http://u.fsf.org/ys">
                                       <img alt="Free Software Foundation"
-                                           src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/fsf-logo.png">
+                                           src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png">
                                     </a>
                                   </h3>
                                   <div class="fsf-emphasis">
@@ -87,13 +87,15 @@
 
 					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/donate.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/join.png"></a></p>
 
+                    <div class="fsf-emphasis"><p>Conheça também a <a href="http://www.fsfla.org/ikiwiki/index.pt.html">FSFLA</a>, organização irmã da FSF na América Latina.</p></div>
+
 				</div><!-- End #fsf-intro -->
 
 				<!-- ~~~~~~~~~ Guide Introduction ~~~~~~~~~ -->
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					A vigilância por e-mail viola nossos direitos fundamentais e torna a livre expressão arriscada. Esse guia vai lhe ensinar uma habilidade básica de autodefesa contra vigilância: criptografia por e-mail. Assim que terminar, você estará apto a enviar e receber e-mails cifrados para que um agente de vigilância ou bandido que intercepte seus e-mails não possam lê-los. Tudo que você precisa é de um computador com conexão à Internet, uma conta de e-mail e cerca de meia hora.</p>
+					A vigilância por e-mail viola nossos direitos fundamentais e põe em risco a liberdade de expressão. Esse guia vai lhe ensinar uma habilidade básica de autodefesa contra vigilância: criptografia por e-mail. Assim que terminar, você estará apto a enviar e receber e-mails cifrados para que um agente de vigilância ou bandido que intercepte seus e-mails não possam lê-los. Tudo que você precisa é de um computador com conexão à Internet, uma conta de e-mail e cerca de meia hora.</p>
 
 <p>Mesmo se você não tiver nada a esconder, usar criptografia protege a privacidade das pessoas com quem você se comunica, e torna a vida difícil para sistemas de vigilância em massa. Se você tem algo importante a esconder, está em boa companhia: essas são as mesmas ferramentas que Edward Snowden usou para compartilhar seus famosos segredos sobre a NSA.</p>
 
@@ -341,10 +343,10 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Aprenda a Rede de Confiabilidade</h2>
-						<p>A criptografia por e-mail é uma tecnologia poderosa, mas tem uma fraqueza; ela requer uma maneira de verificar que a chave pública de uma pessoa é dela mesmo. Senão, não há nada que impeça um adversário de criar um endereço de e-mail com o nome de uma pessoa, criando chaves pra esse endereço e fazendo-se passar por ela. É por isso que os programadores de software livre que desenvolveram a criptografia por e-mail criaram a assinatura de chave e a Rede de Confiabilidade.</p>
+						<h2><em>#4</em> Aprenda a Rede de Confiança</h2>
+						<p>A criptografia por e-mail é uma tecnologia poderosa, mas tem uma fraqueza; ela requer uma maneira de verificar que a chave pública de uma pessoa é dela mesmo. Senão, não há nada que impeça um adversário de criar um endereço de e-mail com o nome de uma pessoa, criando chaves pra esse endereço e fazendo-se passar por ela. É por isso que os programadores de software livre que desenvolveram a criptografia por e-mail criaram a assinatura de chave e a Rede de Confiança.</p>
 
-<p>Quando você assina a chave de alguém, está dizendo publicamente que confia que a chave pertence mesmo a essa pessoa e não a um impostor. Pessoas que usam sua chave pública podem ver o número de assinaturas que ela tem. Quando já tiver usado o GnuPG por algum tempo, sua chave pode ter centenas de assinaturas. A Rede de Confiabilidade é uma constelação de todas as pessoas que usam o GnuPG, conectadas umas às outras por correntes de confiança expressadas através de assinaturas, formando uma rede gigante. Quanto mais assinaturas uma chave tiver, e quanto mais assinaturas essas pessoas que assinaram tiverem, mais confiável é essa chave.</p>
+<p>Quando você assina a chave de alguém, está dizendo publicamente que confia que a chave pertence mesmo a essa pessoa e não a um impostor. Pessoas que usam sua chave pública podem ver o número de assinaturas que ela tem. Quando já tiver usado o GnuPG por algum tempo, sua chave pode ter centenas de assinaturas. A Rede de Confiança é uma constelação de todas as pessoas que usam o GnuPG, conectadas umas às outras por correntes de confiança expressadas através de assinaturas, formando uma rede gigante. Quanto mais assinaturas uma chave tiver, e quanto mais assinaturas essas pessoas que assinaram tiverem, mais confiável é essa chave.</p>
 
 <p>As chaves públicas das pessoas geralmente são identificadas pela impressão digital de sua chave, que é uma série de dígitos como DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 para a chave de Edward). Você pode ver a imprsesão digital de sua chave pública, e de outras chaves públicas salvas no seu computador, indo em
 
@@ -356,7 +358,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-4a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/screenshots/section4-web-of-trust.png" alt="Seção 4: Rede de Confiabilidade" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/screenshots/section4-web-of-trust.png" alt="Seção 4: Rede de Confiança" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
 						<h3><em>Passo 4.a</em> Assine uma chave</h3>
@@ -396,7 +398,7 @@
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 						<h2><em>#5</em> Use bem</h2>
-<p>Cada pessoa usa o GnuPG de um jeito um pouquinho diferente, mas é importante seguir algumas práticas básicas pra manter seu e-mail seguro. Se você não as seguir, estará ponto em risco a privacidade das pessoas com as quais se comunica, assim como a sua própria, e danificando a Rede de Confiabilidade.</p>
+<p>Cada pessoa usa o GnuPG de um jeito um pouquinho diferente, mas é importante seguir algumas práticas básicas pra manter seu e-mail seguro. Se você não as seguir, estará ponto em risco a privacidade das pessoas com as quais se comunica, assim como a sua própria, e danificando a Rede de Confiança.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -500,7 +502,7 @@
 		<footer class="row" id="footer">
 			<div>
 				<div id="copyright">
-					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/fsf-logo.png"></a></h4>
+					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Política de Privacidade</a>. <a href="https://u.fsf.org/yr">Junte-se a nós.</a></p>
 					<p><em>Versão 2.0. Tradução pra português do Brasil por <a href="http://cmirio.tk">CMI-Rio</a> e <a href="mailto:thiago@marinello.eng.br">Thiago Marinello</a></em></p><!--EDWARDSOURCESTART Código-fonte do robô de e-mail Edward por PROGRAMMERNAME, disponível sob a GNU General Public License. EDWARDSOURCEEND-->
 <p>As imagens dessa página estão sob a licença de uso <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR">Creative Commons Atribuição 4.0 Internacional (ou uma versão mais nova)</a>, e o resto está sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (ou uma versão mais nova)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.pt-br.html#OtherLicenses">Por quê essas licenças?</a></p>
@@ -513,7 +515,7 @@
                                         </p>
 				</div><!-- /#copyright -->
 				<p class="credits">
-					Design do guia e do infográfico por <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/pt-br/jplusplus.png" alt="Journalism++" /></a>
+					Design do guia e do infográfico por <a rel="external" href="http://jplusplus.org"><strong>Journalism++</strong> <img src="//static.fsf.org/nosvn/enc-dev0/img/jplusplus.png" alt="Journalism++" /></a>
 				</p><!-- /.credits -->
 			</div>
 		</footer><!-- End #footer -->

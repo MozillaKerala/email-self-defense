@@ -3,9 +3,9 @@
 	<head>
 			<meta charset="utf-8">
 
-			<title>Email Self-Defense - a guide to fighting surveillance with GnuPG encryption</title>
-			<meta name="keywords" content="GnuPG, GPG, openpgp, surveillance, privacy, email, Enigmail" />
-      <meta name="description" content="Email surveillance violates our fundamental rights and makes free speech risky. This guide will teach you email self-defense in 30 minutes with GnuPG.">
+			<title>ΑΥΤΟΑΜΥΝΑ ΓΙΑ ΤΑ EMAIL - ένας οδηγός ενάντια στην παρακολούθηση με κρυποτγράφηση GnuPG</title>
+			<meta name="keywords" content="GnuPG, GPG, openpgp, παρακολούθηση, ιδιωτικότητα, email, Enigmail" />
+      <meta name="description" content="Η μαζική παρακολούθηση δεδομένων παραβιάζει τα θεμελιώδη δικαιώματα μας και κάνει την ελεύθερη έκφραση ριψοκίνδυνη.Αυτός ο οδηγός θα σε διδάξει αυτοάμυνα για τα email μέσα σε 30 λεπτά, με το GnuPG.">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
@@ -18,11 +18,11 @@
 
 		<header class="row"  id="header">
 			<div>
-			  <h1>Email Self-Defense</h1>
+			  <h1>ΟΔΗΓΟΣ ΑΥΤΟΑΜΥΝΑΣ ΓΙΑ ΤΑ EMAIL</h1>
 
                           <!-- Language list for browsers that do not have JS enabled -->
                           <ul id="languages" class="os">
-                            <li><a class="current" href="/en">english</a></li>
+                            <li><a href="/en">english</a></li>
                             <li><a href="/es">español</a></li>
                             <li><a href="/fr">français</a></li>
                             <li><a href="/de">deutsch</a></li>
@@ -33,7 +33,7 @@
                             <li><a href="/ml">മലയാളം</a></li>
                             <li><a href="/ko">한국어</a></li>
                             <li><a href="/ja">日本語</a></li>
-                            <li><a href="/el">ελληνικά</a></li>
+                            <li><a class="current" href="/el">ελληνικά</a></li>
                           </ul>
 
                           <ul id="menu" class="os">
@@ -63,11 +63,18 @@
                                   </h3>
                                   <div class="fsf-emphasis">
                                     <p>
-                                      We fight for computer user's rights, and promote the development of free (as in freedom) software. Resisting bulk surveillance is very important to us.
+										Αγωνιζόμαστε για τα δικαιώματα των χρηστών υπολογιστών και προωθούμε την ανάπτυξη
+										ελεύθερου (όπως λέμε ελευθερία και όχι δωρεάν) λογισμικού. Η αντίσταση στη 
+										μαζική παρακολούθηση είναι πολύ σημαντική για μας.
                                     </p>
                                     <p>
                                       <strong>
-                                        We want to heavily promote tools like this in-person and online, to help as many people as possible take the first step towards using free software to protect their privacy. Can you make a donation or become a member to help us achieve this goal?
+										Θέλουμε να προωθήσουμε εντατικά 
+										εργαλεία σαν και αυτό, πρόσωπο με πρόσωπο ή και μέσω του διαδικτύου, για να βοηθήσουμε όσο
+										γίνεται περισσότερο κόσμο να κάνει το πρώτο βήμα προς τη χρήση του ελεύθερου
+										λογισμικού, διασφαλίζοντας την ιδιωτικότητα τους.
+										Μπορείς να κάνεις μια δωρεά ή να γίνεις μέλος για να μας βοηθήσεις να
+										πετύχουμε αυτό το σκοπό;
                                       </strong>
                                     </p>
                                   </div>
@@ -80,11 +87,14 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/en/infographic-button.png" alt="View &amp; share our infographic &rarr;" /></a>
-					Bulk surveillance violates our fundamental rights and makes free speech risky. This guide will teach you a basic surveillance self-defense skill: email encryption. Once you've finished, you'll be able to send and receive emails that are coded to make sure a surveillance agent or thief intercepting your email can't read it. All you need is a computer with an Internet connection, an email account, and about half an hour.</p>
+Η μαζική παρακολούθηση δεδομένων παραβιάζει τα θεμελιώδη δικαιώματα μας και κάνει την ελεύθερη έκφραση ριψοκίνδυνη. 
+Αυτός ο οδηγός θα σε διδάξει μία βασική τεχνική αυτοάμυνας απέναντι στην παρακολούθηση: την κρυπτογράφηση του email. 
+Όταν τον ολοκληρώσεις, θα είσαι σε θέση να στέλνεις και να λαμβάνεις μηνύματα email κρυπτογραφημένα έτσι ώστε να είσαι βέβαιος/η ότι ένας πράκτορας παρακολούθησης ή ένας κλέφτης που υποκλέπτει το email σου δε θα μπορεί να το διαβάσει. Το μόνο που χρειάζεσαι είναι ένας υπολογιστής με σύνδεση στο Διαδίκτυο, ένας λογαριασμός email και περίπου μισή ώρα. </p>
 
-<p>Even if you have nothing to hide, using encryption helps protect the privacy of people you communicate with, and makes life difficult for bulk surveillance systems. If you do have something important to hide, you're in good company; these are the same tools that Edward Snowden used to share his famous secrets about the NSA.</p>
+<p>Ακόμα και αν δεν έχεις τίποτα να κρύψεις, η χρήση της κρυπτογράφησης βοηθά ώστε να προστατευτεί η ιδιωτικότητα των ανθρώπων με τους οποίους επικοινωνείς και κάνει τη ζωή δύσκολη για τα συστήματα μαζικής παρακολούθησης. 
+Εάν έχεις όντως κάτι να κρύψεις, τότε είσαι σε καλά χέρια: αυτά είναι τα ίδια εργαλεία που χρησιμοποίησε ο Edward Snowden ώστε να μοιραστεί τα περίφημα μυστικά του σχετικά με την NSA.</p>
 
-<p>In addition to using encryption, standing up to surveillance requires fighting politically for a <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">reduction in the amount of data collected on us</a>, but the essential first step is to protect yourself and make surveillance of your communication as difficult as possible. Let's get started!</p>
+<p>Επιπλέον της χρήσης κρυπτογράφησης, η αντιμετώπιση της παρακολούθησης απαιτεί να αγωνιστούμε πολιτικά για μια <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">μείωση της ποσότητας των δεδομένων που συλλέγονται για εμάς</a>, αλλά το απαραίτητο πρώτο βήμα είναι το να προστατέψεις τον εαυτό σου και να κάνεις την παρακολούθηση της επικοινωνίας σου όσο πιο δύσκολη γίνεται. Ας ξεκινήσουμε!</p>
 
 				</div>
 
