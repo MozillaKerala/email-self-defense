@@ -5,7 +5,7 @@
 
 			<title>E-posta Öz Savunma - GnuPG şifreleme yardımıyla gözetimle mücadele rehberi</title>
 			<meta name="keywords" content="GnuPG, GPG, openpgp, gözetim, mahremiyet, eposta, Enigmail">
-      <meta name="description" content="Eposta gözetimi, temel haklarımızı ihlal eder ve konuşma özgürlüğümüzü tehdit eder. Bu rehber GnuPG yardımıyla 30 dakikada e-posta öz savunmayı öğretecektir.">
+      <meta name="description" content="Eposta gözetimi, temel haklarımızı ihlal eder ve ifade özgürlüğümüzü tehdit eder. Bu rehber GnuPG yardımıyla 30 dakikada e-posta öz savunmayı öğretecektir.">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="//static.fsf.org/nosvn/enc-dev0/css/main.css">
@@ -60,7 +60,7 @@
                                     </a>
                                   </h3>
                                   <div class="fsf-emphasis">
-                                    <p>Bilgisayar kullanıcılarının hakları için mücadele ediyoruz ve özgür yazılım geliştirmeyi destekliyoruz. Toptan gözetime karşı koymak bizim için oldukça önemlidir.</p>
+                                    <p>Bilgisayar kullanıcılarının hakları için mücadele ediyoruz ve özgür yazılım geliştirmeyi destekliyoruz. Kitlesel gözetime karşı koymak bizim için oldukça önemlidir.</p>
                                     <p><strong>Mahremiyetlerini korumaları için, mümkün olduğu kadar fazla insanın, özgür yazılım kullanmadaki ilk adımlarına yardımcı olmak için, bunun gibi kişisel ve çevrim içi araçları ciddi ölçüde desteklemeyi istiyoruz. Bu amacımıza ulaşmamız için bağışta bulunur veya üyemiz olur musunuz?</strong></p>
                                   </div>
 
@@ -72,11 +72,11 @@
 				<div class="intro">
 					<p>
 						<a id="infographic" href="infographic.html"><img src="//static.fsf.org/nosvn/enc-dev0/img/tr/infographic-button.png" alt="İnfografiği görüntüleyin ve paylaşın →"></a>
-Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüzü tehdit eder. Bu rehber size, basit bir gözetim öz savunma tekniği olan e-posta şifrelemeyi öğretecek. Rehberi tamamladığınızda, ele geçiren gözetim failleri veya hırsızların okuyamacakları şekilde şifrelenmiş e-postalar gönderip alabileceksiniz. Bütün ihtiyacınız olan İnternet bağlantısı olan bir bilgisayar, bir e-posta hesabı ve yarım saat.</p>
+Kitlesel gözetim, temel haklarımızı ihlal eder ve ifade özgürlüğümüzü tehdit eder. Bu rehber size gözetime karşı basit bir (öz) savunma tekniği olan e-posta şifrelemeyi öğretecek. Bu rehberi tamamladığınızda, gözetleyen bir görevlinin veya hırsızın okuyamayacağına emin olabileceğiniz şekilde şifrelenmiş e-postalar gönderip alabileceksiniz. Bütün ihtiyacınız olan İnternet bağlantısı olan bir bilgisayar, bir e-posta hesabı ve yaklaşık yarım saat.</p>
 
-<p>Gizleyecek hiç bir şeyiniz olmasa bile, şifrelemeyi kullanmak, iletişim kurduğunuz insanların mahremiyetini korumanıza yardımcı olur ve toptan gözetim sistemlerinin işini zorlaştırır. Eğer gerçekten de gizlemeye değer bir şeye sahipseniz, yalnız değilsniz; bu araçlar, Edward Snowden'ın, NSA hakkındaki meşhur sırlarını paylaşmak için kullandığı araçların aynısı.</p>
+<p>Gizleyecek hiç bir şeyiniz olmasa bile, şifrelemeyi kullanmak, iletişim kurduğunuz insanların mahremiyetini korumanıza yardımcı olur ve kitlesel gözetim sistemlerinin işini zorlaştırır. Eğer gizleyecek önemli bir şeyiniz varsa, endişelenmeyin, aradığınızı burada bulacaksınız. Burada kullanmayı öğreneceğiniz araçlar, Edward Snowden'in, NSA hakkındaki meşhur sırlarını paylaşmak için kullandığı araçların aynısıdır.</p>
 
-<p>Şifrelemeye ek olarak, gözetime karşı durmak, <a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">hakkımızda toplanan veri miktarının azaltılması</a> için politik bir mücadele de gerektirir. Yine de zorunlu ilk adım kendinizi korumak ve iletişiminiz üzerindeki gözetimi iyice zorlaştırmaktır. Hadi başlayalım!</p>
+<p><a href="http://gnu.org/philosophy/surveillance-vs-democracy.html">Hakkımızda toplanan veri miktarının azaltılması</a> için şifreleme kullanmanın yanında, gözetlemeye karşı politik bir mücadeleye de girmek gerekir. Ancak ilk aşamada kendinizi korumak ve iletişiminiz üzerindeki gözetimi zorlaştırmak önemlidir. Hadi başlayalım!</p>
 
 				</div>
 
@@ -88,10 +88,10 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#1</em> PARÇALARI TOPLAYIN</h2>
-<p class="notes">Bu rehber, özgür lisanslı yazılımlara bel bağlamaktadır. Bu yazılımlar tamamen şeffaftır ve herhangi bir kimse bunları kopyalayabilir veya kendi sürümlerini oluşturabilir. Bu özellik, bu yazılımları, özel mülk yazılımlara (örneğin Windows) göre gözetime karşı daha güvenli kılar. Özgür yazılım hakkında daha fazla bilgi için <a href="https://u.fsf.org/ys">fsf.org</a> sitesini ziyaret edebilirsiniz.</p>
+						<h2><em>#1</em> HAZIRLIK AŞAMASI</h2>
+<p class="notes">Bu rehber, özgür lisanslı yazılımlara dayanarak hazırlanmıştır. Bu yazılımlar tamamen şeffaftır ve herhangi bir kimse bunları kopyalayabilir veya kendi sürümlerini oluşturabilir. Bu özellik, bu yazılımları, özel mülk yazılımlara (örneğin Windows) göre gözetime karşı daha güvenli kılar. Özgür yazılım hakkında daha fazla bilgi için <a href="https://u.fsf.org/ys">fsf.org</a> sitesini ziyaret edebilirsiniz.</p>
 
-<p>Çoğu GNU/Linux işletim sistemi, GnuPG kurulu bir şekilde gelir, dolayısıyla ayrıca indirmeniz gerekmez. Yine de GnuPG'yi yapılandırmadan önce, bilgisayarınızda bir masaüstü e-posta programının kurulu olması gerekiyor. Çoğu GNU/Linux dağıtımında, Thunderbird e-posta programının özgür yazılım bir sürümünü rahatlıkla kurabilirsiniz. Bu rehber, Thunderbird'le birlikte, özgür yazılım sürümleriyle de çalışır. E-posta programları, tarayıcı üzerinden eriştiğiniz e-posta hesaplarınıza (örneğin GMail) ulaşmanın bir başka yoludur ve ek özellikler sağlarlar.</p>
+<p>Çoğu GNU/Linux işletim sistemi, GnuPG kurulu bir şekilde gelir, dolayısıyla GnuGP'yi ayrıca indirmeniz gerekmez. Yine de GnuPG'yi yapılandırmadan önce, bilgisayarınızda bir masaüstü e-posta programının kurulu olması gerekiyor. Çoğu GNU/Linux dağıtımında, Thunderbird e-posta programının özgür yazılım bir sürümünü rahatlıkla kurabilirsiniz. Bu rehber, Thunderbird'le birlikte, özgür yazılım sürümleriyle de çalışır. E-posta programları, tarayıcı üzerinden eriştiğiniz e-posta hesaplarınıza (örneğin GMail) ulaşmanın bir başka yoludur ve ek özellikler sağlarlar.</p>
 
                         <p>Eğer bu programlardan birine sahipseniz, <a href="#step-1b">Adım 1.b</a>'ye atlayabilirsiniz.</p>
 				</div><!-- End .section-intro -->
@@ -133,7 +133,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 					<div class="main">
 						<h3><em>ADIM 1.b</em> E-POSTA PROGRAMINIZA ENIGMAIL EKLENTİSİNİ KURUN</h3>
 						<p>E-posta programınızın menüsünde, Add-on (Eklentiler) (Tools (Araçlar) bölümünde de olabilir) seçin. Sol tarafta Extensions (Eklentiler) sekmesinin seçili olduğundan emin olun. Enigmail'i görüyor musunuz? Görüyorsanız eğer, bu adımı atlayın.</p>
-						<p>Göremiyorsanız, sağ üstteki arama kutusuna "Enigmail" yazarak arama yapın. Sonuçlar arasından kurabilirsiniz. Kurulum bittikten sonra programınızı yeniden başlatın.</p>
+						<p>Göremiyorsanız, sağ üstteki arama kutusuna "Enigmail" yazarak arama yapın. Sonuçlar arasından bulup kurabilirsiniz. Kurulum bittikten sonra programınızı yeniden başlatın.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>SORUN GİDERME</h4>
@@ -156,11 +156,11 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 					<h2><em>#2</em> ANAHTARLARINIZI OLUŞTURUN</h2>
-						<p>GnuPG sistemini kullanmak için, bir açık anahtar ve bir de gizli anahtara (ikisi birlikte anahtar çifti olarak biliniyor) ihtiyacınız var. Anahtarların her biri, sadece size özgü olan rastgele üretilmiş uzun rakam ve harf karakter dizisidir. Açık ve gizli anahtarınız, özel bir matematiksel fonksiyon yardımıyla birbiriyle bağlantılandırılmıştır.</p>
+						<p>GnuPG sistemini kullanmak için, bir açık anahtar ve bir de gizli anahtara (ikisi birlikte anahtar çifti olarak biliniyor) ihtiyacınız var. Anahtarların her biri, sadece size özgü olarak rastgele üretilmiş, rakam ve harflerden oluşan uzun bir karakter dizisidir. Açık ve gizli anahtarınız, özel bir matematiksel fonksiyon yardımıyla birbiriyle bağlantılandırılmıştır.</p>
 
-<p>Açık anahtarınız, fiziksel bir anahtar gibi değildir. Çünkü anahtar sunucusu adı verilen bir çevrim içi dizinde açık olarak saklanmaktadır. İnsanlar onu indirip, GnuPG ile birlikte, size gönderecekleri e-postaları şifrelemek için kullanırlar. Anahtar sunucusunu, size şifreli bir e-posta göndermek isteyen insanların açık anahtarınızı araştırdıkları bir telefon defteri gibi düşünebilirsiniz.</p>
+<p>Açık anahtarınız, fiziksel bir anahtar gibi değildir. Çünkü anahtar sunucusu adı verilen bir çevrim içi dizinde açık olarak saklanmaktadır. Kullanıcılar bu açık anahtarı indirip, GnuPG ile birlikte, size gönderecekleri e-postaları şifrelemek için kullanırlar. Anahtar sunucusunu, size şifreli bir e-posta göndermek isteyen insanların açık anahtarınızı araştırdıkları bir telefon defteri gibi düşünebilirsiniz.</p>
 
-<p>Gizli anahtarınız ise, fiziksel bir anahtar gibidir. Çünkü onu sadece kendinize (kendi bilgisayarınızda) saklıyorsunuz. GnuPG ve gizli anahtarınızı, diğer insanlar tarafından size gönderilmiş olan şifreli e-postaları çözmek için kullanıyorsunuz.</p>
+<p>Gizli anahtarınız ise, fiziksel bir anahtar gibidir. Çünkü onu sadece kendinize (kendi bilgisayarınızda) saklarsınız. GnuPG ve gizli anahtarınızı, diğer insanlar tarafından size gönderilmiş olan şifreli e-postaları çözmek için kullanırsınız.</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -175,7 +175,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 						<p>"Create Key" (Anahtar Oluştur) başlıklı pencereye ulaşana kadar size sunulmuş olan varsayılan seçenekleri kullanın.</p>
 						<p>"Create Key" başlıklı pencerede güçlü bir parola seçin! Parolanız en az 12 karakterden oluşmalı ve en azından bir adet küçük harf, bir adet büyük harf ve bir adet noktalama işareti içermelidir. Parolayı unutmayın yoksa bütün bu çabanız boşa gider!</p>
 		  			<p class="notes">Programın, "Key Creation" (Anahtar Yaratma) başlıklı bir sonraki adımı tamamlaması biraz zaman alacaktır. Beklerken, bilgisayarınızla başka şeyler yapın, örneğin film izleyin veya İnternette gezinin. Bu noktada bilgisayarınızı ne kadar kullanırsanız, anahtar yaratma süreci de o kadar hızlı olur.</p>
-						<p>OpenPGP Confirm (Onay) penceresi açıldığında, Generate Certificate (Sertifika Yarat) seçeneğini seçin ve oluşan sertifikayı bilgisayarınızda güvenli bir yerde saklayın (ev dizininizde "İptal Sertifikası" başlıklı bir dizin yaratıp, sertifikaları orada saklamanızı öneriyoruz. İptal sertifikaları hakkında daha fazla bilgiyi <a href="#section5">5. bölümde</a> öğreneceksiniz). Kurulum sihirbazı onu harici bir aygıta saklamanızı isteyecektir, ancak bu şu anda gerekli değil.</p>
+						<p>OpenPGP Confirm (Onay) penceresi açıldığında, Generate Certificate (Sertifika Yarat) seçeneğini seçin ve oluşan sertifikayı bilgisayarınızda güvenli bir yerde saklayın (ev dizininizde "İptal Sertifikası" başlıklı bir dizin yaratıp, sertifikaları orada saklamanızı öneriyoruz. İptal sertifikaları hakkında daha fazla bilgiyi <a href="#section5">5. bölümde</a> öğreneceksiniz). Kurulum sihirbazı onu harici bir aygıtta saklamanızı isteyecektir, ancak bu şu anda gerekli değil.</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
@@ -199,7 +199,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 						<h3><em>ADIM 2.B</em> AÇIK ANAHTARINIZI BİR ANAHTAR SUNUCUSUNA YÜKLEYİN</h3>
 						<p>E-posta programınızın menüsünde, OpenPGP → Key Management (Anahtar Yönetimi) seçeneğini seçin.</p>
 <p>Anahtarınıza sağ tıklayın ve Upload Public Keys to Keyserver (Açık Anahtarları Anahtar Sunucusuna Yükle) seçeneğine tıklayın. Çıkan penceredeki varsayılan anahtar sunucusunu kullanın.</p>
-<p class="notes">Şimdi, size şifreli mesaj göndermek isteyen birisi, açık anahtarınızı İnternet'ten indirebilir. Yüklerken menüden seçebileceğiniz bir çok anahtar sunucusu mevcut, ama hepsi birbirinin kopyası, dolayısıyla hangisini kullanırsanız kullanın, fark etmez. Yine de, yeni bir anahtar yüklendiğinde birbirleriyle eşleşmeleri bir kaç saat sürebiliyor.</p>
+<p class="notes">Şimdi, size şifreli mesaj göndermek isteyen birisi, açık anahtarınızı İnternet'ten indirebilir. Yüklerken menüden seçebileceğiniz bir çok anahtar sunucusu mevcut, ama hepsi birbirinin kopyası olduğundan hangisini kullanırsanız kullanın fark etmeyecektir. Buna rağmen yeni bir anahtar yüklendiğinde birbirleriyle eşleşmeleri bir kaç saat sürebilir.</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
 							<h4>SORUN GİDERME</h4>
@@ -218,7 +218,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="terminology" class="step">
 					<div class="main">
-						<h3>GnuPG, OpenPGP, NE DİYORSUN?</h3>
+						<h3>GnuPG veya OpenPGP, HANGİSİ?</h3>
 						<p>GnuPG adı verilen bir program kullanıyorsunuz. Ancak e-posta programınızın menüsünde OpenPGP olarak geçiyor. Kafa karıştırıcı, değil mi? Çok az farklı anlamlara sahip olsalar da, genellikle GnuPG, GPG, GNU Privacy Guard, OpenPGP ve PGP terimleri birbirlerinin yerine kullanılıyor.</p>
 					</div><!-- End .main -->
 				</div><!-- End #terminology.step-->
@@ -247,7 +247,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 
 <p>Mesaj adresi olarak edward-tr@fsf.org girin. Konuda ve metnin gövdesinde en azından bir kelime (ne isterseniz) yazın ve mesajı gönderin.</p>
 
-<p class="notes">Edward'ın yanıtlaması iki veya üç dakikayı bulabilir. Bu arada, ileriye atlayıp, rehberin <a href="#section5">İyi Kullanın</a> bölümünü inceleyebilirsiniz. Yanıt verdiğinde, bir sonraki adıma geçin. Buradan sonrası, gerçek bir insanla yazışırken durumla aynıdır.</p>
+<p class="notes">Edward'ın yanıtlaması iki veya üç dakikayı bulabilir. Bu arada, ileriye atlayıp, rehberin <a href="#section5">İyi Kullanın</a> bölümünü inceleyebilirsiniz. Yanıt geldiğinde, bir sonraki adıma geçin. Buradan sonrası, gerçek bir insanla yazışırken durumla aynıdır.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
@@ -255,8 +255,8 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 				<div id="step-3b" class="step">
 					<div class="main">
 							<h3><em>ADIM 3.b</em> ŞİFRELENMİŞ BİR DENEME E-POSTASI GÖNDERİN</h3>
-							<p>E-posta programınızda, adres olarak adele-en@gnupp.de olan yeni bir e-posta yazın. Konuyu "Şifre Deneme" veya benzeri bir şey yapın ve gövdeye bir şeyler yazın. Henüz göndermeyin.</p>
-							<p>Mesaj yazma penceresindeki sağ alttaki anahtar simgesine tıklayın (sarıya dönecektir). Bu Enigmail eklentisine, son adımda indirdiğiniz anahtarla e-postayı şifrelemesini söyleyecektir.</p>
+							<p>E-posta programınızda, adres olarak edward-tr@fsf.org olan yeni bir e-posta yazın. Konuyu "Şifre Deneme" veya benzeri bir şey yapın ve gövdeye bir şeyler yazın. Henüz göndermeyin.</p>
+							<p>Mesaj yazma penceresindeki sağ alttaki anahtar simgesine tıklayın (sarıya dönecektir). Bu, Enigmail eklentisine son adımda indirdiğiniz anahtarla e-postayı şifrelemesini söyleyecektir.</p>
 							<p class="notes">Anahtar simgesinin yanında, bir kurşun kalem simgesi göreceksiniz. Buna tıkladığınızda Enigmail eklentisine mesaja, gizli anahtarınızı kullanarak oluşturulmuş tekil bir imza yerleştirmesini söylemiş olursunuz. Bu şifrelemeden farklı bir özelliktir ve bu rehber kapsamında kullanmanıza gerek yoktur.</p>
 							<p>Gönder'e tıklayın. Enigmail bir pencere açarak "Recipients not valid, not trusted or not found." (Alıcılar geçerli değil, güvenli değil veya bulunamadı) mesajını gösterecektir.</p>
 
@@ -293,7 +293,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 						<p>Edward e-postanızı aldığında, gizli anahtarını kullanarak onu çözecek, daha sonra da sizin açık anahtarınızı bir anahtar sunucusundan çekerek size bir yanıt şifrelemek için kullanacaktır.</p>
 						<p class="notes">Bu e-postayı Edward'ın açık şifresiyle şifrelediğiniz için, onu çözmek üzere Edward'ın gizli anahtarına ihtiyaç vardır. Bu gizli anahtara sahip olan da sadece Edward olduğu için, onun dışında — siz de dahil — hiç kimse e-postanın şifresini çözemez.</p>
 						<p class="notes">Edward'ın yanıtlaması iki veya üç dakikayı bulabilir. Bu arada, ileriye atlayıp, rehberin <a href="#section5">İyi Kullanın</a> bölümünü inceleyebilirsiniz.</p>
-						<p>Edward'ın e-postasını aldığınızda açın, Enigmail e-postanın sizin açık anahtarınızla şifreli olduğunu otomatik olarak bulacak ve mesajı özel anahtarınızı kullanarak düz metin haline getirecektir.</p>
+						<p>Edward'ın e-postasını aldığınızda açın, Enigmail e-postanın sizin açık anahtarınızla şifreli olduğunu otomatik olarak bulacak ve mesajı özel anahtarınızı kullanarak açık metin haline getirecektir.</p>
 						<p>Edward'ın anahtarının durumu hakkındaki bilgiyle beraber mesajın üstünde Enigmail'in gösterdiği çubuğa dikkat edin.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
@@ -321,9 +321,11 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 
 <p>Bir kişinin anahtarını imzaladığınızda, o anahtarın gerçekten de o kişiye ait olduğunu, bir sahtekara ait olmadığını herkese açık bir şekilde söylemiş oluyorsunuz. Anahtarınızı kullanan bir kişi, anahtarınızın sahip olduğu imzaları görebilir. GnuPG'yi yeterince uzun bir zaman kullandıktan sonra, yüzlerce imzanız olacaktır. Güvenilirlik Ağı, imzalar aracılığıyla ifade edilen bir güven zinciriyle birbilerine bağlı olan bütün GnuPG kullanıcılarının, bir devasa ağ halinde gruplaşmasıdır. Bir anahtarın daha fazla imzaya sahip olması ve onu imzalayanların anahtarlarının daha fazla imzalara sahip olması, o anahtarın güvenilirliğini arttırır.</p>
 
-<p>İnsanların açık anahtarları, genellikle, DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (Edward'ın anahtarı) şeklindeki karakterlerden oluşan bir dizi olan parmak iziyle tanımlanıyorlar. Kendi açık anahtarınızın ve bilgisayarınızda kayıtlı diğer anahtarların parmak izini e-posta programınızda OpenPGP → Key Management (Anahtar Yönetimi) kısmına gidip, ilgili anahtara sağ tıklayıp Key Properties (Anahtar Özellikleri) seçeneğini seçerek görebilirsiniz. Her e-posta adresinizi paylaştığınızda anahtarınızın parmak izini paylaşmanız, iyi bir alışkanlıktır. Böylece insanlar sizin açık anahtarınızı bir sunucudan indirdiklerinde, doğru anahtara sahip olup olmadıklarını iki kere kontrol etmiş olurlar.</p>
+<p>İnsanların açık anahtarları, genellikle, DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (Edward'ın anahtarı) şeklindeki karakterlerden yaratılmış bir dizi olan "anahtar parmak izi"yle tanımlanıyorlar. Kendi açık anahtarınızın ve bilgisayarınızda kayıtlı diğer anahtarların parmak izini e-posta programınızda OpenPGP → Key Management (Anahtar Yönetimi) kısmına gidip, ilgili anahtara sağ tıklayıp Key Properties (Anahtar Özellikleri) seçeneğini seçerek görebilirsiniz. Her e-posta adresinizi paylaştığınızda anahtarınızın parmak izini paylaşmanız, iyi bir alışkanlıktır. Böylece insanlar sizin açık anahtarınızı bir sunucudan indirdiklerinde, doğru anahtara sahip olup olmadıklarını iki kere kontrol etmiş olurlar.</p>
 
-<p class="notes">Ayrıca, sadece, parmak izinin son 8 karakteri olan anahtar kimliğiyle (örneğin Edward için 92AB3FF7) atıfta bulunan açık anahtarlar da görebilirsiniz. Anahtar kimliği Key Management (Anahtar Yönetimi) penceresinde doğrudan görülebilir. Anahtar kimliği bir insanın ilk ismi gibidir (kısaltma olarak iyidir ancak ilgili anahtara özgün değildir), oysa parmak izi gerçekten de ilgili anahtara özgüdür, herhangi bir karışıklık yaratmaz. Eğer sadece anahtar kimliğine sahip olsanız bile, anahtarı (ve onun parmak izini), aynı Adım 3'te yaptığınız gibi araştırabilirsiniz. Eğer birden fazla seçenekle karşılaşırsanız, gerçekten de iletişim kurmaya çalıştığınız kişiye ait olanı seçebilmek için parmak izine ihtiyacınız vardır.</p>
+You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele.
+
+<p class="notes">Ayrıca, sadece parmak izinin son 8 karakteri olan anahtar kimliğiyle (örneğin Edward için 92AB3FF7) atıfta bulunulan açık anahtarları da görebilirsiniz. Anahtar kimliği Key Management (Anahtar Yönetimi) penceresinde doğrudan görülebilir. Anahtar kimliği bir insanın ilk ismi gibidir (kısaltma olarak iyidir ancak ilgili anahtara özgün değildir), oysa parmak izi gerçekten de ilgili anahtara özgüdür, herhangi bir karışıklık yaratmaz. Eğer sadece anahtar kimliğine sahip olsanız bile, anahtarı (ve onun parmak izini), aynı Adım 3'te yaptığınız gibi araştırabilirsiniz. Eğer birden fazla seçenekle karşılaşırsanız, gerçekten de iletişim kurmaya çalıştığınız kişiye ait olanı seçebilmek için parmak izine ihtiyacınız vardır.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -356,7 +358,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 				<div id="step-sign_real_keys" class="step">
 					<div class="main">
 						<h3><em>ÖNEMLİ:</em> İNSANLARIN ANAHTARLARINI İMZALAMADAN ÖNCE KİMLİKLERİNİ KONTROL EDİN</h3>
-						<p>Gerçek bir insanın anahtarını imzaladan önce, her zaman mutlaka o anahtarın gerçekten de onlara ait olduğundan ve söyledikleri kişi olduklarından emin olun. Kimliklerini ve açık anahtar parmak izini (yalnızca başka bir anahtarı da kastedebilecek daha kısa açık anahtar kimliğini değil) göstermelerini (eğer yeterince güvenmiyorsanız) isteyin. Enigmail'de, ilgili penceredeki "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?" (Yukarıda ismi verilen kişiye ait olan imzalamak üzere olduğunuz anahtarı ne kadar dikkatli bir şekilde doğruladınız?) sorusunu dürüst bir şekilde yanıtlayın.</p>
+						<p>Gerçek bir insanın anahtarını imzaladan önce, her zaman mutlaka o anahtarın gerçekten de onlara ait olduğundan ve söyledikleri kişi olduklarından emin olun. Eğer çok güvenmiyorsanız kimliklerini ve açık anahtar parmak izini de (yalnızca başka bir anahtarı da kastedebilecek daha kısa açık anahtar kimliğini değil) göstermelerini isteyin. Enigmail'de, ilgili penceredeki "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?" (Yukarıda ismi verilen kişiye ait olan imzalamak üzere olduğunuz anahtarı ne kadar dikkatli bir şekilde doğruladınız?) sorusunu dürüst bir şekilde yanıtlayın.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-sign_real_keys .step-->
 
@@ -384,7 +386,7 @@ Toptan gözetim, temel haklarımızı ihlal eder ve konuşma özgürlüğümüz�
 
 						<p>Mesajlarınızı ne kadar sık şifrelerseniz, o kadar iyi. Bunun nedeni şudur: eğer e-postalarınızı sadece arada sırada şifrelerseniz, her bir şifreli mesaj gözetim sistemleri için tehlike işareti oluşturabilir. Eğer mesajlarınızın hepsini veya çoğunu şifreliyorsanız, gözetimi gerçekleştiren insanlar nereden başlayacağını bilemez.</p>
 
-<p>Elbette, bu, sadece bazı e-postalarınızı şifrelemek yararsızdır anlamına gelmez. Oldukça iyi bir başlangıçtır ve toptan gözetimi daha da zorlaştırır.</p>
+<p>Elbette, bu, sadece bazı e-postalarınızı şifrelemek yararsızdır anlamına gelmez. Oldukça iyi bir başlangıçtır ve kitlesel gözetimi daha da zorlaştırır.</p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
@@ -407,7 +409,7 @@ of this message encrypted." (OpenPGP: Bu mesajın bir kısmı şifrelenmiştir) 
 				<div id="step-5c" class="step">
 					<div class="main">
 						<h3>İPTAL SERTİFİKANIZI GÜVENLİ BAŞKA BİR YERE KOPYALAYIN</h3>
-						<p>Anahtarınızı oluştururken, GnuPG'nin yarattığı iptal sertifikasını kaydettiğinizi hatırlıyorsunuz değil mi? Şimdi, bu sertifikayı en güvenli dijital deponuza (en uygun depo evinizde güvenli bir yerde saklamış olduğunuz flaş bellek veya bir disktir) kopyalamanın tam zamanı.</p>
+						<p>Anahtarlarınızı oluştururken, GnuPG'nin yarattığı iptal sertifikasını kaydettiğinizi hatırlıyorsunuz değil mi? Şimdi, bu sertifikayı en güvenli dijital deponuza (en uygun depo evinizde güvenli bir yerde saklamış olduğunuz flaş bellek veya bir disktir) kopyalamanın tam zamanı.</p>
 <p>Eğer gizli anahtarınız bir şekilde kaybolur veya çalınırsa, bu sertifika dosyasına ihtiyacınız olacak.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step -->
