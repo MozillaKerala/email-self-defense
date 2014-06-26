@@ -141,7 +141,7 @@
 						</ul>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 1.B</em> Enigmail（エニグメール）プラグインをメールプログラムにインストール</h3>
+						<h3><em>1.B</em> Enigmail（エニグメール）プラグインをメールプログラムにインストール</h3>
 						<p>メールプログラムのメニューの中から「アドイン」を選択してください。これはたいてい「ツール」というメニューの下にあります。必要な拡張機能を、左側のマークで選択します。すでにEnigmailが表示されていれば、すぐ次のステップは飛ばしてください。</p>
 						<p>表示されていなければ、上の検索バーを使って Enigmailを検索して、プラグインをインストールしてください。インストールが完了したら、メールプログラムを再起動してください。</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -179,7 +179,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>ステップ2.A</em> 自分専用のキーペアを作る</h3>
+						<h3><em>2.A</em> 自分専用のキーペアを作る</h3>
 						<p>電子メールプログラムのメニューでOpenPGP&rarr;設定ウィザードを選択してください。ウィザードの始めの方のウィンドウに現れる説明は読まなくてもいいですが、後のウィンドウの説明は重要です。</p>
 						<p>2番目の「サインする」または「署名する」というウィンドウでは、「いいえ、むしろ宛先別のルールによって署名が必要なメールを作成する」を選択してください。</p>
 						<p>「キーを作る」という名前のウィンドウになるまでは既定（デフォルト）の設定を選んでください。</p>
@@ -206,7 +206,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-2b" class="step">
 					<div class="main">
-						<h3><em>ステップ2.B</em> 公開鍵をキーサーバーにアップロードする</h3>
+						<h3><em>2.B</em> 公開鍵をキーサーバーにアップロードする</h3>
 						<p>メールプログラムのメニューでOpenPGP&rarr;キー管理を選択してください。</p>
 <p>生成した公開鍵を右クリックして、「公開鍵をキーサーバーにアップロード」を選んでください。ポップアップ表示される既定(デフォルト)のキーサーバーをそのまま使いましょう。</p>
 <p class="notes">これであなたへ暗号化されたメールを送ろうとする人が、あなたの公開鍵をインターネットからダウンロードできるようになりました。アップロードするときにキーサーバーがいくつか表示されていてその中から選択できるのですが、実はどれも互いにコピーをとっています。つまりどのキーサーバーへアップロードしても同じ結果になるのです。ただ、公開鍵をアップロードすると他のサーバーへコピーされるまでに数時間かかる場合もあります。</p>
@@ -244,7 +244,7 @@
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 						<h2><em>#3</em> 暗号化を使ってみましょう！</h2>
-						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
+						<p>「Edward」という名前のプログラムにメールを送って、暗号化の使い方を練習してみましょう。次の説明は本物の人間にメールするときのステップとほぼ同じやり方ですが、違う部分だけはそのように書いてあります。</p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
@@ -253,35 +253,35 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 3.a</em> Send Adele your public key</h3>
-						<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to OpenPGP &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
+						<h3><em>3.A</em> Edwardに公開鍵を送る</h3>
+						<p>だれか人にメールするときは、このステップは不要です。電子メールプログラムのメニューでOpenPGP&rarr;キー管理を選択してください。表示されるリストに自分の鍵が表示されるはずです。そのキーを右クリックして、コンテキストメニューの「電子メールで公開鍵を送る」を選択してください。新規作成ボタンを押したときと同様に新しいメールの作成ウィンドウが開きます。</p>
 
-<p>Address the message to adele-en@gnupp.de. Put at least one word (whatever you want) in the subject and body of the email, then hit send.</p>
+<p>宛先フィールドに「edward-ja@fsf.org」と入力します。メールの件名フイールドと本文にもそれぞれ何か一言を書いて、メールを送信してください。</p>
 
-<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide. Once she's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
+<p class="notes">Edwardから自動返信が届くまで1分から3分ぐらいかかることもあります。待っている間、下記の<a href="#section5">「GnuPGを上手く使う」</a>のセクションを見てもいいでしょう。Edwardから返事が届いたら、次のステップに進みましょう。ここからは人間にメールを送るときと同じ手順です。</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
-							<p>Write a new email in your email program, addressed to adele-en@gnupp.de. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
-							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, unique signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
-							<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+							<h3><em>3.B</em> テストの暗号化メールを送信</h3>
+							<p>電子メールのプログラムで「edward-ja@fsf.org」に宛てたメールを新規作成してください。件名を「暗号化テスト」とか、そんなものにして、メールの本文にも何か適当な内容を書きます。まだ送信しないでください。</p>
+							<p>新規作成ウィンドウの右下の鍵のアイコンをクリックします。そのアイコンが黄色に変わっているはずです。このアイコンをクリックすると、前のステップでダウンロードした公開鍵を使ってEnigmailにメールを暗号化させます。</p>
+							<p class="notes">鍵アイコンのとなりに鉛筆アイコンがあります。これはメールに特別な、唯一の署名を添付するためのものです。この署名はあなたの秘密鍵から生成されますが、暗号化とはまだ別なものです。このガイドではまだ使わないことにします。</p>
+							<p>では、送信をクリックしてください。すると「宛先が無効か、信頼できないか、見つかりません。」というポップアップが開きます。</p>
 
-							<p>To encrypt and email to Adele, you need her public key, and so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with 9), then select ok. Select ok in the next pop-up.</p>
+							<p>Edwardへのメールを暗号化するためにはEdwardの公開鍵が必要だったのです。ではEnigmailを使って公開鍵をダウンロードしましょう。「まだダウンロードしていない鍵をダウンロードする」をクリックするとポップアップが開きますから、既定(デフォルト)のキーサーバーを選んでください。キーが表示されたら、最初の（キーIDの4C11BBB2の）キーにチェックを付けて、OKを選択してください。次のポップアップもOKをクリックしてください。</p>
 
-							<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Select Adele's key from the list and click Ok. If the message doesn't send automatically, you can hit send now.</p>
+							<p>「宛先が無効か、信頼できないか、見つかりません。」というポップアップに戻ってきたはずです。そこでEdwardのキーを選択し、OKをクリックします。もしメッセージが自動的に送信されなければ、送信をクリックしてください。</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 							<div class="troubleshooting">
-								<h4>Troubleshooting</h4>
+								<h4>トラブル・シューティング</h4>
 								<dl>
-									<dt>Enigmail can't find Adele's key</dt>
-										<dd>Close the pop-ups that have appeared since you clicked. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</dd>
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+									<dt> EnigmailでEdwardの公開鍵が見つかりません。</dt>
+										<dd>クリックした後で表示されたポップアップを全部閉じてください。インターネットに接続していることを再確認して、もう一回試みてください。それでもだめだったら、別のキーサーバーを選んでダウンロードしてみてください。</dd>
+								<dt class="feedback">問題が解決しませんでしたか？</dt>
+										<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">フィードバックのページ</a>で知らせてください。</dd>
 								</dl>
 							</div><!-- /.troubleshooting -->
 						</div><!-- End .main -->
@@ -290,9 +290,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
+						<h3><em>注意：</em> セキュリティーのヒント</h3>
+						<p>メールを暗号化しても、メールの件名は暗号化されません。そこにはプライベートな情報を入力しないほうがいいのです。宛先も、発信人のアドレスも暗号化されませんので、監視システムに読まれる可能性があります。添付文書を送るときには、それも暗号化するかどうかがたずねられます。</p>
+						<p>メールの新規作成ウィンドウで、書き始める<strong>前に</strong>鍵アイコンをクリックしておくのがよいでしょう。そうせずに書き始めると、暗号化されないままで第三者も読める状態の下書きがメールサーバーに保存されてしまうかもしれないからです。</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
