@@ -300,12 +300,12 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
+						<h3><em>3.C</em> 返信を受ける</h3>
+						<p>メールが届くとEdwardでは自分の秘密鍵であなたの暗号化メールを解読し、次にあなたの公開鍵をキーサーバーからダウンロードし、それを使って暗号化した返事を送ります。</p>
+						<p class="notes">Edward宛にメールを送った時、Edwardの公開鍵を使用したので、解読にはEdwardの秘密鍵が必要です。Edwardの秘密鍵はEdwardにしかありませんので、Edwardだけがそのメールを解読できます。そのメールを送信したあなたでさえ解読できません。</p>
+						<p class="notes">Edwardからの自動返信が届くまで２、３分かかりますので、その間に<a href="#section5">「GnuPGを上手く使う」</a>のセクションをご覧になるのもいいでしょう。</p>
+						<p>Edwardからの自動返信メールが届いたら、そのメールを開いてみてください。Enigmailは自動的にそのメールがあなたの公開鍵で暗号化されていることを認識して、あなたの秘密鍵を使って解読します。</p>
+						<p>メールを表示しているウィンドウの上のほうにEdwardのキーのステータス情報が表示されています。</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
@@ -327,14 +327,14 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Learn the Web of Trust</h2>
-						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
+						<h2><em>#4</em> 信頼の輪</h2>
+						<p>電子メールの暗号化は信頼できる技術なのですが、実は一つ欠点があります。つまり、ある人の公開鍵は本当にその人の公開鍵なのか、確認できる方法が必要なのです。そうでないと「なりすまし」、つまり悪意の第三者があなたの友人の名前を使って新しい電子メールのアカウントを開き、そのアカウントのためのキーペアを作成して、その友人の振りをすることができてしまいます。それを防ぐために、暗号化メールのソフトを作ったフリーソフトの開発者が鍵署名と信頼の輪を作りました。</p>
 
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, forming a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+<p>あなたが誰かの公開鍵に署名することで、その公開鍵が偽物ではなく、本当にその人の鍵だとあなたが公言するのです。あなたの公開鍵を使っている人たちはその鍵が何回署名されたかを見ることができます。あなたが長期間にわたってGnuPGを使っていれば、何百もの署名がついていることでしょう。信頼の輪とはGnuPGの全ユーザで構成され、互いの署名によって裏打されている相互信頼の巨大なネットワークです。鍵に署名が多くついているほど、そしてその署名者の鍵にも署名が多くついているほど、その鍵の信用性が高くなるのです。</p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>各ユーザーの公開鍵はその「指紋」で区別されます。指紋は、例えばAdeleの場合、DD878C06E8C2BEDDD4A440D3E573346992AB3FF7といった英数字の列です。あなたの公開鍵の指紋や、あなたのコンピューターに保存されている別の人の公開鍵の指紋を表示するには、メールプログラムのOpenPGP&rarr;キー管理メニューを選択してから鍵を右クリックし、鍵プロパティーを選択します。あなたが誰かにメールアドレスを伝えるときは、いっしょに公開鍵の指紋も伝えるようにしましょう。その人がキーサーバーからあなたの公開鍵をダウンロードしたとき、それが本物であるのかを再確認する手がかりになるからです。</p>
 
-<p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to whom are trying to communicate to verify which one to use.</p>
+<p class="notes">公開鍵にはさらに、長さ８文字の鍵IDがついています。例えばEdwardの鍵IDは4C11BBB2で、Adeleの鍵IDは92AB3FF7です。この鍵IDは、指紋の文字列の最後の８字とまったく同じものです。自分の鍵IDはメールプログラムのOpenPGP&rarr;キー管理のメニューに表示されています。鍵IDはちょうど苗字のようなもので、短くて具合がよいのですが決して重複しないわけではないのです。指紋ならば鍵を完全に見分けることができて、重複はありません。鍵IDしかわからない場合でも指紋によるときと同じように、3章で説明した方法で鍵を見つけることができます。もし鍵が複数見つかった場合、相手の鍵の指紋を使って正しい鍵を選択しなければなりません。</p>
 
 
 				</div><!-- End .section-intro -->
@@ -345,12 +345,12 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 4.a</em> Sign a key</h3>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management.</p>
-						<p>Right click on Adele's public key and select Sign Key from the context menu.</p>
-						<p>In the window that pops up, select "I will not answer" and click OK.</p>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys and hit OK.</p>
-						<p class="notes">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
+						<h3><em>4.A</em> 鍵に署名する</h3>
+						<p>電子メールのソフトのOpenPGP&rarr;キー管理をクリックします。</p>
+						<p>Edwardの公開鍵を右クリックして、コンテキストメニューで「鍵に署名する」を選びます。</p>
+						<p>ポップアップが表示されるので「返事はしない」を選んでからOKをクリックしてください。</p>
+						<p>メールプログラムのメニューでOpenPGP&rarr;キー管理&rarr;キーサーバー&rarr;公開鍵をアップロードを選択してから、OKをクリックします。</p>
+						<p class="notes">この一連の操作であなたはEdwardの公開鍵が本当にEdwardのものだと信用する、と述べたのです。Edwardはプログラムなので人間ではありませんが、こうするのがいい習慣です。</p>
 
 
 						<!--<div id="pgp-pathfinder">
@@ -381,7 +381,7 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#5</em> Use it well</h2>
+						<h2><em>#5</em> GnuPGを上手く使う</h2>
 <p>Everyone uses GnuPG a little differently, but it's important to follow some basic practices to keep your email secure. Not following them, you risk the privacy of the people you communicate with, as well as your own, and damage the Web of Trust.</p>
 				</div><!-- End .section-intro -->
 
