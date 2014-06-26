@@ -123,7 +123,7 @@
 									<dd>ウィザードとは、パソコンで何かを設定するとかインストールするためのウィンドウが順番に表れるようになっているものす。「次へ」のボタンをクリックして、設定をしていきます。</dd>
 								<dt>私のメールプログラムではメールアカウントが見つからない、またはメールがダウンロードされません</dt>
 									<dd>インターネットを検索する前に、同じメールプログラムを使っている人に正しい設定方法をたずねることをお勧めします。</dd>
-								<dt class="feedback">問題が解決しませんでしたか？>
+									<dt class="feedback">問題が解決しませんでしたか？</dt>
 								<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">フィードバックのページ</a>で知らせてください。</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
@@ -151,7 +151,7 @@
 								<dt>メニューが見つかりません。</dt>
 									<dd>メニューが横棒3本で表示されるメールプログラムもたくさんあります。</dd>
 
-								<dt class="feedback">問題が解決しませんでしたか？>
+								<dt class="feedback">問題が解決しませんでしたか？</dt>
 										<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">フィードバックのページ</a>で知らせてください。</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
@@ -179,7 +179,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>2.A</em> 自分専用のキーペアを作る</h3>
+						<h3><em>ステップ2.A</em> 自分専用のキーペアを作る</h3>
 						<p>電子メールプログラムのメニューでOpenPGP&rarr;設定ウィザードを選択してください。ウィザードの始めの方のウィンドウに現れる説明は読まなくてもいいですが、後のウィンドウの説明は重要です。</p>
 						<p>2番目の「サインする」または「署名する」というウィンドウでは、「いいえ、むしろ宛先別のルールによって署名が必要なメールを作成する」を選択してください。</p>
 						<p>「キーを作る」という名前のウィンドウになるまでは既定（デフォルト）の設定を選んでください。</p>
@@ -196,7 +196,7 @@
     <dt>ウィザードに「GnuPGが見つからない」と表示されました。</dt>
                                          <dd>いつもインストールに使うプログラムを起動して、GnuPGを検索して、インストールしてください。インストールしたらOpenPGP&rarr;設定ウィザードを選択して、Enigmailの設定ウィザードを再起動してください。</dd>
 
-								<dt class="feedback">問題が解決しませんでしたか？>
+								<dt class="feedback">問題が解決しませんでしたか？</dt>
 										<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">フィードバックのページ</a>で知らせてください。</dd>
 							</dl>
 						</div><!-- /.troubleshooting -->
@@ -206,21 +206,21 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-2b" class="step">
 					<div class="main">
-						<h3><em>Step 2.b</em> Upload your public key to a keyserver</h3>
-						<p>In your email program's menu, select OpenPGP &rarr; Key Management.</p>
-<p>Right click on your key and select Upload Public Keys to Keyserver. Use the default keyserver in the popup.</p>
-<p class="notes">Now someone who wants to send you an encrypted message can download your public key from the Internet. There are multiple keyservers that you can select from the menu when you upload, but they are all copies of each other, so it doesn't matter which one you use. However, it sometimes takes a few hours for them to match each other when a new key is uploaded.</p>
+						<h3><em>ステップ2.B</em> 公開鍵をキーサーバーにアップロードする</h3>
+						<p>メールプログラムのメニューでOpenPGP&rarr;キー管理を選択してください。</p>
+<p>生成した公開鍵を右クリックして、「公開鍵をキーサーバーにアップロード」を選んでください。ポップアップ表示される既定(デフォルト)のキーサーバーをそのまま使いましょう。</p>
+<p class="notes">これであなたへ暗号化されたメールを送ろうとする人が、あなたの公開鍵をインターネットからダウンロードできるようになりました。アップロードするときにキーサーバーがいくつか表示されていてその中から選択できるのですが、実はどれも互いにコピーをとっています。つまりどのキーサーバーへアップロードしても同じ結果になるのです。ただ、公開鍵をアップロードすると他のサーバーへコピーされるまでに数時間かかる場合もあります。</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
 						<div class="troubleshooting">
-							<h4>Troubleshooting</h4>
+							<h4>トラブル・シューティング</h4>
 							<dl>
-								<dt>The progress bar never finishes</dt>
-										<dd>Close the upload popup, make sure you are connected to the Internet, and try again. If that doesn't work, try again, selecting a different keyserver.</dd>
-<dt>My key doesnt appear in the list</dt>
-										<dd>Try checking Show Default Keys.</dd>
+								<dt>実行中のバー表示が最後までいかない</dt>
+										<dd>まずアップロードのポップアップを閉じ、インターネットに接続していることを再確認した上で、もう一度開始させます。それでもだめだったら、違うキーサーバーを選択してください。</dd>
+<dt>私のキーがリストにありません。</dt>
+										<dd>「デフォルトのキーを表示」をチェックしてください。</dd>
 
-								<dt class="feedback">Don't see a solution to your problem?</dt>
-									<dd class="feedback">Please let us know on the <a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">feedback page</a>.</dd>
+								<dt class="feedback">問題が解決しませんでしたか？</dt>
+										<dd class="feedback"><a href="https://libreplanet.org/wiki/GPG_guide/Public_Review">フィードバックのページ</a>で知らせてください。</dd>
 
 							</dl>
 						</div><!-- /.troubleshooting -->
@@ -229,8 +229,8 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="terminology" class="step">
 					<div class="main">
-						<h3>GnuPG, OpenPGP, what?</h3>
-						<p>You're using a program called GnuPG, but the menu in your email program is called OpenPGP. Confusing, right? In general, the terms GnuPG, GPG, GNU Privacy Guard, OpenPGP and PGP are used interchangeably, though they all have slightly different meanings.</p>
+						<h3>GnuPGとかOpenPGPとは？</h3>
+						<p>プログラムの名前がGnuPGですが、メールプログラムのメニューにはOpenPGPと表示されます。紛らわしいのですが、おおざっぱにはGnuPG、GPG、GNU Privacy Guard、OpenPGP、PGPはどれも似たようなものです。もちろん正確にはそれぞれ別のものです。</p>
 					</div><!-- End .main -->
 				</div><!-- End #terminology.step-->
 
@@ -243,7 +243,7 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#3</em> Try it out!</h2>
+						<h2><em>#3</em> 暗号化を使ってみましょう！</h2>
 						<p>Now you'll try a test correspondence with a computer program named Adele, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
 				</div><!-- End .section-intro -->
 
