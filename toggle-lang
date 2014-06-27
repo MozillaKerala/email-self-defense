@@ -1,0 +1,22 @@
+#!/bin/bash
+# Really quick hacky script to comment/uncomment links to translations
+# of the GPG guide.
+
+enc_mode=$1
+enc_lang=$2
+
+if [ $enc_mode = 'enable' ]
+then
+    # Regex to match <li> tag with language link
+    enc_regex="<!--\(<li><a.*href=\"\/${enc_lang}\".*<\/li>\)-->"
+    # Uncomment it
+    sed -i "s/$enc_regex/\1/" **/*.html
+elif [ $enc_mode = 'disable' ]
+then
+    # Regex to match <li> tag with language link
+    enc_regex="\(<li><a.*href=\"\/${enc_lang}\".*<\/li>\)"
+    # Comment it out
+    sed -i "s/$enc_regex/<!--\1-->/" **/*.html
+else
+    echo 'Usage: toggle-lang enable|disable <lang>'
+fi
