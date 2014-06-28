@@ -30,20 +30,60 @@
 		<!--<div class="highlight" style="background: red;">
 				<h3 style="text-align: center;"><strong style="color: white;">Website Under Construction</strong></h3>
 		</div>-->
-
 			<div>
-				<h1>Email Self-Defense</h1>
-				<ul class="os">
-					<li><a href="index.html">GNU/Linux</a></li>
-					<li><a href="mac.html">Mac OS</a></li>
-					<li><a href="windows.html" class="current">Windows</a></li>
-					<li class="share"><a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Email encryption for everyone via %40fsf">#EmailSelfDefense</a></li>
-				</ul>
+			  <h1>電子メール自己防衛</h1>
+
+                          <!-- Language list for browsers that do not have JS enabled -->
+                          <ul id="languages" class="os">
+                            <li><a href="/en">english</a></li>
+                            <li><a href="/es">español</a></li>
+                            <li><a href="/fr">français</a></li>
+                            <li><a href="/de">deutsch</a></li>
+                            <li><a href="/pt-br">português do Brasil</a></li>
+                            <li><a href="/tr">türkçe</a></li>
+                            <li><a href="/ro">română</a></li>
+                            <li><a href="/ru">русский</a></li>
+                            <li><a href="/ml">മലയാളം</a></li>
+                            <li><a href="/ko">한국어</a></li>
+                            <li><a class="current" href="/ja">日本語</a></li>
+                            <li><a href="/el">ελληνικά</a></li>
+                          </ul>
+
+                          <ul id="menu" class="os">
+			    <li class="spacer">
+                              <a href="index.html">GNU/Linux</a>
+                            </li>
+			    <li>
+                              <a href="mac.html">Mac OS</a>
+                            </li>
+			    <li>
+                              <a href="windows.html" class="current">Windows</a>
+                            </li>
+			    <li class="spacer">
+                              <a href="https://fsf.org/share?u=https://u.fsf.org/zb&amp;t=Email encryption for everyone via %40fsf">
+                                #EmailSelfDefense
+                              </a>
+                            </li>
+			  </ul>
 
 				<!-- ~~~~~~~~~ FSF Introduction ~~~~~~~~~ -->
 				<div id="fsf-intro">
-					<h3><a href="http://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h3>
-					<span  style="font-size:125%"><p>We fight for computer user's rights, and promote the development of free (as in freedom) software. Resisting bulk surveillance is very important to us.</p><p><strong>We want to heavily promote tools like this in-person and online, to help as many people as possible take the first step towards using free software to protect their privacy. Can you make a donation or become a member to help us achieve this goal?</strong></p></span>
+				  <h3>
+						<a href="http://u.fsf.org/ys">
+							<img alt="Free Software Foundation"
+									 src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png">
+						</a>
+					</h3>
+					<div class="fsf-emphasis">
+						<p>
+							Free Software Foundationはパソコンのユーザの権利のために戦って、（自由の）のフリーソフトウェアの開発を促進します。無差別な監視に抵抗するのは我々にとって非常に大切なことです。
+						</p>
+						<p>
+							<strong>
+									Free Software Foundationはこのようなツールをオンラインでもオフラインでも活躍的に促進して、自分のプライバシーを守るためにできるだけ多くの人のフリーソフトウェアへのフリーソフトウェアの使用の第一歩を支援しようと思っています。どうぞFree Software Foundationを支援して、会員になってください。
+							</strong>
+						</p>
+					</div>
 
 					<p><a href="https://crm.fsf.org/civicrm/contribute/transact?reset=1&id=14&pk_campaign=esd&pk_kwd=guide_donate"><img alt="Donate" src="//static.fsf.org/nosvn/enc-dev0/img/donate.en.png"></a>      <a href="https://u.fsf.org/yr"><img alt="Join now" src="//static.fsf.org/nosvn/enc-dev0/img/join.en.png"></a></p>
 
@@ -70,7 +110,7 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#1</em> Get the pieces</h2>
+						<h2><em>#1</em>  必要な部品を集めよう</h2>
 						<p class="notes">このガイドで登場するソフトウェアは自由なソフトウェアライセンスに基づいています。そのようなソフトは完全な透明性があり、誰でもコピーができ、自分だけのバーションを作ることもできます。そういう特徴があるため、フリーソフトウェアライセンスのソフト（短くフリーソフト）は（Windowsのような）プロプライエタリソフト、つまりは売っている会社だけが中身を知っているようなソフトよりよほど監視しにくいのです。自分の自由を守るためにも、プライベートの情報をかんししにくくするためにも、GNU/Linuxのような、自由なオペレーティングシステムに切り替えることをおすすめします。詳しくは<a href="https://u.fsf.org/ys">fsf.org</a>をご覧ください。</p>
 						<p>まずはデスクトップ用のメールプログラムをインストールしなければならないのです。このガイドはフリーソフトのThunderbirdというメールプログラムを使って、GnuPGの使い方を説明します。ブラウザーを使ってもGmailのようなメールアカウントをアクセスできますが、Thunderbirdを始めとするメールプログラムはブラウザーよりも多機能です。</p>
 						<p>そういうメールプログラムがもうパソコンにインストールされているなら、<a href="#step-1b">1.B</a>に進んでください。</p>
@@ -82,7 +122,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step1a-install-wizard.png" alt="Step 1.A: Install Wizard" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>1.A</em> メールプログラムに自分のメールアカウントを設定する（まだ設定済でない場合）</h3>
+						<h3><em>ステップ1.A</em> メールプログラムに自分のメールアカウントを設定する（まだ設定済でない場合）</h3>
 						<p>メールプログラムを起動し、ウィザードの指示に従ってメールアカウントを設定してください。</p>
 
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -105,7 +145,7 @@
 				<div id="step-1b" class="step">
 
 					<div class="main">
-						<h3><em>1.B</em> GPG4Winをダウンロードすることで、GnuPGを手に入れる</h3>
+						<h3><em>ステップ1.B</em> GPG4Winをダウンロードすることで、GnuPGを手に入れる</h3>
 						<p>GPG4WinはGnuPGを含めているソフトウェアパッケージです。そのパッケージを<a href="http://files.gpg4win.org/gpg4win-2.2.1.exe">ダウンロード</a>し、既定の設定を選んでインストールしてください。インストールが終わったら、表示されたウインドーズを閉じましょう。</p>
 
 					</div><!-- End .main -->
@@ -121,7 +161,7 @@
 						</ul>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>1.C</em> Enigmail（エニグメール）プラグインをメールプログラムにインストール</h3>
+						<h3><em>ステップ1.C</em> Enigmail（エニグメール）プラグインをメールプログラムにインストール</h3>
 						<p>メールプログラムのメニューの中から「アドイン」を選択してください。これはたいてい「ツール」というメニューの下にあります。必要な拡張機能を、左側のマークで選択します。すでにEnigmailが表示されていれば、すぐ次のステップは飛ばしてください。</p>
 						<p>表示されていなければ、上の検索バーを使って Enigmailを検索して、プラグインをインストールしてください。インストールが完了したら、メールプログラムを再起動してください。</p>
 						<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -159,7 +199,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/step2a-01-make-keypair.png" alt="Step 2.A: Make a Keypair" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>2.A</em> 自分専用のキーペアを作る</h3>
+						<h3><em>ステップ2.A</em> 自分専用のキーペアを作る</h3>
 						<p>電子メールプログラムのメニューでOpenPGP&rarr;設定ウィザードを選択してください。ウィザードの始めの方のウィンドウに現れる説明は読まなくてもいいですが、後のウィンドウの説明は重要です。</p>
 						<p>2番目の「サインする」または「署名する」というウィンドウでは、「いいえ、むしろ宛先別のルールによって署名が必要なメールを作成する」を選択してください。</p>
 						<p>「キーを作る」という名前のウィンドウになるまでは既定（デフォルト）の設定を選んでください。</p>
@@ -184,7 +224,7 @@
 				</div><!-- End #step-2a .step  -->
 				<div id="step-2b" class="step">
 					<div class="main">
-						<h3><em>2.B</em> 公開鍵をキーサーバーにアップロードする</h3>
+						<h3><em>ステップ2.B</em> 公開鍵をキーサーバーにアップロードする</h3>
 						<p>メールプログラムのメニューでOpenPGP&rarr;キー管理を選択してください。</p>
 <p>生成した公開鍵を右クリックして、「公開鍵をキーサーバーにアップロード」を選んでください。ポップアップ表示される既定(デフォルト)のキーサーバーをそのまま使いましょう。</p>
 <p class="notes">これであなたへ暗号化されたメールを送ろうとする人が、あなたの公開鍵をインターネットからダウンロードできるようになりました。アップロードするときにキーサーバーがいくつか表示されていてその中から選択できるのですが、実はどれも互いにコピーをとっています。つまりどのキーサーバーへアップロードしても同じ結果になるのです。ただ、公開鍵をアップロードすると他のサーバーへコピーされるまでに数時間かかる場合もあります。</p>
@@ -231,7 +271,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section3-try-it-out.png" alt="Try it out." /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>3.A</em> Edwardに公開鍵を送る</h3>
+						<h3><em>ステップ3.A</em> Edwardに公開鍵を送る</h3>
 						<p>だれか人にメールするときは、このステップは不要です。電子メールプログラムのメニューでOpenPGP&rarr;キー管理を選択してください。表示されるリストに自分の鍵が表示されるはずです。そのキーを右クリックして、コンテキストメニューの「電子メールで公開鍵を送る」を選択してください。新規作成ボタンを押したときと同様に新しいメールの作成ウィンドウが開きます。</p>
 
 <p>宛先フィールドに「edward-ja@fsf.org」と入力します。メールの件名フイールドと本文にもそれぞれ何か一言を書いて、メールを送信してください。</p>
@@ -243,7 +283,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3b" class="step">
 					<div class="main">
-							<h3><em>3.B</em> テストの暗号化メールを送信</h3>
+							<h3><em>ステップ3.B</em> テストの暗号化メールを送信</h3>
 							<p>電子メールのプログラムで「edward-ja@fsf.org」に宛てたメールを新規作成してください。件名を「暗号化テスト」とか、そんなものにして、メールの本文にも何か適当な内容を書きます。まだ送信しないでください。</p>
 							<p>新規作成ウィンドウの右下の鍵のアイコンをクリックします。そのアイコンが黄色に変わっているはずです。このアイコンをクリックすると、前のステップでダウンロードした公開鍵を使ってEnigmailにメールを暗号化させます。</p>
 							<p class="notes">鍵アイコンのとなりに鉛筆アイコンがあります。これはメールに特別な、唯一の署名を添付するためのものです。この署名はあなたの秘密鍵から生成されますが、暗号化とはまだ別なものです。このガイドではまだ使わないことにします。</p>
@@ -278,7 +318,7 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>3.C</em> 返信を受ける</h3>
+						<h3><em>ステップ3.C</em> 返信を受ける</h3>
 						<p>メールが届くとEdwardでは自分の秘密鍵であなたの暗号化メールを解読し、次にあなたの公開鍵をキーサーバーからダウンロードし、それを使って暗号化した返事を送ります。</p>
 						<p class="notes">Edward宛にメールを送った時、Edwardの公開鍵を使用したので、解読にはEdwardの秘密鍵が必要です。Edwardの秘密鍵はEdwardにしかありませんので、Edwardだけがそのメールを解読できます。そのメールを送信したあなたでさえ解読できません。</p>
 						<p class="notes">Edwardからの自動返信が届くまで２、３分かかりますので、その間に<a href="#section5">「GnuPGを上手く使う」</a>のセクションをご覧になるのもいいでしょう。</p>
@@ -323,7 +363,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>4.A</em> 鍵に署名する</h3>
+						<h3><em>ステップ4.A</em> 鍵に署名する</h3>
 						<p>電子メールのソフトのOpenPGP&rarr;キー管理をクリックします。</p>
 						<p>Edwardの公開鍵を右クリックして、コンテキストメニューで「鍵に署名する」を選びます。</p>
 						<p>ポップアップが表示されるので「返事はしない」を選んでからOKをクリックしてください。</p>
