@@ -343,14 +343,15 @@
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#4</em> Learn the Web of Trust</h2>
-						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
+						<h2><em>#4</em>ΓΝΩΡΙΣΕ ΤΟΝ "ΙΣΤΟ ΤΗΣ ΕΜΠΙΣΤΟΣΥΝΗΣ"</h2>
+						<p> Η κρυπτογράφηση email είναι μια ισχυρή τεχνολογία, με μια αδυναμία: χρειάζεται ένα τρόπο επαλήθευσης ότι ένα δημόσιο κλειδί ανήκει πραγματικά στο συγκεκριμένο άτομο. Διαφορετικά, δεν θα υπήρχε τρόπος να αποτρέψει έναν εισβολέα, από το να δημιουργήσει ένα λογαριασμό email με το όνομα ενός φίλου σου, μαζί με το αντίστοιχο ζεύγος κλειδιών και να παριστάνει το φιλικό σου πρόσωπο. Γιαυτό το λόγο οι προγραμματιστές/ριες ελεύθερου λογισμικού που ανέπτυξαν την κρυπτογράφηση email, δημιούργησαν την δυνατότητα υπογραφής ενός κλειδιού και τον "Ιστό της Εμπιστοσύνης".</p>
 
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, forming a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+<p>Υπογράφοντας το κλειδί κάποιου/ας, δηλώνεις δημόσια ότι πιστεύεις πως το κλειδί ανήκει όντως στο άτομο αυτό και όχι σε κάποιον κλέπτη ταυτότητας. Όσοι χρησιμοποιούν το κλειδί σου, βλέπουν τον αριθμό των υπογραφών που έχει συγκεντρώσει. Όταν θα έχεις χρησιμοποιήσει το GnuPG για μεγάλο χρονικό διάστημα, θα έχεις συγκεντρώσει εκατοντάδες υπογραφές. Ο "Ιστός της Εμπιστοσύνης" είναι ο αστερισμός όλων όσων χρησιμοποιούν το  GnuPG, συνδεδεμένοι με εμπιστοσύνη που εκφράζεται μέσα από τις υπογραφές, σε ένα τεράστιο δίκτυο. Η αξιοπιστία ενός κλειδιού, αυξάνει με τον αριθμό των κλειδιών που το έχουν υπογράψει και ανάλογα, με το πόσες υπογραφές έχουν τα κλειδιά που το υπόγραψαν. </p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>Τα δημόσια κλειδιά αναγνωρίζονται συνήθως από το αποτύπωμα (fingerprint) ενός κλειδιού, το οποίο είναι μια ακολουθία χαρακτήρων, σαν: DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (για το κλειδί του Edward). Μπορείς να δεις το αποτύπωμα του δικού σου κλειδιού, ή και άλλων που είναι αποθηκευμένα στον υπολογιστή σου, από το πρόγραμμα που χρησιμοποιείς για email, στο μενού OpenPGP &rarr; Key Management. Εκεί με δεξί κλικ στο συγκεκριμένο κλειδί, μπορείς να επιλέξεις το Key Properties. Είναι καλή πρακτική το να μοιράζεσαι το αποτύπωμα του δημόσιου κλειδιού σου, ώστε οι αποδέκτες να μπορούν να διπλοτσεκάρουν ότι έχουν κατεβάσει το σωστό δημόσιο κλειδί από κάποιο εξυπηρετητή κλειδιών. </p>
 
-<p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to are trying to communicate to verify which one to use.</p>
+<p class="notes">Μπορεί να δεις κλειδιά να αναφέρονται με το ID τους, που είναι μια απλούστερη ακολουθία χαρακτήρων με τα 8 τελευταία ψηφία του αποτυπώματος, σαν 4C11BBB2 (για το κλειδί του Edward). Το ID ενός κλειδιού, είναι ορατό από το εργαλείο διαχείρισης κλειδιών που μπορείς να βρεις στο πρόγραμμα που χρησιμοποιείς για email, στο μενού OpenPGP &rarr; Key Management. 
+Το ID ενός κλειδιού, είναι σαν το μικρό όνομα ενός ανθρώπου (είναι μικρό και εύκολο στη χρήση, αλλά δεν είναι σίγουρο ότι είναι μοναδικό για το συγκεκριμένο κλειδί), ενώ το αποτύπωμα είναι μοναδικό για κάθε κλειδί. Αν έχεις μόνο το ID ενός κλειδιού, μπορείς να αναζητήσεις το κλειδί (όπως και το αποτύπωμά του), όπως στο Βήμα 3, αλλά αν εμφανιστούν πολλά κλειδιά με το ίδιο ID, θα χρειαστείς και το αποτύπωμά του για να επιβεβαιώσεις ότι συνομιλείς με το σωστό άτομο.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -358,15 +359,15 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-4a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section4-web-of-trust.png" alt="Section 4: Web of Trust" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section4-web-of-trust.png" alt="Section 4: Ιστός της Εμπιστοσύνης" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Step 4.a</em> Sign a key</h3>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management.</p>
-						<p>Right click on Adele's public key and select Sign Key from the context menu.</p>
-						<p>In the window that pops up, select "I will not answer" and click ok.</p>
-						<p>In your email program's menu, go to OpenPGP &rarr; Key Management &rarr; Keyserver &rarr; Upload Public Keys and hit ok.</p>
-						<p class="notes">You've just effectively said "I trust that Adele's public key actually belongs to Adele." This doesn't mean much because Adele isn't a real person, but it's good practice.</p>
+						<h3><em>ΒΗΜΑ 4.Α</em> ΥΠΟΓΡΑΨΕ ΕΝΑ ΚΛΕΙΔΙ</h3>
+						<p>Πρώτα υπογράφουμε ένα κλειδί. Στο πρόγραμμα που χρησιμοποιείς για email, πήγαινε στο μενού OpenPGP &rarr; Key Management</p>
+						<p>Βλέπεις όλα τα κλειδιά. Για να υπογράψεις το δημόσιο κλειδί του Edward, επίλεξε το, πάτα δεξί-κλικ και επίλεξε το Sign Key από το μενού</p>
+						<p>Στο αναδυόμενο παράθυρο, επίλεξε "I will not answer" και πάτα OK. </p>
+						<p> Στη συνέχεια ανεβάζεις το κλειδί που υπέγραψες σε κάποιο keyserver. Στο μενού του Key Management, πήγαινε στο Keyserver -> Upload Public Keys και πάτα OK. </p>
+						<p class="notes"> Είναι σαν να λες δημόσια: "Εμπιστεύομαι ότι το δημόσιο κλειδί του Edward ανήκει στον Edward". Αυτό δεν σημαίνει πολλά αφού ο Edward δεν είναι πραγματικό πρόσωπο, αλλά είναι καλή εξάσκηση.</p>
 
 
 						<!--<div id="pgp-pathfinder">
@@ -375,43 +376,37 @@
 								<p><strong>To:</strong> <input type="text" placeholder="50BD01x4" name="TO"></p>
 								<p class="buttons"><input type="submit" value="trust paths" name="PATHS"> <input type="reset" value="reset" name=".reset"></p>
 							</form>
-						</div><!-- End #pgp-pathfinder -->
+						</div> End #pgp-pathfinder -->
 
 					</div><!-- End .main -->
 				</div><!-- End #step-4a .step -->
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-sign_real_keys" class="step">
 					<div class="main">
-						<h3><em>Important:</em> check people's identification before signing their keys</h3>
-						<p>Before signing a real person's key, always make sure it actually belongs to them, and that they are who they say they are. Ask them to show you their ID (unless you trust them very highly) and their public key fingerprint -- not just the shorter public key ID, which could refer to another key as well. In Enigmail, answer honestly in the window that pops up and asks "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?".</p>
+						<h3><em>ΣΗΜΑΝΤΙΚΟ:</em> ΕΛΕΓΞΕ ΤΗΝ ΤΑΥΤΟΤΗΤΑ ΚΑΠΟΙΟΥ/ΑΣ ΠΡΙΝ ΥΠΟΓΡΑΨΕΙΣ ΤΑ ΚΛΕΙΔΙΑ ΤΟΥΣ</h3>
+						<p> Πριν υπογράψεις το κλειδί κάποιου/ας, πάντα έλεγξε αν πραγματικά ανήκει σε αυτό το άτομο και δεν πρόκειται για κάποιο κλέπτη ταυτότητας. Ζήτησε τους να σου δείξουν ταυτότητα (εκτός και αν τους εμπιστεύεσαι πάρα πολύ) και το αποτύπωμα του δημόσιου κλειδιού τους – όχι το μικρότερο ID του δημόσιου κλειδιού, που μπορεί να αφορά και άλλα κλειδιά. Στο Enigmail απάντησε ειλικρινά στο αναδυόμενο παράθυρο "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?" </p>
 					</div><!-- End .main -->
 				</div><!-- End #step-sign_real_keys .step-->
-
-
-
-			</div>
-		</section><!-- End #section4 -->
-
 <!-- ~~~~~~~~~ Section 5: Use it well  ~~~~~~~~~ -->
 		<section id="section5" class="row">
 			<div>
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
-						<h2><em>#5</em> Use it well</h2>
-<p>Everyone uses GnuPG a little differently, but it's important to follow some basic practices to keep your email secure. Not following them, you risk the privacy of the people you communicate with, as well as your own, and damage the Web of Trust.</p>
+						<h2><em>#5</em> Χρησιμοποιησε το Καλα </h2>
+<p>  Όλοι μας χρησιμοποιούμε το GnuPG λίγο διαφορετικά, αλλά είναι σημαντικό να ακολουθούμε κάποιες βασικές πρακτικές, για να έχουμε ασφαλή email. Μη ακολουθώντας τις, ρισκάρεις την ιδιωτικότητα των προσώπων με τα οποία επικοινωνείς, όπως επίσης και τη δική σου, και βλάπτεις τον "Ιστό της Εμπιστοσύνης".  </p>
 				</div><!-- End .section-intro -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5a" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section5-01-use-it-well.png" alt="Section 5:  Χρησιμοποίησε το Καλά"></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>When should I encrypt?</h3>
+						<h3>Ποτε να κρυπτογραφω; </h3>
 
-						<p>The more you can encrypt your messages, the better. If you only encrypt emails occasionally, each encrypted message could raise a red flag for surveillance systems. If all or most of your email is encrypted, people doing surveillance won't know where to start.</p>
+						<p>Όσο περισσότερο κρυπτογραφείς, τόσο το καλύτερο.Αν κρυπτογραφείς σπάνια, κάθε κρυπτογραφημένο μήνυμα μπορεί να γίνει κόκκινο πανί για τα συστήματα παρακολούθησης. Αν κρυπτογραφείς όλα ή τα περισσότερα από τα email σου, αυτοί που ασχολούνται με τα συστήματα παρακολούθησης δεν θα ξέρουν από που να αρχίσουν.</p>
 
-<p>That's not to say that only encrypting some of your email isn't helpful -- it's a great start and it makes bulk surveillance more difficult.</p>
+<p>Αυτό δεν σημαίνει ότι το να κρυπτογραφείς μόνο κάποια email δεν βοηθάει. Είναι μια πολύ καλή αρχή και κάνει τη μαζική παρακολούθηση δυσκολότερη </p>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-5a .step -->
@@ -419,30 +414,29 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5b" class="step">
 					<div class="sidebar">
-						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section5-02-use-it-well.png" alt="Section 5: Use it Well" /></p>
+						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/en/screenshots/section5-02-use-it-well.png" alt="Section 5: Χρησιμοποίησε το Καλά"></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3><em>Important:</em> Be wary of invalid keys</h3>
-						<p>GnuPG makes email safer, but it's still important to watch out for invalid keys, which might have fallen into the wrong hands. Email encrypted with invalid keys might be readable by surveillance programs.</p>
-						<p>In your email program, go back to the second email that Adele sent you. Because Adele encrypted it with your public key, it will have a message from OpenPGP at the top, which most likely says "OpenPGP: Part of this message encrypted."</p>
-<p><b>When using GnuPG, make a habit of glancing at that bar. The program will warn you there if you get an email encrypted with a key that can't be trusted.</b></p>
+						<h3><em>Σημαντικο:</em> προσεξε τα μη εγκυρα κλειδια</h3>
+						<p> Το GnuPG κάνει τα email μας ασφαλέστερα. Παρ'όλα αυτά, είναι σημαντικό να έχεις το νου σου για μη έγκυρα κλειδιά, που μπορεί να έχουν πέσει σε λάθος χέρια. Email κρυπτογραφημένα με μη έγκυρα κλειδιά μπορεί να είναι αναγνώσιμα από προγράμματα παρακολούθησης.  </p>
+						<p>  Στο πρόγραμμα που χρησιμοποιείς για email, πήγαινε πίσω στο δεύτερο email που σου έστειλε ο Edward. Επειδή το κρυπτογράφησε με το δημόσιο κλειδί σου, θα έχει ένα μήνυμα από το OpenPGP στην κορυφή, που λογικά θα λέει "OpenPGP: Part of this message encrypted". Όταν χρησιμοποιείς το GnuPG, ρίχνε μια ματιά σε αυτά τα μηνύματα. Το πρόγραμμα θα σε προειδοποιήσει αν λάβεις ένα email κρυπτογραφημένο με ένα μη έμπιστο κλειδί.  </b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-5c" class="step">
 					<div class="main">
-						<h3>Copy your revocation certificate to somewhere safe</h3>
-						<p>Remember when you created your keys and saved the revocation certificate that GnuPG made? It's time to copy that certificate onto the safest digital storage that you have -- the ideal thing is a flash drive, disk, or hard drive stored in a safe place in your home.</p>
-<p>If your private key ever gets lost or stolen, you'll need this certificate file to let people know that you are no longer using that keypair.</p>
+						<h3>Κρατα ενα αντιγραφο απο το πιστοποιητικο ανακλησης, σε ασφαλες σημειο</h3>
+						<p>Θυμάσαι όταν δημιούργησες τα κλειδιά σου και έσωσες το πιστοποιητικό ανάκλησης που έφτιαξε το GnuPG; Ήρθε η ώρα να αντιγράψεις αυτό το πιστοποιητικό στο ασφαλέστερο ψηφιακό αποθηκευτικό σου μέσο - το ιδανικό είναι ένα flash drive, cd, ή εξωτερικός δίσκος αποθηκευμένος σε ασφαλές σημείο στο σπίτι σου. </p>
+<p>Αν το ιδιωτικό σου κλειδί χαθεί ή κλαπεί, θα χρειαστείς αυτό το πιστοποιητικό, για να ενημερώσεις τις επαφές σου ότι δεν χρησιμοποιείς πια αυτό το ζεύγος κλειδιών. </p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5c .step -->
 
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-lost_key" class="step">
 					<div class="main">
-						<h3><em>Important:</em> act swiftly if someone gets your private key</h3>
-						<p>If you lose your private key or someone else gets ahold of it (say, by stealing or cracking your computer), it's important to revoke it immediately before someone else uses it to read your encrypted email. This guide doesn't cover how to revoke a key, but you can follow the <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">instructions on the GnuPG site</a>. After you're done revoking, send an email to everyone with whom you usually use your key to make sure they know.</p>
+						<h3><em>Σημαντικο:</em> Δρασε αμεσα αν καποιος παρει το ιδιωτικο σου κλειδι </h3>
+						<p>Α Αν χάσεις το ιδιωτικό σου κλειδί, ή κάποιος/α το πάρει (π.χ. κλέβοντας ή αποκτώντας πρόσβαση στον υπολογιστή σου), είναι σημαντικό να το ανακαλέσεις άμεσα, πριν το χρησιμοποιήσει για να διαβάσει τα κρυπτογραφημένα email σου. Αυτός ο οδηγός δεν καλύπτει τη διαδικασία ανάκλησης, αλλά μπορείς να ακολουθήσεις τις <a href="https://www.gnupg.org/gph/en/manual.html#AEN305">οδηγίες στην ιστοσελίδα του GnuPG</a>. Όταν ολοκληρωθεί η ανάκληση, στείλτε ένα email σε όσους/ες μιλάς κρυπτογραφημένα ενημερώνοντας για την κατάργηση αυτού του κλειδιού. </p>
 					</div><!-- End .main -->
 				</div><!-- End #step-lost_key .step-->
 
@@ -453,18 +447,19 @@
 						<p> First add your public key fingerprint to your email signature, then compose an email to at least five of your friends, telling them you just set up GnuPG and mentioning your public key fingerprint. Link to this guide and ask them to join you. Don't forget that there's also an awesome <a href="infographic.html">infographic to share.</a></p>
 
 <p class="notes">Start writing your public key fingerprint anywhere someone would see your email address: your social media profiles, blog, Website, or business card. (At the Free Software Foundation, we put ours on our <a href="https://fsf.org/about/staff">staff page</a>.) We need to get our culture to the point that we feel like something is missing when we see an email address without a public key fingerprint.</p>
-					</div><!-- End .main
-				</div><!-- End #step-5d .step-->
+					</div>End .main 
+				</div>End #step-5d .step-->
 
 
 			</div>
 		</section><!-- End #section5 -->
 
+
 <!-- ~~~~~~~~~ Section 6: Next steps  ~~~~~~~~~ -->
 		<section class="row" id="section6">
 			<div id="step-click_here" class="step">
 					<div class="main">
-					  <h2><a href="next_steps.html">Click here when you're done</a></h2>
+					  <h2><a href="next_steps.html">Πατησε εδω οταν τελειωσεις</a></h2>
 
 					</div><!-- End .main -->
 				</div><!-- End #step-click_here .step-->
