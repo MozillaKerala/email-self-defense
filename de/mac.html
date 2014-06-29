@@ -343,9 +343,9 @@
 
 <p>Wenn du den Schlüssel von jemandem signierst, dann sagst du öffentlich, dass du glaubst, dass der Schlüssel tatsächlich dieser Person gehört und nicht einem Betrüger. Leute, die deinen öffentlichen Schlüssel benutzen, können sehen, wie viele Signaturen er erhalten hat. Wenn du GnuPG einige Jahre lang verwendet hast, kannst du hunderte Signaturen haben. Das Web of Trust ist eine Konstellation aller GnuPG-Nutzer, die durch Signaturenketten zu einem riesigen Netz verbunden sind. Je mehr Signaturen ein Schlüssel hat und je mehr Signaturen die Schlüssel derjenigen, die unterschrieben haben, erhalten haben, desto vertrauenswürdiger ist dieser Schlüssel.</p>
 
-<p>Öffentliche Schlüssel werden normalerweise anhand ihres Fingerabdrucks identifiziert, einer Zeichenkette wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (für Adeles Schlüssel). Du kannst den Fingerabdruck deines öffentlichen Schlüssels – und anderer öffentlicher Schlüssel, die du gespeichert hast, indem du zu OpenPGP &rarr; Schlüssel verwalten im Menü deines E-Mail-Programms gehst und dann mit der rechten Maustaste auf den Schlüssel klickst und die Schlüsseleigenschaften auswählst. Es ist sinnvoll, deinen Fingerabdruck immer weiterzugeben, wenn du anderen deine E-Mail-Adresse mitteilst, so dass diese Menschen kontrollieren können, ob sie deinen richtigen Schlüssel von einem Schlüsselserver herunterladen.</p>
+<p>Öffentliche Schlüssel werden normalerweise anhand ihres Fingerabdrucks identifiziert, einer Zeichenkette wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (für Edwards Schlüssel). Du kannst den Fingerabdruck deines öffentlichen Schlüssels – und anderer öffentlicher Schlüssel, die du gespeichert hast, indem du zu OpenPGP &rarr; Schlüssel verwalten im Menü deines E-Mail-Programms gehst und dann mit der rechten Maustaste auf den Schlüssel klickst und die Schlüsseleigenschaften auswählst. Es ist sinnvoll, deinen Fingerabdruck immer weiterzugeben, wenn du anderen deine E-Mail-Adresse mitteilst, so dass diese Menschen kontrollieren können, ob sie deinen richtigen Schlüssel von einem Schlüsselserver herunterladen.</p>
 
-<p class="notes">Du wirst sehen, dass man sich auch über die Schlüssel-ID auf öffentliche Schlüssel bezieht, dabei handelt es sich einfach um die letzten 8 Zeichen des Fingerabdrucks, z.B. 92AB3FF7 für Adele. Die Schlüssel-ID ist direkt im Fenster Schlüssel verwalten sichtbar. Diese Schlüssel-ID ist wie der Vorname einer Person (es ist eine nützliche Abkürzung, aber ist vielleicht nicht eindeutig), während der Fingerabdruck tatsächlich den Schlüssel eindeutig und ohne Möglichkeit der Verwechslung identifiziert. Wenn du nur die Schlüssel-ID hast, kannst du den Schlüssel (und seinen Fingerabdruck) immer noch nachschlagen, wie du es in Schritt 3 getan hast, aber wenn mehrere Möglichkeiten auftauchen, brauchst du den Fingerabdruck der Person, mit der du kommunizieren willst, um zu klären, welchen Schlüssel du benutzen sollst.</p>
+<p class="notes">Du wirst sehen, dass man sich auch über die Schlüssel-ID auf öffentliche Schlüssel bezieht, dabei handelt es sich einfach um die letzten 8 Zeichen des Fingerabdrucks, z.B. 92AB3FF7 für Edward. Die Schlüssel-ID ist direkt im Fenster Schlüssel verwalten sichtbar. Diese Schlüssel-ID ist wie der Vorname einer Person (es ist eine nützliche Abkürzung, aber ist vielleicht nicht eindeutig), während der Fingerabdruck tatsächlich den Schlüssel eindeutig und ohne Möglichkeit der Verwechslung identifiziert. Wenn du nur die Schlüssel-ID hast, kannst du den Schlüssel (und seinen Fingerabdruck) immer noch nachschlagen, wie du es in Schritt 3 getan hast, aber wenn mehrere Möglichkeiten auftauchen, brauchst du den Fingerabdruck der Person, mit der du kommunizieren willst, um zu klären, welchen Schlüssel du benutzen sollst.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -358,10 +358,10 @@
 					<div class="main">
 						<h3><em>Schritt 4.a</em> Signiere einen Schlüssel</h3>
 						<p>Gehe in deinem E-Mail-Programm zu OpenPGP &rarr; Schlüssel verwalten.</p>
-						<p>Klicke mit der rechten Maustaste auf Adeles öffentlichen Schlüssel und wähle "Unterschreiben" aus dem Kontextmenü aus.</p>
+						<p>Klicke mit der rechten Maustaste auf Edwards öffentlichen Schlüssel und wähle "Unterschreiben" aus dem Kontextmenü aus.</p>
 						<p>Im Pop-up-Fenster wähle "Keine Antwort" und klicke auf OK.</p>
 						<p>Gehe zu OpenPGP &rarr; Schlüssel verwalten &rarr; Schlüssel-Server &rarr; Schlüssel hochladen und klicke auf OK.</p>
-						<p class="notes">Du hast gerade gesagt, dass du darauf vertraust, dass Adeles Schlüssel tatsächlich Adele gehört. Dies bedeutet wenig, da Adele keine echte Person ist, es ist aber gute Praxis.</p>
+						<p class="notes">Du hast gerade gesagt, dass du darauf vertraust, dass Edwards Schlüssel tatsächlich Edward gehört. Dies bedeutet wenig, da Edward keine echte Person ist, es ist aber gute Praxis.</p>
 
 
 						<!--<div id="pgp-pathfinder">
@@ -419,7 +419,7 @@
 					<div class="main">
 						<h3><em>Wichtig:</em> Nimm dich vor ungültigen Schlüsseln in acht</h3>
 						<p>GnuPG macht E-Mails sicherer, aber es ist immer noch wichtig, nach ungültigen Schlüsseln Ausschau zu halten, die in die falschen Hände gefallen sein könnten. E-Mails, die mit ungültigen Schlüsseln verschlüsselt worden sind, könnten von Überwachungsprogrammen gelesen werden. </p>
-						<p>Gehe in deinem E-Mail-Programm zurück zur zweiten E-Mail, die dir Adele gesendet hat. Weil sie mit deinem Schlüssel verschlüsselt wurde, gibt es oben eine Leiste, die sagt, dass die E-Mail verschlüsselt ist.</p>
+						<p>Gehe in deinem E-Mail-Programm zurück zur zweiten E-Mail, die dir Edward gesendet hat. Weil sie mit deinem Schlüssel verschlüsselt wurde, gibt es oben eine Leiste, die sagt, dass die E-Mail verschlüsselt ist.</p>
 <p><b>Wenn Du GnuPG benutzt, gewöhne es dir an, dass du auf diese Leiste schaust. Enigmail wird dich dort warnen, wenn Du eine E-Mail erhältst, die mit einem nicht vertrauenswürdigen Schlüssel verschlüsselt worden sind.</b></p>
 					</div><!-- End .main -->
 				</div><!-- End #step-5b .step -->
