@@ -288,9 +288,9 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-headers_unencrypted" class="step">
 					<div class="main">
-						<h3><em>Important:</em> Security tips</h3>
-						<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
-<p>It's also good practice to click the key icon in your email composition window <strong>before</strong> you start to write. Otherwise, your email client could save an unencrypted draft on the mail server, potentially exposing it to snooping.</p>
+						<h3><em>Importante:</em> Tips de seguridad</h3>
+						<p>Incluso si cifras tu correo electrónico, la linea del asunto no se cifra, por lo que no debes poner información privada alli. Las direcciones de envio y recepción tampoco se cifran, por lo que pueden ser leidas por un sistema de vigilancia. Cuando envias adjuntos, Enigmail te dara la opción de cifrarlos si asi lo quieres.</p>
+                        <p>Es tambien una buena práctica hacer click en el icono de llave en la ventana de redacción <strong>antes</strong>  de empezar a escribir. De otra manera, tu cliente de correo electrónico, podria guardar un borrador sin cifrar en el servidor de correo, siendo expuesto potencialmente a ser espiado.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-headers_unencrypted .step-->
 
@@ -298,12 +298,12 @@
 				<!-- ~~~~~~~~~ a div for each step  ~~~~~~~~~ -->
 				<div id="step-3c" class="step">
 					<div class="main">
-						<h3><em>Step 3.c</em> Receive a response</h3>
-						<p>When Adele receives your email, she will use her private key to decrypt it, then fetch your public key from a keyserver and use it to encrypt a response to you.</p>
-						<p class="notes">Since you encrypted this email with Adele's public key, Adele's private key is required to decrypt it. Adele is the only one with her private key, so no one except her &mdash; not even you &mdash; can decrypt it.</p>
-						<p class="notes">It may take two or three minutes for Adele to respond. In the meantime, you might want to skip ahead and check out the <a href="#section5">Use it Well</a> section of this guide.</p>
-						<p>When you receive Adele's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
-						<p>Notice the bar that Enigmail shows you above the message, with information about the status of Adele's key.</p>
+						<h3><em>Paso 3.c</em> Recibir una respuesta</h3>
+						<p>Cuando Edward recibe tu correo electrónico, el usará su llave privada para descifrarlo, luego obtendra tu llave pública de un servidor de llaves y la usará para cifrar la respuesta para ti.</p>
+						<p class="notes">Debido a que cifraste este correo electrónico con la llave pública de Edward, la llave privada de Edward  es necesaria para descifrarlo. Edward es la única persona con su llave privada, por lo que nadie más a parte de el — ni siquiera tu — pueden descrifrarlo.</p>
+						<p class="notes">Es posible que le tome responder a Edward entre dos a tres minutos. Mientras tanto, es probable que desees avanzar revisar la sección <a href="#section5">Usalo bien</a>  des esta guía.</p>
+						<p>Cuando recibas el correo electrónic de Edward y lo abras, Enigmail detectará automáticamente que esta cifrado con tu llave pública, y usará tu llave privada para descifrarlo</p>
+						<p>Nota la barra que Enigmail te muestra arriba del mensaje, con información sobre el estado de la llave de Edward.</p>
 					</div><!-- End .main -->
 				</div><!-- End #step-3c .step -->
 
@@ -326,13 +326,10 @@
 					<!-- ~~~~~~~~~ section introduction: interspersed text  ~~~~~~~~~ -->
 				<div class="section-intro">
 						<h2><em>#4</em> Learn the Web of Trust</h2>
-						<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
-
-<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, into a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
-
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Adele's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
-
-<p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Adele. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to are trying to communicate to verify which one to use.</p>
+						<p>El cifrado de correo electrónico es una tecnólogia poderosa, pero tiene sus debilidades; requiere una manera de verificar que una llave pública de una persona es realmente de ella. De otra forma, no exisitiría una manera de parar a un atacante que se haga una dirección de correo electrónico con el nombre de tu amigo, que cree llaves con esa dirección y suplantando a tu amigo. Es por eso que los programadores de software libre que desarrollaron el cifrado de correo electrónico crearon el firmado de llaves y the Web of Trust.</p>
+                        <p>Cuando firmas la llave de alguien, estas diciendo publicamente que confias en que pertenece a esa persona y no a un impostor. Las personas que usan tu llave pública pueden ver el número de firmas que tiene. Una vez que has usado GnuPG por mucho tiempo, puede ser que tengas cientos de firmas. The Web of Trust es la constelación de todos los usuarios de GnuPG, conectados entre ellos mediante las cadenas de confianza expresadas a traves de las firmas, en una red gigante. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
+                        <p>Las llaves públicas de las personas mayormente estan idetnficadas por su fingerprint, que es una cadena de which is a string como DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (para la llave de Adele). Puedes ver el fingerprint de tu llave pública, y de otras llaves públicas que han sido guardadas en tu computadora, yendo a OpenPGP → Manejo de llaves en el menú de tu programa de correo electrónico, luego hay que hacer click derecho en la llave y seleccionar Propiedades de la Llave. Es una buena práctica compartir tu fingerprint cada vez que compartes tu dirección de correo electrónico, asi otras personas puede verificar que tienene la llave pública correcta cuando descarguen tu llave desde un servidor de llaves.</p>
+                        <p class="notes">Puedes ver tambien las llaves públicas referidas por su ID de llave, que sencillament es los 8 últimos caracteres del fingerprint, como 92AB3FF7 para Edward. El ID de llave es visible directamente desde la ventana de administración de llaves. Este ID de llave es como el primer nombre de una persona (es un atajo útil pero no es único), mientras que el fingerprint relamente identifica una llave de manera única sin la posibilidad de confusión. Si solo tienes el ID de llave, igualmente puedes buscar la llave (como tambien su fingerprint), como hiciste en el paso 3, pero si aparecen varias opciones, necesitaras el fingerprint de la persona con la que estas tratando de comunicarte para ver cual es la que usa.</p>
 
 
 				</div><!-- End .section-intro -->
