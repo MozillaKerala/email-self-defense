@@ -28,10 +28,10 @@
                             <li><a href="/de">deutsch</a></li>
                             <li><a href="/pt-br">português do Brasil</a></li>
                             <li><a href="/tr">türkçe</a></li>
-                            <li><a href="/ro">română</a></li>
+                            <!--<li><a href="/ro">română</a></li>-->
                             <li><a href="/ru">русский</a></li>
                             <li><a href="/ml">മലയാളം</a></li>
-                            <li><a href="/ko">한국어</a></li>
+                            <!--<li><a href="/ko">한국어</a></li>-->
                             <li><a href="/ja">日本語</a></li>
                             <li><a href="/el">ελληνικά</a></li>
                           </ul>
@@ -265,7 +265,7 @@
 					<div class="main">
 							<h3><em>Step 3.b</em> Send a test encrypted email</h3>
 							<p>Write a new email in your email program, addressed to edward-en@fsf.org. Make the subject "Encryption test" or something similar and write something in the body. Don't send it yet.</p>
-							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email with the key you downloaded in the last step.</p>
+							<p>Click the icon of the key in the bottom right of the composition window (it should turn yellow). This tells Enigmail to encrypt the email.</p>
 							<p class="notes">Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, unique signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
 							<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
 
@@ -330,7 +330,7 @@
 
 <p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, forming a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Edward's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (for Edward's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to OpenPGP &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
 
 <p class="notes">You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like 92AB3FF7 for Edward. The key ID is visible directly from the Key Management Window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to whom are trying to communicate to verify which one to use.</p>
 
