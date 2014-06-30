@@ -24,17 +24,17 @@
                           <!-- Language list for browsers that do not have JS enabled -->
                           <ul id="languages" class="os">
                             <li><a href="/en">english</a></li>
-                            <li><a href="/es">español</a></li>
+                            <!--<li><a href="/es">español</a></li>-->
                             <li><a href="/fr">français</a></li>
                             <li><a href="/de">deutsch</a></li>
                             <li><a href="/pt-br">português do Brasil</a></li>
                             <li><a href="/tr">türkçe</a></li>
                             <!--<li><a class="current" href="/ro">română</a></li>-->
                             <li><a href="/ru">русский</a></li>
-                            <li><a href="/ml">മലയാളം</a></li>
+                            <!--<li><a href="/ml">മലയാളം</a></li>-->
                             <!--<li><a href="/ko">한국어</a></li>-->
                             <li><a href="/ja">日本語</a></li>
-                            <li><a href="/el">ελληνικά</a></li>
+                            <!--<li><a href="/el">ελληνικά</a></li>-->
                           </ul>
 
                           <ul id="menu" class="os">
@@ -270,7 +270,7 @@
 							<p class="notes">Lângă cheie, veți observa o iconiță cu un creion. Dacă dați clic pe ea, Enigmail adaugă o semnătură specială, unică, la mesajul dumneavoastră, generată cu cheia dumneavoastră privată. Aceasta este o funcție separată de criptare, ce nu este prezentată în acest ghid.</p>
 							<p>Apăsați pe Trimite. Enigmail va deschide o fereastră care spune „Destinatari nevalabili, care nu sunt de încredere sau nu sunt găsiți”.</p>
 
-							<p>Pentru a cripta un e-mail către Edward, aveți nevoie de cheia lui publică, deci acum îi veți cere lui Enigmail să o descarce dintr-un keyserver. Dați clic pe Download Missing Keys și folosiți valoarea implicită în pop-upul care vă cere să alegeți un keyserver. Când găsește chei, selectați-o pe prima (Key ID 4C11BBB2), apoi selectați Ok. Selectați Ok în pop-upul următor.</p>
+							<p>Pentru a cripta un e-mail către Edward, aveți nevoie de cheia lui publică, deci acum îi veți cere lui Enigmail să o descarce dintr-un keyserver. Dați clic pe Download Missing Keys și folosiți valoarea implicită în pop-upul care vă cere să alegeți un keyserver. Când găsește chei, selectați-o pe prima (Key ID C09A61E8), apoi selectați Ok. Selectați Ok în pop-upul următor.</p>
 
 							<p>Acum ați revenit la ecranul „Destinatari nevalabili, care nu sunt de încredere sau nu sunt găsiți”. Alegeți cheia lui Edward din listă și dați clic pe Ok. Dacă mesajul nu este trimis automat, puteți apăsa Trimite acum.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -331,9 +331,9 @@
 
 <p>Când semnați cheia cuiva, afirmați public că aveți încredere că aceasta îi aparține lui și nu unui impostor. Oamenii care folosesc o cheie publică pot vedea câte semnături are. După ce veți fi folosit GnuPG vreme îndelungată, puteți avea sute de semnături. The Web of Trust este constelația tuturor utilizatorilor de GnuPG, conectați între ei prin lanțuri de încredere exprimate prin semnături, care formează o rețea gigantică. Cu cât o cheie are mai multe semnături și cu cât mai multe semnături au cheile semnatarilor ei, cu atât acea cheie este mai demnă de încredere.</p>
 
-<p>Cheile publice ale oamenilor sunt identificate de obicei prin amprenta cheii, care este un șir de cifre ca DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (pentru cheia lui Edward). Puteți vedea amprenta cheii dumneavoastră și a altor chei publice salvate pe calculatorul dumneavoastră accesând OpenPGP &rarr; Key Management în meniul programului dumneavoastră de e-mail, apoi dând clic dreapta pe cheie și selectând Key Properties. Este o practică bună să distribuiți amprenta de câte ori distribuiți adresa de e-mail, pentru ca oamenii să se poată asigura că au cheia dumneavoastră publică corectă când o descarcă de pe un keyserver.</p>
+<p>Cheile publice ale oamenilor sunt identificate de obicei prin amprenta cheii, care este un șir de cifre ca F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (pentru cheia lui Edward). Puteți vedea amprenta cheii dumneavoastră și a altor chei publice salvate pe calculatorul dumneavoastră accesând OpenPGP &rarr; Key Management în meniul programului dumneavoastră de e-mail, apoi dând clic dreapta pe cheie și selectând Key Properties. Este o practică bună să distribuiți amprenta de câte ori distribuiți adresa de e-mail, pentru ca oamenii să se poată asigura că au cheia dumneavoastră publică corectă când o descarcă de pe un keyserver.</p>
 
-<p class="notes">Puteți întâlni și chei publice menționate prin ID-ul cheii, adică ultimele 8 cifre ale amprentei, cum ar fi 4C11BBB2 pentru Edward. ID-ul cheii este vizibil direct din fereastra Key Management. Acest ID al cheii este ca prenumele unei persoane (este o scurtătură utilă, dar nu este neapărat specific unei chei date), pe când amprenta chiar identifică cheia în mod unic fără posibilitate de confuzie. Dacă aveți numai ID-ul cheii, puteți să căutați cheia (ca și amprenta sa), cum ați procedat la Pasul 3, dar, dacă apar mai multe opțiuni, veți avea nevoie de amprenta persoanei cu care încercați să comunicați pentru a verifica pe care să o folosiți.</p>
+<p class="notes">Puteți întâlni și chei publice menționate prin ID-ul cheii, adică ultimele 8 cifre ale amprentei, cum ar fi C09A61E8 pentru Edward. ID-ul cheii este vizibil direct din fereastra Key Management. Acest ID al cheii este ca prenumele unei persoane (este o scurtătură utilă, dar nu este neapărat specific unei chei date), pe când amprenta chiar identifică cheia în mod unic fără posibilitate de confuzie. Dacă aveți numai ID-ul cheii, puteți să căutați cheia (ca și amprenta sa), cum ați procedat la Pasul 3, dar, dacă apar mai multe opțiuni, veți avea nevoie de amprenta persoanei cu care încercați să comunicați pentru a verifica pe care să o folosiți.</p>
 
 
 				</div><!-- End .section-intro -->
@@ -487,7 +487,7 @@
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Fundația pentru Software Liber" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Fundația pentru Software Liber</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Politica de confidențialitate</a>. <a href="https://u.fsf.org/yr">Înscrieți-vă.</a></p>
-                                        <p><em>Versiunea 2.0. <!--Romanian translation by Cătălin Frâncu.--> <!--EDWARDSOURCESTART Codul-sursă al robotului de răspunsuri Edward de PROGRAMMERNAME, disponibil sub Licența Publică Generală GNU. EDWARDSOURCEEND--></em></p>
+                                        <p><em>Versiunea 2.0. <!--Romanian translation by Cătălin Frâncu.--> <a href="http://agpl.fsf.org/emailselfdefense.fsf.org/edward/CURRENT/edward.tar.gz">Codul-sursă al robotului de răspunsuri Edward de Josh Drake <zamnedix@gnu.org> disponibil sub Licența Publică Generală GNU.</a></em></p>
 <p>Imaginile de pe această pagină sunt sub <a href="https://creativecommons.org/licenses/by/4.0/">licența Creative Commons Attribution 4.0 (sau o versiune ulterioară)</a>, iar restul ei este sub <a href="https://creativecommons.org/licenses/by-sa/4.0">licența Creative Commons Attribution-ShareAlike 4.0 (sau o versiune ulterioară)</a>. &mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">De ce aceste licențe?</a></p>
 					<p>Descărcați pachetul-sursă pentru <a href="emailselfdefense_source.zip">acest ghid</a>. Fonturi folosite în ghid și în infografic: <a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> de Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> de Anna Giedry&#347;, <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> de Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> de Florian Cramer, <a href="https://fedorahosted.org/liberation-fonts/">Liberation Sans</a> de Red Hat, <a href="http://font.ubuntu.com/">Ubuntu</a> de Dalton Maag, <a href="http://dejavu-fonts.org/">DejaVu</a> de <a href="http://dejavu-fonts.org/wiki/Authors">autori multipli</a>.
                                         <p>

@@ -23,17 +23,17 @@
                           <!-- Language list for browsers that do not have JS enabled -->
                           <ul id="languages" class="os">
                             <li><a href="/en">english</a></li>
-                            <li><a href="/es">español</a></li>
+                            <!--<li><a href="/es">español</a></li>-->
                             <li><a href="/fr">français</a></li>
                             <li><a class="current" href="/de">deutsch</a></li>
                             <li><a href="/pt-br">português do Brasil</a></li>
                             <li><a href="/tr">türkçe</a></li>
                             <!--<li><a href="/ro">română</a></li>-->
                             <li><a href="/ru">русский</a></li>
-                            <li><a href="/ml">മലയാളം</a></li>
+                            <!--<li><a href="/ml">മലയാളം</a></li>-->
                             <!--<li><a href="/ko">한국어</a></li>-->
                             <li><a href="/ja">日本語</a></li>
-                            <li><a href="/el">ελληνικά</a></li>
+                            <!--<li><a href="/el">ελληνικά</a></li>-->
                           </ul>
 
                           <ul id="menu" class="os">
@@ -282,7 +282,7 @@
 							<p class="notes">Neben dem Schlüssel siehst du das Bild eines Stiftes. Das Anklicken dieses Symbols veranlasst Enigmail, eine spezielle eindeutige Unterschrift auf der Basis deines privaten Schlüssels zu deiner Nachricht hinzuzufügen. Dies ist ein anderes Verfahren als die Verschlüsselung, das du im Rahmen dieser Anleitung nicht benutzten musst.</p>
 							<p>Drücke auf Senden. Enigmail wird eine Meldung "Nicht gefundene Empfänger" zeigen.</p>
 
-							<p>Um eine E-Mail an Edward zu verschlüsseln, benötigst du seinen öffentlichen Schlüssel, also muss Enigmail ihn jetzt von einem Schlüsselserver herunterladen. Klicke auf "Fehlende Schlüssel herunterladen", wähle den ersten (Schlüssel-ID 4C11BBB2) und klicke dann auf OK. Klicke im nächsten Pop-up-Fenster wieder auf OK.</p>
+							<p>Um eine E-Mail an Edward zu verschlüsseln, benötigst du seinen öffentlichen Schlüssel, also muss Enigmail ihn jetzt von einem Schlüsselserver herunterladen. Klicke auf "Fehlende Schlüssel herunterladen", wähle den ersten (Schlüssel-ID C09A61E8) und klicke dann auf OK. Klicke im nächsten Pop-up-Fenster wieder auf OK.</p>
 
 							<p>Jetzt bist du zurück beim Dialog "Nicht gefundene Empfänger". Wähle Edwards Schlüssel aus der Liste aus und klicke OK. Sollte die E-Mail nicht automatisch versendet werden, kannst du jetzt auf Senden drücken.</p>
 					<!-- ~~~~~~~~~ Troubleshooting  ~~~~~~~~~ -->
@@ -343,9 +343,9 @@
 
 <p>Wenn du den Schlüssel von jemandem signierst, dann sagst du öffentlich, dass du glaubst, dass der Schlüssel tatsächlich dieser Person gehört und nicht einem Betrüger. Leute, die deinen öffentlichen Schlüssel benutzen, können sehen, wie viele Signaturen er erhalten hat. Wenn du GnuPG einige Jahre lang verwendet hast, kannst du hunderte Signaturen haben. Das Web of Trust ist eine Konstellation aller GnuPG-Nutzer, die durch Signaturenketten zu einem riesigen Netz verbunden sind. Je mehr Signaturen ein Schlüssel hat und je mehr Signaturen die Schlüssel derjenigen, die unterschrieben haben, erhalten haben, desto vertrauenswürdiger ist dieser Schlüssel.</p>
 
-<p>Öffentliche Schlüssel werden normalerweise anhand ihres Fingerabdrucks identifiziert, einer Zeichenkette wie DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (für Edwards Schlüssel). Du kannst den Fingerabdruck deines öffentlichen Schlüssels – und anderer öffentlicher Schlüssel, die du gespeichert hast, indem du zu OpenPGP &rarr; Schlüssel verwalten im Menü deines E-Mail-Programms gehst und dann mit der rechten Maustaste auf den Schlüssel klickst und die Schlüsseleigenschaften auswählst. Es ist sinnvoll, deinen Fingerabdruck immer weiterzugeben, wenn du anderen deine E-Mail-Adresse mitteilst, so dass diese Menschen kontrollieren können, ob sie deinen richtigen Schlüssel von einem Schlüsselserver herunterladen.</p>
+<p>Öffentliche Schlüssel werden normalerweise anhand ihres Fingerabdrucks identifiziert, einer Zeichenkette wie F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (für Edwards Schlüssel). Du kannst den Fingerabdruck deines öffentlichen Schlüssels – und anderer öffentlicher Schlüssel, die du gespeichert hast, indem du zu OpenPGP &rarr; Schlüssel verwalten im Menü deines E-Mail-Programms gehst und dann mit der rechten Maustaste auf den Schlüssel klickst und die Schlüsseleigenschaften auswählst. Es ist sinnvoll, deinen Fingerabdruck immer weiterzugeben, wenn du anderen deine E-Mail-Adresse mitteilst, so dass diese Menschen kontrollieren können, ob sie deinen richtigen Schlüssel von einem Schlüsselserver herunterladen.</p>
 
-<p class="notes">Du wirst sehen, dass man sich auch über die Schlüssel-ID auf öffentliche Schlüssel bezieht, dabei handelt es sich einfach um die letzten 8 Zeichen des Fingerabdrucks, z.B. 92AB3FF7 für Edward. Die Schlüssel-ID ist direkt im Fenster Schlüssel verwalten sichtbar. Diese Schlüssel-ID ist wie der Vorname einer Person (es ist eine nützliche Abkürzung, aber ist vielleicht nicht eindeutig), während der Fingerabdruck tatsächlich den Schlüssel eindeutig und ohne Möglichkeit der Verwechslung identifiziert. Wenn du nur die Schlüssel-ID hast, kannst du den Schlüssel (und seinen Fingerabdruck) immer noch nachschlagen, wie du es in Schritt 3 getan hast, aber wenn mehrere Möglichkeiten auftauchen, brauchst du den Fingerabdruck der Person, mit der du kommunizieren willst, um zu klären, welchen Schlüssel du benutzen sollst.</p>
+<p class="notes">Du wirst sehen, dass man sich auch über die Schlüssel-ID auf öffentliche Schlüssel bezieht, dabei handelt es sich einfach um die letzten 8 Zeichen des Fingerabdrucks, z.B. C09A61E8 für Edward. Die Schlüssel-ID ist direkt im Fenster Schlüssel verwalten sichtbar. Diese Schlüssel-ID ist wie der Vorname einer Person (es ist eine nützliche Abkürzung, aber ist vielleicht nicht eindeutig), während der Fingerabdruck tatsächlich den Schlüssel eindeutig und ohne Möglichkeit der Verwechslung identifiziert. Wenn du nur die Schlüssel-ID hast, kannst du den Schlüssel (und seinen Fingerabdruck) immer noch nachschlagen, wie du es in Schritt 3 getan hast, aber wenn mehrere Möglichkeiten auftauchen, brauchst du den Fingerabdruck der Person, mit der du kommunizieren willst, um zu klären, welchen Schlüssel du benutzen sollst.</p>
 
 
 				</div><!-- End .section-intro -->

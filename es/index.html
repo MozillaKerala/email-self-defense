@@ -23,17 +23,17 @@
                           <!-- Language list for browsers that do not have JS enabled -->
                           <ul id="languages" class="os">
                             <li><a href="/en">english</a></li>
-                            <li><a class="current" href="/es">español</a></li>
+                            <!--<li><a class="current" href="/es">español</a></li>-->
                             <li><a href="/fr">français</a></li>
                             <li><a href="/de">deutsch</a></li>
                             <li><a href="/pt-br">português do Brasil</a></li>
                             <li><a href="/tr">türkçe</a></li>
                             <!--<li><a href="/ro">română</a></li>-->
                             <li><a href="/ru">русский</a></li>
-                            <li><a href="/ml">മലയാളം</a></li>
+                            <!--<li><a href="/ml">മലയാളം</a></li>-->
                             <!--<li><a href="/ko">한국어</a></li>-->
                             <li><a href="/ja">日本語</a></li>
-                            <li><a href="/el">ελληνικά</a></li>
+                            <!--<li><a href="/el">ελληνικά</a></li>-->
                           </ul>
 
                           <ul id="menu" class="os">
@@ -328,8 +328,8 @@
 						<h2><em>#4</em> Learn the Web of Trust</h2>
 						<p>El cifrado de correo electrónico es una tecnólogia poderosa, pero tiene sus debilidades; requiere una manera de verificar que una llave pública de una persona es realmente de ella. De otra forma, no exisitiría una manera de parar a un atacante que se haga una dirección de correo electrónico con el nombre de tu amigo, que cree llaves con esa dirección y suplantando a tu amigo. Es por eso que los programadores de software libre que desarrollaron el cifrado de correo electrónico crearon el firmado de llaves y the Web of Trust.</p>
                         <p>Cuando firmas la llave de alguien, estas diciendo publicamente que confias en que pertenece a esa persona y no a un impostor. Las personas que usan tu llave pública pueden ver el número de firmas que tiene. Una vez que has usado GnuPG por mucho tiempo, puede ser que tengas cientos de firmas. The Web of Trust es la constelación de todos los usuarios de GnuPG, conectados entre ellos mediante las cadenas de confianza expresadas a traves de las firmas, en una red gigante. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
-                        <p>Las llaves públicas de las personas mayormente estan idetnficadas por su fingerprint, que es una cadena de which is a string como DD878C06E8C2BEDDD4A440D3E573346992AB3FF7 (para la llave de Adele). Puedes ver el fingerprint de tu llave pública, y de otras llaves públicas que han sido guardadas en tu computadora, yendo a OpenPGP → Manejo de llaves en el menú de tu programa de correo electrónico, luego hay que hacer click derecho en la llave y seleccionar Propiedades de la Llave. Es una buena práctica compartir tu fingerprint cada vez que compartes tu dirección de correo electrónico, asi otras personas puede verificar que tienene la llave pública correcta cuando descarguen tu llave desde un servidor de llaves.</p>
-                        <p class="notes">Puedes ver tambien las llaves públicas referidas por su ID de llave, que sencillament es los 8 últimos caracteres del fingerprint, como 92AB3FF7 para Edward. El ID de llave es visible directamente desde la ventana de administración de llaves. Este ID de llave es como el primer nombre de una persona (es un atajo útil pero no es único), mientras que el fingerprint relamente identifica una llave de manera única sin la posibilidad de confusión. Si solo tienes el ID de llave, igualmente puedes buscar la llave (como tambien su fingerprint), como hiciste en el paso 3, pero si aparecen varias opciones, necesitaras el fingerprint de la persona con la que estas tratando de comunicarte para ver cual es la que usa.</p>
+                        <p>Las llaves públicas de las personas mayormente estan idetnficadas por su fingerprint, que es una cadena de which is a string como F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (para la llave de Adele). Puedes ver el fingerprint de tu llave pública, y de otras llaves públicas que han sido guardadas en tu computadora, yendo a OpenPGP → Manejo de llaves en el menú de tu programa de correo electrónico, luego hay que hacer click derecho en la llave y seleccionar Propiedades de la Llave. Es una buena práctica compartir tu fingerprint cada vez que compartes tu dirección de correo electrónico, asi otras personas puede verificar que tienene la llave pública correcta cuando descarguen tu llave desde un servidor de llaves.</p>
+                        <p class="notes">Puedes ver tambien las llaves públicas referidas por su ID de llave, que sencillament es los 8 últimos caracteres del fingerprint, como C09A61E8 para Edward. El ID de llave es visible directamente desde la ventana de administración de llaves. Este ID de llave es como el primer nombre de una persona (es un atajo útil pero no es único), mientras que el fingerprint relamente identifica una llave de manera única sin la posibilidad de confusión. Si solo tienes el ID de llave, igualmente puedes buscar la llave (como tambien su fingerprint), como hiciste en el paso 3, pero si aparecen varias opciones, necesitaras el fingerprint de la persona con la que estas tratando de comunicarte para ver cual es la que usa.</p>
 
 
 				</div><!-- End .section-intro -->
