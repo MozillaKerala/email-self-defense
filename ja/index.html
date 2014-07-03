@@ -26,6 +26,7 @@
                             <!--<li><a href="/es">español</a></li>-->
                             <li><a href="/fr">français</a></li>
                             <li><a href="/de">deutsch</a></li>
+                            <!--<li><a href="/it">italiano</a></li>-->
                             <li><a href="/pt-br">português do Brasil</a></li>
                             <li><a href="/tr">türkçe</a></li>
                             <!--<li><a href="/ro">română</a></li>-->
@@ -330,9 +331,9 @@
 
 <p>あなたが誰かの公開鍵に署名することで、その公開鍵が偽物ではなく、本当にその人の鍵だとあなたが公言するのです。あなたの公開鍵にもだれかが署名をして、公開鍵が何回署名されたかを見ることができます。あなたが長期間にわたってGnuPGを使っていれば、何百もの署名がついていることでしょう。信頼の輪とはGnuPGの全ユーザで構成され、互いの署名によって裏打されている相互信頼の巨大なネットワークです。鍵に署名が多くついているほど、そしてその署名者の鍵にも署名が多くついているほど、その鍵の信用性が高くなるのです。</p>
 
-<p>各ユーザーの公開鍵はその「指紋」で区別されます。指紋は、例えばAdeleの場合、F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8といった英数字の列です。あなたの公開鍵の指紋や、あなたのコンピューターに保存されている別の人の公開鍵の指紋を表示するには、メールプログラムのOpenPGP&rarr;キー管理メニューを選択してから鍵を右クリックし、鍵プロパティーを選択します。あなたが誰かにメールアドレスを伝えるときは、いっしょに公開鍵の指紋も伝えるようにしましょう。その人がキーサーバーからあなたの公開鍵をダウンロードしたとき、それが本物であるのかを再確認する手がかりになるからです。</p>
+<p>各ユーザーの公開鍵はその「指紋」で区別されます。指紋は、例えばEdwardの場合、F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8といった英数字の列です。あなたの公開鍵の指紋や、あなたのコンピューターに保存されている別の人の公開鍵の指紋を表示するには、メールプログラムのOpenPGP&rarr;キー管理メニューを選択してから鍵を右クリックし、鍵プロパティーを選択します。あなたが誰かにメールアドレスを伝えるときは、いっしょに公開鍵の指紋も伝えるようにしましょう。その人がキーサーバーからあなたの公開鍵をダウンロードしたとき、それが本物であるのかを再確認する手がかりになるからです。</p>
 
-<p class="notes">公開鍵にはさらに、長さ８文字の鍵IDがついています。例えばEdwardの鍵IDはC09A61E8で、Adeleの鍵IDはC09A61E8です。この鍵IDは、指紋の文字列の最後の８字とまったく同じものです。自分の鍵IDはメールプログラムのOpenPGP&rarr;キー管理のメニューに表示されています。鍵IDはちょうど苗字のようなもので、短くて具合がよいのですが決して重複しないわけではないのです。指紋ならば鍵を完全に見分けることができて、重複はありません。鍵IDしかわからない場合でも指紋によるときと同じように、3章で説明した方法で鍵を見つけることができます。もし鍵が複数見つかった場合、相手の鍵の指紋を使って正しい鍵を選択しなければなりません。</p>
+<p class="notes">公開鍵にはさらに、長さ８文字の鍵IDがついています。例えばEdwardの鍵IDはC09A61E8です。この鍵IDは、指紋の文字列の最後の８字とまったく同じものです。自分の鍵IDはメールプログラムのOpenPGP&rarr;キー管理のメニューに表示されています。鍵IDはちょうど苗字のようなもので、短くて具合がよいのですが決して重複しないわけではないのです。指紋ならば鍵を完全に見分けることができて、重複はありません。鍵IDしかわからない場合でも指紋によるときと同じように、3章で説明した方法で鍵を見つけることができます。もし鍵が複数見つかった場合、相手の鍵の指紋を使って正しい鍵を選択しなければなりません。</p>
 
 
 				</div><!-- End .section-intro -->
@@ -389,7 +390,7 @@
 						<p><img src="//static.fsf.org/nosvn/enc-dev0/img/ja/screenshots/section5-01-use-it-well.png" alt="Section 5: Use it Well" /></p>
 					</div><!-- /.sidebar -->
 					<div class="main">
-						<h3>暗号化はいつ使えばいいでのしょうか？</h3>
+						<h3>暗号化はいつ使えばいいでしょうか？</h3>
 
 						<p>いつも暗号化するようにすれば、その方がいいのです。なぜなら、たまにしかメールを暗号化しないと、暗号化しているメールが監視システムに注目されるかもしれません。ほぼ全部のメールが暗号化されていたら、監視する側ではどれが大事なメッセージなのかがわかりません。</p>
 
@@ -485,7 +486,7 @@
 				<div id="copyright">
 					<h4><a href="https://u.fsf.org/ys"><img alt="Free Software Foundation" src="//static.fsf.org/nosvn/enc-dev0/img/fsf-logo.png"></a></h4>
 					<p>Copyright &copy; 2014 <a href="https://u.fsf.org/ys">Free Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>. <a href="https://u.fsf.org/yr">Join.</a></p>
-                                        <p><em>Version 2.0. <!--LANGUAGE translation by NAME, NAME and NAME.--> Source code of Edward reply bot by Josh Drake &lt;zamnedix@gnu.org&gt; available under the GNU General Public License.</em></p>
+                                        <p><em>Version 2.0. Japanese translation by Silvan Jegen and Fred Okayama. Source code of Edward reply bot by Josh Drake &lt;zamnedix@gnu.org&gt; available under the GNU General Public License.</em></p>
 <p>このページの画像に<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license (or later version)</a>が使われ、他のものには<a href="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 license (or later version)</a>が使用されています。&mdash; <a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses">どうしてこのライセンスを？</a></p>
 					<p><a href="emailselfdefense_source.zip">このガイドの</a>ソースをダウンロード。 このガイドとインフォグラフィックに使われているフォント：<a href="https://www.google.com/fonts/specimen/Dosis">Dosis</a> by Pablo Impallari, <a href="http://www.google.com/fonts/specimen/Signika">Signika</a> by Anna Giedry&#347;, <a href="http://www.google.com/fonts/specimen/Archivo+Narrow">Archivo Narrow</a> by Omnibus-Type, <a href="http://www.thegopherarchive.com/gopher-files-hacks-pxl2000-119351.htm">PXL-2000</a> by Florian Cramer.</p>
                                         <p>
